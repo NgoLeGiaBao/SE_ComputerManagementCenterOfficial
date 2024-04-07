@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.guna2Chip1 = new Guna.UI2.WinForms.Guna2Chip();
+            this.guna2Chip2 = new Guna.UI2.WinForms.Guna2Chip();
             this.SuspendLayout();
             // 
             // guna2Chip1
@@ -37,17 +38,30 @@
             this.guna2Chip1.BorderRadius = 19;
             this.guna2Chip1.Font = new System.Drawing.Font("Segoe UI", 9.5F);
             this.guna2Chip1.ForeColor = System.Drawing.Color.White;
-            this.guna2Chip1.Location = new System.Drawing.Point(382, 206);
+            this.guna2Chip1.Location = new System.Drawing.Point(44, 26);
             this.guna2Chip1.Name = "guna2Chip1";
             this.guna2Chip1.Size = new System.Drawing.Size(130, 40);
             this.guna2Chip1.TabIndex = 0;
             this.guna2Chip1.Text = "guna2Chip1";
+            // 
+            // guna2Chip2
+            // 
+            this.guna2Chip2.AutoRoundedCorners = true;
+            this.guna2Chip2.BorderRadius = 19;
+            this.guna2Chip2.Font = new System.Drawing.Font("Segoe UI", 9.5F);
+            this.guna2Chip2.ForeColor = System.Drawing.Color.White;
+            this.guna2Chip2.Location = new System.Drawing.Point(520, 36);
+            this.guna2Chip2.Name = "guna2Chip2";
+            this.guna2Chip2.Size = new System.Drawing.Size(130, 40);
+            this.guna2Chip2.TabIndex = 1;
+            this.guna2Chip2.Text = "guna2Chip2";
             // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.guna2Chip2);
             this.Controls.Add(this.guna2Chip1);
             this.Name = "FLogin";
             this.Text = "FLogin";
@@ -58,5 +72,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Chip guna2Chip1;
+        private Guna.UI2.WinForms.Guna2Chip guna2Chip2;
     }
 }
