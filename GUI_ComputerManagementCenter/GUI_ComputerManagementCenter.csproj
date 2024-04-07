@@ -53,17 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI_RelatedToLogin\FLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_RelatedToLogin\FLogin.Designer.cs">
-      <DependentUpon>FLogin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUI_RelatedToLogin\FLogin.resx">
-      <DependentUpon>FLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -91,6 +82,7 @@
     <Folder Include="GUI_RelatedToActorEmployee\" />
     <Folder Include="GUI_RelatedToActorStudent\" />
     <Folder Include="GUI_RelatedToActorTeacher\" />
+    <Folder Include="GUI_RelatedToLogin\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BUS_ComputerManagementCenter\BUS_ComputerManagementCenter.csproj">
