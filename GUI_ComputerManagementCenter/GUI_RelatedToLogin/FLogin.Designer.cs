@@ -36,6 +36,7 @@
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
             this.gunaMetroTrackBar1 = new Guna.UI.WinForms.GunaMetroTrackBar();
+            this.gunaSeparator1 = new Guna.UI.WinForms.GunaSeparator();
             this.SuspendLayout();
             // 
             // gunaButton1
@@ -189,11 +190,20 @@
             this.gunaMetroTrackBar1.TrackIdleColor = System.Drawing.Color.Silver;
             this.gunaMetroTrackBar1.TrackPressedColor = System.Drawing.Color.Black;
             // 
+            // gunaSeparator1
+            // 
+            this.gunaSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.gunaSeparator1.Location = new System.Drawing.Point(402, 294);
+            this.gunaSeparator1.Name = "gunaSeparator1";
+            this.gunaSeparator1.Size = new System.Drawing.Size(200, 10);
+            this.gunaSeparator1.TabIndex = 7;
+            // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gunaSeparator1);
             this.Controls.Add(this.gunaMetroTrackBar1);
             this.Controls.Add(this.gunaCheckBox1);
             this.Controls.Add(this.gunaDateTimePicker1);
@@ -217,5 +227,6 @@
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
         private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
         private Guna.UI.WinForms.GunaMetroTrackBar gunaMetroTrackBar1;
+        private Guna.UI.WinForms.GunaSeparator gunaSeparator1;
     }
 }
