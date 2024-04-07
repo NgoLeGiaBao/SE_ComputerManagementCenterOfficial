@@ -30,6 +30,7 @@
         {
             this.guna2Chip1 = new Guna.UI2.WinForms.Guna2Chip();
             this.guna2Chip2 = new Guna.UI2.WinForms.Guna2Chip();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2Chip1
@@ -56,11 +57,26 @@
             this.guna2Chip2.TabIndex = 1;
             this.guna2Chip2.Text = "guna2Chip2";
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(263, 250);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 2;
+            this.guna2Button1.Text = "guna2Button1";
+            // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2Chip2);
             this.Controls.Add(this.guna2Chip1);
             this.Name = "FLogin";
@@ -73,5 +89,6 @@
 
         private Guna.UI2.WinForms.Guna2Chip guna2Chip1;
         private Guna.UI2.WinForms.Guna2Chip guna2Chip2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
