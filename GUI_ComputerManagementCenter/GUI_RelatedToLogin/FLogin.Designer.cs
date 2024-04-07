@@ -30,6 +30,8 @@
         {
             this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox2 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.SuspendLayout();
             // 
             // gunaTextBox1
@@ -47,7 +49,7 @@
             this.gunaTextBox1.SelectedText = "";
             this.gunaTextBox1.Size = new System.Drawing.Size(160, 32);
             this.gunaTextBox1.TabIndex = 0;
-            this.gunaTextBox1.Text = "Hoàng";
+            this.gunaTextBox1.Text = "BBBBB";
             // 
             // gunaTextBox2
             // 
@@ -66,11 +68,32 @@
             this.gunaTextBox2.TabIndex = 1;
             this.gunaTextBox2.Text = "Hoàng";
             // 
+            // gunaPanel1
+            // 
+            this.gunaPanel1.Location = new System.Drawing.Point(561, 157);
+            this.gunaPanel1.Name = "gunaPanel1";
+            this.gunaPanel1.Size = new System.Drawing.Size(200, 200);
+            this.gunaPanel1.TabIndex = 2;
+            // 
+            // gunaImageButton1
+            // 
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = null;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(446, 26);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.TabIndex = 3;
+            // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gunaImageButton1);
+            this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaTextBox2);
             this.Controls.Add(this.gunaTextBox1);
             this.Name = "FLogin";
@@ -83,5 +106,7 @@
 
         private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox2;
+        private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaImageButton gunaImageButton1;
     }
 }
