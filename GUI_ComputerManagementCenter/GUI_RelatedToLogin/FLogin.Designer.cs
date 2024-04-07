@@ -34,6 +34,7 @@
             this.gunaAdvenceButton2 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
             this.SuspendLayout();
             // 
             // gunaButton1
@@ -164,11 +165,24 @@
             this.gunaDateTimePicker1.Text = "Sunday, April 7, 2024";
             this.gunaDateTimePicker1.Value = new System.DateTime(2024, 4, 7, 23, 44, 0, 308);
             // 
+            // gunaCheckBox1
+            // 
+            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
+            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
+            this.gunaCheckBox1.Location = new System.Drawing.Point(564, 146);
+            this.gunaCheckBox1.Name = "gunaCheckBox1";
+            this.gunaCheckBox1.Size = new System.Drawing.Size(129, 20);
+            this.gunaCheckBox1.TabIndex = 5;
+            this.gunaCheckBox1.Text = "gunaCheckBox1";
+            // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gunaCheckBox1);
             this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaAdvenceButton2);
@@ -177,6 +191,7 @@
             this.Name = "FLogin";
             this.Text = "FLogin";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -187,5 +202,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton2;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
     }
 }
