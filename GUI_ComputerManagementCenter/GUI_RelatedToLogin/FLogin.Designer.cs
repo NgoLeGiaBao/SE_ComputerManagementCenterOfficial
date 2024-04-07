@@ -35,6 +35,7 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaMetroTrackBar1 = new Guna.UI.WinForms.GunaMetroTrackBar();
             this.SuspendLayout();
             // 
             // gunaButton1
@@ -49,7 +50,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(442, 337);
+            this.gunaButton1.Location = new System.Drawing.Point(69, 184);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -78,7 +79,7 @@
             this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(488, 399);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(524, 206);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -108,7 +109,7 @@
             this.gunaAdvenceButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.Image")));
             this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(23, 349);
+            this.gunaAdvenceButton2.Location = new System.Drawing.Point(31, 97);
             this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
             this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -132,7 +133,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(584, 320);
+            this.gunaButton2.Location = new System.Drawing.Point(584, 58);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -152,7 +153,7 @@
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(286, 349);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(44, 26);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -171,17 +172,29 @@
             this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
             this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(584, 305);
+            this.gunaCheckBox1.Location = new System.Drawing.Point(593, 167);
             this.gunaCheckBox1.Name = "gunaCheckBox1";
             this.gunaCheckBox1.Size = new System.Drawing.Size(129, 20);
             this.gunaCheckBox1.TabIndex = 5;
             this.gunaCheckBox1.Text = "gunaCheckBox1";
+            // 
+            // gunaMetroTrackBar1
+            // 
+            this.gunaMetroTrackBar1.Location = new System.Drawing.Point(372, 350);
+            this.gunaMetroTrackBar1.Name = "gunaMetroTrackBar1";
+            this.gunaMetroTrackBar1.Size = new System.Drawing.Size(100, 23);
+            this.gunaMetroTrackBar1.TabIndex = 6;
+            this.gunaMetroTrackBar1.TrackColor = System.Drawing.Color.DimGray;
+            this.gunaMetroTrackBar1.TrackHoverColor = System.Drawing.Color.Gray;
+            this.gunaMetroTrackBar1.TrackIdleColor = System.Drawing.Color.Silver;
+            this.gunaMetroTrackBar1.TrackPressedColor = System.Drawing.Color.Black;
             // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gunaMetroTrackBar1);
             this.Controls.Add(this.gunaCheckBox1);
             this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.gunaButton2);
@@ -203,5 +216,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
         private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
+        private Guna.UI.WinForms.GunaMetroTrackBar gunaMetroTrackBar1;
     }
 }
