@@ -28,49 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gunaVProgressBar1 = new Guna.UI.WinForms.GunaVProgressBar();
-            this.gunaSwitch1 = new Guna.UI.WinForms.GunaSwitch();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FLogin));
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaLineTextBox2 = new Guna.UI.WinForms.GunaLineTextBox();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // gunaVProgressBar1
+            // gunaButton1
             // 
-            this.gunaVProgressBar1.BorderColor = System.Drawing.Color.Black;
-            this.gunaVProgressBar1.ColorStyle = Guna.UI.WinForms.ColorStyle.Default;
-            this.gunaVProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaVProgressBar1.Location = new System.Drawing.Point(365, 104);
-            this.gunaVProgressBar1.Name = "gunaVProgressBar1";
-            this.gunaVProgressBar1.ProgressMaxColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaVProgressBar1.ProgressMinColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaVProgressBar1.Size = new System.Drawing.Size(211, 186);
-            this.gunaVProgressBar1.TabIndex = 0;
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Lime;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(166, 403);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton1.TabIndex = 1;
+            this.gunaButton1.Text = "gunaButton1";
             // 
-            // gunaSwitch1
+            // gunaLineTextBox1
             // 
-            this.gunaSwitch1.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaSwitch1.CheckedOffColor = System.Drawing.Color.DarkGray;
-            this.gunaSwitch1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaSwitch1.FillColor = System.Drawing.Color.White;
-            this.gunaSwitch1.Location = new System.Drawing.Point(202, 270);
-            this.gunaSwitch1.Name = "gunaSwitch1";
-            this.gunaSwitch1.Size = new System.Drawing.Size(28, 20);
-            this.gunaSwitch1.TabIndex = 1;
+            this.gunaLineTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.gunaLineTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaLineTextBox1.FocusedLineColor = System.Drawing.Color.Empty;
+            this.gunaLineTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.gunaLineTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.gunaLineTextBox1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.gunaLineTextBox1.Location = new System.Drawing.Point(66, 169);
+            this.gunaLineTextBox1.Name = "gunaLineTextBox1";
+            this.gunaLineTextBox1.PasswordChar = '\0';
+            this.gunaLineTextBox1.SelectedText = "";
+            this.gunaLineTextBox1.Size = new System.Drawing.Size(408, 37);
+            this.gunaLineTextBox1.TabIndex = 3;
+            this.gunaLineTextBox1.Text = "Username";
+            // 
+            // gunaLineTextBox2
+            // 
+            this.gunaLineTextBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.gunaLineTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaLineTextBox2.FocusedLineColor = System.Drawing.Color.Empty;
+            this.gunaLineTextBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLineTextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.gunaLineTextBox2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.gunaLineTextBox2.Location = new System.Drawing.Point(69, 257);
+            this.gunaLineTextBox2.Name = "gunaLineTextBox2";
+            this.gunaLineTextBox2.PasswordChar = '\0';
+            this.gunaLineTextBox2.SelectedText = "";
+            this.gunaLineTextBox2.Size = new System.Drawing.Size(408, 37);
+            this.gunaLineTextBox2.TabIndex = 4;
+            this.gunaLineTextBox2.Text = "Password";
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(69, 25);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(405, 120);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 5;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // FLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gunaSwitch1);
-            this.Controls.Add(this.gunaVProgressBar1);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(546, 545);
+            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.gunaLineTextBox2);
+            this.Controls.Add(this.gunaLineTextBox1);
+            this.Controls.Add(this.gunaButton1);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "FLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "FLogin";
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaVProgressBar gunaVProgressBar1;
-        private Guna.UI.WinForms.GunaSwitch gunaSwitch1;
+        private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaLineTextBox gunaLineTextBox1;
+        private Guna.UI.WinForms.GunaLineTextBox gunaLineTextBox2;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
     }
 }
