@@ -49,7 +49,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(422, 178);
+            this.gunaButton1.Location = new System.Drawing.Point(426, 58);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -78,7 +78,7 @@
             this.gunaAdvenceButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton1.Image")));
             this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton1.Location = new System.Drawing.Point(468, 240);
+            this.gunaAdvenceButton1.Location = new System.Drawing.Point(472, 120);
             this.gunaAdvenceButton1.Name = "gunaAdvenceButton1";
             this.gunaAdvenceButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -108,7 +108,7 @@
             this.gunaAdvenceButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton2.Image")));
             this.gunaAdvenceButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton2.Location = new System.Drawing.Point(3, 190);
+            this.gunaAdvenceButton2.Location = new System.Drawing.Point(7, 70);
             this.gunaAdvenceButton2.Name = "gunaAdvenceButton2";
             this.gunaAdvenceButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaAdvenceButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -132,7 +132,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.White;
             this.gunaButton2.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton2.Image")));
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(564, 161);
+            this.gunaButton2.Location = new System.Drawing.Point(568, 41);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -152,7 +152,7 @@
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(266, 190);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(270, 70);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -171,7 +171,7 @@
             this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
             this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Location = new System.Drawing.Point(564, 146);
+            this.gunaCheckBox1.Location = new System.Drawing.Point(568, 26);
             this.gunaCheckBox1.Name = "gunaCheckBox1";
             this.gunaCheckBox1.Size = new System.Drawing.Size(129, 20);
             this.gunaCheckBox1.TabIndex = 5;
