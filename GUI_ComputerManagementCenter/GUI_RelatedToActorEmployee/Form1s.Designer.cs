@@ -1,6 +1,6 @@
-﻿namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
+﻿namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    partial class Form1
+    partial class Form1s
     {
         /// <summary>
         /// Required designer variable.
@@ -39,22 +39,21 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1400, 284);
+            this.guna2Button1.Location = new System.Drawing.Point(504, 220);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "guna2Button1";
             // 
-            // Form1
+            // Form1s
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1024);
+            this.ClientSize = new System.Drawing.Size(1782, 977);
             this.Controls.Add(this.guna2Button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Name = "Form1s";
+            this.Text = "Form1s";
             this.ResumeLayout(false);
 
         }
