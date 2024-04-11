@@ -43,9 +43,9 @@
   <ItemGroup>
     <Compile Include="DAO_DataProvider.cs" />
     <Compile Include="DAO_RelatedToEmployeeActor.cs" />
-    <Compile Include="DAO_RelatedToLogin.cs" />
     <Compile Include="DAO_RelatedToStudent.cs" />
     <Compile Include="DAO_RelatedToStudentActor.cs" />
+    <Compile Include="DAO_RelatedToLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

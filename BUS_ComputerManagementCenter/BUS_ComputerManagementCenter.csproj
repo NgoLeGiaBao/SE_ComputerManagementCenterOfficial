@@ -42,9 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_RelatedToEmployee.cs" />
-    <Compile Include="BUS_RelatedToLogin.cs" />
     <Compile Include="BUS_RelatedToStudent.cs" />
     <Compile Include="BUS_RelatedToTeacher.cs" />
+    <Compile Include="BUS_RelatedToLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

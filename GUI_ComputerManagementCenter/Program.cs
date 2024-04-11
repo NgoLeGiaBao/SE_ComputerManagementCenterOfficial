@@ -1,4 +1,5 @@
-﻿using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
+﻿using GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee;
+using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace GUI_ComputerManagementCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FLogin());
+            Application.Run(new FEmployee());
         }
     }
 }

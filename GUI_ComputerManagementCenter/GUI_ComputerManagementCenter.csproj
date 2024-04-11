@@ -57,14 +57,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_RelatedToActorEmployee\FEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorEmployee\FEmployee.Designer.cs">
+      <DependentUpon>FEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_RelatedToLogin\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_RelatedToLogin\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_RelatedToLogin\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEmployee.resx">
+      <DependentUpon>FEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToLogin\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,7 +108,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GUI_RelatedToActorEmployee\" />
     <Folder Include="GUI_RelatedToActorStudent\" />
     <Folder Include="GUI_RelatedToActorTeacher\" />
   </ItemGroup>
@@ -102,6 +116,10 @@
       <Project>{fff956de-ec01-438f-8b24-fcd2b6c20bae}</Project>
       <Name>BUS_ComputerManagementCenter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAO_ComputerManagementCenter\DAO_ComputerManagementCenter.csproj">
+      <Project>{44b96994-cfd1-48a2-ba02-defafd9f8115}</Project>
+      <Name>DAO_ComputerManagementCenter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO_ComputerManagementCenter\DTO_ComputerManagementCenter.csproj">
       <Project>{bdced2cd-ac70-4aff-bce2-88fc38343252}</Project>
       <Name>DTO_ComputerManagementCenter</Name>
@@ -109,6 +127,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MITR %28back white%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
