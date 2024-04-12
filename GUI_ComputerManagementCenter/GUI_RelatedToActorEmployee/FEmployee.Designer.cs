@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series22 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series23 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series24 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea21 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend21 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series61 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series62 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series63 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -63,6 +63,10 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -74,6 +78,7 @@
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -83,7 +88,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1924, 30);
+            this.guna2Panel1.Size = new System.Drawing.Size(1942, 30);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2ControlBox1
@@ -92,7 +97,7 @@
             this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1837, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1855, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 1;
@@ -102,7 +107,7 @@
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1879, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1897, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 2;
@@ -112,7 +117,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 30);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1924, 100);
+            this.guna2Panel2.Size = new System.Drawing.Size(1942, 100);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2TabControl1
@@ -127,7 +132,7 @@
             this.guna2TabControl1.Location = new System.Drawing.Point(0, 130);
             this.guna2TabControl1.Name = "guna2TabControl1";
             this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1924, 894);
+            this.guna2TabControl1.Size = new System.Drawing.Size(1942, 894);
             this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
@@ -155,7 +160,7 @@
             this.tabPage1.Location = new System.Drawing.Point(184, 4);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1736, 886);
+            this.tabPage1.Size = new System.Drawing.Size(1754, 886);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Home";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -194,33 +199,34 @@
             // 
             // chart1
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart1.Legends.Add(legend8);
+            chartArea21.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea21);
+            legend21.Name = "Legend1";
+            this.chart1.Legends.Add(legend21);
             this.chart1.Location = new System.Drawing.Point(100, 74);
             this.chart1.Name = "chart1";
-            series22.ChartArea = "ChartArea1";
-            series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series22.Legend = "Legend1";
-            series22.Name = "Series1";
-            series23.ChartArea = "ChartArea1";
-            series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series23.Legend = "Legend1";
-            series23.Name = "Series2";
-            series24.ChartArea = "ChartArea1";
-            series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series24.Legend = "Legend1";
-            series24.Name = "Series3";
-            this.chart1.Series.Add(series22);
-            this.chart1.Series.Add(series23);
-            this.chart1.Series.Add(series24);
+            series61.ChartArea = "ChartArea1";
+            series61.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series61.Legend = "Legend1";
+            series61.Name = "Series1";
+            series62.ChartArea = "ChartArea1";
+            series62.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series62.Legend = "Legend1";
+            series62.Name = "Series2";
+            series63.ChartArea = "ChartArea1";
+            series63.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series63.Legend = "Legend1";
+            series63.Name = "Series3";
+            this.chart1.Series.Add(series61);
+            this.chart1.Series.Add(series62);
+            this.chart1.Series.Add(series63);
             this.chart1.Size = new System.Drawing.Size(560, 290);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.guna2GradientPanel5);
             this.panel1.Controls.Add(this.guna2GradientPanel4);
             this.panel1.Controls.Add(this.guna2GradientPanel3);
             this.panel1.Controls.Add(this.guna2GradientPanel2);
@@ -228,7 +234,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1730, 264);
+            this.panel1.Size = new System.Drawing.Size(1748, 264);
             this.panel1.TabIndex = 0;
             // 
             // guna2GradientPanel4
@@ -359,7 +365,7 @@
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(170)))), ((int)(((byte)(231)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(170)))), ((int)(((byte)(231)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(25, 0);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(112, 0);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(275, 180);
             this.guna2GradientPanel1.TabIndex = 0;
@@ -396,7 +402,7 @@
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1612, 886);
+            this.tabPage2.Size = new System.Drawing.Size(1754, 886);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Course";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -406,7 +412,7 @@
             this.tabPage3.Location = new System.Drawing.Point(184, 4);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1612, 886);
+            this.tabPage3.Size = new System.Drawing.Size(1754, 886);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Teacher";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -416,10 +422,50 @@
             this.tabPage4.Location = new System.Drawing.Point(184, 4);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1612, 886);
+            this.tabPage4.Size = new System.Drawing.Size(1736, 886);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Student";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // guna2GradientPanel5
+            // 
+            this.guna2GradientPanel5.BorderRadius = 30;
+            this.guna2GradientPanel5.Controls.Add(this.label13);
+            this.guna2GradientPanel5.Controls.Add(this.label14);
+            this.guna2GradientPanel5.Controls.Add(this.label15);
+            this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(124)))), ((int)(((byte)(49)))));
+            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(124)))), ((int)(((byte)(49)))));
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(1520, 0);
+            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(275, 180);
+            this.guna2GradientPanel5.TabIndex = 4;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(46, 125);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(51, 16);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "label13";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(46, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(51, 16);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "label14";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(46, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 16);
+            this.label15.TabIndex = 1;
+            this.label15.Text = "label15";
             // 
             // FEmployee
             // 
@@ -427,15 +473,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1924, 1024);
+            this.ClientSize = new System.Drawing.Size(1942, 1024);
             this.Controls.Add(this.guna2TabControl1);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximizeBox = false;
             this.Name = "FEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEmployee";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FEmployee_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2TabControl1.ResumeLayout(false);
@@ -452,6 +498,8 @@
             this.guna2GradientPanel2.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            this.guna2GradientPanel5.ResumeLayout(false);
+            this.guna2GradientPanel5.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -488,5 +536,9 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
     }
 }
