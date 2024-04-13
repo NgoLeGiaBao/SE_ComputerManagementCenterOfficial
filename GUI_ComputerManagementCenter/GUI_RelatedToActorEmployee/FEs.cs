@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    public partial class Form1s : Form
+    public partial class DSS : Form
     {
-        public Form1s()
+        public DSS()
         {
             InitializeComponent();
         }

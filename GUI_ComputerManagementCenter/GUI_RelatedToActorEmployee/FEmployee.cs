@@ -13,9 +13,9 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    public partial class FEmployee : Form
+    public partial class FE : Form
     {
-        public FEmployee()
+        public FE()
         {
             InitializeComponent();
         }

@@ -21,7 +21,10 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FLogin());
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
-            Application.Run(new Form1s());  
+            //Application.Run(new FEmployees());  
+            //Application.Run(new FE());
+            //Application.Run(new Fes());
+            Application.Run(new DSS());
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    partial class FEmployee
+    partial class FE
     {
         /// <summary>
         /// Required designer variable.
