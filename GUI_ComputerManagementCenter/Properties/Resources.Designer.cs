@@ -83,6 +83,26 @@ namespace GUI_ComputerManagementCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LogoBlackBackground {
+            get {
+                object obj = ResourceManager.GetObject("LogoBlackBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogoBlackBackground1 {
+            get {
+                object obj = ResourceManager.GetObject("LogoBlackBackground1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MITR__back_white_ {
             get {
                 object obj = ResourceManager.GetObject("MITR (back white)", resourceCulture);

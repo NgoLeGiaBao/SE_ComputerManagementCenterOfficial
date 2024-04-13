@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS_ComputerManagementCenter;
+using Guna.UI.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -49,7 +51,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             // Đặt giá trị bắt đầu của trục Y là 1
             chart1.ChartAreas[0].AxisY.Minimum = 1;
 
-            
+
+            //guna2DataGridView1.RowTemplate = new DataGridViewRow();
+            //guna2DataGridView1.RowTemplate.Height = 50;
+            //guna2DataGridView1.DataSource = BUS_RelatedToEmployee.Instance.GetListStudet();
+
+            for (int i = 0; i < 6; i++)
+            {
+                Panel newPanel = new Panel();
+                newPanel.Size = new Size(325, 500);
+                newPanel.BackColor = Color.LightBlue;
+                newPanel.BorderStyle = BorderStyle.FixedSingle;
+
+                flowLayoutPanel1.Controls.Add(newPanel);
+            }
         }
     }
 }
