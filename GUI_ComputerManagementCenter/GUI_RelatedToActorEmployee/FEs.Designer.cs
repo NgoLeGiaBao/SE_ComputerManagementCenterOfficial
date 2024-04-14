@@ -50,6 +50,8 @@
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridViewTeacher = new Guna.UI2.WinForms.Guna2DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,8 +64,6 @@
             this.AcademicLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageStudent = new System.Windows.Forms.TabPage();
             this.tabPageCourse = new System.Windows.Forms.TabPage();
-            this.guna2ButtonDelete = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
@@ -176,6 +176,7 @@
             this.guna2TextBoxSearch.SelectedText = "";
             this.guna2TextBoxSearch.Size = new System.Drawing.Size(348, 49);
             this.guna2TextBoxSearch.TabIndex = 1;
+            this.guna2TextBoxSearch.Click += new System.EventHandler(this.guna2TextBoxSearch_Click);
             // 
             // guna2ButtonAdd
             // 
@@ -193,6 +194,7 @@
             this.guna2ButtonAdd.Size = new System.Drawing.Size(180, 49);
             this.guna2ButtonAdd.TabIndex = 0;
             this.guna2ButtonAdd.Text = "+ Add new student";
+            this.guna2ButtonAdd.Click += new System.EventHandler(this.guna2ButtonAdd_Click);
             // 
             // guna2PanelNav
             // 
@@ -242,6 +244,7 @@
             // 
             this.guna2ControlBoxClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBoxClose.FillColor = System.Drawing.Color.LightGray;
+            this.guna2ControlBoxClose.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBoxClose.IconColor = System.Drawing.Color.White;
             this.guna2ControlBoxClose.Location = new System.Drawing.Point(149, 0);
             this.guna2ControlBoxClose.Margin = new System.Windows.Forms.Padding(4);
@@ -282,6 +285,7 @@
             this.guna2TabControlEmployee.Controls.Add(this.tabPageStudent);
             this.guna2TabControlEmployee.Controls.Add(this.tabPageCourse);
             this.guna2TabControlEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2TabControlEmployee.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TabControlEmployee.ItemSize = new System.Drawing.Size(180, 80);
             this.guna2TabControlEmployee.Location = new System.Drawing.Point(0, 200);
             this.guna2TabControlEmployee.Margin = new System.Windows.Forms.Padding(4);
@@ -306,6 +310,7 @@
             this.guna2TabControlEmployee.TabButtonSize = new System.Drawing.Size(180, 80);
             this.guna2TabControlEmployee.TabIndex = 1;
             this.guna2TabControlEmployee.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControlEmployee.SelectedIndexChanged += new System.EventHandler(this.guna2TabControlEmployee_SelectedIndexChanged);
             // 
             // tabPageHome
             // 
@@ -344,6 +349,38 @@
             this.guna2PanelFooter.Size = new System.Drawing.Size(1746, 100);
             this.guna2PanelFooter.TabIndex = 1;
             // 
+            // guna2ButtonEdit
+            // 
+            this.guna2ButtonEdit.BorderRadius = 6;
+            this.guna2ButtonEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonEdit.FillColor = System.Drawing.SystemColors.MenuText;
+            this.guna2ButtonEdit.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonEdit.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonEdit.Location = new System.Drawing.Point(1331, 25);
+            this.guna2ButtonEdit.Name = "guna2ButtonEdit";
+            this.guna2ButtonEdit.Size = new System.Drawing.Size(180, 45);
+            this.guna2ButtonEdit.TabIndex = 1;
+            this.guna2ButtonEdit.Text = "Edit";
+            // 
+            // guna2ButtonDelete
+            // 
+            this.guna2ButtonDelete.BorderRadius = 6;
+            this.guna2ButtonDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonDelete.FillColor = System.Drawing.Color.Red;
+            this.guna2ButtonDelete.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonDelete.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonDelete.Location = new System.Drawing.Point(1545, 25);
+            this.guna2ButtonDelete.Name = "guna2ButtonDelete";
+            this.guna2ButtonDelete.Size = new System.Drawing.Size(180, 45);
+            this.guna2ButtonDelete.TabIndex = 0;
+            this.guna2ButtonDelete.Text = "Delete";
+            // 
             // guna2DataGridViewTeacher
             // 
             this.guna2DataGridViewTeacher.AllowUserToAddRows = false;
@@ -355,7 +392,7 @@
             this.guna2DataGridViewTeacher.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
@@ -512,38 +549,6 @@
             this.tabPageCourse.TabIndex = 4;
             this.tabPageCourse.Text = "Course";
             this.tabPageCourse.UseVisualStyleBackColor = true;
-            // 
-            // guna2ButtonDelete
-            // 
-            this.guna2ButtonDelete.BorderRadius = 6;
-            this.guna2ButtonDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonDelete.FillColor = System.Drawing.Color.Red;
-            this.guna2ButtonDelete.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonDelete.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonDelete.Location = new System.Drawing.Point(1545, 25);
-            this.guna2ButtonDelete.Name = "guna2ButtonDelete";
-            this.guna2ButtonDelete.Size = new System.Drawing.Size(180, 45);
-            this.guna2ButtonDelete.TabIndex = 0;
-            this.guna2ButtonDelete.Text = "Delete";
-            // 
-            // guna2ButtonEdit
-            // 
-            this.guna2ButtonEdit.BorderRadius = 6;
-            this.guna2ButtonEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonEdit.FillColor = System.Drawing.SystemColors.MenuText;
-            this.guna2ButtonEdit.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonEdit.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonEdit.Location = new System.Drawing.Point(1331, 25);
-            this.guna2ButtonEdit.Name = "guna2ButtonEdit";
-            this.guna2ButtonEdit.Size = new System.Drawing.Size(180, 45);
-            this.guna2ButtonEdit.TabIndex = 1;
-            this.guna2ButtonEdit.Text = "Edit";
             // 
             // FEs
             // 
