@@ -80,11 +80,17 @@
     <Compile Include="GUI_RelatedToActorEmployee\FEs.Designer.cs">
       <DependentUpon>FEs.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_RelatedToActorStudent\Form1.cs">
+    <Compile Include="GUI_RelatedToActorStudent\FStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI_RelatedToActorStudent\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI_RelatedToActorStudent\FStudent.Designer.cs">
+      <DependentUpon>FStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorTeacher\FTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorTeacher\FTeacher.Designer.cs">
+      <DependentUpon>FTeacher.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI_RelatedToLogin\FLogin.cs">
       <SubType>Form</SubType>
@@ -112,8 +118,11 @@
     <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEs.resx">
       <DependentUpon>FEs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_RelatedToActorStudent\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_RelatedToActorStudent\FStudent.resx">
+      <DependentUpon>FStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RelatedToActorTeacher\FTeacher.resx">
+      <DependentUpon>FTeacher.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToLogin\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
@@ -148,9 +157,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="GUI_RelatedToActorTeacher\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\BUS_ComputerManagementCenter\BUS_ComputerManagementCenter.csproj">
       <Project>{fff956de-ec01-438f-8b24-fcd2b6c20bae}</Project>

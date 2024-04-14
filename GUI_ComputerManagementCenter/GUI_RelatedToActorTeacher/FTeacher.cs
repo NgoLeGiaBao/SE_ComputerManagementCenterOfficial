@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
+namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 {
-    public partial class FEs : Form
+    public partial class FTeacher : Form
     {
-        public FEs()
+        public FTeacher()
         {
             InitializeComponent();
         }

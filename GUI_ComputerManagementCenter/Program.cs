@@ -24,7 +24,7 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FEmployees());  
             //Application.Run(new FE());
             //Application.Run(new Fes());
-            Application.Run(new DSS());
+            Application.Run(new FEs());
         }
     }
 }
