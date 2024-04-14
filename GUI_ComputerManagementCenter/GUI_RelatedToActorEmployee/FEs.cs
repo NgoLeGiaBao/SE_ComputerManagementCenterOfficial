@@ -25,9 +25,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             // Load list teacher
             LoadListTeacher();
+            // Load list student
+            LoaListStudent();
         }
 
-        // Load list student
+        // Load list teacher
         public void LoadListTeacher ()
         {
             List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
@@ -48,7 +50,26 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2DataGridViewTeacher.Rows.Add(rowValues);
             }    
         }
-
+        // Load list student
+        public void LoaListStudent()
+        {
+            List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetListStudet();
+            foreach (DTO_Student item in list)
+            {
+                object[] rowValues = new object[]
+                {
+                    item.Id,
+                    item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Address,
+                    item.EmailAddress,
+                };
+                guna2DataGridViewStudent.Rows.Add(rowValues);
+            }
+        }
 
         // Selected index change
         private void guna2TabControlEmployee_SelectedIndexChanged(object sender, EventArgs e)
