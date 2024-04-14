@@ -29,7 +29,7 @@ namespace DTO_ComputerManagementCenter
         public string TelephoneNumber { get => telephoneNumber; set => telephoneNumber = value; }
         public string Address { get => address; set => address = value; }
         public static string IDSession { get => IdSession; set => IdSession = value; }
-        protected string EmailAddress { get => emailAddress; set => emailAddress = value; }
+        public string EmailAddress { get => emailAddress; set => emailAddress = value; }
         public static string IdSession { get => idSession; set => idSession = value; }
     }
 }

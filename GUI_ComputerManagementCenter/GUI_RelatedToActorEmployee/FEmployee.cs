@@ -56,15 +56,15 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             //guna2DataGridView1.RowTemplate.Height = 50;
             //guna2DataGridView1.DataSource = BUS_RelatedToEmployee.Instance.GetListStudet();
 
-            for (int i = 0; i < 6; i++)
-            {
-                Panel newPanel = new Panel();
-                newPanel.Size = new Size(325, 500);
-                newPanel.BackColor = Color.LightBlue;
-                newPanel.BorderStyle = BorderStyle.FixedSingle;
-
-                flowLayoutPanel1.Controls.Add(newPanel);
-            }
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    Panel newPanel = new Panel();
+            //    newPanel.Size = new Size(325, 500);
+            //    newPanel.BackColor = Color.LightBlue;
+            //    newPanel.BorderStyle = BorderStyle.FixedSingle;
+            //
+            //    flowLayoutPanel1.Controls.Add(newPanel);
+            //}
         }
     }
 }

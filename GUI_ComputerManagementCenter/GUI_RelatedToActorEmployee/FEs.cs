@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BUS_ComputerManagementCenter;
+using DTO_ComputerManagementCenter;
+using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +27,34 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             //guna2CirclePictureBox1.BorderSize = 2;
             //guna2CirclePictureBox1.FillColor = Color.Red;
             //guna2CirclePictureBox1.ImageSizeMode = PictureBoxSizeMode.Zoom;
+            LoadListTeacher();
+        }
+
+        // Load list student
+        public void LoadListTeacher ()
+        {
+            List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
+            foreach (DTO_Teacher item in list)
+            {
+                Guna2Button guna2Button = new Guna2Button();
+
+                
+
+                object[] rowValues = new object[]
+                {
+                    item.Id,
+                    item.FullName,
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Date.ToString(),
+                    item.Sex,
+                    item.Address,
+                    item.EmailAddress,
+                    item.AcademicLevels,
+                    guna2Button,
+                };
+                guna2DataGridViewTeacher.Rows.Add(rowValues);
+            }
         }
     }
 }
