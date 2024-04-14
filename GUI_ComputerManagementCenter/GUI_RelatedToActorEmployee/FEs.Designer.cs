@@ -351,17 +351,25 @@
             // 
             // guna2DataGridViewTeacher
             // 
+            this.guna2DataGridViewTeacher.AllowUserToAddRows = false;
+            this.guna2DataGridViewTeacher.AllowUserToDeleteRows = false;
+            this.guna2DataGridViewTeacher.AllowUserToResizeColumns = false;
+            this.guna2DataGridViewTeacher.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridViewTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewTeacher.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.guna2DataGridViewTeacher.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            this.guna2DataGridViewTeacher.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridViewTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridViewTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridViewTeacher.ColumnHeadersHeight = 50;
+            this.guna2DataGridViewTeacher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridViewTeacher.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.FullName,
@@ -373,6 +381,7 @@
             this.Email,
             this.AcademicLevel,
             this.Action});
+            this.guna2DataGridViewTeacher.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -381,13 +390,14 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridViewTeacher.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridViewTeacher.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewTeacher.GridColor = System.Drawing.Color.LightGray;
             this.guna2DataGridViewTeacher.Location = new System.Drawing.Point(56, 0);
             this.guna2DataGridViewTeacher.Name = "guna2DataGridViewTeacher";
             this.guna2DataGridViewTeacher.ReadOnly = true;
             this.guna2DataGridViewTeacher.RowHeadersVisible = false;
             this.guna2DataGridViewTeacher.RowHeadersWidth = 51;
-            this.guna2DataGridViewTeacher.RowTemplate.Height = 24;
+            this.guna2DataGridViewTeacher.RowTemplate.Height = 50;
+            this.guna2DataGridViewTeacher.ShowEditingIcon = false;
             this.guna2DataGridViewTeacher.Size = new System.Drawing.Size(1695, 998);
             this.guna2DataGridViewTeacher.TabIndex = 0;
             this.guna2DataGridViewTeacher.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -396,19 +406,19 @@
             this.guna2DataGridViewTeacher.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.guna2DataGridViewTeacher.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.guna2DataGridViewTeacher.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewTeacher.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewTeacher.ThemeStyle.GridColor = System.Drawing.Color.LightGray;
             this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.Height = 18;
+            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewTeacher.ThemeStyle.HeaderStyle.Height = 50;
             this.guna2DataGridViewTeacher.ThemeStyle.ReadOnly = true;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.Height = 24;
+            this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
