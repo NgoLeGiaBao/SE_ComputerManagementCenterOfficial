@@ -36,25 +36,24 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
             foreach (DTO_Teacher item in list)
             {
-                Guna2Button guna2Button = new Guna2Button();
 
-                
 
                 object[] rowValues = new object[]
                 {
                     item.Id,
                     item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
                     item.TelephoneNumber,
                     item.IdCard,
-                    item.Date.ToString(),
-                    item.Sex,
                     item.Address,
                     item.EmailAddress,
                     item.AcademicLevels,
-                    guna2Button,
                 };
                 guna2DataGridViewTeacher.Rows.Add(rowValues);
             }
+
+            
         }
     }
 }
