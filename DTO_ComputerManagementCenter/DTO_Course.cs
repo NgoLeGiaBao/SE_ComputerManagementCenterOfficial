@@ -19,6 +19,7 @@ namespace DTO_ComputerManagementCenter
         private int courseFee;
         private int courseStatus;
 
+
         // Constructor with full paramenters
         public DTO_Course(string courseID, string subjectID, string courseName, DateTime startDay, DateTime endDay, string courseInfor, int courseFee, int courseStatus)
         {

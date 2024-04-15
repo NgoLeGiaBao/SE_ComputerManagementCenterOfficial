@@ -30,6 +30,7 @@ namespace BUS_ComputerManagementCenter
             }
             return listStudent;
         }
+        
         // Get course list
         public List<DTO_Course> GetListCourse()
         {
@@ -41,6 +42,7 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
+        
         // Get student list
         public List<DTO_Teacher> GetListTeacher()
         {
@@ -52,6 +54,7 @@ namespace BUS_ComputerManagementCenter
             }
             return listTeacher;
         }
+        
         // Get subject list
         public List<DTO_Subject> GetListSubject()
         {
@@ -63,21 +66,50 @@ namespace BUS_ComputerManagementCenter
             }
             return listSubject;
         }
+        
         // Get subject id base on name subject
         public string GetSubjectIDBaseOnSubjectName(string subjectName)
         {
             return DAO_RelatedToEmployee.Instance.GetSubjecIDtBaseOnSubjectName(subjectName).ToString();
         }
+        
         // Get shift 
         public DataTable GetListShift()
         {
             return DAO_RelatedToEmployee.Instance.GetListShift();
         }
+        
         // Get lasted course id
         public string GetLastedCourseID()
         {
             return DAO_RelatedToEmployee.Instance.GetLastedCourseID().ToString();
         }
+
+        
+        // Get course by ID
+        public DTO_Course GetCourseByID (string id)
+        {
+            DataRow dataRow = DAO_RelatedToEmployee.Instance.GetCourseByID(id).Rows[0];
+            return new DTO_Course(dataRow);
+        }
+
+        // Get student by ID
+        public DTO_Student GetStudentByID (string id)
+        {
+            DataRow dataRow = DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows[0];
+            return new DTO_Student(dataRow);
+        }
+
+        // Get teacher by ID
+        public DTO_Teacher GetTeacherByID (string id)
+        {
+            DataRow dataRow = DAO_RelatedToEmployee.Instance.GetTeacherByID(id).Rows[0];
+            return new DTO_Teacher(dataRow);
+        }
+
+
+
+
 
         //---Add----
         // Add a new student

@@ -1,5 +1,6 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
+using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -21,54 +22,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             InitializeComponent();
         }
 
+
+        // Process with all pages
         private void FEs_Load(object sender, EventArgs e)
         {
-            // Load list teacher
             LoadListTeacher();
-            // Load list student
             LoaListStudent();
-        }
-
-        // Load list teacher
-        public void LoadListTeacher ()
-        {
-            List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
-            foreach (DTO_Teacher item in list)
-            {
-                object[] rowValues = new object[]
-                {
-                    item.Id,
-                    item.FullName,
-                    item.Sex,
-                    item.Date.ToString("dd/MM/yyyy"),
-                    item.TelephoneNumber,
-                    item.IdCard,
-                    item.Address,
-                    item.EmailAddress,
-                    item.AcademicLevels,
-                };
-                guna2DataGridViewTeacher.Rows.Add(rowValues);
-            }    
-        }
-        // Load list student
-        public void LoaListStudent()
-        {
-            List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetListStudet();
-            foreach (DTO_Student item in list)
-            {
-                object[] rowValues = new object[]
-                {
-                    item.Id,
-                    item.FullName,
-                    item.Sex,
-                    item.Date.ToString("dd/MM/yyyy"),
-                    item.TelephoneNumber,
-                    item.IdCard,
-                    item.Address,
-                    item.EmailAddress,
-                };
-                guna2DataGridViewStudent.Rows.Add(rowValues);
-            }
         }
 
         // Selected index change
@@ -118,9 +77,107 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+        // When click on TextBox Search
         private void guna2TextBoxSearch_Click(object sender, EventArgs e)
         {
             guna2TextBoxSearch.Text = "";
+        }
+
+        // When leave on TextBox Search
+        private void guna2TextBoxSearch_Leave(object sender, EventArgs e)
+        {
+            guna2TextBoxSearch.Text = "Search here";
+        }
+
+
+        // Process with teacher page
+        // Load list teacher
+        public void LoadListTeacher ()
+        {
+            List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
+            foreach (DTO_Teacher item in list)
+            {
+                object[] rowValues = new object[]
+                {
+                    item.Id,
+                    item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Address,
+                    item.EmailAddress,
+                    item.AcademicLevels,
+                };
+                guna2DataGridViewTeacher.Rows.Add(rowValues);
+            }    
+        }
+        
+        // Load list student
+        public void LoaListStudent()
+        {
+            List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetListStudet();
+            foreach (DTO_Student item in list)
+            {
+                object[] rowValues = new object[]
+                {
+                    item.Id,
+                    item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Address,
+                    item.EmailAddress,
+                };
+                guna2DataGridViewStudent.Rows.Add(rowValues);
+            }
+        }
+
+
+
+
+        // Process with teacher page
+
+        // Get ID teacher from row selected from datagridview teacher
+        public string GetRowTeacherSelected()
+        {
+            int selectedIndex = guna2DataGridViewTeacher.SelectedRows[0].Index;
+            string cellValueID = guna2DataGridViewTeacher.Rows[selectedIndex].Cells["ID"].Value.ToString();
+            return cellValueID;
+        }
+        
+        // Click Edit Teacher
+        private void guna2ButtonEditTeacher_Click(object sender, EventArgs e)
+        {
+            DTO_Teacher.PersonChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
+        }
+
+        // Click DeleteTeacher
+        private void guna2ButtonDeleteTeacher_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // Process with student page
+        // Get row selected from datagridview teacher
+        public string GetRowStudentSelected()
+        {
+            int selectedIndex = guna2DataGridViewStudent.SelectedRows[0].Index;
+            string cellValueID = guna2DataGridViewStudent.Rows[selectedIndex].Cells["StudentID"].Value.ToString();
+            return cellValueID;
+        }
+
+        // Click Edit Student
+        private void guna2ButtonEditStudent_Click(object sender, EventArgs e)
+        {
+           DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+        }
+
+        // Click Delete Student
+        private void guna2ButtonDeleteStudent_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

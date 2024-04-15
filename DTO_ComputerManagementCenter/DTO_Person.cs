@@ -19,6 +19,7 @@ namespace DTO_ComputerManagementCenter
         private string emailAddress;
 
         private static string idSession;
+        private static DTO_Person personChoosen;
 
         public string Id { get => id; set => id = value; }
         public string Username { get => username; set => username = value; }
@@ -28,8 +29,8 @@ namespace DTO_ComputerManagementCenter
         public DateTime Date { get => date; set => date = value; }
         public string TelephoneNumber { get => telephoneNumber; set => telephoneNumber = value; }
         public string Address { get => address; set => address = value; }
-        public static string IDSession { get => IdSession; set => IdSession = value; }
+        public static string IDSession { get => idSession; set => idSession = value; }
         public string EmailAddress { get => emailAddress; set => emailAddress = value; }
-        public static string IdSession { get => idSession; set => idSession = value; }
+        public static DTO_Person PersonChoosen { get => personChoosen; set => personChoosen = value; }
     }
 }
