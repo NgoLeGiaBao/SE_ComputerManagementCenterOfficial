@@ -151,6 +151,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonEditTeacher_Click(object sender, EventArgs e)
         {
             DTO_Teacher.PersonChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
+            FEditTeacher fEditTeacher = new FEditTeacher();
+            fEditTeacher.Show();
         }
 
         // Click DeleteTeacher
@@ -172,6 +174,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonEditStudent_Click(object sender, EventArgs e)
         {
            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+            
         }
 
         // Click Delete Student

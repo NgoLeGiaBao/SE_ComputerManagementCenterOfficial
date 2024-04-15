@@ -68,6 +68,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_RelatedToActorEmployee\FEditTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorEmployee\FEditTeacher.Designer.cs">
+      <DependentUpon>FEditTeacher.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_RelatedToActorEmployee\FEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEditTeacher.resx">
+      <DependentUpon>FEditTeacher.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEmployee.resx">
       <DependentUpon>FEmployee.cs</DependentUpon>
     </EmbeddedResource>
