@@ -101,7 +101,7 @@ namespace DAO_ComputerManagementCenter
                 {
                     return false;
                 }
-                string query = "EXEC USP_ThemMotHocVienMoi @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail";
+                string query = "EXEC USP_ThemMotHocVienMoi @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail , @MatKhau";
                 return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
             }
             return false;

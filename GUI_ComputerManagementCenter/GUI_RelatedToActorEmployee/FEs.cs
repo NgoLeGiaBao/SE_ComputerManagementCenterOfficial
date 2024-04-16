@@ -65,7 +65,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             else if (page == "Student")
             {
-                MessageBox.Show("Student");
+                FAddStudent fAddStudent = new FAddStudent();
+                fAddStudent.Show();
             }
             else if (page == "Teacher")
             {

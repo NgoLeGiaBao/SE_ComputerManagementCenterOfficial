@@ -1,6 +1,6 @@
 ﻿namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    partial class FAddTeacher
+    partial class FEditStudent
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelEmpty = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelHeader = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelAdd = new System.Windows.Forms.Label();
+            this.labelViewAndEdit = new System.Windows.Forms.Label();
             this.guna2PanelContent1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelContent2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBoxIC = new Guna.UI2.WinForms.Guna2TextBox();
@@ -122,24 +122,24 @@
             // 
             // guna2PanelHeader
             // 
-            this.guna2PanelHeader.Controls.Add(this.labelAdd);
+            this.guna2PanelHeader.Controls.Add(this.labelViewAndEdit);
             this.guna2PanelHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelHeader.Location = new System.Drawing.Point(0, 70);
             this.guna2PanelHeader.Name = "guna2PanelHeader";
             this.guna2PanelHeader.Size = new System.Drawing.Size(760, 40);
             this.guna2PanelHeader.TabIndex = 2;
             // 
-            // labelAdd
+            // labelViewAndEdit
             // 
-            this.labelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAdd.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelAdd.Location = new System.Drawing.Point(0, 0);
-            this.labelAdd.Name = "labelAdd";
-            this.labelAdd.Size = new System.Drawing.Size(760, 40);
-            this.labelAdd.TabIndex = 0;
-            this.labelAdd.Text = "ADD NEW TEACHER";
-            this.labelAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelViewAndEdit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelViewAndEdit.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelViewAndEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelViewAndEdit.Location = new System.Drawing.Point(0, 0);
+            this.labelViewAndEdit.Name = "labelViewAndEdit";
+            this.labelViewAndEdit.Size = new System.Drawing.Size(760, 40);
+            this.labelViewAndEdit.TabIndex = 0;
+            this.labelViewAndEdit.Text = "VIEW AND EDIT STUDENT";
+            this.labelViewAndEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PanelContent1
             // 
@@ -613,7 +613,7 @@
             this.guna2Panel2.Size = new System.Drawing.Size(760, 30);
             this.guna2Panel2.TabIndex = 11;
             // 
-            // FAddTeacher
+            // FEditStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -635,7 +635,7 @@
             this.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "FAddTeacher";
+            this.Name = "FEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEditTeacher";
             this.guna2PanelNav.ResumeLayout(false);
@@ -666,7 +666,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContent4;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContent5;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContent6;
-        private System.Windows.Forms.Label labelAdd;
+        private System.Windows.Forms.Label labelViewAndEdit;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContent7;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label labelID;
