@@ -19,6 +19,27 @@ namespace BUS_ComputerManagementCenter
             private set { instance = value; }
         }
 
+        // Get body email with information account
+        public static string GetBodyEmailWithAccountInformation (string username, string password, string fullName)
+        {
+            string emailBody = $@"
+            Dear {fullName},
+
+            We hope this email finds you well.
+
+            As requested, we are sending you the login credentials for your account. Please find your details below:
+
+            Username: {username}
+            Password: {password}
+
+            Please ensure to keep this information secure and do not share it with anyone. If you have any questions or concerns, feel free to reach out to our customer support team.
+
+            Best regards,
+            [Gia Bảo]
+            ";
+            return emailBody;
+        }
+
         public static string CreateStringRadom(int n)
         {
             Random random = new Random();

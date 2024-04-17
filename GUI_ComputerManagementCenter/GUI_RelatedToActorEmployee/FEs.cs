@@ -70,7 +70,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             else if (page == "Teacher")
             {
-                MessageBox.Show("Teacher");
+               FAddTeacher fAddTeacher = new FAddTeacher();
+                fAddTeacher.Show();
             }
             else
             {
@@ -151,7 +152,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Click Edit Teacher
         private void guna2ButtonEditTeacher_Click(object sender, EventArgs e)
         {
-            DTO_Teacher.PersonChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
+            DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
             FEditTeacher fEditTeacher = new FEditTeacher();
             fEditTeacher.Show();
         }
@@ -175,6 +176,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonEditStudent_Click(object sender, EventArgs e)
         {
            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+            MessageBox.Show(DTO_Student.PersonChoosen.FullName);
+            FEditStudent fEditStudent = new FEditStudent();
+           fEditStudent.Show();
             
         }
 

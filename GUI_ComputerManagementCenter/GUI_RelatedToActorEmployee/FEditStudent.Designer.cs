@@ -56,9 +56,7 @@
             this.labelGender = new System.Windows.Forms.Label();
             this.guna2PanelContent5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBoxEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBoxAcademic = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.labelAcademicLevel = new System.Windows.Forms.Label();
             this.guna2PanelContent6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBoxAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.labelAddress = new System.Windows.Forms.Label();
@@ -171,6 +169,8 @@
             this.guna2TextBoxIC.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxIC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxIC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxIC.Enabled = false;
+            this.guna2TextBoxIC.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2TextBoxIC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxIC.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxIC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -194,6 +194,8 @@
             this.guna2TextBoxID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxID.Enabled = false;
+            this.guna2TextBoxID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2TextBoxID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxID.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -225,9 +227,9 @@
             this.labelID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelID.Location = new System.Drawing.Point(30, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(96, 26);
+            this.labelID.Size = new System.Drawing.Size(89, 26);
             this.labelID.TabIndex = 0;
-            this.labelID.Text = "Teacher ID";
+            this.labelID.Text = "StudentID";
             this.labelID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2PanelCotent3
@@ -332,9 +334,9 @@
             this.guna2DateTimePickerBirth.BorderRadius = 6;
             this.guna2DateTimePickerBirth.Checked = true;
             this.guna2DateTimePickerBirth.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePickerBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePickerBirth.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePickerBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePickerBirth.Location = new System.Drawing.Point(400, 24);
+            this.guna2DateTimePickerBirth.Location = new System.Drawing.Point(400, 25);
             this.guna2DateTimePickerBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePickerBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePickerBirth.Name = "guna2DateTimePickerBirth";
@@ -419,9 +421,7 @@
             // guna2PanelContent5
             // 
             this.guna2PanelContent5.Controls.Add(this.guna2TextBoxEmail);
-            this.guna2PanelContent5.Controls.Add(this.guna2TextBoxAcademic);
             this.guna2PanelContent5.Controls.Add(this.labelEmail);
-            this.guna2PanelContent5.Controls.Add(this.labelAcademicLevel);
             this.guna2PanelContent5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelContent5.Location = new System.Drawing.Point(0, 360);
             this.guna2PanelContent5.Name = "guna2PanelContent5";
@@ -442,59 +442,25 @@
             this.guna2TextBoxEmail.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxEmail.Location = new System.Drawing.Point(400, 25);
+            this.guna2TextBoxEmail.Location = new System.Drawing.Point(35, 25);
             this.guna2TextBoxEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBoxEmail.Name = "guna2TextBoxEmail";
             this.guna2TextBoxEmail.PasswordChar = '\0';
             this.guna2TextBoxEmail.PlaceholderText = "";
             this.guna2TextBoxEmail.SelectedText = "";
-            this.guna2TextBoxEmail.Size = new System.Drawing.Size(330, 30);
+            this.guna2TextBoxEmail.Size = new System.Drawing.Size(695, 30);
             this.guna2TextBoxEmail.TabIndex = 8;
-            // 
-            // guna2TextBoxAcademic
-            // 
-            this.guna2TextBoxAcademic.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.guna2TextBoxAcademic.BorderRadius = 6;
-            this.guna2TextBoxAcademic.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxAcademic.DefaultText = "";
-            this.guna2TextBoxAcademic.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxAcademic.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxAcademic.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxAcademic.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxAcademic.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxAcademic.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxAcademic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.guna2TextBoxAcademic.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxAcademic.Location = new System.Drawing.Point(30, 25);
-            this.guna2TextBoxAcademic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBoxAcademic.Name = "guna2TextBoxAcademic";
-            this.guna2TextBoxAcademic.PasswordChar = '\0';
-            this.guna2TextBoxAcademic.PlaceholderText = "";
-            this.guna2TextBoxAcademic.SelectedText = "";
-            this.guna2TextBoxAcademic.Size = new System.Drawing.Size(330, 30);
-            this.guna2TextBoxAcademic.TabIndex = 7;
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.labelEmail.Location = new System.Drawing.Point(400, 0);
+            this.labelEmail.Location = new System.Drawing.Point(30, 0);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(55, 26);
             this.labelEmail.TabIndex = 5;
             this.labelEmail.Text = "Email";
-            // 
-            // labelAcademicLevel
-            // 
-            this.labelAcademicLevel.AutoSize = true;
-            this.labelAcademicLevel.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAcademicLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.labelAcademicLevel.Location = new System.Drawing.Point(30, 0);
-            this.labelAcademicLevel.Name = "labelAcademicLevel";
-            this.labelAcademicLevel.Size = new System.Drawing.Size(137, 26);
-            this.labelAcademicLevel.TabIndex = 4;
-            this.labelAcademicLevel.Text = "Academic Level";
             // 
             // guna2PanelContent6
             // 
@@ -589,6 +555,7 @@
             this.guna2ButtonSave.Size = new System.Drawing.Size(330, 45);
             this.guna2ButtonSave.TabIndex = 10;
             this.guna2ButtonSave.Text = "Save";
+            this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
             // guna2PanelFooter
             // 
@@ -638,6 +605,7 @@
             this.Name = "FEditStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEditTeacher";
+            this.Load += new System.EventHandler(this.FEditStudent_Load);
             this.guna2PanelNav.ResumeLayout(false);
             this.guna2PanelHeader.ResumeLayout(false);
             this.guna2PanelContent2.ResumeLayout(false);
@@ -685,9 +653,7 @@
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePickerBirth;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxEmail;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxAcademic;
         private System.Windows.Forms.Label labelEmail;
-        private System.Windows.Forms.Label labelAcademicLevel;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxAddress;
         private System.Windows.Forms.Label labelAddress;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonCacel;

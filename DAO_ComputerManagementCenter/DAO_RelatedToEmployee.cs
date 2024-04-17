@@ -89,7 +89,6 @@ namespace DAO_ComputerManagementCenter
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 
-
         // -- Add
         // Add new student
         public bool AddNewStudent(object[] parameters, string obj)
@@ -106,6 +105,14 @@ namespace DAO_ComputerManagementCenter
             }
             return false;
         }
+
+        // Add new teacher
+        public bool AddNewTeacher(object[] parameters)
+        {
+            string query = "USP_ThemMotGiaoVienMoi @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail , @MatKhau , @TrinhDoHocVan";
+            return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
+        }
+
         // Add new course
         public bool AddNewCourse(object[] parameters)
         {
@@ -121,6 +128,20 @@ namespace DAO_ComputerManagementCenter
         public bool AddNewCourseStudentDetail(object[] parameters)
         {
             string query = "exec InsertToCourseStudentDetail @MaHocVien , @MaKhoaHoc";
+            return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
+        }
+
+        //--Update--
+        // Update student
+        public bool UpdateStudent (object[] parameters)
+        {
+            string query = "USP_CapNhatHocVien @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail";
+            return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
+        }
+        // Update teacher
+        public bool UpdateTeacher (object[] parameters)
+        {
+            string query = "USP_CapNhatGiaoVien @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail , @TrinhDoHocVan";
             return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
         }
     }

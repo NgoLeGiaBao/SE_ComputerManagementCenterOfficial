@@ -108,11 +108,20 @@ namespace BUS_ComputerManagementCenter
         }
 
 
+        //--Check--//
+        // Check student exist
+        public bool CheckExistStudentID (string id)
+        {
+            return DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows.Count > 0 ? true : false;
+        }
+        // Check teacher exist
+        public bool CheckExistTeacherID(string id)
+        {
+            return DAO_RelatedToEmployee.Instance.GetTeacherByID(id).Rows.Count > 0 ? true : false;
+        }
 
-
-
-        //---Add----
-        // Add a new student
+         //---Add----
+         // Add a new student
         public bool AddNewStudent(object[] parameters, string obj)
         {
             return DAO_RelatedToEmployee.Instance.AddNewStudent(parameters, obj);
@@ -121,6 +130,11 @@ namespace BUS_ComputerManagementCenter
         public bool AddNewCourse(object[] parameters)
         {
             return DAO_RelatedToEmployee.Instance.AddNewCourse(parameters);
+        }
+        // Add new teacher
+        public bool AddNewTeacher(object[] parameters)
+        {
+            return DAO_RelatedToEmployee.Instance.AddNewTeacher(parameters);
         }
         // Add Course Teacher Detail
         public bool AddNewCourseTeacherDetail(object[] parameters)
@@ -131,6 +145,18 @@ namespace BUS_ComputerManagementCenter
         public bool AddNewCourseStudentDetail(object[] parameters)
         {
             return DAO_RelatedToEmployee.Instance.AddNewCourseStudentDetail(parameters);
+        }
+
+        //--Update--
+        // Update student
+        public bool UpdateStudent(object[] parameters)
+        {
+            return DAO_RelatedToEmployee.Instance.UpdateStudent(parameters);
+        }
+        // Update teacher
+        public bool UpdateTeacher(object[] parameters)
+        {
+            return DAO_RelatedToEmployee.Instance.UpdateTeacher(parameters);
         }
     }    
 }

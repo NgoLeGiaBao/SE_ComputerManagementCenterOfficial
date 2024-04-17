@@ -43,14 +43,24 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2TextBoxIC.Focus();
             } else
             {
-                guna2TextBoxID.Text = "HV"+id;
-                guna2TextBoxFullName.Focus();
+                if (BUS_RelatedToEmployee.Instance.CheckExistStudentID("HV"+id))
+                {
+                    MessageBox.Show("ID existed");
+                    guna2TextBoxIC.Focus();
+                }
+                else
+                {
+                    guna2TextBoxID.Text = "HV"+id;
+                    guna2TextBoxFullName.Focus();
+                    //MessageBox.Show("");
+                }
             }
         }
 
         // Click on Save Button
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {   
+            
             string gender = GetGender();
             string identityCard = guna2TextBoxIC.Text;
             string fullName = guna2TextBoxFullName.Text;
@@ -59,23 +69,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string address = guna2TextBoxAddress.Text;
             string email = guna2TextBoxEmail.Text;
             string username = "HV" + identityCard;
+            
             string password = BUS_RelatedToSendEmail.CreateStringRadom(8);
             string emailSubject = "Your Account Login Information";
-            string emailBody = $@"
-            Dear {fullName},
-
-            We hope this email finds you well.
-
-            As requested, we are sending you the login credentials for your account. Please find your details below:
-
-            Username: {username}
-            Password: {password}
-
-            Please ensure to keep this information secure and do not share it with anyone. If you have any questions or concerns, feel free to reach out to our customer support team.
-
-            Best regards,
-            [Gia Bảo]
-            ";
+            string emailBody = BUS_RelatedToSendEmail.GetBodyEmailWithAccountInformation(username, password, fullName);
 
 
             bool isAdded = BUS_RelatedToEmployee.Instance.AddNewStudent(new Object [] { identityCard, fullName, gender , birthday, phone, address, email, password }, "HV");
@@ -87,5 +84,17 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Data is not valid");
             }
         }
+
+        // Click on Cancel button
+        private void guna2ButtonCacel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FEs fEs = new FEs();
+            fEs.LoaListStudent();
+            MessageBox.Show("Da Load");
+        }
+
+
+
     }
 }

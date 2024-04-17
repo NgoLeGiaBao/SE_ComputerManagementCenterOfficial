@@ -9,6 +9,7 @@ namespace DTO_ComputerManagementCenter
 {
     public class DTO_Teacher : DTO_Person
     {
+        private static DTO_Teacher techerChoosen;
         private string academicLevels;
         public DTO_Teacher(string id, string username, string idCard, string fullName, string sex, DateTime date, string telephoneNumber, string address, string emailAddress, string academicLevels)
         {
@@ -38,5 +39,7 @@ namespace DTO_ComputerManagementCenter
             this.AcademicLevels = dataRow["TrinhDoHocVan"].ToString();
         }
         public string AcademicLevels { get => academicLevels; set => academicLevels = value; }
+        public static DTO_Teacher TeacherChoosen { get => techerChoosen; set => techerChoosen = value; }
+
     }
 }

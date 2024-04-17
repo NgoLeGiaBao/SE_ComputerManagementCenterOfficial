@@ -183,6 +183,7 @@
             this.guna2TextBoxIC.SelectedText = "";
             this.guna2TextBoxIC.Size = new System.Drawing.Size(330, 30);
             this.guna2TextBoxIC.TabIndex = 1;
+            this.guna2TextBoxIC.Leave += new System.EventHandler(this.guna2TextBoxIC_Leave);
             // 
             // guna2TextBoxID
             // 
@@ -194,6 +195,8 @@
             this.guna2TextBoxID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxID.Enabled = false;
+            this.guna2TextBoxID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2TextBoxID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxID.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -589,6 +592,7 @@
             this.guna2ButtonSave.Size = new System.Drawing.Size(330, 45);
             this.guna2ButtonSave.TabIndex = 10;
             this.guna2ButtonSave.Text = "Save";
+            this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
             // guna2PanelFooter
             // 

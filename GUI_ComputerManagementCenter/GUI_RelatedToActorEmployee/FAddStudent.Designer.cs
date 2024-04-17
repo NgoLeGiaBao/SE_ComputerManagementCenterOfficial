@@ -352,7 +352,6 @@
             this.label8.Size = new System.Drawing.Size(69, 26);
             this.label8.TabIndex = 10;
             this.label8.Text = "Female";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label7
             // 
@@ -362,7 +361,6 @@
             this.label7.Size = new System.Drawing.Size(48, 20);
             this.label7.TabIndex = 9;
             this.label7.Text = "Male";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2CustomRadioButtonFemale
             // 
@@ -539,6 +537,7 @@
             this.guna2ButtonCacel.Size = new System.Drawing.Size(330, 45);
             this.guna2ButtonCacel.TabIndex = 11;
             this.guna2ButtonCacel.Text = "Cancel";
+            this.guna2ButtonCacel.Click += new System.EventHandler(this.guna2ButtonCacel_Click);
             // 
             // guna2ButtonSave
             // 

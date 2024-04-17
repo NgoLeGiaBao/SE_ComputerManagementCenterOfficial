@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BUS_ComputerManagementCenter;
+using DTO_ComputerManagementCenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,55 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         public FEditStudent()
         {
             InitializeComponent();
+        }
+
+        private void FEditStudent_Load(object sender, EventArgs e)
+        {
+            guna2TextBoxID.Text = DTO_Person.PersonChoosen.Id;
+            guna2TextBoxIC.Text = DTO_Person.PersonChoosen.IdCard;
+            guna2TextBoxFullName.Text = DTO_Person.PersonChoosen.FullName;
+            guna2TextBoxPhone.Text = DTO_Person.PersonChoosen.TelephoneNumber;
+            if (DTO_Person.PersonChoosen.Sex == "Female")
+            {
+                guna2CustomRadioButtonFemale.Checked = true;
+            } else
+            {
+                guna2CustomRadioButtonMale.Checked = true;
+            }
+            guna2DateTimePickerBirth.Value = DTO_Person.PersonChoosen.Date;
+            guna2TextBoxAddress.Text = DTO_Person.PersonChoosen.Address;
+            guna2TextBoxEmail.Text = DTO_Person.PersonChoosen.EmailAddress;
+        }
+
+        // Get gender
+        public string GetGender ()
+        {
+            if (guna2CustomRadioButtonFemale.Checked)
+            {
+                return "Female";
+            }
+            if (guna2CustomRadioButtonFemale.Checked)
+            {
+                return "Male";
+            }
+            return "";
+        }
+
+        private void guna2ButtonSave_Click(object sender, EventArgs e)
+        {
+            string gender = GetGender();
+            string identityCard = guna2TextBoxIC.Text;
+            string fullName = guna2TextBoxFullName.Text;
+            string phone = guna2TextBoxPhone.Text;
+            string birthday = guna2DateTimePickerBirth.Value.ToString("yyyy/MM/dd");
+            string address = guna2TextBoxAddress.Text;
+            string email = guna2TextBoxEmail.Text;
+
+            bool isUpdated = BUS_RelatedToEmployee.Instance.UpdateStudent(new object[] {identityCard, fullName, gender, birthday, phone, address, email});
+            if (isUpdated)
+            {
+                MessageBox.Show("Update student successfully");
+            }
         }
     }
 }
