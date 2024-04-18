@@ -204,5 +204,22 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
 
         }
+
+        public Guna2Panel GetGuna2PanelCourse ()
+        {
+            Guna2Panel guna2PanelCourse = new Guna2Panel();
+            guna2PanelCourse.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            guna2PanelCourse.BorderRadius = 6;
+            guna2PanelCourse.BorderThickness = 1;
+            guna2PanelCourse.Controls.Add(this.guna2ButtonSatus);
+            guna2PanelCourse.Controls.Add(this.guna2PanelDetailCourse);
+            guna2PanelCourse.Controls.Add(this.guna2PanelCoverPicture);
+            guna2PanelCourse.FillColor = System.Drawing.Color.White;
+            guna2PanelCourse.Location = new System.Drawing.Point(0, 0);
+            guna2PanelCourse.Margin = new System.Windows.Forms.Padding(0);
+            guna2PanelCourse.Name = "guna2PanelCourse";
+            guna2PanelCourse.Size = new System.Drawing.Size(533, 217);
+            guna2PanelCourse.TabIndex = 0;
+        }
     }
 }
