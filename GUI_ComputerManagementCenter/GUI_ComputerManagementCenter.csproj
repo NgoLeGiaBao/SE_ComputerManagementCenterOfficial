@@ -240,5 +240,8 @@
   <ItemGroup>
     <None Include="Resources\Arrow back ios new.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\course_1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

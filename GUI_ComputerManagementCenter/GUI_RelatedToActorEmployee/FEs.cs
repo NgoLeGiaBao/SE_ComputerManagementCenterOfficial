@@ -1,6 +1,5 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
-using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -28,6 +27,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             LoadListTeacher();
             LoaListStudent();
+            LoadListCourse();
         }
 
         // Selected index change
@@ -135,7 +135,24 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2DataGridViewStudent.Rows.Add(rowValues);
             }
         }
+        // Load list course
+        public void LoadListCourse ()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                //flowLayoutPanel1.AutoScroll = true;
 
+                //// Tạo một Guna2Panel mới và thiết lập một số thuộc tính
+                //Guna2Panel guna2Panel1 = new Guna2Panel();
+                //guna2Panel1.BackColor = Color.Blue;
+                //guna2Panel1.FillColor = Color.Red;
+                //guna2Panel1.Size = new Size(200, 500);
+                //guna2Panel1.Margin = new Padding(10);
+                //
+                //// Thêm Guna2Panel vào FlowLayoutPanel
+                //flowLayoutPanel1.Controls.Add(guna2Panel1);
+            }
+        }
 
 
 
