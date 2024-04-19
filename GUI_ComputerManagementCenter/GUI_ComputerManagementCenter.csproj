@@ -68,6 +68,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI_RelatedToActorEmployee\FAddCourse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorEmployee\FAddCourse.Designer.cs">
+      <DependentUpon>FAddCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_RelatedToActorEmployee\FAddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\course_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

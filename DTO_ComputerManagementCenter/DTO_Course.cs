@@ -42,6 +42,7 @@ namespace DTO_ComputerManagementCenter
             this.EndDay = DateTime.Parse(dataRow["NgayKetThuc"].ToString());
             this.CourseInfor = dataRow["ThongTinKhoaHoc"].ToString();
             this.CourseFee = int.Parse(dataRow["HocPhiKhoaHoc"].ToString());
+            this.CourseStatus = int.Parse(dataRow["TrangThaiKhoaHoc"].ToString());
         }
 
 

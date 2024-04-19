@@ -79,6 +79,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (isAdded) {
                 BUS_RelatedToSendEmail.SendEmailToUser(email, emailSubject, emailBody);
                 MessageBox.Show("Successfully");
+                // Tạo một tham chiếu đến form FEs nếu cần thiết
+                FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
+                if (fEs != null)
+                {
+                    fEs.RefreshPage();
+                }
             } else
             {
                 MessageBox.Show("Data is not valid");
@@ -88,12 +94,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Click on Cancel button
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
+            
             this.Close();
-            FEs fEs = new FEs();
-            fEs.LoaListStudent();
-            MessageBox.Show("Da Load");
         }
-
 
 
     }

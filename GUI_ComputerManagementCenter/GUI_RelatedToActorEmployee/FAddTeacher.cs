@@ -76,11 +76,22 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 BUS_RelatedToSendEmail.SendEmailToUser(email, emailSubject, emailBody);
                 MessageBox.Show("Successfully");
+                // Tạo một tham chiếu đến form FEs nếu cần thiết
+                FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
+                if (fEs != null)
+                {
+                    fEs.RefreshPage();
+                }
             }
             else
             {
                 MessageBox.Show("Data is not valid");
             }
+        }
+
+        private void guna2ButtonCacel_Click(object sender, EventArgs e)
+        {
+            this.Close();   
         }
     }
 }

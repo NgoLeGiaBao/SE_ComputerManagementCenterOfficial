@@ -29,19 +29,23 @@
         private void InitializeComponent()
         {
             this.guna2PanelControl = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2TabControlStudent = new Guna.UI2.WinForms.Guna2TabControl();
+            this.tabPageCourse = new System.Windows.Forms.TabPage();
+            this.tabPageResult = new System.Windows.Forms.TabPage();
+            this.tabPageAccount = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.guna2PanelControl.SuspendLayout();
-            this.guna2TabControl1.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).BeginInit();
+            this.guna2TabControlStudent.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2PanelControl
             // 
+            this.guna2PanelControl.Controls.Add(this.guna2Button1);
             this.guna2PanelControl.Controls.Add(this.guna2PanelLogo);
             this.guna2PanelControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelControl.Location = new System.Drawing.Point(0, 0);
@@ -49,35 +53,110 @@
             this.guna2PanelControl.Size = new System.Drawing.Size(1942, 124);
             this.guna2PanelControl.TabIndex = 0;
             // 
-            // guna2TabControl1
+            // guna2Button1
             // 
-            this.guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.guna2TabControl1.Controls.Add(this.tabPage1);
-            this.guna2TabControl1.Controls.Add(this.tabPage2);
-            this.guna2TabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2TabControl1.ItemSize = new System.Drawing.Size(180, 80);
-            this.guna2TabControl1.Location = new System.Drawing.Point(0, 124);
-            this.guna2TabControl1.Name = "guna2TabControl1";
-            this.guna2TabControl1.SelectedIndex = 0;
-            this.guna2TabControl1.Size = new System.Drawing.Size(1942, 1082);
-            this.guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonHoverState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonIdleState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(160)))), ((int)(((byte)(167)))));
-            this.guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
-            this.guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.guna2TabControl1.TabButtonSelectedState.Font = new System.Drawing.Font("Segoe UI Semibold", 10F);
-            this.guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
-            this.guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
-            this.guna2TabControl1.TabButtonSize = new System.Drawing.Size(180, 80);
-            this.guna2TabControl1.TabIndex = 1;
-            this.guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(425, 73);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.TabIndex = 1;
+            this.guna2Button1.Text = "guna2Button1";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2PanelLogo
+            // 
+            this.guna2PanelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2PanelLogo.Controls.Add(this.guna2PictureBoxLogo);
+            this.guna2PanelLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PanelLogo.Location = new System.Drawing.Point(0, 0);
+            this.guna2PanelLogo.Name = "guna2PanelLogo";
+            this.guna2PanelLogo.Size = new System.Drawing.Size(240, 124);
+            this.guna2PanelLogo.TabIndex = 0;
+            // 
+            // guna2PictureBoxLogo
+            // 
+            this.guna2PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBoxLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2PictureBoxLogo.Image = global::GUI_ComputerManagementCenter.Properties.Resources.LogoBlackBackground;
+            this.guna2PictureBoxLogo.ImageRotate = 0F;
+            this.guna2PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBoxLogo.Name = "guna2PictureBoxLogo";
+            this.guna2PictureBoxLogo.Size = new System.Drawing.Size(240, 124);
+            this.guna2PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxLogo.TabIndex = 0;
+            this.guna2PictureBoxLogo.TabStop = false;
+            // 
+            // guna2TabControlStudent
+            // 
+            this.guna2TabControlStudent.Alignment = System.Windows.Forms.TabAlignment.Left;
+            this.guna2TabControlStudent.Controls.Add(this.tabPageCourse);
+            this.guna2TabControlStudent.Controls.Add(this.tabPageResult);
+            this.guna2TabControlStudent.Controls.Add(this.tabPageAccount);
+            this.guna2TabControlStudent.Controls.Add(this.tabPage1);
+            this.guna2TabControlStudent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2TabControlStudent.ItemSize = new System.Drawing.Size(180, 80);
+            this.guna2TabControlStudent.Location = new System.Drawing.Point(0, 124);
+            this.guna2TabControlStudent.Name = "guna2TabControlStudent";
+            this.guna2TabControlStudent.SelectedIndex = 0;
+            this.guna2TabControlStudent.Size = new System.Drawing.Size(1942, 1082);
+            this.guna2TabControlStudent.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControlStudent.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControlStudent.TabButtonHoverState.Font = new System.Drawing.Font("Poppins", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlStudent.TabButtonHoverState.ForeColor = System.Drawing.Color.Gray;
+            this.guna2TabControlStudent.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
+            this.guna2TabControlStudent.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControlStudent.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControlStudent.TabButtonIdleState.Font = new System.Drawing.Font("Poppins Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlStudent.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.guna2TabControlStudent.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControlStudent.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
+            this.guna2TabControlStudent.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
+            this.guna2TabControlStudent.TabButtonSelectedState.Font = new System.Drawing.Font("Poppins Medium", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlStudent.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
+            this.guna2TabControlStudent.TabButtonSelectedState.InnerColor = System.Drawing.Color.Transparent;
+            this.guna2TabControlStudent.TabButtonSize = new System.Drawing.Size(180, 80);
+            this.guna2TabControlStudent.TabButtonTextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2TabControlStudent.TabIndex = 1;
+            this.guna2TabControlStudent.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
+            this.guna2TabControlStudent.UseWaitCursor = true;
+            // 
+            // tabPageCourse
+            // 
+            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
+            this.tabPageCourse.Name = "tabPageCourse";
+            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCourse.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageCourse.TabIndex = 0;
+            this.tabPageCourse.Text = "Course";
+            this.tabPageCourse.UseVisualStyleBackColor = true;
+            this.tabPageCourse.UseWaitCursor = true;
+            // 
+            // tabPageResult
+            // 
+            this.tabPageResult.Location = new System.Drawing.Point(184, 4);
+            this.tabPageResult.Name = "tabPageResult";
+            this.tabPageResult.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageResult.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageResult.TabIndex = 1;
+            this.tabPageResult.Text = "Result";
+            this.tabPageResult.UseVisualStyleBackColor = true;
+            this.tabPageResult.UseWaitCursor = true;
+            // 
+            // tabPageAccount
+            // 
+            this.tabPageAccount.Location = new System.Drawing.Point(184, 4);
+            this.tabPageAccount.Name = "tabPageAccount";
+            this.tabPageAccount.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAccount.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageAccount.TabIndex = 2;
+            this.tabPageAccount.Text = "Account";
+            this.tabPageAccount.UseVisualStyleBackColor = true;
+            this.tabPageAccount.UseWaitCursor = true;
             // 
             // tabPage1
             // 
@@ -85,49 +164,16 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1754, 1074);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.TabIndex = 3;
             this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(184, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1736, 1027);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // guna2PanelLogo
-            // 
-            this.guna2PanelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2PanelLogo.Controls.Add(this.guna2PictureBox1);
-            this.guna2PanelLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2PanelLogo.Location = new System.Drawing.Point(0, 0);
-            this.guna2PanelLogo.Name = "guna2PanelLogo";
-            this.guna2PanelLogo.Size = new System.Drawing.Size(180, 124);
-            this.guna2PanelLogo.TabIndex = 0;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2PictureBox1.Image = global::GUI_ComputerManagementCenter.Properties.Resources.LogoBlackBackground;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(180, 124);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.tabPage1.UseWaitCursor = true;
             // 
             // FStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1942, 1206);
-            this.Controls.Add(this.guna2TabControl1);
+            this.Controls.Add(this.guna2TabControlStudent);
             this.Controls.Add(this.guna2PanelControl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FStudent";
@@ -135,9 +181,9 @@
             this.Text = "Form Student";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2PanelControl.ResumeLayout(false);
-            this.guna2TabControl1.ResumeLayout(false);
             this.guna2PanelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).EndInit();
+            this.guna2TabControlStudent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -146,9 +192,12 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2PanelControl;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelLogo;
-        private Guna.UI2.WinForms.Guna2TabControl guna2TabControl1;
+        private Guna.UI2.WinForms.Guna2TabControl guna2TabControlStudent;
+        private System.Windows.Forms.TabPage tabPageCourse;
+        private System.Windows.Forms.TabPage tabPageResult;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxLogo;
+        private System.Windows.Forms.TabPage tabPageAccount;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

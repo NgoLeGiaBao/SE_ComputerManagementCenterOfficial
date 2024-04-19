@@ -16,5 +16,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
         {
             InitializeComponent();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            guna2TabControlStudent.SelectedTab = guna2TabControlStudent.TabPages[2];
+        }
     }
 }

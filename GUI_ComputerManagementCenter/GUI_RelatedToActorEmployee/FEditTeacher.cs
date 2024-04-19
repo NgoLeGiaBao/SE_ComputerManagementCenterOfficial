@@ -68,8 +68,19 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             bool isUpdated = BUS_RelatedToEmployee.Instance.UpdateTeacher(new object[] { identityCard, fullName, gender, birthday, phone, address, email, academicLevel });
             if (isUpdated)
             {
+                // Tạo một tham chiếu đến form FEs nếu cần thiết
+                FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
+                if (fEs != null)
+                {
+                    fEs.RefreshPage();
+                }
                 MessageBox.Show("Update teacher successfully");
             }
+        }
+
+        private void guna2ButtonCacel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

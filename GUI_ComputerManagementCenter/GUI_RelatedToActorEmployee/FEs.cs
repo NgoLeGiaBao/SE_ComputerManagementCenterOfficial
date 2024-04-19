@@ -10,8 +10,10 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Windows.Media.Media3D;
+using Label = System.Windows.Forms.Label;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -21,13 +23,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             InitializeComponent();
         }
-
-
         // Process with all pages
         private void FEs_Load(object sender, EventArgs e)
         {
             LoadListTeacher();
-            LoaListStudent();
+            LoadListStudent();
             LoadListCourse();
         }
 
@@ -117,7 +117,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
         
         // Load list student
-        public void LoaListStudent()
+        public void LoadListStudent()
         {
             List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetListStudet();
             foreach (DTO_Student item in list)
@@ -139,21 +139,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Load list course
         public void LoadListCourse ()
         {
-            for (int i = 0; i < 10; i++)
+            int k = 1;
+            int i = 0;
+            foreach (DTO_Course course in BUS_RelatedToEmployee.Instance.GetListCourse())
             {
-                //flowLayoutPanel1.AutoScroll = true;
-
-                //// Tạo một Guna2Panel mới và thiết lập một số thuộc tính
-                Guna2Panel guna2Panel1 = new Guna2Panel();
-                guna2Panel1.BackColor = Color.Blue;
-                guna2Panel1.FillColor = Color.Red;
-                guna2Panel1.Size = new Size(400, 217);
-                guna2Panel1.Margin = new Padding(10);
-
-                // Thêm Guna2Panel vào FlowLayoutPanel
-                //GetGuna2PanelCourse();
-                //flowLayoutPanelCourse.Controls.Add(GetGuna2PanelCourse());
-                GetGuna2PanelCourse();
+                GetGuna2PanelCourse(course, i, k);
+                if (k == 3)
+                {
+                    k = 1;
+                }
+                else
+                {
+                    k++;
+                }
+                i++;
             }
         }
 
@@ -208,11 +207,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
         }
 
-        public void GetGuna2PanelCourse ()
+        public void GetGuna2PanelCourse (DTO_Course course, int i, int k)
         {
 
             // guna2PanelCourse
-            // 
             Guna2Panel guna2PanelCourse = new Guna2Panel();
             Guna2Panel guna2PanelDetailCourse = new Guna2Panel();
             Label labelInforCourse = new Label();
@@ -259,7 +257,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             labelInforCourse.Name = "labelInforCourse";
             labelInforCourse.Size = new System.Drawing.Size(272, 115);
             labelInforCourse.TabIndex = 1;
-            labelInforCourse.Text = "MOS BASIS(OFF)_Q7_(24 - 18H -19H30)";
+            labelInforCourse.Text = course.CourseName;
             labelInforCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelIDCourse
@@ -269,7 +267,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             labelIDCourse.Name = "labelIDCourse";
             labelIDCourse.Size = new System.Drawing.Size(57, 35);
             labelIDCourse.TabIndex = 0;
-            labelIDCourse.Text = "KH001";
+            labelIDCourse.Text = course.CourseID;
             
 
             // guna2ButtonViewCourse
@@ -282,11 +280,15 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ButtonViewCourse.FillColor = System.Drawing.Color.Black;
             guna2ButtonViewCourse.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             guna2ButtonViewCourse.ForeColor = System.Drawing.Color.White;
-            guna2ButtonViewCourse.Location = new System.Drawing.Point(0, 117);
+            guna2ButtonViewCourse.Location = new System.Drawing.Point(0, 156);
             guna2ButtonViewCourse.Name = "guna2ButtonViewCourse";
             guna2ButtonViewCourse.Size = new System.Drawing.Size(131, 41);
             guna2ButtonViewCourse.TabIndex = 2;
             guna2ButtonViewCourse.Text = "View and Edit";
+
+            guna2ButtonViewCourse.Tag = course;
+            guna2ButtonViewCourse.Click += new EventHandler(guna2ButtonViewCourse_Click);
+
             // 
             // guna2ButtonDeleteCourse
             // 
@@ -309,7 +311,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ButtonSatus.BorderRadius = 6;
             guna2ButtonSatus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             guna2ButtonSatus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            //guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             guna2ButtonSatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             guna2ButtonSatus.FillColor = System.Drawing.Color.Lime;
             guna2ButtonSatus.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -318,13 +320,33 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ButtonSatus.Name = "guna2ButtonSatus";
             guna2ButtonSatus.Size = new System.Drawing.Size(105, 41);
             guna2ButtonSatus.TabIndex = 4;
-            guna2ButtonSatus.Text = "OnGoing";
+            guna2ButtonSatus.Enabled = false;
+
+            guna2ButtonSatus.TextAlign = (HorizontalAlignment)ContentAlignment.MiddleCenter;
+            if (course.CourseStatus == 0)
+            {
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightGray;
+                guna2ButtonSatus.Text = "Not yet started";
+                
+                guna2ButtonSatus.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+
+            }
+            else if (course.CourseStatus == 1)
+            {
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightGreen;
+                guna2ButtonSatus.Text = "OnGoing";
+            } else if (course.CourseStatus == 2)
+            {
+                guna2ButtonSatus.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightSkyBlue;
+                guna2ButtonSatus.Text = "Ended";
+            }
 
 
             // 
             // guna2PanelCoverPicture
             // 
-           
+
 
             guna2PanelCoverPicture.Controls.Add(guna2PictureBoxCourse);
             guna2PanelCoverPicture.Location = new System.Drawing.Point(10, 10);
@@ -347,9 +369,37 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2PictureBoxCourse.TabIndex = 0;
             guna2PictureBoxCourse.TabStop = false;
             // 
+            if (i == 1)
+            {
+                guna2PanelCourse.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            }
+            else if (k != 2 && i > 2)
+            {
+                guna2PanelCourse.Margin = new System.Windows.Forms.Padding(0, 20, 0, 20);
+            } else if (k == 2 && i > 2)
+            {
+                guna2PanelCourse.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
+            }
 
             flowLayoutPanelCourse.Controls.Add(guna2PanelCourse);
 
+        }
+
+        private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
+        {
+            DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
+            MessageBox.Show(course.CourseID.ToString());
+        }
+
+
+        public void RefreshPage()
+        {
+            guna2DataGridViewStudent.Rows.Clear();
+            guna2DataGridViewTeacher.Rows.Clear();
+            flowLayoutPanelCourse.Controls.Clear();
+            LoadListStudent();
+            LoadListTeacher();
+            LoadListCourse();
         }
     }
 }

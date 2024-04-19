@@ -1,4 +1,5 @@
 ﻿using GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorStudent;
 using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,7 @@ namespace GUI_ComputerManagementCenter
             Application.Run(new FEs());
             //Application.Run(new FAddTeacher());
             //Application.Run(new FAddStudent());
+            //Application.Run(new FStudent());
         }
     }
 }

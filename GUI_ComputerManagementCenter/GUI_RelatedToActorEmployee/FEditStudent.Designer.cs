@@ -539,6 +539,7 @@
             this.guna2ButtonCacel.Size = new System.Drawing.Size(330, 45);
             this.guna2ButtonCacel.TabIndex = 11;
             this.guna2ButtonCacel.Text = "Cancel";
+            this.guna2ButtonCacel.Click += new System.EventHandler(this.guna2ButtonCacel_Click);
             // 
             // guna2ButtonSave
             // 
