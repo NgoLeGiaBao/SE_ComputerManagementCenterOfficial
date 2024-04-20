@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2PanelNav = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelEmpty = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelHeader = new Guna.UI2.WinForms.Guna2Panel();
@@ -67,6 +66,7 @@
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelHeader.SuspendLayout();
             this.guna2PanelContent2.SuspendLayout();
@@ -87,17 +87,6 @@
             this.guna2PanelNav.Name = "guna2PanelNav";
             this.guna2PanelNav.Size = new System.Drawing.Size(760, 30);
             this.guna2PanelNav.TabIndex = 0;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(640, 0);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 30);
-            this.guna2ControlBox2.TabIndex = 1;
             // 
             // guna2ControlBox1
             // 
@@ -579,6 +568,17 @@
             this.guna2Panel2.Size = new System.Drawing.Size(760, 30);
             this.guna2Panel2.TabIndex = 11;
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.guna2ControlBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(640, 0);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(60, 30);
+            this.guna2ControlBox2.TabIndex = 1;
+            // 
             // FAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
@@ -657,7 +657,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2PanelFooter;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }

@@ -1,19 +1,20 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
-using Guna.UI.WinForms;
 using Guna.UI2.WinForms;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using System.Windows.Media.Media3D;
 using Label = System.Windows.Forms.Label;
+using Rectangle = iTextSharp.text.Rectangle;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -400,6 +401,98 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListStudent();
             LoadListTeacher();
             LoadListCourse();
+        }
+
+        private void guna2ButtonViewAndPrint_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                // Create a SaveFileDialog instance
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Save Data as PDF";
+
+                // Show the dialog and check for user confirmation
+                if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    // Create and use the file stream within a using block for proper resource management
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                    {
+                        // Create a new PDF document with desired margins and orientation
+                        Rectangle pageSize = new Rectangle(800, 600); // Example: 800 points width, 600 points height
+                        Document document = new Document(pageSize, 20f, 20f, 10f, 10f);
+                        PdfWriter.GetInstance(document, fs);
+
+                        document.Open();
+
+                        // Add a header with bold font, centered alignment, custom font family, and larger font size
+                        Paragraph header = new Paragraph("DANH SÁCH HỌC VIÊN", FontFactory.GetFont("Times New Roman", 18 + "", Font.Italic));
+                        header.Alignment = Element.ALIGN_CENTER;
+                        document.Add(header);
+
+                        // Add a table with alternating row colors, centered content, and different column widths
+                        PdfPTable table = new PdfPTable(8); // Adjust the number of columns based on your data
+                        table.WidthPercentage = 100f;
+
+                        // Set column widths
+                        float[] columnWidths = new float[] { 110f, 100f, 40f, 60f, 65f, 80f, 80f, 150f }; // Adjust widths as needed
+                        table.SetWidths(columnWidths);
+
+                        // Add table header row with background color, bold font, and centered alignment
+                        for (int i = 0; i < guna2DataGridViewStudent.Columns.Count; i++)
+                        {
+                            PdfPCell cell = new PdfPCell(new Phrase(guna2DataGridViewStudent.Columns[i].HeaderText));
+                            cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                            cell.HorizontalAlignment = Element.ALIGN_CENTER;
+                            //cell.Font = FontFactory.GetFont("Times New Roman", 12, Font.BOLD);
+                            cell.FixedHeight = 50f;
+                            table.AddCell(cell);
+                        }
+
+                        // Add table data rows with alternating colors and centered content
+                        bool alternateColor = false;
+                        for (int i = 0; i < guna2DataGridViewStudent.Rows.Count; i++)
+                        {
+                            if (guna2DataGridViewStudent.Rows[i].IsNewRow) continue;
+
+                            for (int j = 0; j < guna2DataGridViewStudent.Columns.Count; j++)
+                            {
+                                PdfPCell cell = new PdfPCell(new Phrase(guna2DataGridViewStudent.Rows[i].Cells[j].Value?.ToString()));
+                                cell.HorizontalAlignment = Element.ALIGN_CENTER;
+                                cell.FixedHeight = 50f;
+
+                                //cell.Font = FontFactory.GetFont("Times New Roman", 10, Font.NORMAL);
+                                if (alternateColor)
+                                {
+                                    cell.BackgroundColor = BaseColor.BLUE;
+                                }
+                                else
+                                {
+                                    cell.BackgroundColor = BaseColor.WHITE;
+                                }
+                                alternateColor = !alternateColor;
+                                table.AddCell(cell);
+                            }
+                        }
+
+                        // Add the table to the document
+                        document.Add(table);
+
+                        document.Close();
+
+                        // Show success message with custom icon
+                        MessageBox.Show("Data exported to PDF successfully!", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle potential exceptions during PDF creation
+                MessageBox.Show("Error exporting data to PDF: " + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

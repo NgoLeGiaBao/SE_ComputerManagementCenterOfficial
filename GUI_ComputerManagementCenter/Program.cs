@@ -25,10 +25,11 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FEmployees());  
             //Application.Run(new FE());
             //Application.Run(new Fes());
-            Application.Run(new FEs());
+            //Application.Run(new FEs());
             //Application.Run(new FAddTeacher());
             //Application.Run(new FAddStudent());
             //Application.Run(new FStudent());
+            Application.Run(new FAddCourse());
         }
     }
 }

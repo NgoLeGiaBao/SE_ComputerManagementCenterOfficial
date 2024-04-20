@@ -69,6 +69,7 @@
             this.AcademicLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageStudent = new System.Windows.Forms.TabPage();
             this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ButtonViewAndPrint = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonEditStudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridViewStudent = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -82,7 +83,6 @@
             this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageCourse = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2ButtonViewAndPrint = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
@@ -595,6 +595,23 @@
             this.guna2PanelFooterStudent.Size = new System.Drawing.Size(1746, 100);
             this.guna2PanelFooterStudent.TabIndex = 1;
             // 
+            // guna2ButtonViewAndPrint
+            // 
+            this.guna2ButtonViewAndPrint.BorderRadius = 6;
+            this.guna2ButtonViewAndPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonViewAndPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonViewAndPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonViewAndPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonViewAndPrint.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonViewAndPrint.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonViewAndPrint.Location = new System.Drawing.Point(1174, 25);
+            this.guna2ButtonViewAndPrint.Name = "guna2ButtonViewAndPrint";
+            this.guna2ButtonViewAndPrint.Size = new System.Drawing.Size(201, 45);
+            this.guna2ButtonViewAndPrint.TabIndex = 3;
+            this.guna2ButtonViewAndPrint.Text = "Export student list";
+            this.guna2ButtonViewAndPrint.Click += new System.EventHandler(this.guna2ButtonViewAndPrint_Click);
+            // 
             // guna2ButtonEditStudent
             // 
             this.guna2ButtonEditStudent.BorderRadius = 6;
@@ -779,22 +796,6 @@
             this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
             this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
             this.flowLayoutPanelCourse.TabIndex = 0;
-            // 
-            // guna2ButtonViewAndPrint
-            // 
-            this.guna2ButtonViewAndPrint.BorderRadius = 6;
-            this.guna2ButtonViewAndPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonViewAndPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonViewAndPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonViewAndPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonViewAndPrint.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonViewAndPrint.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonViewAndPrint.Location = new System.Drawing.Point(1195, 25);
-            this.guna2ButtonViewAndPrint.Name = "guna2ButtonViewAndPrint";
-            this.guna2ButtonViewAndPrint.Size = new System.Drawing.Size(180, 45);
-            this.guna2ButtonViewAndPrint.TabIndex = 3;
-            this.guna2ButtonViewAndPrint.Text = "View and Print";
             // 
             // FEs
             // 
