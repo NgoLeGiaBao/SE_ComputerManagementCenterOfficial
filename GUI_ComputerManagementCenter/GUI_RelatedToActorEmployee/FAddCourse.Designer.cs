@@ -45,51 +45,55 @@
             this.guna2PanelEmpty2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelStudent = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2DataGridViewSearch = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.StudentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Student = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2DataGridViewStudent = new Guna.UI2.WinForms.Guna2DataGridView();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Action = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PanelInforFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PanelInforCover = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelContent5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelSubject = new System.Windows.Forms.Label();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelCourseName = new System.Windows.Forms.Label();
-            this.guna2PanelCotent3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelPhone = new System.Windows.Forms.Label();
-            this.guna2TextBoxPhone = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelFullName = new System.Windows.Forms.Label();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBoxTeacher = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2TextBoxDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.labelDescription = new System.Windows.Forms.Label();
+            this.guna2PanelContent7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBoxMeetings = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ComboBoxShift = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelNumberOfMeeting = new System.Windows.Forms.Label();
+            this.labelShift = new System.Windows.Forms.Label();
+            this.guna2PanelCotent3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DateTimePickerStart = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.labelPhone = new System.Windows.Forms.Label();
+            this.guna2TextBoxFee = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelFullName = new System.Windows.Forms.Label();
+            this.guna2PanelContent6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBoxCourseName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelCourseName = new System.Windows.Forms.Label();
+            this.guna2PanelContent5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBoxSubject = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.labelSubject = new System.Windows.Forms.Label();
+            this.guna2PanelBtnFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PanelMarginRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PanelMarginLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelTitle.SuspendLayout();
             this.guna2PanelStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewSearch)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).BeginInit();
             this.guna2PanelFooterStudent.SuspendLayout();
+            this.guna2PanelInforCover.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2PanelContent5.SuspendLayout();
-            this.guna2Panel6.SuspendLayout();
+            this.guna2PanelContent7.SuspendLayout();
             this.guna2PanelCotent3.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
+            this.guna2PanelContent6.SuspendLayout();
+            this.guna2PanelContent5.SuspendLayout();
+            this.guna2PanelBtnFooter.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2PanelNav
@@ -120,6 +124,7 @@
             this.guna2ControlBoxClose.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2ControlBoxClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2ControlBoxClose.HoverState.FillColor = System.Drawing.Color.Red;
+            this.guna2ControlBoxClose.HoverState.IconColor = System.Drawing.Color.White;
             this.guna2ControlBoxClose.IconColor = System.Drawing.Color.Black;
             this.guna2ControlBoxClose.Location = new System.Drawing.Point(1234, 0);
             this.guna2ControlBoxClose.Name = "guna2ControlBoxClose";
@@ -183,8 +188,14 @@
             // 
             // guna2DataGridViewSearch
             // 
+            this.guna2DataGridViewSearch.AllowUserToAddRows = false;
+            this.guna2DataGridViewSearch.AllowUserToDeleteRows = false;
+            this.guna2DataGridViewSearch.AllowUserToResizeColumns = false;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
             this.guna2DataGridViewSearch.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            this.guna2DataGridViewSearch.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.guna2DataGridViewSearch.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,23 +206,26 @@
             this.guna2DataGridViewSearch.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridViewSearch.ColumnHeadersHeight = 32;
             this.guna2DataGridViewSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewSearch.ColumnHeadersVisible = false;
             this.guna2DataGridViewSearch.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentName});
+            this.Student});
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridViewSearch.DefaultCellStyle = dataGridViewCellStyle10;
-            this.guna2DataGridViewSearch.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridViewSearch.Location = new System.Drawing.Point(217, 345);
+            this.guna2DataGridViewSearch.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewSearch.Location = new System.Drawing.Point(217, 351);
+            this.guna2DataGridViewSearch.MultiSelect = false;
             this.guna2DataGridViewSearch.Name = "guna2DataGridViewSearch";
+            this.guna2DataGridViewSearch.ReadOnly = true;
             this.guna2DataGridViewSearch.RowHeadersVisible = false;
             this.guna2DataGridViewSearch.RowHeadersWidth = 51;
-            this.guna2DataGridViewSearch.RowTemplate.Height = 24;
-            this.guna2DataGridViewSearch.Size = new System.Drawing.Size(323, 150);
+            this.guna2DataGridViewSearch.RowTemplate.Height = 48;
+            this.guna2DataGridViewSearch.Size = new System.Drawing.Size(323, 144);
             this.guna2DataGridViewSearch.TabIndex = 2;
             this.guna2DataGridViewSearch.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridViewSearch.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -219,28 +233,30 @@
             this.guna2DataGridViewSearch.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.guna2DataGridViewSearch.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.guna2DataGridViewSearch.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewSearch.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewSearch.ThemeStyle.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridViewSearch.ThemeStyle.HeaderStyle.Height = 32;
-            this.guna2DataGridViewSearch.ThemeStyle.ReadOnly = false;
+            this.guna2DataGridViewSearch.ThemeStyle.ReadOnly = true;
             this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.Height = 24;
+            this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.Height = 48;
             this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewSearch.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridViewSearch.Visible = false;
             // 
-            // StudentName
+            // Student
             // 
-            this.StudentName.HeaderText = "StudentName";
-            this.StudentName.MinimumWidth = 6;
-            this.StudentName.Name = "StudentName";
+            this.Student.HeaderText = "StudentName";
+            this.Student.MinimumWidth = 6;
+            this.Student.Name = "Student";
+            this.Student.ReadOnly = true;
+            this.Student.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             // 
             // guna2DataGridViewStudent
             // 
@@ -352,7 +368,7 @@
             // 
             // guna2PanelFooterStudent
             // 
-            this.guna2PanelFooterStudent.Controls.Add(this.guna2Panel4);
+            this.guna2PanelFooterStudent.Controls.Add(this.guna2PanelInforFooter);
             this.guna2PanelFooterStudent.Controls.Add(this.guna2TextBoxSearch);
             this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonAdd);
             this.guna2PanelFooterStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -361,18 +377,18 @@
             this.guna2PanelFooterStudent.Size = new System.Drawing.Size(540, 45);
             this.guna2PanelFooterStudent.TabIndex = 0;
             // 
-            // guna2Panel4
+            // guna2PanelInforFooter
             // 
-            this.guna2Panel4.Location = new System.Drawing.Point(540, 0);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(751, 46);
-            this.guna2Panel4.TabIndex = 7;
+            this.guna2PanelInforFooter.Location = new System.Drawing.Point(540, 0);
+            this.guna2PanelInforFooter.Name = "guna2PanelInforFooter";
+            this.guna2PanelInforFooter.Size = new System.Drawing.Size(751, 46);
+            this.guna2PanelInforFooter.TabIndex = 7;
             // 
             // guna2TextBoxSearch
             // 
             this.guna2TextBoxSearch.BorderRadius = 6;
             this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxSearch.DefaultText = "  Search here";
+            this.guna2TextBoxSearch.DefaultText = "";
             this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -389,6 +405,7 @@
             this.guna2TextBoxSearch.SelectedText = "";
             this.guna2TextBoxSearch.Size = new System.Drawing.Size(323, 45);
             this.guna2TextBoxSearch.TabIndex = 1;
+            this.guna2TextBoxSearch.IconRightClick += new System.EventHandler(this.guna2TextBoxSearch_IconRightClick);
             // 
             // guna2ButtonAdd
             // 
@@ -405,126 +422,190 @@
             this.guna2ButtonAdd.Size = new System.Drawing.Size(180, 45);
             this.guna2ButtonAdd.TabIndex = 0;
             this.guna2ButtonAdd.Text = "Add";
+            this.guna2ButtonAdd.Click += new System.EventHandler(this.guna2ButtonAdd_Click);
+            // 
+            // guna2PanelInforCover
+            // 
+            this.guna2PanelInforCover.Controls.Add(this.guna2Panel1);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelContent7);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelCotent3);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelContent6);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelContent5);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelBtnFooter);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelMarginRight);
+            this.guna2PanelInforCover.Controls.Add(this.guna2PanelMarginLeft);
+            this.guna2PanelInforCover.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PanelInforCover.Location = new System.Drawing.Point(540, 150);
+            this.guna2PanelInforCover.Name = "guna2PanelInforCover";
+            this.guna2PanelInforCover.Size = new System.Drawing.Size(754, 540);
+            this.guna2PanelInforCover.TabIndex = 6;
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.guna2TextBox4);
-            this.guna2Panel1.Controls.Add(this.label4);
-            this.guna2Panel1.Controls.Add(this.guna2Panel7);
-            this.guna2Panel1.Controls.Add(this.guna2PanelCotent3);
-            this.guna2Panel1.Controls.Add(this.guna2Panel6);
-            this.guna2Panel1.Controls.Add(this.guna2PanelContent5);
-            this.guna2Panel1.Controls.Add(this.guna2Panel5);
-            this.guna2Panel1.Controls.Add(this.guna2Panel3);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(540, 150);
+            this.guna2Panel1.Controls.Add(this.guna2ComboBoxTeacher);
+            this.guna2Panel1.Controls.Add(this.guna2TextBoxDescription);
+            this.guna2Panel1.Controls.Add(this.label2);
+            this.guna2Panel1.Controls.Add(this.labelDescription);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(30, 304);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(754, 540);
-            this.guna2Panel1.TabIndex = 6;
+            this.guna2Panel1.Size = new System.Drawing.Size(694, 191);
+            this.guna2Panel1.TabIndex = 11;
             // 
-            // guna2Panel2
+            // guna2ComboBoxTeacher
             // 
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(30, 540);
-            this.guna2Panel2.TabIndex = 0;
+            this.guna2ComboBoxTeacher.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxTeacher.BorderRadius = 6;
+            this.guna2ComboBoxTeacher.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxTeacher.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxTeacher.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxTeacher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxTeacher.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBoxTeacher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBoxTeacher.ItemHeight = 30;
+            this.guna2ComboBoxTeacher.Location = new System.Drawing.Point(0, 33);
+            this.guna2ComboBoxTeacher.Name = "guna2ComboBoxTeacher";
+            this.guna2ComboBoxTeacher.Size = new System.Drawing.Size(325, 36);
+            this.guna2ComboBoxTeacher.TabIndex = 7;
             // 
-            // guna2Panel3
+            // guna2TextBoxDescription
             // 
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel3.Location = new System.Drawing.Point(724, 0);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(30, 540);
-            this.guna2Panel3.TabIndex = 1;
+            this.guna2TextBoxDescription.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.guna2TextBoxDescription.BorderRadius = 6;
+            this.guna2TextBoxDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxDescription.DefaultText = "";
+            this.guna2TextBoxDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxDescription.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.guna2TextBoxDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxDescription.Location = new System.Drawing.Point(369, 33);
+            this.guna2TextBoxDescription.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBoxDescription.Multiline = true;
+            this.guna2TextBoxDescription.Name = "guna2TextBoxDescription";
+            this.guna2TextBoxDescription.PasswordChar = '\0';
+            this.guna2TextBoxDescription.PlaceholderText = "";
+            this.guna2TextBoxDescription.SelectedText = "";
+            this.guna2TextBoxDescription.Size = new System.Drawing.Size(325, 130);
+            this.guna2TextBoxDescription.TabIndex = 6;
             // 
-            // guna2Panel5
+            // label2
             // 
-            this.guna2Panel5.Controls.Add(this.guna2Button2);
-            this.guna2Panel5.Controls.Add(this.guna2Button1);
-            this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel5.Location = new System.Drawing.Point(30, 495);
-            this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(694, 45);
-            this.guna2Panel5.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 26);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Course Teacher";
             // 
-            // guna2PanelContent5
+            // labelDescription
             // 
-            this.guna2PanelContent5.Controls.Add(this.guna2ComboBox1);
-            this.guna2PanelContent5.Controls.Add(this.labelSubject);
-            this.guna2PanelContent5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent5.Location = new System.Drawing.Point(30, 0);
-            this.guna2PanelContent5.Name = "guna2PanelContent5";
-            this.guna2PanelContent5.Size = new System.Drawing.Size(694, 76);
-            this.guna2PanelContent5.TabIndex = 7;
+            this.labelDescription.AutoSize = true;
+            this.labelDescription.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDescription.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelDescription.Location = new System.Drawing.Point(369, 3);
+            this.labelDescription.Name = "labelDescription";
+            this.labelDescription.Size = new System.Drawing.Size(161, 26);
+            this.labelDescription.TabIndex = 5;
+            this.labelDescription.Text = "Course Description";
             // 
-            // labelSubject
+            // guna2PanelContent7
             // 
-            this.labelSubject.AutoSize = true;
-            this.labelSubject.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.labelSubject.Location = new System.Drawing.Point(0, 0);
-            this.labelSubject.Name = "labelSubject";
-            this.labelSubject.Size = new System.Drawing.Size(71, 26);
-            this.labelSubject.TabIndex = 5;
-            this.labelSubject.Text = "Subject";
+            this.guna2PanelContent7.Controls.Add(this.guna2ComboBoxMeetings);
+            this.guna2PanelContent7.Controls.Add(this.guna2ComboBoxShift);
+            this.guna2PanelContent7.Controls.Add(this.labelNumberOfMeeting);
+            this.guna2PanelContent7.Controls.Add(this.labelShift);
+            this.guna2PanelContent7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelContent7.Location = new System.Drawing.Point(30, 228);
+            this.guna2PanelContent7.Name = "guna2PanelContent7";
+            this.guna2PanelContent7.Size = new System.Drawing.Size(694, 76);
+            this.guna2PanelContent7.TabIndex = 10;
             // 
-            // guna2Panel6
+            // guna2ComboBoxMeetings
             // 
-            this.guna2Panel6.Controls.Add(this.guna2TextBox1);
-            this.guna2Panel6.Controls.Add(this.labelCourseName);
-            this.guna2Panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel6.Location = new System.Drawing.Point(30, 76);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(694, 76);
-            this.guna2Panel6.TabIndex = 8;
+            this.guna2ComboBoxMeetings.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxMeetings.BorderRadius = 6;
+            this.guna2ComboBoxMeetings.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxMeetings.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxMeetings.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxMeetings.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxMeetings.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBoxMeetings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBoxMeetings.ItemHeight = 30;
+            this.guna2ComboBoxMeetings.Location = new System.Drawing.Point(369, 29);
+            this.guna2ComboBoxMeetings.Name = "guna2ComboBoxMeetings";
+            this.guna2ComboBoxMeetings.Size = new System.Drawing.Size(325, 36);
+            this.guna2ComboBoxMeetings.TabIndex = 6;
             // 
-            // guna2TextBox1
+            // guna2ComboBoxShift
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.guna2TextBox1.BorderRadius = 6;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(0, 25);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(694, 36);
-            this.guna2TextBox1.TabIndex = 8;
+            this.guna2ComboBoxShift.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxShift.BorderRadius = 6;
+            this.guna2ComboBoxShift.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxShift.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxShift.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxShift.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxShift.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBoxShift.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBoxShift.ItemHeight = 30;
+            this.guna2ComboBoxShift.Location = new System.Drawing.Point(0, 29);
+            this.guna2ComboBoxShift.Name = "guna2ComboBoxShift";
+            this.guna2ComboBoxShift.Size = new System.Drawing.Size(325, 36);
+            this.guna2ComboBoxShift.TabIndex = 5;
             // 
-            // labelCourseName
+            // labelNumberOfMeeting
             // 
-            this.labelCourseName.AutoSize = true;
-            this.labelCourseName.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCourseName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.labelCourseName.Location = new System.Drawing.Point(0, 0);
-            this.labelCourseName.Name = "labelCourseName";
-            this.labelCourseName.Size = new System.Drawing.Size(120, 26);
-            this.labelCourseName.TabIndex = 5;
-            this.labelCourseName.Text = "Course Name";
+            this.labelNumberOfMeeting.AutoSize = true;
+            this.labelNumberOfMeeting.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNumberOfMeeting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelNumberOfMeeting.Location = new System.Drawing.Point(369, 3);
+            this.labelNumberOfMeeting.Name = "labelNumberOfMeeting";
+            this.labelNumberOfMeeting.Size = new System.Drawing.Size(226, 26);
+            this.labelNumberOfMeeting.TabIndex = 4;
+            this.labelNumberOfMeeting.Text = "Course Number Of Meeting";
+            // 
+            // labelShift
+            // 
+            this.labelShift.AutoSize = true;
+            this.labelShift.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShift.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelShift.Location = new System.Drawing.Point(0, 0);
+            this.labelShift.Name = "labelShift";
+            this.labelShift.Size = new System.Drawing.Size(106, 26);
+            this.labelShift.TabIndex = 3;
+            this.labelShift.Text = "Course Shift";
             // 
             // guna2PanelCotent3
             // 
-            this.guna2PanelCotent3.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2PanelCotent3.Controls.Add(this.guna2DateTimePickerStart);
             this.guna2PanelCotent3.Controls.Add(this.labelPhone);
-            this.guna2PanelCotent3.Controls.Add(this.guna2TextBoxPhone);
+            this.guna2PanelCotent3.Controls.Add(this.guna2TextBoxFee);
             this.guna2PanelCotent3.Controls.Add(this.labelFullName);
             this.guna2PanelCotent3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelCotent3.Location = new System.Drawing.Point(30, 152);
             this.guna2PanelCotent3.Name = "guna2PanelCotent3";
             this.guna2PanelCotent3.Size = new System.Drawing.Size(694, 76);
             this.guna2PanelCotent3.TabIndex = 9;
+            // 
+            // guna2DateTimePickerStart
+            // 
+            this.guna2DateTimePickerStart.Checked = true;
+            this.guna2DateTimePickerStart.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePickerStart.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePickerStart.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePickerStart.Location = new System.Drawing.Point(0, 29);
+            this.guna2DateTimePickerStart.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePickerStart.MinDate = new System.DateTime(2024, 4, 21, 0, 0, 0, 0);
+            this.guna2DateTimePickerStart.Name = "guna2DateTimePickerStart";
+            this.guna2DateTimePickerStart.Size = new System.Drawing.Size(325, 36);
+            this.guna2DateTimePickerStart.TabIndex = 5;
+            this.guna2DateTimePickerStart.Value = new System.DateTime(2024, 4, 21, 0, 0, 0, 0);
+            this.guna2DateTimePickerStart.ValueChanged += new System.EventHandler(this.guna2DateTimePickerStart_ValueChanged);
             // 
             // labelPhone
             // 
@@ -537,28 +618,28 @@
             this.labelPhone.TabIndex = 4;
             this.labelPhone.Text = "Course Fee";
             // 
-            // guna2TextBoxPhone
+            // guna2TextBoxFee
             // 
-            this.guna2TextBoxPhone.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.guna2TextBoxPhone.BorderRadius = 6;
-            this.guna2TextBoxPhone.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxPhone.DefaultText = "";
-            this.guna2TextBoxPhone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxPhone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxPhone.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.guna2TextBoxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxPhone.Location = new System.Drawing.Point(369, 25);
-            this.guna2TextBoxPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBoxPhone.Name = "guna2TextBoxPhone";
-            this.guna2TextBoxPhone.PasswordChar = '\0';
-            this.guna2TextBoxPhone.PlaceholderText = "";
-            this.guna2TextBoxPhone.SelectedText = "";
-            this.guna2TextBoxPhone.Size = new System.Drawing.Size(325, 36);
-            this.guna2TextBoxPhone.TabIndex = 3;
+            this.guna2TextBoxFee.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.guna2TextBoxFee.BorderRadius = 6;
+            this.guna2TextBoxFee.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxFee.DefaultText = "";
+            this.guna2TextBoxFee.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxFee.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxFee.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxFee.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxFee.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxFee.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.guna2TextBoxFee.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxFee.Location = new System.Drawing.Point(369, 29);
+            this.guna2TextBoxFee.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBoxFee.Name = "guna2TextBoxFee";
+            this.guna2TextBoxFee.PasswordChar = '\0';
+            this.guna2TextBoxFee.PlaceholderText = "";
+            this.guna2TextBoxFee.SelectedText = "";
+            this.guna2TextBoxFee.Size = new System.Drawing.Size(325, 36);
+            this.guna2TextBoxFee.TabIndex = 3;
             // 
             // labelFullName
             // 
@@ -571,55 +652,96 @@
             this.labelFullName.TabIndex = 3;
             this.labelFullName.Text = "Course Start";
             // 
-            // guna2Panel7
+            // guna2PanelContent6
             // 
-            this.guna2Panel7.Controls.Add(this.guna2ComboBox3);
-            this.guna2Panel7.Controls.Add(this.guna2ComboBox2);
-            this.guna2Panel7.Controls.Add(this.label2);
-            this.guna2Panel7.Controls.Add(this.label3);
-            this.guna2Panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel7.Location = new System.Drawing.Point(30, 228);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(694, 76);
-            this.guna2Panel7.TabIndex = 10;
+            this.guna2PanelContent6.Controls.Add(this.guna2TextBoxCourseName);
+            this.guna2PanelContent6.Controls.Add(this.labelCourseName);
+            this.guna2PanelContent6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelContent6.Location = new System.Drawing.Point(30, 76);
+            this.guna2PanelContent6.Name = "guna2PanelContent6";
+            this.guna2PanelContent6.Size = new System.Drawing.Size(694, 76);
+            this.guna2PanelContent6.TabIndex = 8;
             // 
-            // label2
+            // guna2TextBoxCourseName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.label2.Location = new System.Drawing.Point(369, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(226, 26);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Course Number Of Meeting";
+            this.guna2TextBoxCourseName.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            this.guna2TextBoxCourseName.BorderRadius = 6;
+            this.guna2TextBoxCourseName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxCourseName.DefaultText = "";
+            this.guna2TextBoxCourseName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxCourseName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxCourseName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxCourseName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxCourseName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxCourseName.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxCourseName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.guna2TextBoxCourseName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxCourseName.Location = new System.Drawing.Point(0, 29);
+            this.guna2TextBoxCourseName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBoxCourseName.Name = "guna2TextBoxCourseName";
+            this.guna2TextBoxCourseName.PasswordChar = '\0';
+            this.guna2TextBoxCourseName.PlaceholderText = "";
+            this.guna2TextBoxCourseName.SelectedText = "";
+            this.guna2TextBoxCourseName.Size = new System.Drawing.Size(694, 36);
+            this.guna2TextBoxCourseName.TabIndex = 8;
             // 
-            // label3
+            // labelCourseName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 26);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Course Shift";
+            this.labelCourseName.AutoSize = true;
+            this.labelCourseName.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCourseName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelCourseName.Location = new System.Drawing.Point(0, 0);
+            this.labelCourseName.Name = "labelCourseName";
+            this.labelCourseName.Size = new System.Drawing.Size(120, 26);
+            this.labelCourseName.TabIndex = 5;
+            this.labelCourseName.Text = "Course Name";
             // 
-            // guna2Button1
+            // guna2PanelContent5
             // 
-            this.guna2Button1.BorderRadius = 6;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(340, 45);
-            this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Save";
+            this.guna2PanelContent5.Controls.Add(this.guna2ComboBoxSubject);
+            this.guna2PanelContent5.Controls.Add(this.labelSubject);
+            this.guna2PanelContent5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelContent5.Location = new System.Drawing.Point(30, 0);
+            this.guna2PanelContent5.Name = "guna2PanelContent5";
+            this.guna2PanelContent5.Size = new System.Drawing.Size(694, 76);
+            this.guna2PanelContent5.TabIndex = 7;
+            // 
+            // guna2ComboBoxSubject
+            // 
+            this.guna2ComboBoxSubject.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBoxSubject.BorderRadius = 6;
+            this.guna2ComboBoxSubject.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBoxSubject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBoxSubject.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxSubject.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBoxSubject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ComboBoxSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBoxSubject.ItemHeight = 30;
+            this.guna2ComboBoxSubject.Location = new System.Drawing.Point(0, 29);
+            this.guna2ComboBoxSubject.Name = "guna2ComboBoxSubject";
+            this.guna2ComboBoxSubject.Size = new System.Drawing.Size(694, 36);
+            this.guna2ComboBoxSubject.TabIndex = 6;
+            // 
+            // labelSubject
+            // 
+            this.labelSubject.AutoSize = true;
+            this.labelSubject.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubject.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelSubject.Location = new System.Drawing.Point(0, 0);
+            this.labelSubject.Name = "labelSubject";
+            this.labelSubject.Size = new System.Drawing.Size(71, 26);
+            this.labelSubject.TabIndex = 5;
+            this.labelSubject.Text = "Subject";
+            // 
+            // guna2PanelBtnFooter
+            // 
+            this.guna2PanelBtnFooter.Controls.Add(this.guna2Button2);
+            this.guna2PanelBtnFooter.Controls.Add(this.guna2ButtonSave);
+            this.guna2PanelBtnFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2PanelBtnFooter.Location = new System.Drawing.Point(30, 495);
+            this.guna2PanelBtnFooter.Name = "guna2PanelBtnFooter";
+            this.guna2PanelBtnFooter.Size = new System.Drawing.Size(694, 45);
+            this.guna2PanelBtnFooter.TabIndex = 2;
             // 
             // guna2Button2
             // 
@@ -637,99 +759,38 @@
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Cancel";
             // 
-            // guna2ComboBox1
+            // guna2ButtonSave
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 6;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(0, 25);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(694, 36);
-            this.guna2ComboBox1.TabIndex = 6;
+            this.guna2ButtonSave.BorderRadius = 6;
+            this.guna2ButtonSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2ButtonSave.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonSave.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonSave.Location = new System.Drawing.Point(0, 0);
+            this.guna2ButtonSave.Name = "guna2ButtonSave";
+            this.guna2ButtonSave.Size = new System.Drawing.Size(340, 45);
+            this.guna2ButtonSave.TabIndex = 1;
+            this.guna2ButtonSave.Text = "Save";
+            this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
-            // label4
+            // guna2PanelMarginRight
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.label4.Location = new System.Drawing.Point(30, 307);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 26);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Course Description";
+            this.guna2PanelMarginRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2PanelMarginRight.Location = new System.Drawing.Point(724, 0);
+            this.guna2PanelMarginRight.Name = "guna2PanelMarginRight";
+            this.guna2PanelMarginRight.Size = new System.Drawing.Size(30, 540);
+            this.guna2PanelMarginRight.TabIndex = 1;
             // 
-            // guna2TextBox4
+            // guna2PanelMarginLeft
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
-            this.guna2TextBox4.BorderRadius = 6;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.Location = new System.Drawing.Point(30, 337);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox4.Multiline = true;
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(694, 118);
-            this.guna2TextBox4.TabIndex = 5;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(0, 25);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(325, 36);
-            this.guna2DateTimePicker1.TabIndex = 5;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 4, 20, 23, 47, 27, 149);
-            // 
-            // guna2ComboBox2
-            // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(0, 29);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(325, 36);
-            this.guna2ComboBox2.TabIndex = 5;
-            // 
-            // guna2ComboBox3
-            // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(369, 29);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.Size = new System.Drawing.Size(325, 36);
-            this.guna2ComboBox3.TabIndex = 6;
+            this.guna2PanelMarginLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2PanelMarginLeft.Location = new System.Drawing.Point(0, 0);
+            this.guna2PanelMarginLeft.Name = "guna2PanelMarginLeft";
+            this.guna2PanelMarginLeft.Size = new System.Drawing.Size(30, 540);
+            this.guna2PanelMarginLeft.TabIndex = 0;
             // 
             // FAddCourse
             // 
@@ -737,7 +798,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1294, 730);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.guna2PanelInforCover);
             this.Controls.Add(this.guna2PanelStudent);
             this.Controls.Add(this.guna2PanelEmpty2);
             this.Controls.Add(this.guna2PanelFooter);
@@ -757,17 +818,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewSearch)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).EndInit();
             this.guna2PanelFooterStudent.ResumeLayout(false);
+            this.guna2PanelInforCover.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2PanelContent5.ResumeLayout(false);
-            this.guna2PanelContent5.PerformLayout();
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel6.PerformLayout();
+            this.guna2PanelContent7.ResumeLayout(false);
+            this.guna2PanelContent7.PerformLayout();
             this.guna2PanelCotent3.ResumeLayout(false);
             this.guna2PanelCotent3.PerformLayout();
-            this.guna2Panel7.ResumeLayout(false);
-            this.guna2Panel7.PerformLayout();
+            this.guna2PanelContent6.ResumeLayout(false);
+            this.guna2PanelContent6.PerformLayout();
+            this.guna2PanelContent5.ResumeLayout(false);
+            this.guna2PanelContent5.PerformLayout();
+            this.guna2PanelBtnFooter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -788,34 +850,37 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxSearch;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewStudent;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewSearch;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentName;
         private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewImageColumn Action;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel5;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelInforFooter;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelInforCover;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelBtnFooter;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelMarginRight;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelMarginLeft;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelContent6;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxCourseName;
         private System.Windows.Forms.Label labelCourseName;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelContent5;
         private System.Windows.Forms.Label labelSubject;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Panel guna2PanelContent7;
+        private System.Windows.Forms.Label labelNumberOfMeeting;
+        private System.Windows.Forms.Label labelShift;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelCotent3;
         private System.Windows.Forms.Label labelPhone;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxPhone;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxFee;
         private System.Windows.Forms.Label labelFullName;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2Button guna2ButtonSave;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxSubject;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePickerStart;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxMeetings;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxShift;
+        private System.Windows.Forms.Label labelDescription;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Student;
+        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxTeacher;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxDescription;
     }
 }

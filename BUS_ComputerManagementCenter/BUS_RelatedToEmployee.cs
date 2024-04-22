@@ -107,6 +107,29 @@ namespace BUS_ComputerManagementCenter
             return new DTO_Teacher(dataRow);
         }
 
+        // Get student by search
+        public List<DTO_Student> GetStudentBySearch(string search)
+        {
+            List<DTO_Student> listStudent = new List<DTO_Student>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetStudentBySearch(search);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listStudent.Add(new DTO_Student(data));
+            }
+            return listStudent;
+        }
+
+        // Get teacher by search
+        public List<DTO_Teacher> GetTeachertBySearch(string search)
+        {
+            List<DTO_Teacher> listTeacher = new List<DTO_Teacher>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetTeachertBySearch(search);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listTeacher.Add(new DTO_Teacher(data));
+            }
+            return listTeacher;
+        }
 
         //--Check--//
         // Check student exist

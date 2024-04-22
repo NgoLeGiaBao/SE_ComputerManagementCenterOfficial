@@ -89,6 +89,19 @@ namespace DAO_ComputerManagementCenter
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 
+        // Get student by search
+        public DataTable GetStudentBySearch (string search)
+        {
+            string query = "USP_SearchStudentNoCase @keyword";
+            return DAO_DataProvider.Instance.ExecuteQuery (query, new object[] { search });
+        }
+
+        // Get teacher by search
+        public DataTable GetTeachertBySearch(string search)
+        {
+            string query = "USP_SearchTeacherNoCase @keyword";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search });
+        }
         // -- Add
         // Add new student
         public bool AddNewStudent(object[] parameters, string obj)
@@ -116,7 +129,7 @@ namespace DAO_ComputerManagementCenter
         // Add new course
         public bool AddNewCourse(object[] parameters)
         {
-            string query = "exec USP_NewCourseWithAutoKey @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc ";
+            string query = "exec USP_NewCourseWithAutoKey @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc , @string , @MaGiaoVien";
             return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
         }
         public bool AddNewCourseTeacherDetail(object[] parameters)
