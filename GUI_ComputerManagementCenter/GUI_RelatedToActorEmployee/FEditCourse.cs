@@ -1,7 +1,5 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
-using Guna.UI.WinForms;
-using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,19 +9,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    public partial class FAddCourse : Form
+    public partial class FEditCourse : Form
     {
-        public FAddCourse()
+        public FEditCourse()
         {
             InitializeComponent();
         }
-
         // Get shift from course start
-        public void GetShiftFromCourseStart ()
+        public void GetShiftFromCourseStart()
         {
             DataTable dt = BUS_RelatedToEmployee.Instance.GetListShift();
             string date = guna2DateTimePickerStart.Value.DayOfWeek.ToString();
@@ -60,7 +56,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             // Show data into combobox subject
             guna2ComboBoxSubject.DataSource = BUS_RelatedToEmployee.Instance.GetListSubject();
             guna2ComboBoxSubject.DisplayMember = "SubjectName";
-            
+
             // Show data into combobox shift
             GetShiftFromCourseStart();
 
@@ -73,9 +69,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
 
         // Load list teacher 
-        public void LoadListTeacher ()
+        public void LoadListTeacher()
         {
-            List<DTO_Teacher> teacherList  = BUS_RelatedToEmployee.Instance.GetListTeacher();
+            List<DTO_Teacher> teacherList = BUS_RelatedToEmployee.Instance.GetListTeacher();
             List<String> list = new List<String>();
             foreach (DTO_Teacher item in teacherList)
             {
@@ -88,7 +84,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Add new student into course
         public void AddNewStudentIntoCourse(DTO_Student item)
         {
-            
+
             Action.Image = global::GUI_ComputerManagementCenter.Properties.Resources.de;
             object[] rowValues = new object[]
             {
@@ -99,11 +95,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             };
             guna2DataGridViewStudent.Rows.Add(rowValues);
             guna2DataGridViewStudent.Rows[guna2DataGridViewStudent.Rows.Count - 1].Tag = item;
-            
+
         }
 
         // Set location for datagridviewSearch
-        public void SetDataGridViewSearch (int row)
+        public void SetDataGridViewSearch(int row)
         {
             if (row == 1)
             {
@@ -117,9 +113,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2DataGridViewSearch.Location = new System.Drawing.Point(217, 399);
             }
         }
-        
+
         // Load list student by search
-        public void LoadListStudentBySearch(string text) {
+        public void LoadListStudentBySearch(string text)
+        {
             guna2DataGridViewSearch.Rows.Clear();
             List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetStudentBySearch(text);
             foreach (DTO_Student item in list)
@@ -142,7 +139,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             SetDataGridViewSearch(guna2DataGridViewSearch.Rows.Count);
         }
 
-        
+
         // Click on datagridview student
         private void guna2DataGridViewStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -232,7 +229,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             listStudentID = listStudentID.Length > 0 ? listStudentID.Substring(0, listStudentID.Length - 1) : listStudentID;
 
 
-            if (BUS_RelatedToEmployee.Instance.AddNewCourse(new object[] { subjectID , courseName, courseStart, courseDescription, courseFee, courseShift, courseNumberOfMeeting, listStudentID ,courseTeacherByID}))
+            if (BUS_RelatedToEmployee.Instance.AddNewCourse(new object[] { subjectID, courseName, courseStart, courseDescription, courseFee, courseShift, courseNumberOfMeeting, listStudentID, courseTeacherByID }))
             {
                 MessageBox.Show("Add new course successfully");
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();

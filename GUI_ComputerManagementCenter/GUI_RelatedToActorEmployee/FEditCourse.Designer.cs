@@ -1,6 +1,6 @@
 ﻿namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
-    partial class FAddCourse
+    partial class FEditCourse
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,6 @@
             this.Action = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelInforFooter = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelInforCover = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -81,6 +80,7 @@
             this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelMarginRight = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelMarginLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelTitle.SuspendLayout();
             this.guna2PanelStudent.SuspendLayout();
@@ -156,7 +156,7 @@
             this.labelHeader.Name = "labelHeader";
             this.labelHeader.Size = new System.Drawing.Size(1294, 40);
             this.labelHeader.TabIndex = 0;
-            this.labelHeader.Text = "ADD NEW COURSE";
+            this.labelHeader.Text = "EDIT A COURSE";
             this.labelHeader.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PanelFooter
@@ -332,7 +332,6 @@
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewStudent_CellContentClick);
             // 
             // StudentID
             // 
@@ -384,29 +383,6 @@
             this.guna2PanelInforFooter.Size = new System.Drawing.Size(751, 46);
             this.guna2PanelInforFooter.TabIndex = 7;
             // 
-            // guna2TextBoxSearch
-            // 
-            this.guna2TextBoxSearch.BorderRadius = 6;
-            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxSearch.DefaultText = "";
-            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
-            this.guna2TextBoxSearch.Location = new System.Drawing.Point(217, 0);
-            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
-            this.guna2TextBoxSearch.PasswordChar = '\0';
-            this.guna2TextBoxSearch.PlaceholderText = "";
-            this.guna2TextBoxSearch.SelectedText = "";
-            this.guna2TextBoxSearch.Size = new System.Drawing.Size(323, 45);
-            this.guna2TextBoxSearch.TabIndex = 1;
-            this.guna2TextBoxSearch.IconRightClick += new System.EventHandler(this.guna2TextBoxSearch_IconRightClick);
-            // 
             // guna2ButtonAdd
             // 
             this.guna2ButtonAdd.BorderRadius = 6;
@@ -422,7 +398,6 @@
             this.guna2ButtonAdd.Size = new System.Drawing.Size(180, 45);
             this.guna2ButtonAdd.TabIndex = 0;
             this.guna2ButtonAdd.Text = "Add";
-            this.guna2ButtonAdd.Click += new System.EventHandler(this.guna2ButtonAdd_Click);
             // 
             // guna2PanelInforCover
             // 
@@ -605,7 +580,6 @@
             this.guna2DateTimePickerStart.Size = new System.Drawing.Size(325, 36);
             this.guna2DateTimePickerStart.TabIndex = 5;
             this.guna2DateTimePickerStart.Value = new System.DateTime(2024, 4, 23, 0, 0, 0, 0);
-            this.guna2DateTimePickerStart.ValueChanged += new System.EventHandler(this.guna2DateTimePickerStart_ValueChanged);
             // 
             // labelPhone
             // 
@@ -774,7 +748,6 @@
             this.guna2ButtonSave.Size = new System.Drawing.Size(340, 45);
             this.guna2ButtonSave.TabIndex = 1;
             this.guna2ButtonSave.Text = "Save";
-            this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
             // guna2PanelMarginRight
             // 
@@ -792,7 +765,29 @@
             this.guna2PanelMarginLeft.Size = new System.Drawing.Size(30, 540);
             this.guna2PanelMarginLeft.TabIndex = 0;
             // 
-            // FAddCourse
+            // guna2TextBoxSearch
+            // 
+            this.guna2TextBoxSearch.BorderRadius = 6;
+            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxSearch.DefaultText = "";
+            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
+            this.guna2TextBoxSearch.Location = new System.Drawing.Point(217, 0);
+            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
+            this.guna2TextBoxSearch.PasswordChar = '\0';
+            this.guna2TextBoxSearch.PlaceholderText = "";
+            this.guna2TextBoxSearch.SelectedText = "";
+            this.guna2TextBoxSearch.Size = new System.Drawing.Size(323, 45);
+            this.guna2TextBoxSearch.TabIndex = 1;
+            // 
+            // FEditCourse
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -808,10 +803,9 @@
             this.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Name = "FAddCourse";
+            this.Name = "FEditCourse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FAddCourse";
-            this.Load += new System.EventHandler(this.FAddCourse_Load);
             this.guna2PanelNav.ResumeLayout(false);
             this.guna2PanelTitle.ResumeLayout(false);
             this.guna2PanelStudent.ResumeLayout(false);

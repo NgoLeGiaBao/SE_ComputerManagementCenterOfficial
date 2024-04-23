@@ -63,7 +63,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string page = guna2TabControlEmployee.SelectedTab.Text;
             if (page == "Course")
             {
-                MessageBox.Show("Course");
+                FAddCourse fAddCourse = new FAddCourse();
+                fAddCourse.Show();
             }
             else if (page == "Student")
             {
