@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using BUS_ComputerManagementCenter;
 using System.Windows.Forms;
 using DTO_ComputerManagementCenter;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
 {
@@ -37,8 +38,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
                 }
                 else if (username.StartsWith("GV"))
                 {
-                    // Process here
-                    //MessageBox.Show("GiaoVien");
+                    
+                    FTeacher fTeacher = new FTeacher();
+                    fTeacher.Show();
+                    this.Hide();
                     
                 }
                 else if (username.StartsWith("NV"))

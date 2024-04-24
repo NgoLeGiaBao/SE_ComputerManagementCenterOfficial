@@ -45,6 +45,7 @@
     <Compile Include="DAO_RelatedToEmployee.cs" />
     <Compile Include="DAO_RelatedToStudent.cs" />
     <Compile Include="DAO_RelatedToLogin.cs" />
+    <Compile Include="DAO_RelatedToTeacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

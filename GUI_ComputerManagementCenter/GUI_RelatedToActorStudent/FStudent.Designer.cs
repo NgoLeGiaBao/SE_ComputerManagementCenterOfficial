@@ -32,11 +32,11 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TabControlStudent = new Guna.UI2.WinForms.Guna2TabControl();
-            this.tabPageCourse = new System.Windows.Forms.TabPage();
-            this.tabPageResult = new System.Windows.Forms.TabPage();
-            this.tabPageAccount = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPageAccount = new System.Windows.Forms.TabPage();
+            this.tabPageResult = new System.Windows.Forms.TabPage();
+            this.tabPageCourse = new System.Windows.Forms.TabPage();
+            this.guna2TabControlStudent = new Guna.UI2.WinForms.Guna2TabControl();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).BeginInit();
@@ -91,6 +91,49 @@
             this.guna2PictureBoxLogo.TabIndex = 0;
             this.guna2PictureBoxLogo.TabStop = false;
             // 
+            // tabPage1
+            // 
+            this.tabPage1.Location = new System.Drawing.Point(184, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPage1.TabIndex = 3;
+            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.UseWaitCursor = true;
+            // 
+            // tabPageAccount
+            // 
+            this.tabPageAccount.Location = new System.Drawing.Point(184, 4);
+            this.tabPageAccount.Name = "tabPageAccount";
+            this.tabPageAccount.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageAccount.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageAccount.TabIndex = 2;
+            this.tabPageAccount.Text = "Account";
+            this.tabPageAccount.UseVisualStyleBackColor = true;
+            this.tabPageAccount.UseWaitCursor = true;
+            // 
+            // tabPageResult
+            // 
+            this.tabPageResult.Location = new System.Drawing.Point(184, 4);
+            this.tabPageResult.Name = "tabPageResult";
+            this.tabPageResult.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageResult.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageResult.TabIndex = 1;
+            this.tabPageResult.Text = "Result";
+            this.tabPageResult.UseVisualStyleBackColor = true;
+            this.tabPageResult.UseWaitCursor = true;
+            // 
+            // tabPageCourse
+            // 
+            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
+            this.tabPageCourse.Name = "tabPageCourse";
+            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCourse.Size = new System.Drawing.Size(1754, 1074);
+            this.tabPageCourse.TabIndex = 0;
+            this.tabPageCourse.Text = "Course";
+            this.tabPageCourse.UseVisualStyleBackColor = true;
+            this.tabPageCourse.UseWaitCursor = true;
+            // 
             // guna2TabControlStudent
             // 
             this.guna2TabControlStudent.Alignment = System.Windows.Forms.TabAlignment.Left;
@@ -125,49 +168,6 @@
             this.guna2TabControlStudent.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2TabControlStudent.UseWaitCursor = true;
             // 
-            // tabPageCourse
-            // 
-            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
-            this.tabPageCourse.Name = "tabPageCourse";
-            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCourse.Size = new System.Drawing.Size(1754, 1074);
-            this.tabPageCourse.TabIndex = 0;
-            this.tabPageCourse.Text = "Course";
-            this.tabPageCourse.UseVisualStyleBackColor = true;
-            this.tabPageCourse.UseWaitCursor = true;
-            // 
-            // tabPageResult
-            // 
-            this.tabPageResult.Location = new System.Drawing.Point(184, 4);
-            this.tabPageResult.Name = "tabPageResult";
-            this.tabPageResult.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageResult.Size = new System.Drawing.Size(1754, 1074);
-            this.tabPageResult.TabIndex = 1;
-            this.tabPageResult.Text = "Result";
-            this.tabPageResult.UseVisualStyleBackColor = true;
-            this.tabPageResult.UseWaitCursor = true;
-            // 
-            // tabPageAccount
-            // 
-            this.tabPageAccount.Location = new System.Drawing.Point(184, 4);
-            this.tabPageAccount.Name = "tabPageAccount";
-            this.tabPageAccount.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAccount.Size = new System.Drawing.Size(1754, 1074);
-            this.tabPageAccount.TabIndex = 2;
-            this.tabPageAccount.Text = "Account";
-            this.tabPageAccount.UseVisualStyleBackColor = true;
-            this.tabPageAccount.UseWaitCursor = true;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(184, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1754, 1074);
-            this.tabPage1.TabIndex = 3;
-            this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.UseWaitCursor = true;
-            // 
             // FStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -192,12 +192,12 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2PanelControl;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelLogo;
-        private Guna.UI2.WinForms.Guna2TabControl guna2TabControlStudent;
-        private System.Windows.Forms.TabPage tabPageCourse;
-        private System.Windows.Forms.TabPage tabPageResult;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxLogo;
-        private System.Windows.Forms.TabPage tabPageAccount;
-        private System.Windows.Forms.TabPage tabPage1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPageAccount;
+        private System.Windows.Forms.TabPage tabPageResult;
+        private System.Windows.Forms.TabPage tabPageCourse;
+        private Guna.UI2.WinForms.Guna2TabControl guna2TabControlStudent;
     }
 }

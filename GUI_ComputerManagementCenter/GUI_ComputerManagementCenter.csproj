@@ -125,6 +125,12 @@
     <Compile Include="GUI_RelatedToActorStudent\FStudent.Designer.cs">
       <DependentUpon>FStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_RelatedToActorTeacher\FCourseDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToActorTeacher\FCourseDetail.Designer.cs">
+      <DependentUpon>FCourseDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_RelatedToActorTeacher\FTeacher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToActorStudent\FStudent.resx">
       <DependentUpon>FStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RelatedToActorTeacher\FCourseDetail.resx">
+      <DependentUpon>FCourseDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToActorTeacher\FTeacher.resx">
       <DependentUpon>FTeacher.cs</DependentUpon>
@@ -269,6 +278,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\att1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,6 +18,7 @@ namespace DTO_ComputerManagementCenter
         private string courseInfor;
         private int courseFee;
         private int courseStatus;
+        private static DTO_Course courseChoosen;
 
 
         // Constructor with full paramenters
@@ -54,5 +55,6 @@ namespace DTO_ComputerManagementCenter
         public string CourseInfor { get => courseInfor; set => courseInfor = value; }
         public int CourseFee { get => courseFee; set => courseFee = value; }
         public int CourseStatus { get => courseStatus; set => courseStatus = value; }
+        public static DTO_Course CourseChoosen { get => courseChoosen; set => courseChoosen = value; }
     }
 }

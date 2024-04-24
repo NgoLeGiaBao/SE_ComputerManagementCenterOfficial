@@ -98,7 +98,7 @@
             // guna2ButtonLogin
             // 
             this.guna2ButtonLogin.AutoRoundedCorners = true;
-            this.guna2ButtonLogin.BorderRadius = 17;
+            this.guna2ButtonLogin.BorderRadius = 22;
             this.guna2ButtonLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2ButtonLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2ButtonLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -123,7 +123,7 @@
             this.guna2TextBoxPassword.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.guna2TextBoxPassword.BorderThickness = 2;
             this.guna2TextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxPassword.DefaultText = "1357911";
+            this.guna2TextBoxPassword.DefaultText = "123456";
             this.guna2TextBoxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -148,7 +148,7 @@
             this.guna2TextBoxUserName.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.guna2TextBoxUserName.BorderThickness = 2;
             this.guna2TextBoxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxUserName.DefaultText = "NV001";
+            this.guna2TextBoxUserName.DefaultText = "GV001";
             this.guna2TextBoxUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

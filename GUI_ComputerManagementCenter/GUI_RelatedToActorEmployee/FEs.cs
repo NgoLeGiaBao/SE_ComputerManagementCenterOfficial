@@ -197,8 +197,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonEditStudent_Click(object sender, EventArgs e)
         {
            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
-            MessageBox.Show(DTO_Student.PersonChoosen.FullName);
-            FEditStudent fEditStudent = new FEditStudent();
+           MessageBox.Show(DTO_Student.PersonChoosen.FullName);
+           FEditStudent fEditStudent = new FEditStudent();
            fEditStudent.Show();
             
         }
@@ -390,7 +390,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
-            MessageBox.Show(course.CourseID.ToString());
+            FEditCourse fEditCourse = new FEditCourse();
+            fEditCourse.Show();
         }
 
 

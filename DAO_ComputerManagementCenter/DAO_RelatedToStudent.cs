@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DAO_ComputerManagementCenter
 {
-    internal class DAO_RelatedToStudent
+    public class DAO_RelatedToStudent
     {
+        private static DAO_RelatedToStudent instance;
+        public static DAO_RelatedToStudent Instance
+        {
+            get { if (instance == null) instance = new DAO_RelatedToStudent(); return instance; }
+            private set { instance = value; }
+        }
     }
 }
