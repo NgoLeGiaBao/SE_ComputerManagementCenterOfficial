@@ -14,7 +14,7 @@ namespace DTO_ComputerManagementCenter
         private DateTime startDay;
         private DateTime endDay;
         private string courseID;
-        private DTO_Meeting meetingChoosen;
+        private static DTO_Meeting meetingChoosen;
 
         public DTO_Meeting (string meetingId, string roomID, DateTime startDay, DateTime endDay, string courseID)
         {
@@ -38,7 +38,7 @@ namespace DTO_ComputerManagementCenter
         public DateTime StartDay { get => startDay; set => startDay = value; }
         public DateTime EndDay { get => endDay; set => endDay = value; }
         public string CourseID { get => courseID; set => courseID = value; }
-        public DTO_Meeting MeetingChoosen { get => meetingChoosen; set => meetingChoosen = value; }
+        public static DTO_Meeting MeetingChoosen { get => meetingChoosen; set => meetingChoosen = value; }
         public string RoomID { get => roomID; set => roomID = value; }
     }
 }
