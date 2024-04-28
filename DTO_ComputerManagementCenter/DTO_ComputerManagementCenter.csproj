@@ -44,6 +44,7 @@
     <Compile Include="DTO_Course.cs" />
     <Compile Include="DTO_CourseStudentDetail.cs" />
     <Compile Include="DTO_Meeting.cs" />
+    <Compile Include="DTO_MeetingDetail.cs" />
     <Compile Include="DTO_Person.cs" />
     <Compile Include="DTO_Student.cs" />
     <Compile Include="DTO_Subject.cs" />

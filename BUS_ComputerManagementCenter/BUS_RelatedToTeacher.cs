@@ -56,12 +56,31 @@ namespace BUS_ComputerManagementCenter
         {
             return new DTO_Meeting(DAO_RelatedToTeacher.Instance.GetMeetingByMeetingID(meetingID).Rows[0]);
         }
+        //-- Get list meeting detail by meeting id
+        public List<DTO_MeetingDetail> GetListMeetingDetailByMeetingID(string meetingID)
+        {
+            List<DTO_MeetingDetail> listMeetingDetail = new List<DTO_MeetingDetail> ();
+            DataTable dataTable = DAO_RelatedToTeacher.Instance.GetListMeetingDetailByMeetingID(meetingID);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listMeetingDetail.Add(new DTO_MeetingDetail(new DTO_Meeting(data), new DTO_Student(data), data["TrangThaiDiemDanh"].ToString()));
+            }
+            return listMeetingDetail;
+        }
 
         //-- Update point into Course Student Detail
         public int UpdatePointIntoCourseStudentDetail (string courseID, string studentID, string point)
         {
             return DAO_RelatedToTeacher.Instance.UpdatePointIntoCourseStudentDetail(courseID, studentID, point);    
         }
+        //-- Update attendance into Detail Meeting
+        public void UpdateAttendanceIntoDetailMeeting(List<string> listStudentID, List<string> listAttendance, string courseID)
+        {
+            for (int i = 0; i < listStudentID.Count; i++)
+            {
+                DAO_RelatedToTeacher.Instance.UpdateAttendanceIntoDetailMeeting(listStudentID[i], listAttendance[i], courseID);
+            }
 
+        }
     }
 }

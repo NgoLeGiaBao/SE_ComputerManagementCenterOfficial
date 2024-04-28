@@ -10,17 +10,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls.Primitives;
 using System.Windows.Forms;
+using System.Windows.Markup;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 {
     public partial class FCourseDetail : Form
     {
+        private List<TabPage> tabs;
         public FCourseDetail()
         {
             InitializeComponent();
         }
-
         private void FCourseDetail_Load(object sender, EventArgs e)
         {
             LoadMeetings();
@@ -65,7 +67,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 };
                 guna2DataGridViewPoint.Rows.Add(rowValues);
             }
-            //guna2TabControlCourseDetail.TabPages.Remove(tabPageAttendance);
         }
 
         // Change value in column point
@@ -118,12 +119,43 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             {
                 DataGridViewRow selectedRow = guna2DataGridViewSchedule.SelectedRows[0];
                 DTO_Meeting.MeetingChoosen = BUS_RelatedToTeacher.Instance.GetMeetingByMeetingID(selectedRow.Cells["MeetingIDSCH"].Value.ToString());
-                
-                guna2TabControlCourseDetail.TabPages.Add(tabPageAttendance);
                 guna2TabControlCourseDetail.SelectedTab = tabPageAttendance;
-                MessageBox.Show(DTO_Meeting.MeetingChoosen.MeetingId);
+                LoadListDetailMeeting();
             }
+        }
+        // Load list list student by meeting
+        public void LoadListDetailMeeting()
+        {
+            int i = 1;
+            StatusAtt.DataSource = new List<string> {"C", "A", "V" };
+            
+            List<DTO_MeetingDetail> list = BUS_RelatedToTeacher.Instance.GetListMeetingDetailByMeetingID(DTO_Meeting.MeetingChoosen.MeetingId);
+            foreach (DTO_MeetingDetail item in list )
+            {
+                object[] rowValues = new object[]
+                {
+                    i++,
+                    item.Student.Id,
+                    item.Student.FullName,
+                    item.Student.Sex,
+                    
+                };
+                guna2DataGridViewAttendance.Rows.Add(rowValues);
+            }
+        }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            List<string> listStudentID = new List<string>();
+            List<string> listAttendance = new List<string>();
+            foreach (DataGridViewRow row in guna2DataGridViewAttendance.Rows)
+            {
+                listStudentID.Add(row.Cells[1].Value?.ToString());
+                listAttendance.Add(row.Cells[4].Value?.ToString());               
+            }
+            MessageBox.Show(DTO_Meeting.MeetingChoosen.MeetingId);
+            BUS_RelatedToTeacher.Instance.UpdateAttendanceIntoDetailMeeting(listStudentID, listAttendance, DTO_Meeting.MeetingChoosen.MeetingId);
+            MessageBox.Show("Succ");
         }
     }
 }
