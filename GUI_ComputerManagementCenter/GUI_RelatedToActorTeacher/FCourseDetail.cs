@@ -18,7 +18,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 {
     public partial class FCourseDetail : Form
     {
-        private List<TabPage> tabs;
         public FCourseDetail()
         {
             InitializeComponent();
@@ -31,7 +30,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 
         public void LoadMeetings()
         {
-            labelTitleSchedule.Text = "SCHEDULE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper();
+            labelTitleSchedule.Text = "SCHEDULE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
             List<DTO_Meeting> list = BUS_RelatedToTeacher.Instance.GetMeetingFromCourseID(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
             Attandance.Image = global::GUI_ComputerManagementCenter.Properties.Resources.de;
@@ -52,7 +51,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         // Load List Point
         public void LoadListPoint()
         {
-            labelPointTitle.Text = DTO_Course.CourseChoosen.CourseName.ToUpper() + "\n" + "GRADE SHEET";
+            labelPointTitle.Text = DTO_Course.CourseChoosen.CourseName.ToUpper() + "COURSE" + "\n" + " GRADE SHEET";
             List<DTO_CourseStudentDetail> list = BUS_RelatedToTeacher.Instance.GetListCourseStudentDetail(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
             foreach (DTO_CourseStudentDetail item in list)
@@ -108,7 +107,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             {
                 BUS_RelatedToTeacher.Instance.UpdatePointIntoCourseStudentDetail(DTO_Course.CourseChoosen.CourseID, item.Student.Id, (points[i++] == "") ? "-1" : points[i - 1]);
             }
-            MessageBox.Show("Save Point Successfully");
+            MessageBox.Show("Save Grade Sheet Successfully");
             
         }
 
@@ -126,6 +125,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         // Load list list student by meeting
         public void LoadListDetailMeeting()
         {
+            labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
             int i = 1;
             StatusAtt.DataSource = new List<string> {"C", "A", "V" };
             
@@ -144,18 +144,25 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
+        private void guna2ButtonSaveAttendance_Click(object sender, EventArgs e)
         {
             List<string> listStudentID = new List<string>();
             List<string> listAttendance = new List<string>();
             foreach (DataGridViewRow row in guna2DataGridViewAttendance.Rows)
             {
                 listStudentID.Add(row.Cells[1].Value?.ToString());
-                listAttendance.Add(row.Cells[4].Value?.ToString());               
+                listAttendance.Add(row.Cells[4].Value != null ? row.Cells[4].Value.ToString() : "C");
             }
-            MessageBox.Show(DTO_Meeting.MeetingChoosen.MeetingId);
             BUS_RelatedToTeacher.Instance.UpdateAttendanceIntoDetailMeeting(listStudentID, listAttendance, DTO_Meeting.MeetingChoosen.MeetingId);
-            MessageBox.Show("Succ");
+            MessageBox.Show("Attendance is successfully");
+
+        }
+
+        private void guna2ControlBoxClose_Click(object sender, EventArgs e)
+        {
+            Form fBackGround = Application.OpenForms["FBackGround"];
+            fBackGround?.Hide();
+
         }
     }
 }

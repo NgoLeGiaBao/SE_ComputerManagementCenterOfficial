@@ -31,7 +31,7 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FAddStudent());
             //Application.Run(new FStudent());
             //Application.Run(new FAddCourse());
-
+            //Application.Run(new FBackGround()); 
             //Application.Run(new FTeacher());
             //Application.Run(new FCourseDetail());
         }

@@ -36,9 +36,9 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TabControlTeacher = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelSmall.SuspendLayout();
             this.guna2PanelCoverLogo.SuspendLayout();
@@ -165,6 +165,13 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanelCourse
+            // 
+            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
+            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
+            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
+            this.flowLayoutPanelCourse.TabIndex = 1;
+            // 
             // tabPage2
             // 
             this.tabPage2.Location = new System.Drawing.Point(184, 4);
@@ -184,13 +191,6 @@
             this.tabPage4.TabIndex = 2;
             this.tabPage4.Text = "tabPage4";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanelCourse
-            // 
-            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
-            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
-            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
-            this.flowLayoutPanelCourse.TabIndex = 1;
             // 
             // FTeacher
             // 
