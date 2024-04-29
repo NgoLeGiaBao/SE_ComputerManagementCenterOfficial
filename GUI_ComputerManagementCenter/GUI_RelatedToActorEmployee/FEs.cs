@@ -537,5 +537,81 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 
             }
         }
+
+        private void guna2ButtonSavePDFTeacher_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Create a SaveFileDialog instance
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+                saveFileDialog.Title = "Save Data as PDF";
+
+                // Show the dialog and check for user confirmation
+                if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+
+                    // Create and use the file stream within a using block for proper resource management
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None))
+                    {
+                        // Create a new PDF document with desired margins and orientation
+                        Rectangle pageSize = new Rectangle(800, 600); // Example: 800 points width, 600 points height
+                        Document document = new Document(pageSize, 20f, 20f, 10f, 10f);
+                        PdfWriter.GetInstance(document, fs);
+
+                        document.Open();
+
+                        // Add a header with bold font, centered alignment, custom font family, and larger font size
+                        Paragraph header = new Paragraph("LIST TEACHER IN MANGEMENT COUMPUTER CENTER \n ", FontFactory.GetFont("Times New Roman", 18 + "", Font.Italic));
+                        header.Alignment = Element.ALIGN_CENTER;
+                        document.Add(header);
+
+                        // Add a table with alternating row colors, centered content, and different column widths
+                        PdfPTable table = new PdfPTable(9); // Adjust the number of columns based on your data
+                        table.WidthPercentage = 100f;
+
+                        // Set column widths
+                        float[] columnWidths = new float[] { 110f, 100f, 50f, 70f, 65f, 80f, 80f, 150f ,70f}; // Adjust widths as needed
+                        table.SetWidths(columnWidths);
+
+                        // Add table header row with background color, bold font, and centered alignment
+                        for (int i = 0; i < guna2DataGridViewTeacher.Columns.Count; i++)
+                        {
+                            PdfPCell cell = new PdfPCell(new Phrase(guna2DataGridViewTeacher.Columns[i].HeaderText));
+                            cell.BackgroundColor = BaseColor.LIGHT_GRAY;
+                            cell.HorizontalAlignment = Element.ALIGN_CENTER;
+                            //cell.Font = FontFactory.GetFont("Times New Roman", 12, Font.BOLD);
+                            cell.FixedHeight = 20f;
+                            table.AddCell(cell);
+                        }
+
+                        // Add table data rows with alternating colors and centered content
+                        for (int i = 0; i < guna2DataGridViewTeacher.Rows.Count; i++)
+                        {
+                            if (guna2DataGridViewTeacher.Rows[i].IsNewRow) continue;
+
+                            for (int j = 0; j < guna2DataGridViewTeacher.Columns.Count; j++)
+                            {
+                                PdfPCell cell = new PdfPCell(new Phrase(guna2DataGridViewTeacher.Rows[i].Cells[j].Value?.ToString()));
+                                cell.HorizontalAlignment = Element.ALIGN_CENTER;
+                                cell.FixedHeight = 20f;
+                                table.AddCell(cell);
+                            }
+                        }
+                        // Add the table to the document
+                        document.Add(table);
+                        document.Close();
+                        // Show success message with custom icon
+                        MessageBox.Show("Data exported to PDF successfully!", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle potential exceptions during PDF creation
+                MessageBox.Show("Error exporting data to PDF: " + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -68,7 +68,6 @@
             this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelHeader.SuspendLayout();
             this.guna2PanelContent2.SuspendLayout();
@@ -610,22 +609,12 @@
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 629);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(760, 30);
-            this.guna2Panel2.TabIndex = 11;
-            // 
             // FEditTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(760, 659);
-            this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2PanelFooter);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PanelContent7);
@@ -703,6 +692,5 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

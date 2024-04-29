@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -52,6 +53,7 @@
             this.Action = new System.Windows.Forms.DataGridViewImageColumn();
             this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelInforFooter = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelInforCover = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -80,7 +82,7 @@
             this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelMarginRight = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelMarginLeft = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2ElipseEditCours = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelTitle.SuspendLayout();
             this.guna2PanelStudent.SuspendLayout();
@@ -382,6 +384,28 @@
             this.guna2PanelInforFooter.Name = "guna2PanelInforFooter";
             this.guna2PanelInforFooter.Size = new System.Drawing.Size(751, 46);
             this.guna2PanelInforFooter.TabIndex = 7;
+            // 
+            // guna2TextBoxSearch
+            // 
+            this.guna2TextBoxSearch.BorderRadius = 6;
+            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxSearch.DefaultText = "";
+            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
+            this.guna2TextBoxSearch.Location = new System.Drawing.Point(217, 0);
+            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
+            this.guna2TextBoxSearch.PasswordChar = '\0';
+            this.guna2TextBoxSearch.PlaceholderText = "";
+            this.guna2TextBoxSearch.SelectedText = "";
+            this.guna2TextBoxSearch.Size = new System.Drawing.Size(323, 45);
+            this.guna2TextBoxSearch.TabIndex = 1;
             // 
             // guna2ButtonAdd
             // 
@@ -765,27 +789,9 @@
             this.guna2PanelMarginLeft.Size = new System.Drawing.Size(30, 540);
             this.guna2PanelMarginLeft.TabIndex = 0;
             // 
-            // guna2TextBoxSearch
+            // guna2ElipseEditCours
             // 
-            this.guna2TextBoxSearch.BorderRadius = 6;
-            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxSearch.DefaultText = "";
-            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
-            this.guna2TextBoxSearch.Location = new System.Drawing.Point(217, 0);
-            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
-            this.guna2TextBoxSearch.PasswordChar = '\0';
-            this.guna2TextBoxSearch.PlaceholderText = "";
-            this.guna2TextBoxSearch.SelectedText = "";
-            this.guna2TextBoxSearch.Size = new System.Drawing.Size(323, 45);
-            this.guna2TextBoxSearch.TabIndex = 1;
+            this.guna2ElipseEditCours.TargetControl = this;
             // 
             // FEditCourse
             // 
@@ -876,5 +882,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Student;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxTeacher;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxDescription;
+        private Guna.UI2.WinForms.Guna2Elipse guna2ElipseEditCours;
     }
 }

@@ -36,7 +36,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PanelNav = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBoxMinimized = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelEmpty1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelTitle = new Guna.UI2.WinForms.Guna2Panel();
@@ -98,7 +97,6 @@
             // 
             // guna2PanelNav
             // 
-            this.guna2PanelNav.Controls.Add(this.guna2ControlBoxMinimized);
             this.guna2PanelNav.Controls.Add(this.guna2ControlBoxClose);
             this.guna2PanelNav.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2PanelNav.Dock = System.Windows.Forms.DockStyle.Top;
@@ -107,17 +105,6 @@
             this.guna2PanelNav.Name = "guna2PanelNav";
             this.guna2PanelNav.Size = new System.Drawing.Size(1294, 30);
             this.guna2PanelNav.TabIndex = 0;
-            // 
-            // guna2ControlBoxMinimized
-            // 
-            this.guna2ControlBoxMinimized.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBoxMinimized.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2ControlBoxMinimized.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.guna2ControlBoxMinimized.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBoxMinimized.Location = new System.Drawing.Point(1174, 0);
-            this.guna2ControlBoxMinimized.Name = "guna2ControlBoxMinimized";
-            this.guna2ControlBoxMinimized.Size = new System.Drawing.Size(60, 30);
-            this.guna2ControlBoxMinimized.TabIndex = 2;
             // 
             // guna2ControlBoxClose
             // 
@@ -268,7 +255,7 @@
             this.guna2DataGridViewStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -283,9 +270,9 @@
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(146)))), ((int)(((byte)(154)))), ((int)(((byte)(171)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(5)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.guna2DataGridViewStudent.DefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridViewStudent.Dock = System.Windows.Forms.DockStyle.Right;
@@ -750,9 +737,9 @@
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2Button2.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.guna2Button2.Location = new System.Drawing.Point(354, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(340, 45);
@@ -838,7 +825,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2PanelNav;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBoxClose;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBoxMinimized;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelEmpty1;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTitle;
         private System.Windows.Forms.Label labelHeader;
