@@ -28,16 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PanelControl = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelInfor = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DataGridViewCommon = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelPersonnal = new Guna.UI2.WinForms.Guna2Panel();
             this.labelPersonalName = new System.Windows.Forms.Label();
@@ -58,22 +62,6 @@
             this.guna2ButtonEditTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonDeleteTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridViewTeacher = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tabPageStudent = new System.Windows.Forms.TabPage();
-            this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ButtonViewAndPrint = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ButtonEditStudent = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ButtonDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2DataGridViewStudent = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FullNameStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ICNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tabPageCourse = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -83,8 +71,26 @@
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AcademicLevel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPageStudent = new System.Windows.Forms.TabPage();
+            this.guna2PanelFooterStudent = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ButtonViewAndPrint = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonEditStudent = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2DataGridViewStudent = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.tabPageCourse = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
+            this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullNameStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentBirthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ICNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelQuanTity = new System.Windows.Forms.Label();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
             this.guna2PanelPersonnal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).BeginInit();
@@ -117,6 +123,8 @@
             // guna2PanelInfor
             // 
             this.guna2PanelInfor.BackColor = System.Drawing.Color.White;
+            this.guna2PanelInfor.Controls.Add(this.labelQuanTity);
+            this.guna2PanelInfor.Controls.Add(this.guna2DataGridViewCommon);
             this.guna2PanelInfor.Controls.Add(this.guna2PictureBoxScroll);
             this.guna2PanelInfor.Controls.Add(this.guna2PanelPersonnal);
             this.guna2PanelInfor.Controls.Add(this.guna2TextBoxSearch);
@@ -127,6 +135,76 @@
             this.guna2PanelInfor.Name = "guna2PanelInfor";
             this.guna2PanelInfor.Size = new System.Drawing.Size(1702, 170);
             this.guna2PanelInfor.TabIndex = 2;
+            // 
+            // guna2DataGridViewCommon
+            // 
+            dataGridViewCellStyle45.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle45;
+            this.guna2DataGridViewCommon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2DataGridViewCommon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.guna2DataGridViewCommon.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle46.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewCommon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle46;
+            this.guna2DataGridViewCommon.ColumnHeadersHeight = 50;
+            this.guna2DataGridViewCommon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewCommon.ColumnHeadersVisible = false;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewCommon.DefaultCellStyle = dataGridViewCellStyle47;
+            this.guna2DataGridViewCommon.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.Location = new System.Drawing.Point(1419, 73);
+            this.guna2DataGridViewCommon.Name = "guna2DataGridViewCommon";
+            this.guna2DataGridViewCommon.ReadOnly = true;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewCommon.RowHeadersDefaultCellStyle = dataGridViewCellStyle48;
+            this.guna2DataGridViewCommon.RowHeadersVisible = false;
+            this.guna2DataGridViewCommon.RowHeadersWidth = 51;
+            this.guna2DataGridViewCommon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.guna2DataGridViewCommon.RowTemplate.Height = 40;
+            this.guna2DataGridViewCommon.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.guna2DataGridViewCommon.Size = new System.Drawing.Size(226, 97);
+            this.guna2DataGridViewCommon.TabIndex = 0;
+            this.guna2DataGridViewCommon.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridViewCommon.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewCommon.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewCommon.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewCommon.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewCommon.ThemeStyle.HeaderStyle.Height = 50;
+            this.guna2DataGridViewCommon.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.Height = 40;
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewCommon.Visible = false;
+            this.guna2DataGridViewCommon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewCommon_CellContentClick);
             // 
             // guna2PictureBoxScroll
             // 
@@ -142,6 +220,7 @@
             this.guna2PictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBoxScroll.TabIndex = 3;
             this.guna2PictureBoxScroll.TabStop = false;
+            this.guna2PictureBoxScroll.Click += new System.EventHandler(this.guna2PictureBoxScroll_Click);
             // 
             // guna2PanelPersonnal
             // 
@@ -164,6 +243,7 @@
             this.labelPersonalName.TabIndex = 1;
             this.labelPersonalName.Text = "      Hi, Hoang Phuc !";
             this.labelPersonalName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelPersonalName.Click += new System.EventHandler(this.labelPersonalName_Click);
             // 
             // guna2CirclePictureBoxAvatar
             // 
@@ -177,6 +257,7 @@
             this.guna2CirclePictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBoxAvatar.TabIndex = 0;
             this.guna2CirclePictureBoxAvatar.TabStop = false;
+            this.guna2CirclePictureBoxAvatar.Click += new System.EventHandler(this.guna2CirclePictureBoxAvatar_Click);
             // 
             // guna2TextBoxSearch
             // 
@@ -322,17 +403,17 @@
             this.guna2TabControlEmployee.Size = new System.Drawing.Size(1942, 1006);
             this.guna2TabControlEmployee.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControlEmployee.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
-            this.guna2TabControlEmployee.TabButtonHoverState.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlEmployee.TabButtonHoverState.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TabControlEmployee.TabButtonHoverState.ForeColor = System.Drawing.Color.White;
             this.guna2TabControlEmployee.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(52)))), ((int)(((byte)(70)))));
             this.guna2TabControlEmployee.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControlEmployee.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
-            this.guna2TabControlEmployee.TabButtonIdleState.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlEmployee.TabButtonIdleState.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TabControlEmployee.TabButtonIdleState.ForeColor = System.Drawing.Color.White;
             this.guna2TabControlEmployee.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(42)))), ((int)(((byte)(57)))));
             this.guna2TabControlEmployee.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty;
             this.guna2TabControlEmployee.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(37)))), ((int)(((byte)(49)))));
-            this.guna2TabControlEmployee.TabButtonSelectedState.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TabControlEmployee.TabButtonSelectedState.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TabControlEmployee.TabButtonSelectedState.ForeColor = System.Drawing.Color.White;
             this.guna2TabControlEmployee.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(132)))), ((int)(((byte)(255)))));
             this.guna2TabControlEmployee.TabButtonSize = new System.Drawing.Size(180, 80);
@@ -417,17 +498,17 @@
             this.guna2DataGridViewTeacher.AllowUserToDeleteRows = false;
             this.guna2DataGridViewTeacher.AllowUserToResizeColumns = false;
             this.guna2DataGridViewTeacher.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle49.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle49;
             this.guna2DataGridViewTeacher.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle50.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle50.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle50;
             this.guna2DataGridViewTeacher.ColumnHeadersHeight = 50;
             this.guna2DataGridViewTeacher.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -440,27 +521,19 @@
             this.Email,
             this.AcademicLevel});
             this.guna2DataGridViewTeacher.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewTeacher.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle51.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle51.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle51.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewTeacher.DefaultCellStyle = dataGridViewCellStyle51;
             this.guna2DataGridViewTeacher.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewTeacher.Location = new System.Drawing.Point(56, 0);
             this.guna2DataGridViewTeacher.MultiSelect = false;
             this.guna2DataGridViewTeacher.Name = "guna2DataGridViewTeacher";
             this.guna2DataGridViewTeacher.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewTeacher.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridViewTeacher.RowHeadersVisible = false;
             this.guna2DataGridViewTeacher.RowHeadersWidth = 51;
             this.guna2DataGridViewTeacher.RowTemplate.Height = 50;
@@ -491,232 +564,6 @@
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // tabPageStudent
-            // 
-            this.tabPageStudent.Controls.Add(this.guna2PanelFooterStudent);
-            this.tabPageStudent.Controls.Add(this.guna2DataGridViewStudent);
-            this.tabPageStudent.Location = new System.Drawing.Point(184, 4);
-            this.tabPageStudent.Margin = new System.Windows.Forms.Padding(4);
-            this.tabPageStudent.Name = "tabPageStudent";
-            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPageStudent.Size = new System.Drawing.Size(1754, 998);
-            this.tabPageStudent.TabIndex = 3;
-            this.tabPageStudent.Text = "Student";
-            this.tabPageStudent.UseVisualStyleBackColor = true;
-            // 
-            // guna2PanelFooterStudent
-            // 
-            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonViewAndPrint);
-            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonEditStudent);
-            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonDeleteStudent);
-            this.guna2PanelFooterStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelFooterStudent.Location = new System.Drawing.Point(4, 894);
-            this.guna2PanelFooterStudent.Name = "guna2PanelFooterStudent";
-            this.guna2PanelFooterStudent.Size = new System.Drawing.Size(1746, 100);
-            this.guna2PanelFooterStudent.TabIndex = 1;
-            // 
-            // guna2ButtonViewAndPrint
-            // 
-            this.guna2ButtonViewAndPrint.BorderRadius = 6;
-            this.guna2ButtonViewAndPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonViewAndPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonViewAndPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonViewAndPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonViewAndPrint.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonViewAndPrint.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonViewAndPrint.Location = new System.Drawing.Point(1174, 25);
-            this.guna2ButtonViewAndPrint.Name = "guna2ButtonViewAndPrint";
-            this.guna2ButtonViewAndPrint.Size = new System.Drawing.Size(201, 45);
-            this.guna2ButtonViewAndPrint.TabIndex = 3;
-            this.guna2ButtonViewAndPrint.Text = "Export student list";
-            this.guna2ButtonViewAndPrint.Click += new System.EventHandler(this.guna2ButtonViewAndPrint_Click);
-            // 
-            // guna2ButtonEditStudent
-            // 
-            this.guna2ButtonEditStudent.BorderRadius = 6;
-            this.guna2ButtonEditStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonEditStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonEditStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonEditStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonEditStudent.FillColor = System.Drawing.SystemColors.MenuText;
-            this.guna2ButtonEditStudent.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonEditStudent.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonEditStudent.Location = new System.Drawing.Point(1381, 25);
-            this.guna2ButtonEditStudent.Name = "guna2ButtonEditStudent";
-            this.guna2ButtonEditStudent.Size = new System.Drawing.Size(180, 45);
-            this.guna2ButtonEditStudent.TabIndex = 2;
-            this.guna2ButtonEditStudent.Text = "Edit";
-            this.guna2ButtonEditStudent.Click += new System.EventHandler(this.guna2ButtonEditStudent_Click);
-            // 
-            // guna2ButtonDeleteStudent
-            // 
-            this.guna2ButtonDeleteStudent.BorderRadius = 6;
-            this.guna2ButtonDeleteStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonDeleteStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonDeleteStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonDeleteStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonDeleteStudent.FillColor = System.Drawing.Color.Red;
-            this.guna2ButtonDeleteStudent.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonDeleteStudent.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonDeleteStudent.Location = new System.Drawing.Point(1567, 25);
-            this.guna2ButtonDeleteStudent.Name = "guna2ButtonDeleteStudent";
-            this.guna2ButtonDeleteStudent.Size = new System.Drawing.Size(180, 45);
-            this.guna2ButtonDeleteStudent.TabIndex = 1;
-            this.guna2ButtonDeleteStudent.Text = "Delete";
-            this.guna2ButtonDeleteStudent.Click += new System.EventHandler(this.guna2ButtonDeleteStudent_Click);
-            // 
-            // guna2DataGridViewStudent
-            // 
-            this.guna2DataGridViewStudent.AllowUserToAddRows = false;
-            this.guna2DataGridViewStudent.AllowUserToDeleteRows = false;
-            this.guna2DataGridViewStudent.AllowUserToResizeColumns = false;
-            this.guna2DataGridViewStudent.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.guna2DataGridViewStudent.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.guna2DataGridViewStudent.ColumnHeadersHeight = 50;
-            this.guna2DataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.StudentID,
-            this.FullNameStudent,
-            this.StudentGender,
-            this.StudentBirthday,
-            this.StudentPhone,
-            this.ICNumber,
-            this.StudentAddress,
-            this.StudentEmail});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewStudent.DefaultCellStyle = dataGridViewCellStyle7;
-            this.guna2DataGridViewStudent.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.Location = new System.Drawing.Point(56, 0);
-            this.guna2DataGridViewStudent.MultiSelect = false;
-            this.guna2DataGridViewStudent.Name = "guna2DataGridViewStudent";
-            this.guna2DataGridViewStudent.ReadOnly = true;
-            this.guna2DataGridViewStudent.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridViewStudent.RowHeadersVisible = false;
-            this.guna2DataGridViewStudent.RowHeadersWidth = 51;
-            this.guna2DataGridViewStudent.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2DataGridViewStudent.RowsDefaultCellStyle = dataGridViewCellStyle8;
-            this.guna2DataGridViewStudent.RowTemplate.Height = 50;
-            this.guna2DataGridViewStudent.Size = new System.Drawing.Size(1698, 888);
-            this.guna2DataGridViewStudent.TabIndex = 0;
-            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridViewStudent.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.ThemeStyle.GridColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.Height = 50;
-            this.guna2DataGridViewStudent.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Height = 50;
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // StudentID
-            // 
-            this.StudentID.HeaderText = "ID";
-            this.StudentID.MinimumWidth = 6;
-            this.StudentID.Name = "StudentID";
-            this.StudentID.ReadOnly = true;
-            // 
-            // FullNameStudent
-            // 
-            this.FullNameStudent.HeaderText = "FullName";
-            this.FullNameStudent.MinimumWidth = 6;
-            this.FullNameStudent.Name = "FullNameStudent";
-            this.FullNameStudent.ReadOnly = true;
-            // 
-            // StudentGender
-            // 
-            this.StudentGender.HeaderText = "Gender";
-            this.StudentGender.MinimumWidth = 6;
-            this.StudentGender.Name = "StudentGender";
-            this.StudentGender.ReadOnly = true;
-            // 
-            // StudentBirthday
-            // 
-            this.StudentBirthday.HeaderText = "Birthday";
-            this.StudentBirthday.MinimumWidth = 6;
-            this.StudentBirthday.Name = "StudentBirthday";
-            this.StudentBirthday.ReadOnly = true;
-            // 
-            // StudentPhone
-            // 
-            this.StudentPhone.HeaderText = "Phone";
-            this.StudentPhone.MinimumWidth = 6;
-            this.StudentPhone.Name = "StudentPhone";
-            this.StudentPhone.ReadOnly = true;
-            // 
-            // ICNumber
-            // 
-            this.ICNumber.HeaderText = "IC Number";
-            this.ICNumber.MinimumWidth = 6;
-            this.ICNumber.Name = "ICNumber";
-            this.ICNumber.ReadOnly = true;
-            // 
-            // StudentAddress
-            // 
-            this.StudentAddress.HeaderText = "Address";
-            this.StudentAddress.MinimumWidth = 6;
-            this.StudentAddress.Name = "StudentAddress";
-            this.StudentAddress.ReadOnly = true;
-            // 
-            // StudentEmail
-            // 
-            this.StudentEmail.HeaderText = "Email";
-            this.StudentEmail.MinimumWidth = 6;
-            this.StudentEmail.Name = "StudentEmail";
-            this.StudentEmail.ReadOnly = true;
-            // 
-            // tabPageCourse
-            // 
-            this.tabPageCourse.AutoScroll = true;
-            this.tabPageCourse.Controls.Add(this.flowLayoutPanelCourse);
-            this.tabPageCourse.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
-            this.tabPageCourse.Name = "tabPageCourse";
-            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCourse.Size = new System.Drawing.Size(1754, 998);
-            this.tabPageCourse.TabIndex = 4;
-            this.tabPageCourse.Text = "Course";
-            this.tabPageCourse.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanelCourse
-            // 
-            this.flowLayoutPanelCourse.AutoScroll = true;
-            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
-            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
-            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
-            this.flowLayoutPanelCourse.TabIndex = 0;
             // 
             // ID
             // 
@@ -783,7 +630,7 @@
             // 
             // Email
             // 
-            this.Email.FillWeight = 70F;
+            this.Email.FillWeight = 80F;
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
@@ -792,12 +639,254 @@
             // 
             // AcademicLevel
             // 
-            this.AcademicLevel.FillWeight = 60F;
-            this.AcademicLevel.HeaderText = "Academic Level";
+            this.AcademicLevel.FillWeight = 30F;
+            this.AcademicLevel.HeaderText = "AC";
             this.AcademicLevel.MinimumWidth = 6;
             this.AcademicLevel.Name = "AcademicLevel";
             this.AcademicLevel.ReadOnly = true;
             this.AcademicLevel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // tabPageStudent
+            // 
+            this.tabPageStudent.Controls.Add(this.guna2PanelFooterStudent);
+            this.tabPageStudent.Controls.Add(this.guna2DataGridViewStudent);
+            this.tabPageStudent.Location = new System.Drawing.Point(184, 4);
+            this.tabPageStudent.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPageStudent.Name = "tabPageStudent";
+            this.tabPageStudent.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPageStudent.Size = new System.Drawing.Size(1754, 998);
+            this.tabPageStudent.TabIndex = 3;
+            this.tabPageStudent.Text = "Student";
+            this.tabPageStudent.UseVisualStyleBackColor = true;
+            // 
+            // guna2PanelFooterStudent
+            // 
+            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonViewAndPrint);
+            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonEditStudent);
+            this.guna2PanelFooterStudent.Controls.Add(this.guna2ButtonDeleteStudent);
+            this.guna2PanelFooterStudent.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2PanelFooterStudent.Location = new System.Drawing.Point(4, 894);
+            this.guna2PanelFooterStudent.Name = "guna2PanelFooterStudent";
+            this.guna2PanelFooterStudent.Size = new System.Drawing.Size(1746, 100);
+            this.guna2PanelFooterStudent.TabIndex = 1;
+            // 
+            // guna2ButtonViewAndPrint
+            // 
+            this.guna2ButtonViewAndPrint.BorderRadius = 6;
+            this.guna2ButtonViewAndPrint.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonViewAndPrint.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonViewAndPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonViewAndPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonViewAndPrint.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonViewAndPrint.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonViewAndPrint.Location = new System.Drawing.Point(1174, 25);
+            this.guna2ButtonViewAndPrint.Name = "guna2ButtonViewAndPrint";
+            this.guna2ButtonViewAndPrint.Size = new System.Drawing.Size(201, 45);
+            this.guna2ButtonViewAndPrint.TabIndex = 3;
+            this.guna2ButtonViewAndPrint.Text = "Save PDF";
+            this.guna2ButtonViewAndPrint.Click += new System.EventHandler(this.guna2ButtonViewAndPrint_Click);
+            // 
+            // guna2ButtonEditStudent
+            // 
+            this.guna2ButtonEditStudent.BorderRadius = 6;
+            this.guna2ButtonEditStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonEditStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonEditStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonEditStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonEditStudent.FillColor = System.Drawing.SystemColors.MenuText;
+            this.guna2ButtonEditStudent.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonEditStudent.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonEditStudent.Location = new System.Drawing.Point(1381, 25);
+            this.guna2ButtonEditStudent.Name = "guna2ButtonEditStudent";
+            this.guna2ButtonEditStudent.Size = new System.Drawing.Size(180, 45);
+            this.guna2ButtonEditStudent.TabIndex = 2;
+            this.guna2ButtonEditStudent.Text = "Edit";
+            this.guna2ButtonEditStudent.Click += new System.EventHandler(this.guna2ButtonEditStudent_Click);
+            // 
+            // guna2ButtonDeleteStudent
+            // 
+            this.guna2ButtonDeleteStudent.BorderRadius = 6;
+            this.guna2ButtonDeleteStudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonDeleteStudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonDeleteStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonDeleteStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonDeleteStudent.FillColor = System.Drawing.Color.Red;
+            this.guna2ButtonDeleteStudent.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonDeleteStudent.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonDeleteStudent.Location = new System.Drawing.Point(1567, 25);
+            this.guna2ButtonDeleteStudent.Name = "guna2ButtonDeleteStudent";
+            this.guna2ButtonDeleteStudent.Size = new System.Drawing.Size(180, 45);
+            this.guna2ButtonDeleteStudent.TabIndex = 1;
+            this.guna2ButtonDeleteStudent.Text = "Delete";
+            this.guna2ButtonDeleteStudent.Click += new System.EventHandler(this.guna2ButtonDeleteStudent_Click);
+            // 
+            // guna2DataGridViewStudent
+            // 
+            this.guna2DataGridViewStudent.AllowUserToAddRows = false;
+            this.guna2DataGridViewStudent.AllowUserToDeleteRows = false;
+            this.guna2DataGridViewStudent.AllowUserToResizeColumns = false;
+            this.guna2DataGridViewStudent.AllowUserToResizeRows = false;
+            dataGridViewCellStyle52.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle52;
+            this.guna2DataGridViewStudent.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle53.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle53;
+            this.guna2DataGridViewStudent.ColumnHeadersHeight = 50;
+            this.guna2DataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.StudentID,
+            this.FullNameStudent,
+            this.StudentGender,
+            this.StudentBirthday,
+            this.StudentPhone,
+            this.ICNumber,
+            this.StudentAddress,
+            this.StudentEmail});
+            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle54.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle54.Font = new System.Drawing.Font("Poppins", 10F);
+            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewStudent.DefaultCellStyle = dataGridViewCellStyle54;
+            this.guna2DataGridViewStudent.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.Location = new System.Drawing.Point(56, 0);
+            this.guna2DataGridViewStudent.MultiSelect = false;
+            this.guna2DataGridViewStudent.Name = "guna2DataGridViewStudent";
+            this.guna2DataGridViewStudent.ReadOnly = true;
+            this.guna2DataGridViewStudent.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewStudent.RowHeadersVisible = false;
+            this.guna2DataGridViewStudent.RowHeadersWidth = 51;
+            this.guna2DataGridViewStudent.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle55.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            this.guna2DataGridViewStudent.RowsDefaultCellStyle = dataGridViewCellStyle55;
+            this.guna2DataGridViewStudent.RowTemplate.Height = 50;
+            this.guna2DataGridViewStudent.Size = new System.Drawing.Size(1698, 888);
+            this.guna2DataGridViewStudent.TabIndex = 0;
+            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewStudent.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.guna2DataGridViewStudent.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.guna2DataGridViewStudent.ThemeStyle.HeaderStyle.Height = 50;
+            this.guna2DataGridViewStudent.ThemeStyle.ReadOnly = true;
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Height = 50;
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // tabPageCourse
+            // 
+            this.tabPageCourse.AutoScroll = true;
+            this.tabPageCourse.Controls.Add(this.flowLayoutPanelCourse);
+            this.tabPageCourse.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
+            this.tabPageCourse.Name = "tabPageCourse";
+            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCourse.Size = new System.Drawing.Size(1754, 998);
+            this.tabPageCourse.TabIndex = 4;
+            this.tabPageCourse.Text = "Course";
+            this.tabPageCourse.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanelCourse
+            // 
+            this.flowLayoutPanelCourse.AutoScroll = true;
+            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
+            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
+            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
+            this.flowLayoutPanelCourse.TabIndex = 0;
+            // 
+            // StudentID
+            // 
+            this.StudentID.FillWeight = 50F;
+            this.StudentID.HeaderText = "ID";
+            this.StudentID.MinimumWidth = 6;
+            this.StudentID.Name = "StudentID";
+            this.StudentID.ReadOnly = true;
+            // 
+            // FullNameStudent
+            // 
+            this.FullNameStudent.FillWeight = 60F;
+            this.FullNameStudent.HeaderText = "FullName";
+            this.FullNameStudent.MinimumWidth = 6;
+            this.FullNameStudent.Name = "FullNameStudent";
+            this.FullNameStudent.ReadOnly = true;
+            // 
+            // StudentGender
+            // 
+            this.StudentGender.FillWeight = 40F;
+            this.StudentGender.HeaderText = "Gender";
+            this.StudentGender.MinimumWidth = 6;
+            this.StudentGender.Name = "StudentGender";
+            this.StudentGender.ReadOnly = true;
+            // 
+            // StudentBirthday
+            // 
+            this.StudentBirthday.FillWeight = 50F;
+            this.StudentBirthday.HeaderText = "Birthday";
+            this.StudentBirthday.MinimumWidth = 6;
+            this.StudentBirthday.Name = "StudentBirthday";
+            this.StudentBirthday.ReadOnly = true;
+            // 
+            // StudentPhone
+            // 
+            this.StudentPhone.FillWeight = 55F;
+            this.StudentPhone.HeaderText = "Phone";
+            this.StudentPhone.MinimumWidth = 6;
+            this.StudentPhone.Name = "StudentPhone";
+            this.StudentPhone.ReadOnly = true;
+            // 
+            // ICNumber
+            // 
+            this.ICNumber.FillWeight = 55F;
+            this.ICNumber.HeaderText = "IC Number";
+            this.ICNumber.MinimumWidth = 6;
+            this.ICNumber.Name = "ICNumber";
+            this.ICNumber.ReadOnly = true;
+            // 
+            // StudentAddress
+            // 
+            this.StudentAddress.FillWeight = 65F;
+            this.StudentAddress.HeaderText = "Address";
+            this.StudentAddress.MinimumWidth = 6;
+            this.StudentAddress.Name = "StudentAddress";
+            this.StudentAddress.ReadOnly = true;
+            // 
+            // StudentEmail
+            // 
+            this.StudentEmail.FillWeight = 80F;
+            this.StudentEmail.HeaderText = "Email";
+            this.StudentEmail.MinimumWidth = 6;
+            this.StudentEmail.Name = "StudentEmail";
+            this.StudentEmail.ReadOnly = true;
+            // 
+            // labelQuanTity
+            // 
+            this.labelQuanTity.Font = new System.Drawing.Font("Poppins", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuanTity.Location = new System.Drawing.Point(56, 87);
+            this.labelQuanTity.Name = "labelQuanTity";
+            this.labelQuanTity.Size = new System.Drawing.Size(303, 49);
+            this.labelQuanTity.TabIndex = 4;
             // 
             // FEs
             // 
@@ -816,6 +905,7 @@
             this.Load += new System.EventHandler(this.FEs_Load);
             this.guna2PanelControl.ResumeLayout(false);
             this.guna2PanelInfor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).EndInit();
             this.guna2PanelPersonnal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).EndInit();
@@ -863,14 +953,6 @@
         //private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewStudent;
         public Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewStudent;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelFooterStudent;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FullNameStudent;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentGender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentBirthday;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ICNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StudentEmail;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewTeacher;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonDeleteStudent;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonEditStudent;
@@ -885,5 +967,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn AcademicLevel;
+        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridViewCommon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullNameStudent;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentGender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentBirthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ICNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn StudentEmail;
+        private System.Windows.Forms.Label labelQuanTity;
     }
 }

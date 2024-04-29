@@ -102,6 +102,12 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_SearchTeacherNoCase @keyword";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search });
         }
+        // Get quantity
+        public object GetQuantity (string type)
+        {
+            string query = "exec USP_Report @Type";
+            return DAO_DataProvider.Instance.ExecuteScalar (query, new object[] { type });
+        }
         // -- Add
         // Add new student
         public bool AddNewStudent(object[] parameters, string obj)

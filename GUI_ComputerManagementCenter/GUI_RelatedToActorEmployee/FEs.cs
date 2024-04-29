@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Label = System.Windows.Forms.Label;
 using Rectangle = iTextSharp.text.Rectangle;
+using System.Drawing.Printing;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -30,6 +31,17 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListTeacher();
             LoadListStudent();
             LoadListCourse();
+            LoadDataGridViewCommon();
+            
+        }
+        // Process with datagridview common
+        public void LoadDataGridViewCommon ()
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("Function", typeof(string));
+            table.Rows.Add("Change Password");
+            table.Rows.Add("Log out");
+            guna2DataGridViewCommon.DataSource = table;
         }
 
         // Selected index change
@@ -39,21 +51,31 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (page == "Course")
             {
                 guna2ButtonAdd.Text = "+ Add new course";
+                labelQuanTity.Text = "All courses (" + BUS_RelatedToEmployee.Instance.GetQuality(page)+")";
                 guna2ButtonAdd.Visible = true;
+                labelQuanTity.Visible = true;
             }
             else if (page == "Student")
             {
                 guna2ButtonAdd.Text = "+ Add new student";
+                labelQuanTity.Text = "All students (" + BUS_RelatedToEmployee.Instance.GetQuality(page) + ")";
                 guna2ButtonAdd.Visible = true;
+                labelQuanTity.Visible = true;
+
             }
             else if (page == "Teacher")
             {
                 guna2ButtonAdd.Text = "+ Add new teacher";
+                labelQuanTity.Text = "All teachers (" + BUS_RelatedToEmployee.Instance.GetQuality(page) + ")";
                 guna2ButtonAdd.Visible = true;
+                labelQuanTity.Visible = true;
+
             }
             else
             {
+                labelQuanTity.Visible = false;
                 guna2ButtonAdd.Visible = false;
+                guna2TextBoxSearch.Visible = false;
             }
         }
 
@@ -407,7 +429,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
         private void guna2ButtonViewAndPrint_Click(object sender, EventArgs e)
         {
-
             try
             {
                 // Create a SaveFileDialog instance
@@ -431,7 +452,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                         document.Open();
 
                         // Add a header with bold font, centered alignment, custom font family, and larger font size
-                        Paragraph header = new Paragraph("DANH SÁCH HỌC VIÊN", FontFactory.GetFont("Times New Roman", 18 + "", Font.Italic));
+                        Paragraph header = new Paragraph("LIST STUDENT IN MANGEMENT COUMPUTER CENTER \n ", FontFactory.GetFont("Times New Roman", 18 + "", Font.Italic));
                         header.Alignment = Element.ALIGN_CENTER;
                         document.Add(header);
 
@@ -450,12 +471,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                             cell.BackgroundColor = BaseColor.LIGHT_GRAY;
                             cell.HorizontalAlignment = Element.ALIGN_CENTER;
                             //cell.Font = FontFactory.GetFont("Times New Roman", 12, Font.BOLD);
-                            cell.FixedHeight = 50f;
+                            cell.FixedHeight = 20f;
                             table.AddCell(cell);
                         }
 
                         // Add table data rows with alternating colors and centered content
-                        bool alternateColor = false;
                         for (int i = 0; i < guna2DataGridViewStudent.Rows.Count; i++)
                         {
                             if (guna2DataGridViewStudent.Rows[i].IsNewRow) continue;
@@ -464,27 +484,13 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                             {
                                 PdfPCell cell = new PdfPCell(new Phrase(guna2DataGridViewStudent.Rows[i].Cells[j].Value?.ToString()));
                                 cell.HorizontalAlignment = Element.ALIGN_CENTER;
-                                cell.FixedHeight = 50f;
-
-                                //cell.Font = FontFactory.GetFont("Times New Roman", 10, Font.NORMAL);
-                                if (alternateColor)
-                                {
-                                    cell.BackgroundColor = BaseColor.BLUE;
-                                }
-                                else
-                                {
-                                    cell.BackgroundColor = BaseColor.WHITE;
-                                }
-                                alternateColor = !alternateColor;
+                                cell.FixedHeight = 20f;
                                 table.AddCell(cell);
                             }
                         }
-
                         // Add the table to the document
                         document.Add(table);
-
                         document.Close();
-
                         // Show success message with custom icon
                         MessageBox.Show("Data exported to PDF successfully!", "Export Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -494,6 +500,41 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 // Handle potential exceptions during PDF creation
                 MessageBox.Show("Error exporting data to PDF: " + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void guna2ButtonPrint_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2CirclePictureBoxAvatar_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+        }
+
+        private void labelPersonalName_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+
+        }
+
+        private void guna2PictureBoxScroll_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+
+        }
+
+        private void guna2DataGridViewCommon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewCell cell = guna2DataGridViewCommon.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            string cellValue = cell.Value.ToString();
+            if (cellValue == "Change Password")
+            {
+                
+            } else
+            {
+                
             }
         }
     }

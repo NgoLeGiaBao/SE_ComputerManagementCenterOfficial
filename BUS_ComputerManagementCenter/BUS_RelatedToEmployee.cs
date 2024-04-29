@@ -130,7 +130,11 @@ namespace BUS_ComputerManagementCenter
             }
             return listTeacher;
         }
-
+        // Get quantity 
+        public string GetQuality (string type)
+        {
+            return DAO_RelatedToEmployee.Instance.GetQuantity(type).ToString();
+        }
         //--Check--//
         // Check student exist
         public bool CheckExistStudentID (string id)
