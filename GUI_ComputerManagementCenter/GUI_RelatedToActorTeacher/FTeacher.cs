@@ -16,7 +16,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 {
     public partial class FTeacher : Form
     {
-        public static int count = 0;
         public FTeacher()
         {
             InitializeComponent();
@@ -201,7 +200,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         }
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
         {
-            count++;
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
             FCourseDetail detail = new FCourseDetail(); 
             

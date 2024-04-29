@@ -26,6 +26,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         {
             LoadMeetings();
             LoadListPoint();
+            labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+
         }
 
         public void LoadMeetings()
@@ -125,10 +127,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         // Load list list student by meeting
         public void LoadListDetailMeeting()
         {
-            labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+            labelTitleAttendance.Text = "ATTENDANCE FOR " + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE AT MEETING "  + DTO_Meeting.MeetingChoosen.MeetingId.Substring(6,2);
             int i = 1;
             StatusAtt.DataSource = new List<string> {"C", "A", "V" };
-            
+            guna2DataGridViewAttendance.Rows.Clear();   
             List<DTO_MeetingDetail> list = BUS_RelatedToTeacher.Instance.GetListMeetingDetailByMeetingID(DTO_Meeting.MeetingChoosen.MeetingId);
             foreach (DTO_MeetingDetail item in list )
             {
@@ -160,9 +162,36 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)
         {
-            Form fBackGround = Application.OpenForms["FBackGround"];
-            fBackGround?.Hide();
+            Form fBackground = Application.OpenForms["FBackGround"];
+            fBackground.Hide();
+            fBackground.Close();
+            FTeacher fTeacher = new FTeacher();
+            fTeacher.ShowDialog();
+        }
 
+        private void guna2ButtonCancelAttendance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TabControlCourseDetail_Selected(object sender, TabControlEventArgs e)
+        {
+            if (DTO_Meeting.MeetingChoosen != null)
+            {
+                
+                guna2PanelMessageAttendance.Visible = false;
+            } 
+        }
+
+        private void guna2TabControlCourseDetail_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (guna2TabControlCourseDetail.SelectedIndex == 0 || guna2TabControlCourseDetail.SelectedIndex == 1 || guna2TabControlCourseDetail.SelectedIndex == 3)
+            {
+                DTO_Meeting.MeetingChoosen = null;
+                guna2PanelMessageAttendance.Visible = true;
+                labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+
+            }
         }
     }
 }
