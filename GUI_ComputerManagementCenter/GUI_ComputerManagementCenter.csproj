@@ -149,18 +149,6 @@
     <Compile Include="GUI_RelatedToLogin\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_RelatedToLogin\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_RelatedToLogin\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI_RelatedToLogin\Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_RelatedToLogin\Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI_RelatedToActorEmployee\FAddCourse.resx">
@@ -201,12 +189,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToLogin\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI_RelatedToLogin\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI_RelatedToLogin\Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

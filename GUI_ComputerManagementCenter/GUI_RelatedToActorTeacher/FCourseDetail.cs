@@ -26,6 +26,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         {
             LoadMeetings();
             LoadListPoint();
+            LoadCourseInformation();
             labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
 
         }
@@ -50,6 +51,33 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
+        // Load Course Information
+        public void LoadCourseInformation ()
+        {
+            labelCourseInformation.Text = "INFORMATION ABOUT" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper();
+            List<string> infor = BUS_RelatedToTeacher.Instance.GetCourseInformationByID(DTO_Course.CourseChoosen.CourseID);
+            int i = 0;
+            labelTeacher.Text = infor[i++];
+            labelTime.Text = infor[i++];
+            labelRoom.Text = infor[i++];
+            labelStudyTime.Text = infor[i++];
+            labelCourseIF.Text = infor[i++];
+
+            List<DTO_CourseStudentDetail> list = BUS_RelatedToTeacher.Instance.GetListCourseStudentDetail(DTO_Course.CourseChoosen.CourseID);
+            i = 1;
+            foreach (DTO_CourseStudentDetail item in list)
+            {
+                object[] rowValues = new object[]
+                {
+                    i++,
+                    item.Student.Id,
+                    item.Student.FullName,
+                    item.Student.Sex,
+                    item.Student.EmailAddress
+                };
+                guna2DataGridViewListStudentInfor.Rows.Add(rowValues);
+            }
+        }
         // Load List Point
         public void LoadListPoint()
         {
@@ -193,5 +221,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 
             }
         }
+
     }
 }

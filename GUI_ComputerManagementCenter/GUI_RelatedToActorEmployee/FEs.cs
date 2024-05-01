@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using Label = System.Windows.Forms.Label;
 using Rectangle = iTextSharp.text.Rectangle;
 using System.Drawing.Printing;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -219,10 +220,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonEditStudent_Click(object sender, EventArgs e)
         {
            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
-           MessageBox.Show(DTO_Student.PersonChoosen.FullName);
+           FBackGround fBackGround = new FBackGround();
+           fBackGround.Show();
            FEditStudent fEditStudent = new FEditStudent();
-           fEditStudent.Show();
-            
+           fEditStudent.ShowDialog();     
         }
 
         // Click Delete Student
@@ -324,7 +325,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ButtonDeleteCourse.FillColor = System.Drawing.Color.Black;
             guna2ButtonDeleteCourse.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             guna2ButtonDeleteCourse.ForeColor = System.Drawing.Color.White;
-            guna2ButtonDeleteCourse.Location = new System.Drawing.Point(141, 156);
+            guna2ButtonDeleteCourse.Location = new System.Drawing.Point(136, 156);
             guna2ButtonDeleteCourse.Name = "guna2ButtonDeleteCourse";
             guna2ButtonDeleteCourse.Size = new System.Drawing.Size(131, 41);
             guna2ButtonDeleteCourse.TabIndex = 3;
@@ -406,7 +407,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
 
             flowLayoutPanelCourse.Controls.Add(guna2PanelCourse);
-
         }
 
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)

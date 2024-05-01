@@ -37,13 +37,19 @@ namespace DAO_ComputerManagementCenter
         public DataTable GetMeetingByMeetingID (string meetingID)
         {
             string query = "exec GetMeetingFromMeetingID @MeetingID";
-            return DAO_DataProvider.Instance.ExecuteQuery(query, new Object[] {meetingID});
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] {meetingID});
         }
         //-- Get list meeting detail by meeting id
         public DataTable GetListMeetingDetailByMeetingID (string meetingID)
         {
             string query = "exec GetListMeetingDetailByMeeting @MeetingID";
-            return DAO_DataProvider.Instance.ExecuteQuery(query, new Object[] { meetingID });
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { meetingID });
+        }
+        //-- Get information course by ID
+        public DataTable GetInformationCourseByID (string courseID)
+        {
+            string query = "exec USP_GetInforCourse @CourseID";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });
         }
         //-- Update point into Course Student Detail
         public int UpdatePointIntoCourseStudentDetail(string courseID, string studentID, string point)
@@ -58,5 +64,6 @@ namespace DAO_ComputerManagementCenter
             return DAO_DataProvider.Instance.ExecuteNonQuery(query, new object[] { studentID, attendance, courseID});
 
         }
+
     }
 }

@@ -20,13 +20,13 @@ namespace GUI_ComputerManagementCenter
         {
             Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FLogin());
+            Application.Run(new FLogin());
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
             //Application.Run(new FEmployees());  
             //Application.Run(new FE());
             //Application.Run(new Fes());
-            Application.Run(new FEs());
+            //Application.Run(new FEs());
             //Application.Run(new FAddTeacher());
             //Application.Run(new FAddStudent());
             //Application.Run(new FStudent());

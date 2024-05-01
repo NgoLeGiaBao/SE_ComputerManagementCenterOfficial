@@ -71,7 +71,7 @@ namespace DAO_ComputerManagementCenter
         // Get course by ID
         public DataTable GetCourseByID(string id)
         {
-            string query = "GetCourseByID @CourseID";
+            string query = "USP_GetCourseByID @CourseID";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 

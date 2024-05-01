@@ -67,6 +67,26 @@ namespace BUS_ComputerManagementCenter
             }
             return listMeetingDetail;
         }
+        // -- Get course by ID
+        public DTO_Course GetCourseByID(string id)
+        {
+            DataRow dataRow = DAO_RelatedToEmployee.Instance.GetCourseByID(id).Rows[0];
+            return new DTO_Course(dataRow);
+        }
+        //-- Get course information by ID
+        public List<string> GetCourseInformationByID (string id)
+        {
+            DataTable dataTable = DAO_RelatedToTeacher.Instance.GetInformationCourseByID(id);
+            List<string> list = new List<string>();
+            list.Add(dataTable.Rows[0]["HoTen"].ToString());
+            DateTime ngayBatDau = (DateTime)dataTable.Rows[0]["NgayBatDau"];
+            DateTime ngayKetThuc = (DateTime)dataTable.Rows[0]["NgayKetThuc"];
+            list.Add(ngayBatDau.ToString("dd/MM/yyyy") + " - " + ngayKetThuc.ToString("dd/MM/yyyy"));
+            list.Add(dataTable.Rows[0]["TenPhongHoc"].ToString());
+            list.Add(dataTable.Rows[0]["TenCaHoc"].ToString());
+            list.Add(dataTable.Rows[0]["ThongTinKhoaHoc"].ToString());
+            return list;
+        }
 
         //-- Update point into Course Student Detail
         public int UpdatePointIntoCourseStudentDetail (string courseID, string studentID, string point)

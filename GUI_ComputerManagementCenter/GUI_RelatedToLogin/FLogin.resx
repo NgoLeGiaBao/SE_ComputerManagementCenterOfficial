@@ -142,7 +142,7 @@
     <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox1.Parent" xml:space="preserve">
-    <value>guna2Panel1</value>
+    <value>guna2PanelNav</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -169,52 +169,52 @@
     <value>Guna.UI2.WinForms.Guna2ControlBox, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox2.Parent" xml:space="preserve">
-    <value>guna2Panel1</value>
+    <value>guna2PanelNav</value>
   </data>
   <data name="&gt;&gt;guna2ControlBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="guna2Panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="guna2PanelNav.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="guna2PanelNav.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="guna2Panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="guna2PanelNav.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="guna2PanelNav.Size" type="System.Drawing.Size, System.Drawing">
     <value>528, 30</value>
   </data>
-  <data name="guna2Panel1.TabIndex" type="System.Int32, mscorlib">
+  <data name="guna2PanelNav.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;guna2Panel1.Name" xml:space="preserve">
-    <value>guna2Panel1</value>
+  <data name="&gt;&gt;guna2PanelNav.Name" xml:space="preserve">
+    <value>guna2PanelNav</value>
   </data>
-  <data name="&gt;&gt;guna2Panel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;guna2PanelNav.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261</value>
   </data>
-  <data name="&gt;&gt;guna2Panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;guna2PanelNav.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;guna2PanelNav.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Monotype Corsiva, 22.2pt, style=Bold, Italic</value>
+    <value>Poppins, 25.8000011pt, style=Bold, Italic</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 91</value>
+    <value>57, 98</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 45</value>
+    <value>429, 78</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -274,7 +274,7 @@
     <value>3, 2, 3, 2</value>
   </data>
   <data name="guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>528, 166</value>
+    <value>528, 198</value>
   </data>
   <data name="guna2Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -292,16 +292,16 @@
     <value>4</value>
   </data>
   <data name="guna2ButtonLogin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>Poppins, 13.8pt, style=Bold</value>
   </data>
   <data name="guna2ButtonLogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 426</value>
+    <value>30, 534</value>
   </data>
   <data name="guna2ButtonLogin.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
   <data name="guna2ButtonLogin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>456, 46</value>
+    <value>456, 65</value>
   </data>
   <data name="guna2ButtonLogin.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -324,14 +324,17 @@
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins, 12pt</value>
+  </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>303, 389</value>
+    <value>186, 474</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>183, 16</value>
+    <value>299, 35</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -361,13 +364,35 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>528, 518</value>
+    <value>528, 628</value>
   </data>
   <data name="guna2TextBoxPassword.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Monotype Corsiva, 12pt, style=Italic</value>
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="guna2TextBoxPassword.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAA3UlEQVQ4T5XRPQ4BQRjG8Y0gQXzcwRmoOIGWK7iAREMhKgm1aKiohShE5wIkrkDHITzPzLsy7Mzu
+        +Ce/5J2dyWyyG8TUhIFo8IFvOdjBBcbiClvgXmILWEJarXScVzBXq5gq8ISCWn3HZy8oq5WjOpz1aI17
+        NT3a48c66NEa95wfNAtDuEHXgXs8k4FI/NonmCTgmRFE2kBLj59SwoxneDbS7wVVeMBd5jDvCzqwF20+
+        kLwvyMNRcA7zvoD1hNlfF/DN5tuZ84IZrMH2/008M4VIJeiD7d+beKYIKAjebT82QJd754MAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="guna2TextBoxPassword.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABDElEQVQ4T9XSv0pCcRjG8bMkQkOLIFINLRmiNkuDbV2C0RIIdgOCkYNDQ1i7uOgVNDREEIQ1ttWS
+        bkp/TIi2qL3vczwv/A5HL8AHPvD+hvc8P4/HW8gU8TQdZ2cHbfTxE3hBCxV8QQ+JJIVrDFFFFsuBPC7x
+        Cy3HEUoanzjFEmI4xwTf6MKac3iFCvysY4Syf5qmiRus4QDWbDnCB7TrPeBYgxPdRsu7sOYS3Jygp+EO
+        DQ1OdG0127Ka1OimjnsNahrjUIcgHdi1tXyLM1j0E/SyV/0TyeAdF9iDNe9DzVrWixXNKtxEKAk8wpo3
+        sAL9jduo4Q1XSCISLVnzFgb4g/shFTA3z9DyQsXz/gFK8zt//brZBQAAAABJRU5ErkJggg==
+</value>
   </data>
   <data name="guna2TextBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 318</value>
+    <value>29, 387</value>
   </data>
   <data name="guna2TextBoxPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
@@ -391,10 +416,21 @@
     <value>2</value>
   </data>
   <data name="guna2TextBoxUserName.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Monotype Corsiva, 12pt, style=Italic</value>
+    <value>Poppins, 10.2pt</value>
+  </data>
+  <data name="guna2TextBoxUserName.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAABNwAAATcAVFSzCwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAAA/ElEQVQ4T52TPQrCQBCF1y6k8xJpPYOnsPIOuYE2NqnSewyx8SDeQEGwEAQRLOJ7m9nwMq6FLnww
+        zHszyexP6LpuBFYF1mAHzgZj5qoP/xCEMAE1eAAmclCjZzJqwATYAzXfwdZgrBq9sUlqwK5quIHp8BXE
+        llNPbVqc2f92m4qlSSs6YQ1r4+aoQJpMg0b0xArEHfbCFZRSXFrO+1gbj8kL5AI2BuOch7VfG7zA02Cc
+        88QGfoQjWIJCRigsR029cQS/ifNU6KEmPhI3UY/xlCtU6DFvf4yW1Iu08EUJauLrL5IJ/iofAGeeGYyZ
+        S/r4KkuT/x6TgvXDc+7CG2dpVPAIXNAiAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="guna2TextBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 224</value>
+    <value>30, 273</value>
   </data>
   <data name="guna2TextBoxUserName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
