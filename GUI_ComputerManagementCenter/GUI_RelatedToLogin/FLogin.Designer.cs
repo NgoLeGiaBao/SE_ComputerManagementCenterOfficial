@@ -125,7 +125,7 @@
             // 
             this.guna2TextBoxPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2TextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxPassword.DefaultText = "123456";
+            this.guna2TextBoxPassword.DefaultText = "cUv0u2XV";
             this.guna2TextBoxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -149,7 +149,7 @@
             // 
             this.guna2TextBoxUserName.BorderColor = System.Drawing.SystemColors.ControlLight;
             this.guna2TextBoxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxUserName.DefaultText = "GV001";
+            this.guna2TextBoxUserName.DefaultText = "HV777777777777";
             this.guna2TextBoxUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

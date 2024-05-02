@@ -10,6 +10,7 @@ using BUS_ComputerManagementCenter;
 using System.Windows.Forms;
 using DTO_ComputerManagementCenter;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorStudent;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
 {
@@ -33,7 +34,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
                 if (username.StartsWith("HV"))
                 {
                     // Process here
-                    //MessageBox.Show("Hoc vien");
+                    FStudent fStudent = new FStudent();
+                    fStudent.Show();
+                    this.Hide();
 
                 }
                 else if (username.StartsWith("GV"))

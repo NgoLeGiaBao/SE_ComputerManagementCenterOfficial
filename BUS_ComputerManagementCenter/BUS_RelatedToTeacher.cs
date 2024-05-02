@@ -19,7 +19,7 @@ namespace BUS_ComputerManagementCenter
             private set { instance = value; }
         }
 
-        // -- Get course by ID student
+        // -- Get course by ID teacher
         public List<DTO_Course> GetCourseByTeacherID(string teacherID)
         {
             List<DTO_Course> listCourse = new List<DTO_Course>();

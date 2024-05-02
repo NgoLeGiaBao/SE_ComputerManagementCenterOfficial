@@ -19,8 +19,9 @@ namespace GUI_ComputerManagementCenter
         static void Main()
         {
             Application.EnableVisualStyles();
-            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FLogin());
+
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
             //Application.Run(new FEmployees());  

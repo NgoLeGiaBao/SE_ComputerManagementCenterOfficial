@@ -371,24 +371,23 @@
   </data>
   <data name="guna2TextBoxPassword.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAA3UlEQVQ4T5XRPQ4BQRjG8Y0gQXzcwRmoOIGWK7iAREMhKgm1aKiohShE5wIkrkDHITzPzLsy7Mzu
-        +Ce/5J2dyWyyG8TUhIFo8IFvOdjBBcbiClvgXmILWEJarXScVzBXq5gq8ISCWn3HZy8oq5WjOpz1aI17
-        NT3a48c66NEa95wfNAtDuEHXgXs8k4FI/NonmCTgmRFE2kBLj59SwoxneDbS7wVVeMBd5jDvCzqwF20+
-        kLwvyMNRcA7zvoD1hNlfF/DN5tuZ84IZrMH2/008M4VIJeiD7d+beKYIKAjebT82QJd754MAAAAASUVO
-        RK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADdSURBVDhPldE9
+        DgFBGMbxjSBBfNzBGag4gZYruIBEQyEqCbVoqKiFKETnAiSuQMchPM/MuzLszO74J7/knZ3JbLIbxNSE
+        gWjwgW852MEFxuIKW+BeYgtYQlqtdJxXMFermCrwhIJafcdnLyirlaM6nPVojXs1Pdrjxzro0Rr3nB80
+        C0O4QdeBezyTgUj82ieYJOCZEUTaQEuPn1LCjGd4NtLvBVV4wF3mMO8LOrAXbT6QvC/Iw1FwDvO+gPWE
+        2V8X8M3m25nzghmswfb/TTwzhUgl6IPt35t4pggoCN5tPzZAl3vngwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="guna2TextBoxPassword.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAHUAAAB1AePCB2UAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABDElEQVQ4T9XSv0pCcRjG8bMkQkOLIFINLRmiNkuDbV2C0RIIdgOCkYNDQ1i7uOgVNDREEIQ1ttWS
-        bkp/TIi2qL3vczwv/A5HL8AHPvD+hvc8P4/HW8gU8TQdZ2cHbfTxE3hBCxV8QQ+JJIVrDFFFFsuBPC7x
-        Cy3HEUoanzjFEmI4xwTf6MKac3iFCvysY4Syf5qmiRus4QDWbDnCB7TrPeBYgxPdRsu7sOYS3Jygp+EO
-        DQ1OdG0127Ka1OimjnsNahrjUIcgHdi1tXyLM1j0E/SyV/0TyeAdF9iDNe9DzVrWixXNKtxEKAk8wpo3
-        sAL9jduo4Q1XSCISLVnzFgb4g/shFTA3z9DyQsXz/gFK8zt//brZBQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        dAAAAHQBMYXlgQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEMSURBVDhP1dK/
+        SkJxGMbxsyRCQ4sgUg0tGaI2S4NtXYLREgh2A4KRg0NDWLu46BU0NEQQhDW21ZJuSn9MiLaove9zPC/8
+        DkcvwAc+8P6G9zw/j8dbyBTxNB1nZwdt9PETeEELFXxBD4kkhWsMUUUWy4E8LvELLccRShqfOMUSYjjH
+        BN/owppzeIUK/KxjhLJ/mqaJG6zhANZsOcIHtOs94FiDE91Gy7uw5hLcnKCn4Q4NDU50bTXbsprU6KaO
+        ew1qGuNQhyAd2LW1fIszWPQT9LJX/RPJ4B0X2IM170PNWtaLFc0q3EQoCTzCmjewAv2N26jhDVdIIhIt
+        WfMWBviD+yEVMDfP0PJCxfP+AUrzO3/9utkFAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="guna2TextBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
@@ -420,13 +419,13 @@
   </data>
   <data name="guna2TextBoxUserName.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAABNwAAATcAVFSzCwAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAA/ElEQVQ4T52TPQrCQBCF1y6k8xJpPYOnsPIOuYE2NqnSewyx8SDeQEGwEAQRLOJ7m9nwMq6FLnww
-        zHszyexP6LpuBFYF1mAHzgZj5qoP/xCEMAE1eAAmclCjZzJqwATYAzXfwdZgrBq9sUlqwK5quIHp8BXE
-        llNPbVqc2f92m4qlSSs6YQ1r4+aoQJpMg0b0xArEHfbCFZRSXFrO+1gbj8kL5AI2BuOch7VfG7zA02Cc
-        88QGfoQjWIJCRigsR029cQS/ifNU6KEmPhI3UY/xlCtU6DFvf4yW1Iu08EUJauLrL5IJ/iofAGeeGYyZ
-        S/r4KkuT/x6TgvXDc+7CG2dpVPAIXNAiAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAE
+        2wAABNsBAxZqUwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD8SURBVDhPnZM9
+        CsJAEIXXLqTzEmk9g6ew8g65gTY2qdJ7DLHxIN5AQbAQBBEs4nub2fAyroUufDDMezPJ7E/oum4EVgXW
+        YAfOBmPmqg//EIQwATV4ACZyUKNnMmrABNgDNd/B1mCsGr2xSWrArmq4genwFcSWU09tWpzZ/3abiqVJ
+        KzphDWvj5qhAmkyDRvTECsQd9sIVlFJcWs77WBuPyQvkAjYG45yHtV8bvMDTYJzzxAZ+hCNYgkJGKCxH
+        Tb1xBL+J81TooSY+EjdRj/GUK1ToMW9/jJbUi7TwRQlq4usvkgn+Kh8AZ54ZjJlL+vgqS5P/HpOC9cNz
+        7sIbZ2lU8Ahc0CIAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="guna2TextBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
