@@ -34,17 +34,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
                 if (username.StartsWith("HV"))
                 {
                     // Process here
-                    FStudent fStudent = new FStudent();
-                    fStudent.Show();
+                    //FStudent fStudent = new FStudent();
+                    //fStudent.Show();
+                    //this.Hide();
+                    FChangePassword fChangePassword = new FChangePassword();
+                    fChangePassword.Show();
                     this.Hide();
 
                 }
                 else if (username.StartsWith("GV"))
                 {
                     
-                    FTeacher fTeacher = new FTeacher();
-                    fTeacher.Show();
-                    this.Hide();
+                    //FTeacher fTeacher = new FTeacher();
+                    //fTeacher.Show();
+                    //this.Hide();
                     
                 }
                 else if (username.StartsWith("NV"))

@@ -138,12 +138,11 @@
             this.guna2TextBoxPassword.IconRight = ((System.Drawing.Image)(resources.GetObject("guna2TextBoxPassword.IconRight")));
             this.guna2TextBoxPassword.IconRightCursor = System.Windows.Forms.Cursors.Hand;
             this.guna2TextBoxPassword.Name = "guna2TextBoxPassword";
-            this.guna2TextBoxPassword.PasswordChar = '●';
+            this.guna2TextBoxPassword.PasswordChar = '\0';
             this.guna2TextBoxPassword.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.guna2TextBoxPassword.PlaceholderText = "";
             this.guna2TextBoxPassword.SelectedText = "";
             this.guna2TextBoxPassword.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBoxPassword.UseSystemPasswordChar = true;
             // 
             // guna2TextBoxUserName
             // 

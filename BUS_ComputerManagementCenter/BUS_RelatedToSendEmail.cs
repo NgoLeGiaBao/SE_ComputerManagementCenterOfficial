@@ -39,6 +39,8 @@ namespace BUS_ComputerManagementCenter
             ";
             return emailBody;
         }
+        
+   
 
         public static string CreateStringRadom(int n)
         {
@@ -57,20 +59,20 @@ namespace BUS_ComputerManagementCenter
         }
 
         // Check authentication code exists in data
-        private string GetStringAuthenticationCode(string username)
-        {
-            int flag;
-            do
-            {
-                string codeAuthen = CreateStringRadom(6);
-                flag = DAO_RelatedToLogin.Instance.InsertDataIntoAuthenticationTable(codeAuthen, username);
-                if (flag != 0)
-                {
-                    return codeAuthen;
-                }
-            } while (flag == 0);
-            return "";
-        }
+        //private string GetStringAuthenticationCode(string username)
+        //{
+        //    int flag;
+        //    do
+        //    {
+        //        string codeAuthen = CreateStringRadom(6);
+        //        flag = DAO_RelatedToLogin.Instance.InsertDataIntoAuthenticationTable(codeAuthen, username);
+        //        if (flag != 0)
+        //        {
+        //            return codeAuthen;
+        //        }
+        //    } while (flag == 0);
+        //    return "";
+        //}
 
         // Send email
         public static bool SendEmailToUser(string email, string emailSubject, string emailBody)

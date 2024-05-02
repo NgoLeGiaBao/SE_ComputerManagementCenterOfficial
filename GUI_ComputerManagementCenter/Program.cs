@@ -20,7 +20,10 @@ namespace GUI_ComputerManagementCenter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FLogin());
+
+            //Application.Run(new FLogin());
+            //Application.Run(new FChangePassword());
+            Application.Run(new FForgetPassword());
 
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
@@ -35,6 +38,7 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FBackGround()); 
             //Application.Run(new FTeacher());
             //Application.Run(new FCourseDetail());
+           // Application.Run(new FChangePassword());
         }
     }
 }

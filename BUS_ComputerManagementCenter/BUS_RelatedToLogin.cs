@@ -79,16 +79,18 @@ namespace BUS_ComputerManagementCenter
                 return "";
             }
             // Send email to authentication
-            public bool SendEmailToUser(string username)
+            public string SendEmailToUser(string username)
             {
+            string code = "";
                 try
-                {
+                {   
                     MailMessage mail = new MailMessage();
                     mail.To.Add(GetUserMail(username));
                     mail.From = new MailAddress("nlgbaosw@gmail.com");
-                    mail.Subject = "Authentication";
-                    mail.Body = GetStringAuthenticationCode(username);
-
+                    mail.Subject = "Password reset verification code";
+                    code = GetStringAuthenticationCode(username);
+                    mail.Body = $"Your verification code is: {code}";
+                
                     SmtpClient smtp = new SmtpClient();
                     smtp.EnableSsl = true;
                     smtp.Port = 587;
@@ -97,12 +99,13 @@ namespace BUS_ComputerManagementCenter
                     smtp.Credentials = new NetworkCredential("nlgbaosw@gmail.com", "rgnf iqfm eynb auuv"); // Replace with your credentials
 
                     smtp.Send(mail);
-                    return true;
+                    
                 }
                 catch (SmtpException ex)
                 {
-                    return false;
+             
                 }
+            return code;
             }
             // Check verify code
             public bool CheckVerifyCode(string verifyCode, string username)
