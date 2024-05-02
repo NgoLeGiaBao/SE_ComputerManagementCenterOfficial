@@ -133,7 +133,8 @@ namespace BUS_ComputerManagementCenter
         // Get quantity 
         public string GetQuality (string type)
         {
-            return DAO_RelatedToEmployee.Instance.GetQuantity(type).ToString();
+            string result = DAO_RelatedToEmployee.Instance.GetQuantity(type).ToString();
+            return result == "" ? "0": result;
         }
         //--Check--//
         // Check student exist

@@ -17,6 +17,7 @@ using Label = System.Windows.Forms.Label;
 using Rectangle = iTextSharp.text.Rectangle;
 using System.Drawing.Printing;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
+using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -531,10 +532,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string cellValue = cell.Value.ToString();
             if (cellValue == "Change Password")
             {
-                
+                FChangePassword fChangePassword = new FChangePassword();
+                fChangePassword.Show();
             } else
             {
-                
+                FLogin fLogin = new FLogin();
+                this.Close();
             }
         }
 

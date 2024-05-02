@@ -41,6 +41,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PanelControl = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelInfor = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelQuanTity = new System.Windows.Forms.Label();
             this.guna2DataGridViewCommon = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelPersonnal = new Guna.UI2.WinForms.Guna2Panel();
@@ -59,6 +60,7 @@
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ButtonSavePDFTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonEditTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonDeleteTeacher = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridViewTeacher = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -77,8 +79,6 @@
             this.guna2ButtonEditStudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonDeleteStudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2DataGridViewStudent = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tabPageCourse = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.StudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullNameStudent = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,8 +87,8 @@
             this.ICNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.labelQuanTity = new System.Windows.Forms.Label();
-            this.guna2ButtonSavePDFTeacher = new Guna.UI2.WinForms.Guna2Button();
+            this.tabPageCourse = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).BeginInit();
@@ -137,13 +137,20 @@
             this.guna2PanelInfor.Size = new System.Drawing.Size(1702, 170);
             this.guna2PanelInfor.TabIndex = 2;
             // 
+            // labelQuanTity
+            // 
+            this.labelQuanTity.Font = new System.Drawing.Font("Poppins", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelQuanTity.Location = new System.Drawing.Point(56, 87);
+            this.labelQuanTity.Name = "labelQuanTity";
+            this.labelQuanTity.Size = new System.Drawing.Size(357, 49);
+            this.labelQuanTity.TabIndex = 4;
+            // 
             // guna2DataGridViewCommon
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             this.guna2DataGridViewCommon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridViewCommon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2DataGridViewCommon.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.guna2DataGridViewCommon.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -460,6 +467,23 @@
             this.guna2PanelFooter.Size = new System.Drawing.Size(1746, 100);
             this.guna2PanelFooter.TabIndex = 1;
             // 
+            // guna2ButtonSavePDFTeacher
+            // 
+            this.guna2ButtonSavePDFTeacher.BorderRadius = 6;
+            this.guna2ButtonSavePDFTeacher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonSavePDFTeacher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonSavePDFTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonSavePDFTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonSavePDFTeacher.FillColor = System.Drawing.SystemColors.MenuHighlight;
+            this.guna2ButtonSavePDFTeacher.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonSavePDFTeacher.ForeColor = System.Drawing.Color.White;
+            this.guna2ButtonSavePDFTeacher.Location = new System.Drawing.Point(1152, 25);
+            this.guna2ButtonSavePDFTeacher.Name = "guna2ButtonSavePDFTeacher";
+            this.guna2ButtonSavePDFTeacher.Size = new System.Drawing.Size(201, 45);
+            this.guna2ButtonSavePDFTeacher.TabIndex = 4;
+            this.guna2ButtonSavePDFTeacher.Text = "Save PDF";
+            this.guna2ButtonSavePDFTeacher.Click += new System.EventHandler(this.guna2ButtonSavePDFTeacher_Click);
+            // 
             // guna2ButtonEditTeacher
             // 
             this.guna2ButtonEditTeacher.BorderRadius = 6;
@@ -505,7 +529,7 @@
             this.guna2DataGridViewTeacher.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
@@ -525,7 +549,7 @@
             this.guna2DataGridViewTeacher.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -734,7 +758,7 @@
             this.guna2DataGridViewStudent.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
@@ -753,7 +777,7 @@
             this.StudentEmail});
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins", 10F);
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -796,27 +820,6 @@
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // tabPageCourse
-            // 
-            this.tabPageCourse.AutoScroll = true;
-            this.tabPageCourse.Controls.Add(this.flowLayoutPanelCourse);
-            this.tabPageCourse.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
-            this.tabPageCourse.Name = "tabPageCourse";
-            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCourse.Size = new System.Drawing.Size(1754, 998);
-            this.tabPageCourse.TabIndex = 4;
-            this.tabPageCourse.Text = "Course";
-            this.tabPageCourse.UseVisualStyleBackColor = true;
-            // 
-            // flowLayoutPanelCourse
-            // 
-            this.flowLayoutPanelCourse.AutoScroll = true;
-            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
-            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
-            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
-            this.flowLayoutPanelCourse.TabIndex = 0;
             // 
             // StudentID
             // 
@@ -882,30 +885,26 @@
             this.StudentEmail.Name = "StudentEmail";
             this.StudentEmail.ReadOnly = true;
             // 
-            // labelQuanTity
+            // tabPageCourse
             // 
-            this.labelQuanTity.Font = new System.Drawing.Font("Poppins", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelQuanTity.Location = new System.Drawing.Point(56, 87);
-            this.labelQuanTity.Name = "labelQuanTity";
-            this.labelQuanTity.Size = new System.Drawing.Size(303, 49);
-            this.labelQuanTity.TabIndex = 4;
+            this.tabPageCourse.AutoScroll = true;
+            this.tabPageCourse.Controls.Add(this.flowLayoutPanelCourse);
+            this.tabPageCourse.Font = new System.Drawing.Font("Poppins Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPageCourse.Location = new System.Drawing.Point(184, 4);
+            this.tabPageCourse.Name = "tabPageCourse";
+            this.tabPageCourse.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageCourse.Size = new System.Drawing.Size(1754, 998);
+            this.tabPageCourse.TabIndex = 4;
+            this.tabPageCourse.Text = "Course";
+            this.tabPageCourse.UseVisualStyleBackColor = true;
             // 
-            // guna2ButtonSavePDFTeacher
+            // flowLayoutPanelCourse
             // 
-            this.guna2ButtonSavePDFTeacher.BorderRadius = 6;
-            this.guna2ButtonSavePDFTeacher.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonSavePDFTeacher.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonSavePDFTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonSavePDFTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonSavePDFTeacher.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ButtonSavePDFTeacher.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonSavePDFTeacher.ForeColor = System.Drawing.Color.White;
-            this.guna2ButtonSavePDFTeacher.Location = new System.Drawing.Point(1152, 25);
-            this.guna2ButtonSavePDFTeacher.Name = "guna2ButtonSavePDFTeacher";
-            this.guna2ButtonSavePDFTeacher.Size = new System.Drawing.Size(201, 45);
-            this.guna2ButtonSavePDFTeacher.TabIndex = 4;
-            this.guna2ButtonSavePDFTeacher.Text = "Save PDF";
-            this.guna2ButtonSavePDFTeacher.Click += new System.EventHandler(this.guna2ButtonSavePDFTeacher_Click);
+            this.flowLayoutPanelCourse.AutoScroll = true;
+            this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
+            this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
+            this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
+            this.flowLayoutPanelCourse.TabIndex = 0;
             // 
             // FEs
             // 

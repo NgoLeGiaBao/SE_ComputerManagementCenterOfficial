@@ -37,7 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ButtonLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelForgetPw = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2TextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBoxUserName = new Guna.UI2.WinForms.Guna2TextBox();
@@ -109,12 +109,13 @@
             this.guna2ButtonLogin.Name = "guna2ButtonLogin";
             this.guna2ButtonLogin.Click += new System.EventHandler(this.guna2ButtonLogin_Click);
             // 
-            // label2
+            // labelForgetPw
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.labelForgetPw, "labelForgetPw");
+            this.labelForgetPw.BackColor = System.Drawing.Color.White;
+            this.labelForgetPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.labelForgetPw.Name = "labelForgetPw";
+            this.labelForgetPw.Click += new System.EventHandler(this.labelForgetPw_Click);
             // 
             // guna2Elipse1
             // 
@@ -125,7 +126,7 @@
             // 
             this.guna2TextBoxPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2TextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxPassword.DefaultText = "cUv0u2XV";
+            this.guna2TextBoxPassword.DefaultText = "";
             this.guna2TextBoxPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -148,7 +149,7 @@
             // 
             this.guna2TextBoxUserName.BorderColor = System.Drawing.SystemColors.ControlLight;
             this.guna2TextBoxUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxUserName.DefaultText = "HV777777777777";
+            this.guna2TextBoxUserName.DefaultText = "";
             this.guna2TextBoxUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.guna2TextBoxUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.guna2TextBoxUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -169,7 +170,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelForgetPw);
             this.Controls.Add(this.guna2ButtonLogin);
             this.Controls.Add(this.guna2TextBoxPassword);
             this.Controls.Add(this.guna2TextBoxUserName);
@@ -196,7 +197,7 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxUserName;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBoxPassword;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonLogin;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelForgetPw;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

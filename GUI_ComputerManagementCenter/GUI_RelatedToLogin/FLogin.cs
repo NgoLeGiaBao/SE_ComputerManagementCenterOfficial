@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using DTO_ComputerManagementCenter;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorStudent;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
 {
@@ -30,33 +31,34 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
             if (BUS_RelatedToLogin.Instance.CheckLogin(username, password))
             {
                 DTO_Person.IDSession = username;
-
                 if (username.StartsWith("HV"))
                 {
-                    // Process here
-                    //FStudent fStudent = new FStudent();
-                    //fStudent.Show();
-                    //this.Hide();
-                    FChangePassword fChangePassword = new FChangePassword();
-                    fChangePassword.Show();
+                    FStudent fStudent = new FStudent();
+                    fStudent.Show();
                     this.Hide();
-
                 }
                 else if (username.StartsWith("GV"))
                 {
                     
-                    //FTeacher fTeacher = new FTeacher();
-                    //fTeacher.Show();
-                    //this.Hide();
+                    FTeacher fTeacher = new FTeacher();
+                    fTeacher.Show();
+                    this.Hide();
                     
                 }
                 else if (username.StartsWith("NV"))
                 {
-                    // Process here
-                    
-
+                    FEs fEs = new FEs();
+                    fEs.Show();
+                    this.Hide();
                 }
             }
+        }
+
+        private void labelForgetPw_Click(object sender, EventArgs e)
+        {
+            FForgetPassword fForgetPassword = new FForgetPassword();
+            fForgetPassword.Show();
+            this.Hide();
         }
     }
 }

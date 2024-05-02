@@ -21,9 +21,9 @@ namespace GUI_ComputerManagementCenter
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Application.Run(new FLogin());
+            Application.Run(new FLogin());
             //Application.Run(new FChangePassword());
-            Application.Run(new FForgetPassword());
+            //Application.Run(new FForgetPassword());
 
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
