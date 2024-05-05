@@ -533,6 +533,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (cellValue == "Change Password")
             {
                 FChangePassword fChangePassword = new FChangePassword();
+                guna2DataGridViewCommon.Visible = false;
                 fChangePassword.Show();
             } else
             {

@@ -34,12 +34,12 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ButtonLogin = new Guna.UI2.WinForms.Guna2Button();
             this.labelForgetPw = new System.Windows.Forms.Label();
             this.labelMessError = new System.Windows.Forms.Label();
             this.guna2TextBoxPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBoxUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelNav.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -86,6 +86,16 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.label1.Name = "label1";
+            // 
+            // guna2PictureBox1
+            // 
+            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
+            this.guna2PictureBox1.ErrorImage = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
+            this.guna2PictureBox1.Image = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.TabStop = false;
             // 
             // guna2ButtonLogin
             // 
@@ -139,6 +149,7 @@
             this.guna2TextBoxPassword.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.guna2TextBoxPassword.UseSystemPasswordChar = true;
             this.guna2TextBoxPassword.IconRightClick += new System.EventHandler(this.guna2TextBoxPassword_IconRightClick);
+            this.guna2TextBoxPassword.Click += new System.EventHandler(this.guna2TextBoxPassword_Click);
             // 
             // guna2TextBoxUserName
             // 
@@ -159,16 +170,7 @@
             this.guna2TextBoxUserName.PlaceholderText = "Username";
             this.guna2TextBoxUserName.SelectedText = "";
             this.guna2TextBoxUserName.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            // 
-            // guna2PictureBox1
-            // 
-            resources.ApplyResources(this.guna2PictureBox1, "guna2PictureBox1");
-            this.guna2PictureBox1.ErrorImage = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
-            this.guna2PictureBox1.Image = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.MITR__back_white_;
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.TabStop = false;
+            this.guna2TextBoxUserName.Click += new System.EventHandler(this.guna2TextBoxUserName_Click);
             // 
             // FLogin
             // 

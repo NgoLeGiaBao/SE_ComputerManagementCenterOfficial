@@ -89,7 +89,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(549, 41);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Password recovery";
+            this.label1.Text = "Change password";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2TextBoxUserName
@@ -132,7 +132,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(469, 45);
             this.guna2Button1.TabIndex = 6;
-            this.guna2Button1.Text = "Continue";
+            this.guna2Button1.Text = "Confirm";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2

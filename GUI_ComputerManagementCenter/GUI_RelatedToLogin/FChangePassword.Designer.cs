@@ -321,7 +321,7 @@
             this.guna2ButtonSave.Name = "guna2ButtonSave";
             this.guna2ButtonSave.Size = new System.Drawing.Size(225, 45);
             this.guna2ButtonSave.TabIndex = 0;
-            this.guna2ButtonSave.Text = "Save";
+            this.guna2ButtonSave.Text = "Confirm";
             this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
             // guna2PanelBottom

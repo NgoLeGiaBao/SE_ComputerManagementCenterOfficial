@@ -84,5 +84,15 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
             }
 
         }
+
+        private void guna2TextBoxUserName_Click(object sender, EventArgs e)
+        {
+            labelMessError.Text = "";
+        }
+
+        private void guna2TextBoxPassword_Click(object sender, EventArgs e)
+        {
+            labelMessError.Text = ""; 
+        }
     }
 }
