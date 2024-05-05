@@ -35,20 +35,20 @@
             this.guna2PanelTop = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelBottom = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelCurr = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelNew = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelRe = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelBTN = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelCurr = new System.Windows.Forms.Label();
-            this.guna2TextBoxCurr = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelNewPass = new System.Windows.Forms.Label();
-            this.labelReNewPass = new System.Windows.Forms.Label();
-            this.guna2TextBoxNew = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBoxReNew = new Guna.UI2.WinForms.Guna2TextBox();
-            this.labelMessNewPass = new System.Windows.Forms.Label();
-            this.labelMessReNewPass = new System.Windows.Forms.Label();
             this.labelMessCurr = new System.Windows.Forms.Label();
-            this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2TextBoxCurr = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelCurr = new System.Windows.Forms.Label();
+            this.guna2PanelNew = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelMessReNewPass = new System.Windows.Forms.Label();
+            this.guna2TextBoxReNew = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelReNewPass = new System.Windows.Forms.Label();
+            this.guna2PanelRe = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelMessNewPass = new System.Windows.Forms.Label();
+            this.guna2TextBoxNew = new Guna.UI2.WinForms.Guna2TextBox();
+            this.labelNewPass = new System.Windows.Forms.Label();
+            this.guna2PanelBTN = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ButtonCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelCurr.SuspendLayout();
             this.guna2PanelNew.SuspendLayout();
@@ -86,7 +86,7 @@
             this.guna2PanelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.guna2PanelRight.Location = new System.Drawing.Point(498, 30);
             this.guna2PanelRight.Name = "guna2PanelRight";
-            this.guna2PanelRight.Size = new System.Drawing.Size(30, 598);
+            this.guna2PanelRight.Size = new System.Drawing.Size(30, 418);
             this.guna2PanelRight.TabIndex = 2;
             // 
             // guna2PanelLeft
@@ -94,7 +94,7 @@
             this.guna2PanelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2PanelLeft.Location = new System.Drawing.Point(0, 30);
             this.guna2PanelLeft.Name = "guna2PanelLeft";
-            this.guna2PanelLeft.Size = new System.Drawing.Size(30, 598);
+            this.guna2PanelLeft.Size = new System.Drawing.Size(30, 418);
             this.guna2PanelLeft.TabIndex = 3;
             // 
             // guna2PanelTop
@@ -108,9 +108,9 @@
             // guna2PanelBottom
             // 
             this.guna2PanelBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottom.Location = new System.Drawing.Point(30, 588);
+            this.guna2PanelBottom.Location = new System.Drawing.Point(30, 372);
             this.guna2PanelBottom.Name = "guna2PanelBottom";
-            this.guna2PanelBottom.Size = new System.Drawing.Size(468, 40);
+            this.guna2PanelBottom.Size = new System.Drawing.Size(468, 76);
             this.guna2PanelBottom.TabIndex = 5;
             // 
             // guna2PanelCurr
@@ -122,49 +122,18 @@
             this.guna2PanelCurr.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2PanelCurr.Location = new System.Drawing.Point(30, 70);
             this.guna2PanelCurr.Name = "guna2PanelCurr";
-            this.guna2PanelCurr.Size = new System.Drawing.Size(468, 110);
+            this.guna2PanelCurr.Size = new System.Drawing.Size(468, 80);
             this.guna2PanelCurr.TabIndex = 6;
             // 
-            // guna2PanelNew
+            // labelMessCurr
             // 
-            this.guna2PanelNew.Controls.Add(this.labelMessReNewPass);
-            this.guna2PanelNew.Controls.Add(this.guna2TextBoxReNew);
-            this.guna2PanelNew.Controls.Add(this.labelReNewPass);
-            this.guna2PanelNew.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelNew.Location = new System.Drawing.Point(30, 290);
-            this.guna2PanelNew.Name = "guna2PanelNew";
-            this.guna2PanelNew.Size = new System.Drawing.Size(468, 110);
-            this.guna2PanelNew.TabIndex = 7;
-            // 
-            // guna2PanelRe
-            // 
-            this.guna2PanelRe.Controls.Add(this.labelMessNewPass);
-            this.guna2PanelRe.Controls.Add(this.guna2TextBoxNew);
-            this.guna2PanelRe.Controls.Add(this.labelNewPass);
-            this.guna2PanelRe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelRe.Location = new System.Drawing.Point(30, 180);
-            this.guna2PanelRe.Name = "guna2PanelRe";
-            this.guna2PanelRe.Size = new System.Drawing.Size(468, 110);
-            this.guna2PanelRe.TabIndex = 7;
-            // 
-            // guna2PanelBTN
-            // 
-            this.guna2PanelBTN.Controls.Add(this.guna2ButtonCancel);
-            this.guna2PanelBTN.Controls.Add(this.guna2ButtonSave);
-            this.guna2PanelBTN.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelBTN.Location = new System.Drawing.Point(30, 400);
-            this.guna2PanelBTN.Name = "guna2PanelBTN";
-            this.guna2PanelBTN.Size = new System.Drawing.Size(468, 100);
-            this.guna2PanelBTN.TabIndex = 8;
-            // 
-            // labelCurr
-            // 
-            this.labelCurr.AutoSize = true;
-            this.labelCurr.Location = new System.Drawing.Point(3, 0);
-            this.labelCurr.Name = "labelCurr";
-            this.labelCurr.Size = new System.Drawing.Size(176, 30);
-            this.labelCurr.TabIndex = 0;
-            this.labelCurr.Text = "Currrent Password";
+            this.labelMessCurr.AutoSize = true;
+            this.labelMessCurr.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessCurr.ForeColor = System.Drawing.Color.Red;
+            this.labelMessCurr.Location = new System.Drawing.Point(0, 78);
+            this.labelMessCurr.Name = "labelMessCurr";
+            this.labelMessCurr.Size = new System.Drawing.Size(0, 23);
+            this.labelMessCurr.TabIndex = 3;
             // 
             // guna2TextBoxCurr
             // 
@@ -188,47 +157,36 @@
             this.guna2TextBoxCurr.TabIndex = 0;
             this.guna2TextBoxCurr.Leave += new System.EventHandler(this.guna2TextBoxCurr_Leave);
             // 
-            // labelNewPass
+            // labelCurr
             // 
-            this.labelNewPass.AutoSize = true;
-            this.labelNewPass.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNewPass.Location = new System.Drawing.Point(0, 0);
-            this.labelNewPass.Name = "labelNewPass";
-            this.labelNewPass.Size = new System.Drawing.Size(142, 30);
-            this.labelNewPass.TabIndex = 1;
-            this.labelNewPass.Text = "New password";
+            this.labelCurr.AutoSize = true;
+            this.labelCurr.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelCurr.Location = new System.Drawing.Point(3, 0);
+            this.labelCurr.Name = "labelCurr";
+            this.labelCurr.Size = new System.Drawing.Size(176, 30);
+            this.labelCurr.TabIndex = 0;
+            this.labelCurr.Text = "Currrent Password";
             // 
-            // labelReNewPass
+            // guna2PanelNew
             // 
-            this.labelReNewPass.AutoSize = true;
-            this.labelReNewPass.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReNewPass.Location = new System.Drawing.Point(0, 0);
-            this.labelReNewPass.Name = "labelReNewPass";
-            this.labelReNewPass.Size = new System.Drawing.Size(173, 30);
-            this.labelReNewPass.TabIndex = 2;
-            this.labelReNewPass.Text = "Re-New password";
+            this.guna2PanelNew.Controls.Add(this.labelMessReNewPass);
+            this.guna2PanelNew.Controls.Add(this.guna2TextBoxReNew);
+            this.guna2PanelNew.Controls.Add(this.labelReNewPass);
+            this.guna2PanelNew.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelNew.Location = new System.Drawing.Point(30, 231);
+            this.guna2PanelNew.Name = "guna2PanelNew";
+            this.guna2PanelNew.Size = new System.Drawing.Size(468, 82);
+            this.guna2PanelNew.TabIndex = 7;
             // 
-            // guna2TextBoxNew
+            // labelMessReNewPass
             // 
-            this.guna2TextBoxNew.BorderRadius = 6;
-            this.guna2TextBoxNew.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxNew.DefaultText = "";
-            this.guna2TextBoxNew.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxNew.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxNew.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxNew.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxNew.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxNew.Location = new System.Drawing.Point(0, 36);
-            this.guna2TextBoxNew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBoxNew.Name = "guna2TextBoxNew";
-            this.guna2TextBoxNew.PasswordChar = '\0';
-            this.guna2TextBoxNew.PlaceholderText = "";
-            this.guna2TextBoxNew.SelectedText = "";
-            this.guna2TextBoxNew.Size = new System.Drawing.Size(468, 36);
-            this.guna2TextBoxNew.TabIndex = 1;
-            this.guna2TextBoxNew.Leave += new System.EventHandler(this.guna2TextBoxNew_Leave);
+            this.labelMessReNewPass.AutoSize = true;
+            this.labelMessReNewPass.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMessReNewPass.ForeColor = System.Drawing.Color.Red;
+            this.labelMessReNewPass.Location = new System.Drawing.Point(0, 78);
+            this.labelMessReNewPass.Name = "labelMessReNewPass";
+            this.labelMessReNewPass.Size = new System.Drawing.Size(0, 23);
+            this.labelMessReNewPass.TabIndex = 3;
             // 
             // guna2TextBoxReNew
             // 
@@ -252,6 +210,28 @@
             this.guna2TextBoxReNew.TabIndex = 2;
             this.guna2TextBoxReNew.Leave += new System.EventHandler(this.guna2TextBoxReNew_Leave);
             // 
+            // labelReNewPass
+            // 
+            this.labelReNewPass.AutoSize = true;
+            this.labelReNewPass.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelReNewPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelReNewPass.Location = new System.Drawing.Point(0, 0);
+            this.labelReNewPass.Name = "labelReNewPass";
+            this.labelReNewPass.Size = new System.Drawing.Size(173, 30);
+            this.labelReNewPass.TabIndex = 2;
+            this.labelReNewPass.Text = "Re-New password";
+            // 
+            // guna2PanelRe
+            // 
+            this.guna2PanelRe.Controls.Add(this.labelMessNewPass);
+            this.guna2PanelRe.Controls.Add(this.guna2TextBoxNew);
+            this.guna2PanelRe.Controls.Add(this.labelNewPass);
+            this.guna2PanelRe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelRe.Location = new System.Drawing.Point(30, 150);
+            this.guna2PanelRe.Name = "guna2PanelRe";
+            this.guna2PanelRe.Size = new System.Drawing.Size(468, 81);
+            this.guna2PanelRe.TabIndex = 7;
+            // 
             // labelMessNewPass
             // 
             this.labelMessNewPass.AutoSize = true;
@@ -262,25 +242,64 @@
             this.labelMessNewPass.Size = new System.Drawing.Size(0, 23);
             this.labelMessNewPass.TabIndex = 2;
             // 
-            // labelMessReNewPass
+            // guna2TextBoxNew
             // 
-            this.labelMessReNewPass.AutoSize = true;
-            this.labelMessReNewPass.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMessReNewPass.ForeColor = System.Drawing.Color.Red;
-            this.labelMessReNewPass.Location = new System.Drawing.Point(0, 78);
-            this.labelMessReNewPass.Name = "labelMessReNewPass";
-            this.labelMessReNewPass.Size = new System.Drawing.Size(0, 23);
-            this.labelMessReNewPass.TabIndex = 3;
+            this.guna2TextBoxNew.BorderRadius = 6;
+            this.guna2TextBoxNew.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxNew.DefaultText = "";
+            this.guna2TextBoxNew.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxNew.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxNew.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxNew.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxNew.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxNew.Location = new System.Drawing.Point(0, 36);
+            this.guna2TextBoxNew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.guna2TextBoxNew.Name = "guna2TextBoxNew";
+            this.guna2TextBoxNew.PasswordChar = '\0';
+            this.guna2TextBoxNew.PlaceholderText = "";
+            this.guna2TextBoxNew.SelectedText = "";
+            this.guna2TextBoxNew.Size = new System.Drawing.Size(468, 36);
+            this.guna2TextBoxNew.TabIndex = 1;
+            this.guna2TextBoxNew.Leave += new System.EventHandler(this.guna2TextBoxNew_Leave);
             // 
-            // labelMessCurr
+            // labelNewPass
             // 
-            this.labelMessCurr.AutoSize = true;
-            this.labelMessCurr.Font = new System.Drawing.Font("Poppins", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMessCurr.ForeColor = System.Drawing.Color.Red;
-            this.labelMessCurr.Location = new System.Drawing.Point(0, 78);
-            this.labelMessCurr.Name = "labelMessCurr";
-            this.labelMessCurr.Size = new System.Drawing.Size(0, 23);
-            this.labelMessCurr.TabIndex = 3;
+            this.labelNewPass.AutoSize = true;
+            this.labelNewPass.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNewPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
+            this.labelNewPass.Location = new System.Drawing.Point(0, 0);
+            this.labelNewPass.Name = "labelNewPass";
+            this.labelNewPass.Size = new System.Drawing.Size(142, 30);
+            this.labelNewPass.TabIndex = 1;
+            this.labelNewPass.Text = "New password";
+            // 
+            // guna2PanelBTN
+            // 
+            this.guna2PanelBTN.Controls.Add(this.guna2ButtonCancel);
+            this.guna2PanelBTN.Controls.Add(this.guna2ButtonSave);
+            this.guna2PanelBTN.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2PanelBTN.Location = new System.Drawing.Point(30, 313);
+            this.guna2PanelBTN.Name = "guna2PanelBTN";
+            this.guna2PanelBTN.Size = new System.Drawing.Size(468, 87);
+            this.guna2PanelBTN.TabIndex = 8;
+            // 
+            // guna2ButtonCancel
+            // 
+            this.guna2ButtonCancel.BorderRadius = 6;
+            this.guna2ButtonCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2ButtonCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2ButtonCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2ButtonCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.guna2ButtonCancel.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2ButtonCancel.Location = new System.Drawing.Point(245, 30);
+            this.guna2ButtonCancel.Name = "guna2ButtonCancel";
+            this.guna2ButtonCancel.Size = new System.Drawing.Size(225, 45);
+            this.guna2ButtonCancel.TabIndex = 1;
+            this.guna2ButtonCancel.Text = "Cancel";
             // 
             // guna2ButtonSave
             // 
@@ -299,28 +318,12 @@
             this.guna2ButtonSave.Text = "Save";
             this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
             // 
-            // guna2ButtonCancel
-            // 
-            this.guna2ButtonCancel.BorderRadius = 6;
-            this.guna2ButtonCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2ButtonCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2ButtonCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2ButtonCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.guna2ButtonCancel.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ButtonCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2ButtonCancel.Location = new System.Drawing.Point(245, 30);
-            this.guna2ButtonCancel.Name = "guna2ButtonCancel";
-            this.guna2ButtonCancel.Size = new System.Drawing.Size(225, 45);
-            this.guna2ButtonCancel.TabIndex = 1;
-            this.guna2ButtonCancel.Text = "Cancel";
-            // 
             // FChangePassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(528, 628);
+            this.ClientSize = new System.Drawing.Size(528, 448);
             this.Controls.Add(this.guna2PanelBTN);
             this.Controls.Add(this.guna2PanelNew);
             this.Controls.Add(this.guna2PanelRe);

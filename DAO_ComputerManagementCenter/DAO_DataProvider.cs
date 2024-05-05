@@ -20,7 +20,7 @@ namespace DAO_ComputerManagementCenter
         // Đây là một constructor được khởi tạo, và ở dạng private để không có đối tượng nào ở ngoài có thể truy xuất được
         private DAO_DataProvider() { }
         // Để lấy được chuỗi kết nối chọn Tools -> Connect to Database 
-        private string connectionStr = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyTrungTamTinHoc_V2;Integrated Security=True;Encrypt=False";
+        private string connectionStr = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyTrungTamTinHoc;Integrated Security=True;Encrypt=False";
         public DataTable ExecuteQuery(String query, object[] parameters = null)
         {
             // Tạo ra đối tượng bảng

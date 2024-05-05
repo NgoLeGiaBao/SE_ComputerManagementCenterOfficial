@@ -537,6 +537,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             } else
             {
                 FLogin fLogin = new FLogin();
+                fLogin.Show();
                 this.Close();
             }
         }

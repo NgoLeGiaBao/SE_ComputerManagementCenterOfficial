@@ -26,39 +26,63 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
         {
             string username = guna2TextBoxUserName.Text;
             string password = guna2TextBoxPassword.Text;
-
-
-            if (BUS_RelatedToLogin.Instance.CheckLogin(username, password))
+            if (username == "" || password == "")
             {
-                DTO_Person.IDSession = username;
-                if (username.StartsWith("HV"))
+                labelMessError.Text = "Please fill all field information";
+            } else
+            {
+                if (BUS_RelatedToLogin.Instance.CheckLogin(username, password))
                 {
-                    FStudent fStudent = new FStudent();
-                    fStudent.Show();
-                    this.Hide();
+                    DTO_Person.IDSession = username;
+                    if (username.StartsWith("HV"))
+                    {
+                        FStudent fStudent = new FStudent();
+                        fStudent.Show();
+                        this.Hide();
+                    }
+                    else if (username.StartsWith("GV"))
+                    {
+
+                        FTeacher fTeacher = new FTeacher();
+                        fTeacher.Show();
+                        this.Hide();
+
+                    }
+                    else if (username.StartsWith("NV"))
+                    {
+                        FEs fEs = new FEs();
+                        fEs.Show();
+                        this.Hide();
+                    }
                 }
-                else if (username.StartsWith("GV"))
+                else
                 {
-                    
-                    FTeacher fTeacher = new FTeacher();
-                    fTeacher.Show();
-                    this.Hide();
-                    
-                }
-                else if (username.StartsWith("NV"))
-                {
-                    FEs fEs = new FEs();
-                    fEs.Show();
-                    this.Hide();
+                    labelMessError.Text = "Username or password is invalid";
                 }
             }
         }
 
         private void labelForgetPw_Click(object sender, EventArgs e)
         {
-            FForgetPassword fForgetPassword = new FForgetPassword();
-            fForgetPassword.Show();
+            FPasswordRecovery fPasswordRecovery = new FPasswordRecovery();
+            fPasswordRecovery.Show();
             this.Hide();
+        }
+
+        private void guna2TextBoxPassword_IconRightClick(object sender, EventArgs e)
+        {
+            if (guna2TextBoxPassword.UseSystemPasswordChar)
+            {
+                guna2TextBoxPassword.UseSystemPasswordChar = false;
+                guna2TextBoxPassword.PasswordChar = '\0';
+                guna2TextBoxPassword.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.hide__1_;
+            } else
+            {
+                guna2TextBoxPassword.UseSystemPasswordChar = true;
+                guna2TextBoxPassword.PasswordChar = '.';
+                guna2TextBoxPassword.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.visible__1_;
+            }
+
         }
     }
 }

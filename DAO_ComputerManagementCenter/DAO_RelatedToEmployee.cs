@@ -78,14 +78,14 @@ namespace DAO_ComputerManagementCenter
         // Get student by ID
         public DataTable GetStudentByID(string id)
         {
-            string query = "exec GetStudentByID @StudentID";
+            string query = "exec USP_GetStudentByID @StudentID";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 
         // Get teacher by ID
         public DataTable GetTeacherByID(string id)
         {
-            string query = "GetTeachertByID @TeacherID";
+            string query = "USP_GetTeachertByID @TeacherID";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 

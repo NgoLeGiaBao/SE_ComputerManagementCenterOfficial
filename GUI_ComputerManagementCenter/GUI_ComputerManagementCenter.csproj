@@ -155,17 +155,29 @@
     <Compile Include="GUI_RelatedToLogin\FChangePassword.Designer.cs">
       <DependentUpon>FChangePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_RelatedToLogin\FForgetPassword.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_RelatedToLogin\FForgetPassword.Designer.cs">
-      <DependentUpon>FForgetPassword.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI_RelatedToLogin\FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI_RelatedToLogin\FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FNewPassword.Designer.cs">
+      <DependentUpon>FNewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FPasswordRecovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FPasswordRecovery.Designer.cs">
+      <DependentUpon>FPasswordRecovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FVerifyAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_RelatedToLogin\FVerifyAccount.Designer.cs">
+      <DependentUpon>FVerifyAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,11 +223,17 @@
     <EmbeddedResource Include="GUI_RelatedToLogin\FChangePassword.resx">
       <DependentUpon>FChangePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI_RelatedToLogin\FForgetPassword.resx">
-      <DependentUpon>FForgetPassword.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToLogin\FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RelatedToLogin\FNewPassword.resx">
+      <DependentUpon>FNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RelatedToLogin\FPasswordRecovery.resx">
+      <DependentUpon>FPasswordRecovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_RelatedToLogin\FVerifyAccount.resx">
+      <DependentUpon>FVerifyAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -299,6 +317,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\att1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visible %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,7 +24,7 @@ namespace GUI_ComputerManagementCenter
             Application.Run(new FLogin());
             //Application.Run(new FChangePassword());
             //Application.Run(new FForgetPassword());
-
+            //Application.Run(new FNewPassword());
             //Application.Run(new Form2());
             //Application.Run(new FEmployee());
             //Application.Run(new FEmployees());  
@@ -38,7 +38,7 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FBackGround()); 
             //Application.Run(new FTeacher());
             //Application.Run(new FCourseDetail());
-           // Application.Run(new FChangePassword());
+            // Application.Run(new FChangePassword());
         }
     }
 }
