@@ -22,7 +22,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
             MessageBox.Show(DTO_Person.IDSession);
-            if (labelMessCurr.Text == "" && labelMessNewPass.Text == "" && labelMessReNewPass.Text == "")
+            if (label2.Text == "" && label3.Text == "" && label4.Text == "")
             {
                 if (BUS_RelatedToLogin.Instance.ChangeNewPassword(DTO_Person.IDSession, guna2TextBoxNew.Text))
                 {
@@ -38,20 +38,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
         private void guna2TextBoxCurr_Leave(object sender, EventArgs e)
         {
             if (!BUS_RelatedToLogin.Instance.CheckLogin(DTO_Person.IDSession, guna2TextBoxCurr.Text)) {
-                labelMessCurr.Text = "Current password is wrong";
+                label2.Text = "Current password is wrong";
             } else
             {
-                labelMessCurr.Text = "";
+                label2.Text = "";
             }
         }
         private void guna2TextBoxNew_Leave(object sender, EventArgs e)
         {
             if (guna2TextBoxNew.Text.Length < 6)
             {
-                labelMessNewPass.Text = "Password must be at least 6 character";
+                label3.Text = "Password must be at least 6 character";
             } else
             {
-                labelMessNewPass.Text = "";
+                label3.Text = "";
             }
         }
 
@@ -59,11 +59,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
         {
             if (guna2TextBoxNew.Text != guna2TextBoxReNew.Text)
             {
-                labelMessReNewPass.Text = "Re-new password is invalid";
+                label4.Text = "Re-new password is invalid";
             } else
             {
-                labelMessReNewPass.Text = "";
+                label4.Text = "";
             }
         }
+
     }
 }
