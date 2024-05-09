@@ -118,13 +118,13 @@
             // labelViewAndEdit
             // 
             this.labelViewAndEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelViewAndEdit.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelViewAndEdit.Font = new System.Drawing.Font("Poppins Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelViewAndEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.labelViewAndEdit.Location = new System.Drawing.Point(0, 0);
             this.labelViewAndEdit.Name = "labelViewAndEdit";
             this.labelViewAndEdit.Size = new System.Drawing.Size(760, 40);
             this.labelViewAndEdit.TabIndex = 0;
-            this.labelViewAndEdit.Text = "VIEW AND EDIT STUDENT";
+            this.labelViewAndEdit.Text = "View And Edit Student";
             this.labelViewAndEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PanelContent1

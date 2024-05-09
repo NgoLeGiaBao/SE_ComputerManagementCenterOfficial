@@ -295,9 +295,6 @@
     <None Include="Resources\11zon_cropped %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\11zon_cropped.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\search1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -323,6 +320,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hide %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excelad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B09PMFX3R2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61zhCt7RBNL._SY466_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61NYR5UwSyL._AC_UF1000,1000_QL80_.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

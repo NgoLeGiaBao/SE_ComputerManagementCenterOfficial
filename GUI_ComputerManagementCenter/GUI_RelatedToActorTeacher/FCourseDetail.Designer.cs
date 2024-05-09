@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -122,7 +121,6 @@
             this.Point = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2PanelPointBotton = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelPointTop = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ElipseCourseDetail = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PanelSmall.SuspendLayout();
             this.guna2TabControlCourseDetail.SuspendLayout();
             this.tabPageCourseInformation.SuspendLayout();
@@ -1154,11 +1152,6 @@
             this.guna2PanelPointTop.Size = new System.Drawing.Size(1006, 40);
             this.guna2PanelPointTop.TabIndex = 0;
             // 
-            // guna2ElipseCourseDetail
-            // 
-            this.guna2ElipseCourseDetail.BorderRadius = 20;
-            this.guna2ElipseCourseDetail.TargetControl = this;
-            // 
             // FCourseDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1251,7 +1244,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FullNameAtt;
         private System.Windows.Forms.DataGridViewTextBoxColumn GenderAtt;
         private System.Windows.Forms.DataGridViewComboBoxColumn StatusAtt;
-        private Guna.UI2.WinForms.Guna2Elipse guna2ElipseCourseDetail;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelMessageAttendance;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxHidden;
         private System.Windows.Forms.Label labelHidden;

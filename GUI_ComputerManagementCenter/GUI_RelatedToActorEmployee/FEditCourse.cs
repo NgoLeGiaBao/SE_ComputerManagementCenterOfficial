@@ -18,6 +18,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             InitializeComponent();
         }
+
         // Get shift from course start
         public void GetShiftFromCourseStart()
         {
@@ -67,7 +68,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListTeacher();
         }
 
-
+        
         // Load list teacher 
         public void LoadListTeacher()
         {
@@ -84,7 +85,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Add new student into course
         public void AddNewStudentIntoCourse(DTO_Student item)
         {
-
             Action.Image = global::GUI_ComputerManagementCenter.Properties.Resources.de;
             object[] rowValues = new object[]
             {
@@ -95,8 +95,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             };
             guna2DataGridViewStudent.Rows.Add(rowValues);
             guna2DataGridViewStudent.Rows[guna2DataGridViewStudent.Rows.Count - 1].Tag = item;
-
         }
+
 
         // Set location for datagridviewSearch
         public void SetDataGridViewSearch(int row)
@@ -114,11 +114,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+
         // Load list student by search
-        public void LoadListStudentBySearch(string text)
+        public void LoadListStudentBySearchAndNoExist(string text, string exist)
         {
             guna2DataGridViewSearch.Rows.Clear();
-            List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetStudentBySearch(text);
+            List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetStudentBySearchAndNoExist(text, exist);
             foreach (DTO_Student item in list)
             {
                 object[] rowValues = new object[]
@@ -166,7 +167,21 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             string text = guna2TextBoxSearch.Text;
             guna2DataGridViewSearch.Visible = true;
-            LoadListStudentBySearch(text);
+
+            string listStudentID = "";
+            if (guna2DataGridViewStudent != null)
+            {
+                foreach (DataGridViewRow row in guna2DataGridViewStudent.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+
+                        listStudentID = listStudentID + row.Cells["StudentID"].Value.ToString() + ",";
+                        // Xử lý dữ liệu tại đây
+                    }
+                }
+            }
+            LoadListStudentBySearchAndNoExist(text,listStudentID);
 
         }
 
@@ -238,6 +253,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     fEs.RefreshPage();
                 }
             }
+        }
+
+        private void guna2ControlBoxClose_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

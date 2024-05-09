@@ -95,6 +95,12 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_SearchStudentNoCase @keyword";
             return DAO_DataProvider.Instance.ExecuteQuery (query, new object[] { search });
         }
+        // Get student by search and no exist
+        public DataTable GetStudentBySearchAndNoExist (string search, string exist)
+        {
+            string query = "USP_SearchStudentNoCaseAndExist @keyword , @exist";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search,exist});
+        }
 
         // Get teacher by search
         public DataTable GetTeachertBySearch(string search)
@@ -107,6 +113,12 @@ namespace DAO_ComputerManagementCenter
         {
             string query = "exec USP_Report @Type";
             return DAO_DataProvider.Instance.ExecuteScalar (query, new object[] { type });
+        }
+        // Get room 
+        public DataTable GetRoom ()
+        {
+            string query = "exec USP_GetRoom";
+            return DAO_DataProvider.Instance.ExecuteQuery(query);
         }
         // -- Add
         // Add new student
@@ -135,7 +147,7 @@ namespace DAO_ComputerManagementCenter
         // Add new course
         public bool AddNewCourse(object[] parameters)
         {
-            string query = "exec USP_NewCourseWithAutoKey @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc , @string , @MaGiaoVien";
+            string query = "exec USP_NewCourseWithAutoKey @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc , @string , @MaGiaoVien , @MaPhongHoc";
             return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
         }
         public bool AddNewCourseTeacherDetail(object[] parameters)
@@ -162,6 +174,21 @@ namespace DAO_ComputerManagementCenter
         {
             string query = "USP_CapNhatGiaoVien @SoCCCD , @HoTen , @GioiTinh , @NgaySinh , @SoDienThoai , @DiaChi , @DiaChiEmail , @TrinhDoHocVan";
             return DAO_DataProvider.Instance.ExecuteNonQuery(query, parameters) > 0 ? true : false;
+        }
+        // Update status course
+        public void UpdateCourseStatus ()
+        {
+            string query = "USP_UpdateStatusCourse";
+            DAO_DataProvider.Instance.ExecuteNonQuery(query);
+        }
+
+        // --Delete--
+        // Delete a course
+        public void DeleteACourse (string courseID)
+        {
+            string query = "USP_DeleteACourse @CourseID";
+            DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });    
+
         }
     }
 }

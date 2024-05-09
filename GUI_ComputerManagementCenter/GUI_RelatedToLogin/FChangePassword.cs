@@ -1,5 +1,6 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,5 +67,27 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
             }
         }
 
+        private void guna2ControlBox2_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
+        }
+
+        private void guna2ButtonCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
+        }
     }
 }

@@ -100,7 +100,7 @@
             // guna2ButtonLogin
             // 
             this.guna2ButtonLogin.AutoRoundedCorners = true;
-            this.guna2ButtonLogin.BorderRadius = 26;
+            this.guna2ButtonLogin.BorderRadius = 6;
             this.guna2ButtonLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.guna2ButtonLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2ButtonLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

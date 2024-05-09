@@ -117,13 +117,13 @@
             // labelAdd
             // 
             this.labelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAdd.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAdd.Font = new System.Drawing.Font("Poppins Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.labelAdd.Location = new System.Drawing.Point(0, 0);
             this.labelAdd.Name = "labelAdd";
             this.labelAdd.Size = new System.Drawing.Size(760, 40);
             this.labelAdd.TabIndex = 0;
-            this.labelAdd.Text = "ADD NEW STUDENT";
+            this.labelAdd.Text = "Add New Student";
             this.labelAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PanelContent1
@@ -157,7 +157,7 @@
             this.guna2TextBoxIC.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxIC.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxIC.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxIC.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxIC.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxIC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxIC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxIC.Location = new System.Drawing.Point(400, 25);
@@ -166,7 +166,7 @@
             this.guna2TextBoxIC.PasswordChar = '\0';
             this.guna2TextBoxIC.PlaceholderText = "";
             this.guna2TextBoxIC.SelectedText = "";
-            this.guna2TextBoxIC.Size = new System.Drawing.Size(330, 30);
+            this.guna2TextBoxIC.Size = new System.Drawing.Size(330, 36);
             this.guna2TextBoxIC.TabIndex = 1;
             this.guna2TextBoxIC.Leave += new System.EventHandler(this.guna2TextBoxIC_Leave);
             // 
@@ -184,7 +184,7 @@
             this.guna2TextBoxID.Enabled = false;
             this.guna2TextBoxID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2TextBoxID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxID.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxID.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxID.Location = new System.Drawing.Point(30, 25);
@@ -193,28 +193,28 @@
             this.guna2TextBoxID.PasswordChar = '\0';
             this.guna2TextBoxID.PlaceholderText = "";
             this.guna2TextBoxID.SelectedText = "";
-            this.guna2TextBoxID.Size = new System.Drawing.Size(330, 30);
+            this.guna2TextBoxID.Size = new System.Drawing.Size(330, 36);
             this.guna2TextBoxID.TabIndex = 0;
             // 
             // labelIC
             // 
             this.labelIC.AutoSize = true;
-            this.labelIC.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIC.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIC.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelIC.Location = new System.Drawing.Point(400, 0);
             this.labelIC.Name = "labelIC";
-            this.labelIC.Size = new System.Drawing.Size(125, 26);
+            this.labelIC.Size = new System.Drawing.Size(141, 30);
             this.labelIC.TabIndex = 1;
             this.labelIC.Text = "Indentify Card";
             // 
             // labelID
             // 
             this.labelID.AutoSize = true;
-            this.labelID.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelID.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelID.Location = new System.Drawing.Point(30, 0);
             this.labelID.Name = "labelID";
-            this.labelID.Size = new System.Drawing.Size(93, 26);
+            this.labelID.Size = new System.Drawing.Size(106, 30);
             this.labelID.TabIndex = 0;
             this.labelID.Text = "Student ID";
             this.labelID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,11 +234,11 @@
             // labelPhone
             // 
             this.labelPhone.AutoSize = true;
-            this.labelPhone.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPhone.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelPhone.Location = new System.Drawing.Point(400, 0);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(61, 26);
+            this.labelPhone.Size = new System.Drawing.Size(68, 30);
             this.labelPhone.TabIndex = 4;
             this.labelPhone.Text = "Phone";
             // 
@@ -253,7 +253,7 @@
             this.guna2TextBoxPhone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxPhone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxPhone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxPhone.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxPhone.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxPhone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxPhone.Location = new System.Drawing.Point(400, 25);
@@ -262,7 +262,7 @@
             this.guna2TextBoxPhone.PasswordChar = '\0';
             this.guna2TextBoxPhone.PlaceholderText = "";
             this.guna2TextBoxPhone.SelectedText = "";
-            this.guna2TextBoxPhone.Size = new System.Drawing.Size(330, 30);
+            this.guna2TextBoxPhone.Size = new System.Drawing.Size(330, 36);
             this.guna2TextBoxPhone.TabIndex = 3;
             // 
             // guna2TextBoxFullName
@@ -276,7 +276,7 @@
             this.guna2TextBoxFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxFullName.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxFullName.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxFullName.Location = new System.Drawing.Point(30, 25);
@@ -285,17 +285,17 @@
             this.guna2TextBoxFullName.PasswordChar = '\0';
             this.guna2TextBoxFullName.PlaceholderText = "";
             this.guna2TextBoxFullName.SelectedText = "";
-            this.guna2TextBoxFullName.Size = new System.Drawing.Size(330, 30);
+            this.guna2TextBoxFullName.Size = new System.Drawing.Size(330, 36);
             this.guna2TextBoxFullName.TabIndex = 2;
             // 
             // labelFullName
             // 
             this.labelFullName.AutoSize = true;
-            this.labelFullName.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFullName.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFullName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelFullName.Location = new System.Drawing.Point(30, 0);
             this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(86, 26);
+            this.labelFullName.Size = new System.Drawing.Size(97, 30);
             this.labelFullName.TabIndex = 3;
             this.labelFullName.Text = "FullName";
             // 
@@ -321,33 +321,37 @@
             this.guna2DateTimePickerBirth.BorderRadius = 6;
             this.guna2DateTimePickerBirth.Checked = true;
             this.guna2DateTimePickerBirth.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePickerBirth.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePickerBirth.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2DateTimePickerBirth.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.guna2DateTimePickerBirth.Location = new System.Drawing.Point(400, 24);
             this.guna2DateTimePickerBirth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePickerBirth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePickerBirth.Name = "guna2DateTimePickerBirth";
-            this.guna2DateTimePickerBirth.Size = new System.Drawing.Size(330, 30);
+            this.guna2DateTimePickerBirth.Size = new System.Drawing.Size(330, 36);
             this.guna2DateTimePickerBirth.TabIndex = 6;
             this.guna2DateTimePickerBirth.Value = new System.DateTime(2024, 4, 16, 0, 39, 56, 747);
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(180, 34);
+            this.label8.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.label8.Location = new System.Drawing.Point(180, 30);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 26);
+            this.label8.Size = new System.Drawing.Size(94, 24);
             this.label8.TabIndex = 10;
             this.label8.Text = "Female";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(56, 34);
+            this.label7.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.label7.Location = new System.Drawing.Point(56, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 20);
+            this.label7.Size = new System.Drawing.Size(61, 24);
             this.label7.TabIndex = 9;
             this.label7.Text = "Male";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2CustomRadioButtonFemale
             // 
@@ -355,7 +359,7 @@
             this.guna2CustomRadioButtonFemale.CheckedState.BorderThickness = 0;
             this.guna2CustomRadioButtonFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomRadioButtonFemale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButtonFemale.Location = new System.Drawing.Point(154, 34);
+            this.guna2CustomRadioButtonFemale.Location = new System.Drawing.Point(154, 33);
             this.guna2CustomRadioButtonFemale.Name = "guna2CustomRadioButtonFemale";
             this.guna2CustomRadioButtonFemale.Size = new System.Drawing.Size(20, 20);
             this.guna2CustomRadioButtonFemale.TabIndex = 5;
@@ -371,7 +375,7 @@
             this.guna2CustomRadioButtonMale.CheckedState.BorderThickness = 0;
             this.guna2CustomRadioButtonMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2CustomRadioButtonMale.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButtonMale.Location = new System.Drawing.Point(30, 34);
+            this.guna2CustomRadioButtonMale.Location = new System.Drawing.Point(30, 33);
             this.guna2CustomRadioButtonMale.Name = "guna2CustomRadioButtonMale";
             this.guna2CustomRadioButtonMale.Size = new System.Drawing.Size(20, 20);
             this.guna2CustomRadioButtonMale.TabIndex = 4;
@@ -384,22 +388,22 @@
             // labelBirth
             // 
             this.labelBirth.AutoSize = true;
-            this.labelBirth.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBirth.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelBirth.Location = new System.Drawing.Point(400, 0);
             this.labelBirth.Name = "labelBirth";
-            this.labelBirth.Size = new System.Drawing.Size(111, 26);
+            this.labelBirth.Size = new System.Drawing.Size(127, 30);
             this.labelBirth.TabIndex = 6;
             this.labelBirth.Text = "Date Of Birth";
             // 
             // labelGender
             // 
             this.labelGender.AutoSize = true;
-            this.labelGender.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGender.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelGender.Location = new System.Drawing.Point(30, 0);
             this.labelGender.Name = "labelGender";
-            this.labelGender.Size = new System.Drawing.Size(71, 26);
+            this.labelGender.Size = new System.Drawing.Size(79, 30);
             this.labelGender.TabIndex = 5;
             this.labelGender.Text = "Gender";
             // 
@@ -424,7 +428,7 @@
             this.guna2TextBoxEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxEmail.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxEmail.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxEmail.Location = new System.Drawing.Point(30, 25);
@@ -433,17 +437,17 @@
             this.guna2TextBoxEmail.PasswordChar = '\0';
             this.guna2TextBoxEmail.PlaceholderText = "";
             this.guna2TextBoxEmail.SelectedText = "";
-            this.guna2TextBoxEmail.Size = new System.Drawing.Size(700, 30);
+            this.guna2TextBoxEmail.Size = new System.Drawing.Size(700, 36);
             this.guna2TextBoxEmail.TabIndex = 8;
             // 
             // labelEmail
             // 
             this.labelEmail.AutoSize = true;
-            this.labelEmail.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmail.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelEmail.Location = new System.Drawing.Point(30, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(55, 26);
+            this.labelEmail.Size = new System.Drawing.Size(62, 30);
             this.labelEmail.TabIndex = 5;
             this.labelEmail.Text = "Email";
             // 
@@ -468,7 +472,7 @@
             this.guna2TextBoxAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxAddress.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxAddress.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.guna2TextBoxAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxAddress.Location = new System.Drawing.Point(30, 26);
@@ -477,17 +481,17 @@
             this.guna2TextBoxAddress.PasswordChar = '\0';
             this.guna2TextBoxAddress.PlaceholderText = "";
             this.guna2TextBoxAddress.SelectedText = "";
-            this.guna2TextBoxAddress.Size = new System.Drawing.Size(700, 30);
+            this.guna2TextBoxAddress.Size = new System.Drawing.Size(700, 36);
             this.guna2TextBoxAddress.TabIndex = 9;
             // 
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             this.labelAddress.Location = new System.Drawing.Point(30, 0);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(77, 26);
+            this.labelAddress.Size = new System.Drawing.Size(87, 30);
             this.labelAddress.TabIndex = 6;
             this.labelAddress.Text = "Address";
             // 
@@ -517,7 +521,7 @@
             this.guna2ButtonCacel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonCacel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonCacel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.guna2ButtonCacel.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonCacel.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonCacel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.guna2ButtonCacel.Location = new System.Drawing.Point(400, 0);
             this.guna2ButtonCacel.Name = "guna2ButtonCacel";
@@ -534,7 +538,7 @@
             this.guna2ButtonSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonSave.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2ButtonSave.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonSave.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonSave.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonSave.Location = new System.Drawing.Point(30, 0);
             this.guna2ButtonSave.Name = "guna2ButtonSave";

@@ -96,8 +96,12 @@ namespace BUS_ComputerManagementCenter
         // Get student by ID
         public DTO_Student GetStudentByID (string id)
         {
-            DataRow dataRow = DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows[0];
-            return new DTO_Student(dataRow);
+            if (DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows.Count > 0)
+            {
+                DataRow dataRow = DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows[0];
+                return new DTO_Student(dataRow);
+            }
+            return null;
         }
 
         // Get teacher by ID
@@ -108,10 +112,10 @@ namespace BUS_ComputerManagementCenter
         }
 
         // Get student by search
-        public List<DTO_Student> GetStudentBySearch(string search)
+        public List<DTO_Student> GetStudentBySearchAndNoExist(string search, string exist)
         {
             List<DTO_Student> listStudent = new List<DTO_Student>();
-            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetStudentBySearch(search);
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetStudentBySearchAndNoExist(search, exist);
             foreach (DataRow data in dataTable.Rows)
             {
                 listStudent.Add(new DTO_Student(data));
@@ -136,6 +140,18 @@ namespace BUS_ComputerManagementCenter
             string result = DAO_RelatedToEmployee.Instance.GetQuantity(type).ToString();
             return result == "" ? "0": result;
         }
+        // Get room
+        public List<DTO_Room> GetRoom()
+        {
+            List<DTO_Room> listRoom = new List<DTO_Room>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetRoom();
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listRoom.Add(new DTO_Room(data));
+            }
+            return listRoom;
+        }
+
         //--Check--//
         // Check student exist
         public bool CheckExistStudentID (string id)
@@ -147,7 +163,7 @@ namespace BUS_ComputerManagementCenter
         {
             return DAO_RelatedToEmployee.Instance.GetTeacherByID(id).Rows.Count > 0 ? true : false;
         }
-
+      
          //---Add----
          // Add a new student
         public bool AddNewStudent(object[] parameters, string obj)
@@ -185,6 +201,17 @@ namespace BUS_ComputerManagementCenter
         public bool UpdateTeacher(object[] parameters)
         {
             return DAO_RelatedToEmployee.Instance.UpdateTeacher(parameters);
+        }
+        // Update course status
+        public void UpdateCourseStatus()
+        {
+            DAO_RelatedToEmployee.Instance.UpdateCourseStatus();
+        }
+
+        //--Delete --
+        public void DeleteACourse(string courseID)
+        {
+            DAO_RelatedToEmployee.Instance.DeleteACourse(courseID);
         }
     }    
 }

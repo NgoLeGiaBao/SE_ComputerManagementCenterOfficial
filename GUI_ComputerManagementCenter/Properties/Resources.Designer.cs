@@ -63,9 +63,9 @@ namespace GUI_ComputerManagementCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _11zon_cropped {
+        internal static System.Drawing.Bitmap _11zon_cropped__1_ {
             get {
-                object obj = ResourceManager.GetObject("11zon_cropped", resourceCulture);
+                object obj = ResourceManager.GetObject("11zon_cropped (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace GUI_ComputerManagementCenter.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _11zon_cropped__1_ {
+        internal static System.Drawing.Bitmap _61NYR5UwSyL__AC_UF1000_1000_QL80_ {
             get {
-                object obj = ResourceManager.GetObject("11zon_cropped (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("61NYR5UwSyL._AC_UF1000,1000_QL80_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _61zhCt7RBNL__SY466_ {
+            get {
+                object obj = ResourceManager.GetObject("61zhCt7RBNL._SY466_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +106,16 @@ namespace GUI_ComputerManagementCenter.Properties {
         internal static System.Drawing.Bitmap att {
             get {
                 object obj = ResourceManager.GetObject("att", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap B09PMFX3R2 {
+            get {
+                object obj = ResourceManager.GetObject("B09PMFX3R2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +146,16 @@ namespace GUI_ComputerManagementCenter.Properties {
         internal static System.Drawing.Bitmap de {
             get {
                 object obj = ResourceManager.GetObject("de", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap excelad {
+            get {
+                object obj = ResourceManager.GetObject("excelad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

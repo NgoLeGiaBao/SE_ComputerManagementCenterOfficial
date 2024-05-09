@@ -119,13 +119,13 @@
             // labelAdd
             // 
             this.labelAdd.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAdd.Font = new System.Drawing.Font("Poppins", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAdd.Font = new System.Drawing.Font("Poppins Medium", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             this.labelAdd.Location = new System.Drawing.Point(0, 0);
             this.labelAdd.Name = "labelAdd";
             this.labelAdd.Size = new System.Drawing.Size(760, 40);
             this.labelAdd.TabIndex = 0;
-            this.labelAdd.Text = "ADD NEW TEACHER";
+            this.labelAdd.Text = "Add New Teacher";
             this.labelAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2PanelContent1

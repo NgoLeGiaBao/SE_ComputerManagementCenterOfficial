@@ -35,7 +35,7 @@
             // 
             this.guna2PanelCover.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2PanelCover.Enabled = false;
-            this.guna2PanelCover.FillColor = System.Drawing.Color.LightGray;
+            this.guna2PanelCover.FillColor = System.Drawing.Color.DimGray;
             this.guna2PanelCover.Location = new System.Drawing.Point(0, 0);
             this.guna2PanelCover.Name = "guna2PanelCover";
             this.guna2PanelCover.Size = new System.Drawing.Size(1682, 753);
