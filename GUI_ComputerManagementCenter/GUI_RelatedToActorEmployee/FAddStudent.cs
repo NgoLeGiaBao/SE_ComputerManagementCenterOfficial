@@ -1,4 +1,5 @@
 ﻿using BUS_ComputerManagementCenter;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,34 +34,33 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             return gender;
         }
 
-        // Check indentity card number
-        private void guna2TextBoxIC_Leave(object sender, EventArgs e)
-        {
-            string id = guna2TextBoxIC.Text;
-            if (id.Length != 12)
-            {
-                MessageBox.Show("Indetity Card have only 12 characters");
-                guna2TextBoxIC.Focus();
-            } else
-            {
-                if (BUS_RelatedToEmployee.Instance.CheckExistStudentID("HV"+id))
-                {
-                    MessageBox.Show("ID existed");
-                    guna2TextBoxIC.Focus();
-                }
-                else
-                {
-                    guna2TextBoxID.Text = "HV"+id;
-                    guna2TextBoxFullName.Focus();
-                    //MessageBox.Show("");
-                }
-            }
-        }
+
 
         // Click on Save Button
         private void guna2ButtonSave_Click(object sender, EventArgs e)
-        {   
-            
+        {
+
+            string id = guna2TextBoxIC.Text;
+            if (id.Length == 0)
+            {
+                MessageBox.Show("Please enter indetity card");
+                return;
+            }
+            else if (id.Length != 12)
+            {
+                MessageBox.Show("Indetity card have only 12 characters");
+                return;
+
+            }
+            else
+            {
+                if (BUS_RelatedToEmployee.Instance.CheckExistStudentID("HV" + id))
+                {
+                    MessageBox.Show("ID existed");
+                    return ;
+                }
+            }
+
             string gender = GetGender();
             string identityCard = guna2TextBoxIC.Text;
             string fullName = guna2TextBoxFullName.Text;
@@ -79,7 +79,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (isAdded) {
                 BUS_RelatedToSendEmail.SendEmailToUser(email, emailSubject, emailBody);
                 MessageBox.Show("Successfully");
-                // Tạo một tham chiếu đến form FEs nếu cần thiết
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
                 if (fEs != null)
                 {
@@ -94,10 +93,35 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Click on Cancel button
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
-            
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
             this.Close();
         }
 
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
+        }
 
+        private void guna2TextBoxIC_Leave(object sender, EventArgs e)
+        {
+                guna2TextBoxID.Text = "HV" + guna2TextBoxIC.Text;
+        }
+
+        private void FAddStudent_Load(object sender, EventArgs e)
+        {
+            guna2CustomRadioButtonMale.Checked = true;
+        }
     }
 }

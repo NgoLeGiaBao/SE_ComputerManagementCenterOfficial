@@ -102,12 +102,16 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             else if (page == "Student")
             {
                 FAddStudent fAddStudent = new FAddStudent();
-                fAddStudent.Show();
+                FBackGround fBackGround = new FBackGround();
+                fBackGround.Show();
+                fAddStudent.ShowDialog();
             }
             else if (page == "Teacher")
             {
-               FAddTeacher fAddTeacher = new FAddTeacher();
-                fAddTeacher.Show();
+                FAddTeacher fAddTeacher = new FAddTeacher();
+                FBackGround fBackGround = new FBackGround();
+                fBackGround.Show();
+                fAddTeacher.ShowDialog();
             }
             else
             {
@@ -209,7 +213,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
             FEditTeacher fEditTeacher = new FEditTeacher();
-            fEditTeacher.Show();
+            FBackGround fBackGround = new FBackGround();
+            fBackGround.Show();
+            fEditTeacher.ShowDialog();
         }
 
         // Click DeleteTeacher
@@ -445,6 +451,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
+            DTO_Course.CourseChoosen = course;
             FEditCourse fEditCourse = new FEditCourse();
             fEditCourse.Show();
         }
@@ -670,6 +677,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 // Handle potential exceptions during PDF creation
                 MessageBox.Show("Error exporting data to PDF: " + ex.Message, "Export Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void guna2DataGridViewCommon_MouseLeave(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = false;
         }
     }
 }

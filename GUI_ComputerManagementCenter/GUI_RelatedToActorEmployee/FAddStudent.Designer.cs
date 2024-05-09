@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.guna2PanelNav = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelEmpty = new Guna.UI2.WinForms.Guna2Panel();
@@ -64,7 +63,6 @@
             this.guna2ButtonCacel = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ButtonSave = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelHeader.SuspendLayout();
             this.guna2PanelContent2.SuspendLayout();
@@ -96,20 +94,21 @@
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(60, 30);
             this.guna2ControlBox1.TabIndex = 0;
+            this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
             // guna2PanelEmpty
             // 
             this.guna2PanelEmpty.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelEmpty.Location = new System.Drawing.Point(0, 30);
             this.guna2PanelEmpty.Name = "guna2PanelEmpty";
-            this.guna2PanelEmpty.Size = new System.Drawing.Size(760, 40);
+            this.guna2PanelEmpty.Size = new System.Drawing.Size(760, 30);
             this.guna2PanelEmpty.TabIndex = 1;
             // 
             // guna2PanelHeader
             // 
             this.guna2PanelHeader.Controls.Add(this.labelAdd);
             this.guna2PanelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelHeader.Location = new System.Drawing.Point(0, 70);
+            this.guna2PanelHeader.Location = new System.Drawing.Point(0, 60);
             this.guna2PanelHeader.Name = "guna2PanelHeader";
             this.guna2PanelHeader.Size = new System.Drawing.Size(760, 40);
             this.guna2PanelHeader.TabIndex = 2;
@@ -129,9 +128,9 @@
             // guna2PanelContent1
             // 
             this.guna2PanelContent1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent1.Location = new System.Drawing.Point(0, 110);
+            this.guna2PanelContent1.Location = new System.Drawing.Point(0, 100);
             this.guna2PanelContent1.Name = "guna2PanelContent1";
-            this.guna2PanelContent1.Size = new System.Drawing.Size(760, 40);
+            this.guna2PanelContent1.Size = new System.Drawing.Size(760, 30);
             this.guna2PanelContent1.TabIndex = 3;
             // 
             // guna2PanelContent2
@@ -141,7 +140,7 @@
             this.guna2PanelContent2.Controls.Add(this.labelIC);
             this.guna2PanelContent2.Controls.Add(this.labelID);
             this.guna2PanelContent2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent2.Location = new System.Drawing.Point(0, 150);
+            this.guna2PanelContent2.Location = new System.Drawing.Point(0, 130);
             this.guna2PanelContent2.Name = "guna2PanelContent2";
             this.guna2PanelContent2.Size = new System.Drawing.Size(760, 70);
             this.guna2PanelContent2.TabIndex = 4;
@@ -226,7 +225,7 @@
             this.guna2PanelCotent3.Controls.Add(this.guna2TextBoxFullName);
             this.guna2PanelCotent3.Controls.Add(this.labelFullName);
             this.guna2PanelCotent3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelCotent3.Location = new System.Drawing.Point(0, 220);
+            this.guna2PanelCotent3.Location = new System.Drawing.Point(0, 200);
             this.guna2PanelCotent3.Name = "guna2PanelCotent3";
             this.guna2PanelCotent3.Size = new System.Drawing.Size(760, 70);
             this.guna2PanelCotent3.TabIndex = 5;
@@ -309,7 +308,7 @@
             this.guna2PanelContent4.Controls.Add(this.labelBirth);
             this.guna2PanelContent4.Controls.Add(this.labelGender);
             this.guna2PanelContent4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent4.Location = new System.Drawing.Point(0, 290);
+            this.guna2PanelContent4.Location = new System.Drawing.Point(0, 270);
             this.guna2PanelContent4.Name = "guna2PanelContent4";
             this.guna2PanelContent4.Size = new System.Drawing.Size(760, 70);
             this.guna2PanelContent4.TabIndex = 5;
@@ -412,7 +411,7 @@
             this.guna2PanelContent5.Controls.Add(this.guna2TextBoxEmail);
             this.guna2PanelContent5.Controls.Add(this.labelEmail);
             this.guna2PanelContent5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent5.Location = new System.Drawing.Point(0, 360);
+            this.guna2PanelContent5.Location = new System.Drawing.Point(0, 340);
             this.guna2PanelContent5.Name = "guna2PanelContent5";
             this.guna2PanelContent5.Size = new System.Drawing.Size(760, 70);
             this.guna2PanelContent5.TabIndex = 6;
@@ -456,7 +455,7 @@
             this.guna2PanelContent6.Controls.Add(this.guna2TextBoxAddress);
             this.guna2PanelContent6.Controls.Add(this.labelAddress);
             this.guna2PanelContent6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent6.Location = new System.Drawing.Point(0, 430);
+            this.guna2PanelContent6.Location = new System.Drawing.Point(0, 410);
             this.guna2PanelContent6.Name = "guna2PanelContent6";
             this.guna2PanelContent6.Size = new System.Drawing.Size(760, 70);
             this.guna2PanelContent6.TabIndex = 7;
@@ -498,9 +497,9 @@
             // guna2PanelContent7
             // 
             this.guna2PanelContent7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelContent7.Location = new System.Drawing.Point(0, 500);
+            this.guna2PanelContent7.Location = new System.Drawing.Point(0, 480);
             this.guna2PanelContent7.Name = "guna2PanelContent7";
-            this.guna2PanelContent7.Size = new System.Drawing.Size(760, 40);
+            this.guna2PanelContent7.Size = new System.Drawing.Size(760, 30);
             this.guna2PanelContent7.TabIndex = 8;
             // 
             // guna2Panel1
@@ -508,7 +507,7 @@
             this.guna2Panel1.Controls.Add(this.guna2ButtonCacel);
             this.guna2Panel1.Controls.Add(this.guna2ButtonSave);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 540);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 510);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(760, 49);
             this.guna2Panel1.TabIndex = 9;
@@ -523,9 +522,9 @@
             this.guna2ButtonCacel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.guna2ButtonCacel.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonCacel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2ButtonCacel.Location = new System.Drawing.Point(400, 0);
+            this.guna2ButtonCacel.Location = new System.Drawing.Point(390, 0);
             this.guna2ButtonCacel.Name = "guna2ButtonCacel";
-            this.guna2ButtonCacel.Size = new System.Drawing.Size(330, 45);
+            this.guna2ButtonCacel.Size = new System.Drawing.Size(340, 45);
             this.guna2ButtonCacel.TabIndex = 11;
             this.guna2ButtonCacel.Text = "Cancel";
             this.guna2ButtonCacel.Click += new System.EventHandler(this.guna2ButtonCacel_Click);
@@ -542,7 +541,7 @@
             this.guna2ButtonSave.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonSave.Location = new System.Drawing.Point(30, 0);
             this.guna2ButtonSave.Name = "guna2ButtonSave";
-            this.guna2ButtonSave.Size = new System.Drawing.Size(330, 45);
+            this.guna2ButtonSave.Size = new System.Drawing.Size(340, 45);
             this.guna2ButtonSave.TabIndex = 10;
             this.guna2ButtonSave.Text = "Save";
             this.guna2ButtonSave.Click += new System.EventHandler(this.guna2ButtonSave_Click);
@@ -551,22 +550,17 @@
             // 
             this.guna2PanelFooter.BackColor = System.Drawing.Color.Transparent;
             this.guna2PanelFooter.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2PanelFooter.Location = new System.Drawing.Point(0, 589);
+            this.guna2PanelFooter.Location = new System.Drawing.Point(0, 559);
             this.guna2PanelFooter.Name = "guna2PanelFooter";
-            this.guna2PanelFooter.Size = new System.Drawing.Size(760, 40);
+            this.guna2PanelFooter.Size = new System.Drawing.Size(760, 30);
             this.guna2PanelFooter.TabIndex = 10;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
             // 
             // FAddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(760, 659);
+            this.ClientSize = new System.Drawing.Size(760, 601);
             this.Controls.Add(this.guna2PanelFooter);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PanelContent7);
@@ -585,6 +579,7 @@
             this.Name = "FAddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FEditTeacher";
+            this.Load += new System.EventHandler(this.FAddStudent_Load);
             this.guna2PanelNav.ResumeLayout(false);
             this.guna2PanelHeader.ResumeLayout(false);
             this.guna2PanelContent2.ResumeLayout(false);
@@ -636,7 +631,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2ButtonCacel;
         private Guna.UI2.WinForms.Guna2Button guna2ButtonSave;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelFooter;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

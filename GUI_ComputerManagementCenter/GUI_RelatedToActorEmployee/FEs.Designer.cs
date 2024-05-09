@@ -43,8 +43,11 @@
             this.guna2PanelInfor = new Guna.UI2.WinForms.Guna2Panel();
             this.labelQuanTity = new System.Windows.Forms.Label();
             this.guna2DataGridViewCommon = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelPersonnal = new Guna.UI2.WinForms.Guna2Panel();
             this.labelPersonalName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBoxAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ButtonAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PanelNav = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelSmall = new Guna.UI2.WinForms.Guna2Panel();
@@ -52,6 +55,7 @@
             this.guna2ControlBoxMinimized = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PanelLogo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TabControlEmployee = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
@@ -85,17 +89,16 @@
             this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageCourse = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CirclePictureBoxAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2TextBoxSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
             this.guna2PanelPersonnal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).BeginInit();
             this.guna2PanelNav.SuspendLayout();
             this.guna2PanelCover.SuspendLayout();
             this.guna2PanelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).BeginInit();
             this.guna2TabControlEmployee.SuspendLayout();
             this.tabPageTeacher.SuspendLayout();
             this.guna2PanelFooter.SuspendLayout();
@@ -104,9 +107,6 @@
             this.guna2PanelFooterStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).BeginInit();
             this.tabPageCourse.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2PanelControl
@@ -213,6 +213,24 @@
             this.guna2DataGridViewCommon.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.guna2DataGridViewCommon.Visible = false;
             this.guna2DataGridViewCommon.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewCommon_CellContentClick);
+            this.guna2DataGridViewCommon.MouseLeave += new System.EventHandler(this.guna2DataGridViewCommon_MouseLeave);
+            // 
+            // guna2PictureBoxScroll
+            // 
+            this.guna2PictureBoxScroll.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2PictureBoxScroll.BorderRadius = 10;
+            this.guna2PictureBoxScroll.Image = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
+            this.guna2PictureBoxScroll.ImageRotate = 0F;
+            this.guna2PictureBoxScroll.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
+            this.guna2PictureBoxScroll.Location = new System.Drawing.Point(1672, 33);
+            this.guna2PictureBoxScroll.Name = "guna2PictureBoxScroll";
+            this.guna2PictureBoxScroll.Size = new System.Drawing.Size(18, 18);
+            this.guna2PictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxScroll.TabIndex = 3;
+            this.guna2PictureBoxScroll.TabStop = false;
+            this.guna2PictureBoxScroll.Click += new System.EventHandler(this.guna2PictureBoxScroll_Click);
             // 
             // guna2PanelPersonnal
             // 
@@ -236,6 +254,44 @@
             this.labelPersonalName.Text = "      Hi, Hoang Phuc !";
             this.labelPersonalName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.labelPersonalName.Click += new System.EventHandler(this.labelPersonalName_Click);
+            // 
+            // guna2CirclePictureBoxAvatar
+            // 
+            this.guna2CirclePictureBoxAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CirclePictureBoxAvatar.Image = global::GUI_ComputerManagementCenter.Properties.Resources.images;
+            this.guna2CirclePictureBoxAvatar.ImageRotate = 0F;
+            this.guna2CirclePictureBoxAvatar.Location = new System.Drawing.Point(0, 0);
+            this.guna2CirclePictureBoxAvatar.Name = "guna2CirclePictureBoxAvatar";
+            this.guna2CirclePictureBoxAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBoxAvatar.Size = new System.Drawing.Size(50, 50);
+            this.guna2CirclePictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBoxAvatar.TabIndex = 0;
+            this.guna2CirclePictureBoxAvatar.TabStop = false;
+            this.guna2CirclePictureBoxAvatar.Click += new System.EventHandler(this.guna2CirclePictureBoxAvatar_Click);
+            // 
+            // guna2TextBoxSearch
+            // 
+            this.guna2TextBoxSearch.BorderRadius = 6;
+            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBoxSearch.DefaultText = "";
+            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
+            this.guna2TextBoxSearch.Location = new System.Drawing.Point(1082, 87);
+            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
+            this.guna2TextBoxSearch.PasswordChar = '\0';
+            this.guna2TextBoxSearch.PlaceholderText = "Search here";
+            this.guna2TextBoxSearch.SelectedText = "";
+            this.guna2TextBoxSearch.Size = new System.Drawing.Size(348, 49);
+            this.guna2TextBoxSearch.TabIndex = 1;
+            this.guna2TextBoxSearch.Click += new System.EventHandler(this.guna2TextBoxSearch_Click);
+            this.guna2TextBoxSearch.Leave += new System.EventHandler(this.guna2TextBoxSearch_Leave);
             // 
             // guna2ButtonAdd
             // 
@@ -326,6 +382,22 @@
             this.guna2PanelLogo.Size = new System.Drawing.Size(240, 200);
             this.guna2PanelLogo.TabIndex = 0;
             // 
+            // guna2PictureBoxLogo
+            // 
+            this.guna2PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBoxLogo.ErrorImage = null;
+            this.guna2PictureBoxLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.guna2PictureBoxLogo.Image = global::GUI_ComputerManagementCenter.Properties.Resources.LogoBlackBackground1;
+            this.guna2PictureBoxLogo.ImageRotate = 0F;
+            this.guna2PictureBoxLogo.InitialImage = null;
+            this.guna2PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2PictureBoxLogo.Name = "guna2PictureBoxLogo";
+            this.guna2PictureBoxLogo.Size = new System.Drawing.Size(240, 200);
+            this.guna2PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxLogo.TabIndex = 0;
+            this.guna2PictureBoxLogo.TabStop = false;
+            // 
             // guna2TabControlEmployee
             // 
             this.guna2TabControlEmployee.Alignment = System.Windows.Forms.TabAlignment.Left;
@@ -407,7 +479,7 @@
             this.guna2ButtonSavePDFTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonSavePDFTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonSavePDFTeacher.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ButtonSavePDFTeacher.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonSavePDFTeacher.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonSavePDFTeacher.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonSavePDFTeacher.Location = new System.Drawing.Point(1152, 25);
             this.guna2ButtonSavePDFTeacher.Name = "guna2ButtonSavePDFTeacher";
@@ -424,7 +496,7 @@
             this.guna2ButtonEditTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonEditTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonEditTeacher.FillColor = System.Drawing.SystemColors.MenuText;
-            this.guna2ButtonEditTeacher.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonEditTeacher.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonEditTeacher.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonEditTeacher.Location = new System.Drawing.Point(1359, 25);
             this.guna2ButtonEditTeacher.Name = "guna2ButtonEditTeacher";
@@ -441,7 +513,7 @@
             this.guna2ButtonDeleteTeacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonDeleteTeacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonDeleteTeacher.FillColor = System.Drawing.Color.Red;
-            this.guna2ButtonDeleteTeacher.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonDeleteTeacher.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonDeleteTeacher.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonDeleteTeacher.Location = new System.Drawing.Point(1545, 25);
             this.guna2ButtonDeleteTeacher.Name = "guna2ButtonDeleteTeacher";
@@ -636,7 +708,7 @@
             this.guna2ButtonViewAndPrint.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonViewAndPrint.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonViewAndPrint.FillColor = System.Drawing.SystemColors.MenuHighlight;
-            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonViewAndPrint.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonViewAndPrint.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonViewAndPrint.Location = new System.Drawing.Point(1174, 25);
             this.guna2ButtonViewAndPrint.Name = "guna2ButtonViewAndPrint";
@@ -653,7 +725,7 @@
             this.guna2ButtonEditStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonEditStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonEditStudent.FillColor = System.Drawing.SystemColors.MenuText;
-            this.guna2ButtonEditStudent.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonEditStudent.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonEditStudent.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonEditStudent.Location = new System.Drawing.Point(1381, 25);
             this.guna2ButtonEditStudent.Name = "guna2ButtonEditStudent";
@@ -670,7 +742,7 @@
             this.guna2ButtonDeleteStudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2ButtonDeleteStudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2ButtonDeleteStudent.FillColor = System.Drawing.Color.Red;
-            this.guna2ButtonDeleteStudent.Font = new System.Drawing.Font("Poppins Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2ButtonDeleteStudent.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2ButtonDeleteStudent.ForeColor = System.Drawing.Color.White;
             this.guna2ButtonDeleteStudent.Location = new System.Drawing.Point(1567, 25);
             this.guna2ButtonDeleteStudent.Name = "guna2ButtonDeleteStudent";
@@ -838,77 +910,6 @@
             this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
             this.flowLayoutPanelCourse.TabIndex = 0;
             // 
-            // guna2PictureBoxScroll
-            // 
-            this.guna2PictureBoxScroll.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2PictureBoxScroll.BorderRadius = 10;
-            this.guna2PictureBoxScroll.Image = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
-            this.guna2PictureBoxScroll.ImageRotate = 0F;
-            this.guna2PictureBoxScroll.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
-            this.guna2PictureBoxScroll.Location = new System.Drawing.Point(1672, 33);
-            this.guna2PictureBoxScroll.Name = "guna2PictureBoxScroll";
-            this.guna2PictureBoxScroll.Size = new System.Drawing.Size(18, 18);
-            this.guna2PictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBoxScroll.TabIndex = 3;
-            this.guna2PictureBoxScroll.TabStop = false;
-            this.guna2PictureBoxScroll.Click += new System.EventHandler(this.guna2PictureBoxScroll_Click);
-            // 
-            // guna2CirclePictureBoxAvatar
-            // 
-            this.guna2CirclePictureBoxAvatar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBoxAvatar.Image = global::GUI_ComputerManagementCenter.Properties.Resources.images;
-            this.guna2CirclePictureBoxAvatar.ImageRotate = 0F;
-            this.guna2CirclePictureBoxAvatar.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBoxAvatar.Name = "guna2CirclePictureBoxAvatar";
-            this.guna2CirclePictureBoxAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBoxAvatar.Size = new System.Drawing.Size(50, 50);
-            this.guna2CirclePictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBoxAvatar.TabIndex = 0;
-            this.guna2CirclePictureBoxAvatar.TabStop = false;
-            this.guna2CirclePictureBoxAvatar.Click += new System.EventHandler(this.guna2CirclePictureBoxAvatar_Click);
-            // 
-            // guna2TextBoxSearch
-            // 
-            this.guna2TextBoxSearch.BorderRadius = 6;
-            this.guna2TextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBoxSearch.DefaultText = "";
-            this.guna2TextBoxSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBoxSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBoxSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBoxSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBoxSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxSearch.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.search;
-            this.guna2TextBoxSearch.Location = new System.Drawing.Point(1082, 87);
-            this.guna2TextBoxSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.guna2TextBoxSearch.Name = "guna2TextBoxSearch";
-            this.guna2TextBoxSearch.PasswordChar = '\0';
-            this.guna2TextBoxSearch.PlaceholderText = "Search here";
-            this.guna2TextBoxSearch.SelectedText = "";
-            this.guna2TextBoxSearch.Size = new System.Drawing.Size(348, 49);
-            this.guna2TextBoxSearch.TabIndex = 1;
-            this.guna2TextBoxSearch.Click += new System.EventHandler(this.guna2TextBoxSearch_Click);
-            this.guna2TextBoxSearch.Leave += new System.EventHandler(this.guna2TextBoxSearch_Leave);
-            // 
-            // guna2PictureBoxLogo
-            // 
-            this.guna2PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PictureBoxLogo.ErrorImage = null;
-            this.guna2PictureBoxLogo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.guna2PictureBoxLogo.Image = global::GUI_ComputerManagementCenter.Properties.Resources.LogoBlackBackground1;
-            this.guna2PictureBoxLogo.ImageRotate = 0F;
-            this.guna2PictureBoxLogo.InitialImage = null;
-            this.guna2PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBoxLogo.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBoxLogo.Name = "guna2PictureBoxLogo";
-            this.guna2PictureBoxLogo.Size = new System.Drawing.Size(240, 200);
-            this.guna2PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBoxLogo.TabIndex = 0;
-            this.guna2PictureBoxLogo.TabStop = false;
-            // 
             // FEs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -927,10 +928,13 @@
             this.guna2PanelControl.ResumeLayout(false);
             this.guna2PanelInfor.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).EndInit();
             this.guna2PanelPersonnal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).EndInit();
             this.guna2PanelNav.ResumeLayout(false);
             this.guna2PanelCover.ResumeLayout(false);
             this.guna2PanelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).EndInit();
             this.guna2TabControlEmployee.ResumeLayout(false);
             this.tabPageTeacher.ResumeLayout(false);
             this.guna2PanelFooter.ResumeLayout(false);
@@ -939,9 +943,6 @@
             this.guna2PanelFooterStudent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).EndInit();
             this.tabPageCourse.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxLogo)).EndInit();
             this.ResumeLayout(false);
 
         }

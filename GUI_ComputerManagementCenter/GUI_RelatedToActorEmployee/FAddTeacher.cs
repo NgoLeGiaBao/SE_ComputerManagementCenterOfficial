@@ -1,4 +1,5 @@
 ﻿using BUS_ComputerManagementCenter;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,30 +34,23 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
         private void guna2TextBoxIC_Leave(object sender, EventArgs e)
         {
-            string id = guna2TextBoxIC.Text;
-            if (id.Length != 12)
-            {
-                MessageBox.Show("Indetity Card have only 12 characters");
-                guna2TextBoxIC.Focus();
-            }
-            else
-            {
-                if (BUS_RelatedToEmployee.Instance.CheckExistTeacherID("GV" + id))
-                {
-                    MessageBox.Show("ID existed");
-                    guna2TextBoxIC.Focus();
-                }
-                else
-                {
-                    guna2TextBoxID.Text = "HV" + id;
-                    guna2TextBoxFullName.Focus();
-                    //MessageBox.Show("");
-                }
-            }
+            guna2TextBoxID.Text = "GV" + guna2TextBoxIC.Text;
         }
 
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
+            string id = guna2TextBoxIC.Text;
+            if (id.Length == 0)
+            {
+                MessageBox.Show("Please enter indetity card");
+                return;
+            }
+            else if (id.Length != 12)
+            {
+                MessageBox.Show("Indetity card have only 12 characters");
+                return;
+
+            }
             string gender = GetGender();
             string identityCard = guna2TextBoxIC.Text;
             string fullName = guna2TextBoxFullName.Text;
@@ -91,7 +85,30 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
             this.Close();   
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
+        }
+
+        private void FAddTeacher_Load(object sender, EventArgs e)
+        {
+            guna2CustomRadioButtonMale.Checked = true;
         }
     }
 }

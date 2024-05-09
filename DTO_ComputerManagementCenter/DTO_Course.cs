@@ -18,11 +18,12 @@ namespace DTO_ComputerManagementCenter
         private string courseInfor;
         private int courseFee;
         private int courseStatus;
+        private string courseShift;
         private static DTO_Course courseChoosen;
 
 
         // Constructor with full paramenters
-        public DTO_Course(string courseID, string subjectID, string courseName, DateTime startDay, DateTime endDay, string courseInfor, int courseFee, int courseStatus)
+        public DTO_Course(string courseID, string subjectID, string courseName, DateTime startDay, DateTime endDay, string courseInfor, int courseFee, int courseStatus, string courseShift)
         {
             this.CourseID = courseID;
             this.SubjectID = subjectID;
@@ -32,6 +33,7 @@ namespace DTO_ComputerManagementCenter
             this.CourseInfor = courseInfor;
             this.CourseFee = courseFee;
             this.CourseStatus = courseStatus;
+            this.CourseShift = courseShift;
         }
         // Constructor with datarow
         public DTO_Course(DataRow dataRow)
@@ -44,6 +46,7 @@ namespace DTO_ComputerManagementCenter
             this.CourseInfor = dataRow["ThongTinKhoaHoc"].ToString();
             this.CourseFee = int.Parse(dataRow["HocPhiKhoaHoc"].ToString());
             this.CourseStatus = int.Parse(dataRow["TrangThaiKhoaHoc"].ToString());
+            this.CourseShift = dataRow["TenCaHoc"].ToString();
         }
 
 
@@ -56,5 +59,6 @@ namespace DTO_ComputerManagementCenter
         public int CourseFee { get => courseFee; set => courseFee = value; }
         public int CourseStatus { get => courseStatus; set => courseStatus = value; }
         public static DTO_Course CourseChoosen { get => courseChoosen; set => courseChoosen = value; }
+        public string CourseShift { get => courseShift; set => courseShift = value; }
     }
 }
