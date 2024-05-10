@@ -49,6 +49,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
          // Get quantity
          public void RefreshQuantity ()
         {
+            LoadListTeacher();
+            LoadListStudent();
+            LoadListCourse();
+            LoadDataGridViewCommon();
+
             guna2DataGridViewCommon.Visible = false;
             string page = guna2TabControlEmployee.SelectedTab.Text;
             if (page == "Course")
@@ -58,6 +63,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2ButtonAdd.Visible = true;
                 labelQuanTity.Visible = true;
                 guna2TextBoxSearch.Visible = true;
+                guna2TextBoxSearch.Text = "";
                 guna2TextBoxSearch.PlaceholderText = "Search course here";
             }
             else if (page == "Student")
@@ -68,6 +74,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 labelQuanTity.Visible = true;
                 guna2TextBoxSearch.Visible = true;
                 guna2TextBoxSearch.PlaceholderText = "Search student here";
+                guna2TextBoxSearch.Text = "";
 
             }
             else if (page == "Teacher")
@@ -78,6 +85,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 labelQuanTity.Visible = true;
                 guna2TextBoxSearch.Visible = true;
                 guna2TextBoxSearch.PlaceholderText = "Search teacher here";
+                guna2TextBoxSearch.Text = "";
             }
             else
             {
@@ -124,23 +132,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
-        // When click on TextBox Search
-        private void guna2TextBoxSearch_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        // When leave on TextBox Search
-        private void guna2TextBoxSearch_Leave(object sender, EventArgs e)
-        {
-            
-        }
-
 
         // Process with teacher page
         // Load list teacher
         public void LoadListTeacher ()
         {
+            guna2DataGridViewTeacher.Rows.Clear();
             List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetListTeacher();
             foreach (DTO_Teacher item in list)
             {
@@ -163,6 +160,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Load list student
         public void LoadListStudent()
         {
+            guna2DataGridViewStudent.Rows.Clear();
             List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetListStudet();
             foreach (DTO_Student item in list)
             {
@@ -183,6 +181,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Load list course
         public void LoadListCourse ()
         {
+            flowLayoutPanelCourse.Controls.Clear();
             BUS_RelatedToEmployee.Instance.UpdateCourseStatus();
             int k = 1;
             int i = 0;
@@ -699,6 +698,86 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2DataGridViewCommon_MouseLeave(object sender, EventArgs e)
         {
             guna2DataGridViewCommon.Visible = false;
+        }
+
+        private void guna2TextBoxSearch_IconRightClick(object sender, EventArgs e)
+        {
+            string page = guna2TabControlEmployee.SelectedTab.Text;
+            string value = guna2TextBoxSearch.Text;
+            if (page == "Student")
+            {
+                guna2DataGridViewStudent.Rows.Clear();
+                List<DTO_Student> list = BUS_RelatedToEmployee.Instance.GetStudentBySearch(value);
+                foreach (DTO_Student item in list)
+                {
+                    object[] rowValues = new object[]
+                    {
+                    item.Id,
+                    item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Address,
+                    item.EmailAddress,
+                    };
+                    guna2DataGridViewStudent.Rows.Add(rowValues);
+                }
+            }
+            else if (page == "Teacher")
+            {
+                guna2DataGridViewTeacher.Rows.Clear();
+                List<DTO_Teacher> list = BUS_RelatedToEmployee.Instance.GetTeachertBySearch(value);
+                foreach (DTO_Teacher item in list)
+                {
+                    object[] rowValues = new object[]
+                    {
+                    item.Id,
+                    item.FullName,
+                    item.Sex,
+                    item.Date.ToString("dd/MM/yyyy"),
+                    item.TelephoneNumber,
+                    item.IdCard,
+                    item.Address,
+                    item.EmailAddress,
+                    item.AcademicLevels,
+                    };
+                    guna2DataGridViewTeacher.Rows.Add(rowValues);
+                }
+            }
+            else if (page == "Course")
+            {
+                flowLayoutPanelCourse.Controls.Clear();
+                int k = 1;
+                int i = 0;
+                foreach (DTO_Course course in BUS_RelatedToEmployee.Instance.GetListCourseBySearch(guna2TextBoxSearch.Text)) 
+                {
+                    GetGuna2PanelCourse(course, i, k);
+                    if (k == 3)
+                    {
+                        k = 1;
+                    }
+                    else
+                    {
+                        k++;
+                    }
+                    i++;
+                }
+            }
+        }
+
+        private void guna2ButtonRefreshSearchStudent_Click(object sender, EventArgs e)
+        {
+            guna2TextBoxSearch.PlaceholderText = "Search student here";
+            guna2TextBoxSearch.Text = "";
+            this.RefreshPage();
+        }
+
+        private void guna2ButtonRefreshSearchTeacher_Click(object sender, EventArgs e)
+        {
+            guna2TextBoxSearch.PlaceholderText = "Search teacher here";
+            guna2TextBoxSearch.Text = "";
+            this.RefreshPage();
         }
     }
 }

@@ -42,7 +42,18 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
-        
+        // Get course by search
+        public List<DTO_Course> GetListCourseBySearch(string search)
+        {
+            List<DTO_Course> listCourse = new List<DTO_Course>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetCourseBySearch(search); 
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listCourse.Add(new DTO_Course(data));
+            }
+            return listCourse;
+        }
+
         // Get student list
         public List<DTO_Teacher> GetListTeacher()
         {

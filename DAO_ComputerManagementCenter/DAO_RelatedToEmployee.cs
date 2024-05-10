@@ -75,6 +75,13 @@ namespace DAO_ComputerManagementCenter
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
 
+        // Get course by search
+        public DataTable GetCourseBySearch (string search)
+        {
+            string query = "USP_SearchCourseNoCase @keyword";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search });
+        }
+
         // Get student by ID
         public DataTable GetStudentByID(string id)
         {

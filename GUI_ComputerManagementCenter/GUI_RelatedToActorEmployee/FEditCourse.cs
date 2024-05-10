@@ -417,9 +417,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 
 
         // Cancel button
-        private void guna2ButtonCancel_Click(object sender, EventArgs e)
+        private void guna2ButtonCancel_Click_1(object sender, EventArgs e)
         {
-            this.Close();
             foreach (Form form in Application.OpenForms)
             {
                 if (form is FBackGround)
@@ -427,6 +426,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     form.Hide();
                 }
             }
+            this.Close();
         }
     }
 }
