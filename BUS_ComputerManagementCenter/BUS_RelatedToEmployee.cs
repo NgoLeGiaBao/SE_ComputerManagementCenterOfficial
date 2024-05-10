@@ -103,6 +103,17 @@ namespace BUS_ComputerManagementCenter
             }
             return null;
         }
+        // Get student by course ID
+        public List<DTO_Student> GetStudentByCourseID (string courseID)
+        {
+            List<DTO_Student> listStudent = new List<DTO_Student>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetListStudentByCourseID(courseID);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listStudent.Add(new DTO_Student(data));
+            }
+            return listStudent;
+        }
 
         // Get teacher by ID
         public DTO_Teacher GetTeacherByID (string id)
@@ -111,7 +122,7 @@ namespace BUS_ComputerManagementCenter
             return new DTO_Teacher(dataRow);
         }
 
-        // Get student by search
+        // Get student by search and no exist
         public List<DTO_Student> GetStudentBySearchAndNoExist(string search, string exist)
         {
             List<DTO_Student> listStudent = new List<DTO_Student>();
@@ -122,7 +133,17 @@ namespace BUS_ComputerManagementCenter
             }
             return listStudent;
         }
-
+        // Get student by search
+        public List<DTO_Student> GetStudentBySearch(string search)
+        {
+            List<DTO_Student> listStudent = new List<DTO_Student>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetStudentBySearch(search);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                listStudent.Add(new DTO_Student(data));
+            }
+            return listStudent;
+        }
         // Get teacher by search
         public List<DTO_Teacher> GetTeachertBySearch(string search)
         {
@@ -133,6 +154,17 @@ namespace BUS_ComputerManagementCenter
                 listTeacher.Add(new DTO_Teacher(data));
             }
             return listTeacher;
+        }
+        // Get teacher by course id
+        public DTO_Teacher GetTeacherByCourseID (string courseID)
+        {
+            DTO_Teacher teacher = null;
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetTeacherByCourseID(courseID);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                teacher = new DTO_Teacher(data);
+            }
+            return teacher;
         }
         // Get quantity 
         public string GetQuality (string type)
@@ -150,6 +182,17 @@ namespace BUS_ComputerManagementCenter
                 listRoom.Add(new DTO_Room(data));
             }
             return listRoom;
+        }
+        // Get room by course id
+        public DTO_Room GetRoomByCourseID (string courseID)
+        {
+            DTO_Room room = null;
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetRoomByCourseID(courseID);
+            foreach (DataRow data in dataTable.Rows)
+            {
+                room = new DTO_Room(data);
+            }
+            return room;
         }
 
         //--Check--//
@@ -207,11 +250,25 @@ namespace BUS_ComputerManagementCenter
         {
             DAO_RelatedToEmployee.Instance.UpdateCourseStatus();
         }
-
+        // Update course
+        public void UpdateCourse(object[] parameters)
+        {
+            DAO_RelatedToEmployee.Instance.UpdateCourse(parameters);
+        }
         //--Delete --
         public void DeleteACourse(string courseID)
         {
             DAO_RelatedToEmployee.Instance.DeleteACourse(courseID);
+        }
+        // Delete a student
+        public void DeleteAStudent(string studentID)
+        {
+            DAO_RelatedToEmployee.Instance.DeleteAStudent(studentID);
+        }
+        // Delete a teacher
+        public void DeleteATeacher(string teacherID)
+        {
+            DAO_RelatedToEmployee.Instance.DeleteATeacher(teacherID);
         }
     }    
 }

@@ -81,7 +81,12 @@ namespace DAO_ComputerManagementCenter
             string query = "exec USP_GetStudentByID @StudentID";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { id });
         }
-
+        // Get student by course id
+        public DataTable GetListStudentByCourseID (string courseID)
+        {
+            string query = "USP_GetListStudentByCourseID @CourseID";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });
+        }
         // Get teacher by ID
         public DataTable GetTeacherByID(string id)
         {
@@ -101,12 +106,17 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_SearchStudentNoCaseAndExist @keyword , @exist";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search,exist});
         }
-
         // Get teacher by search
         public DataTable GetTeachertBySearch(string search)
         {
             string query = "USP_SearchTeacherNoCase @keyword";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { search });
+        }
+        // Get teacher by course id 
+        public DataTable GetTeacherByCourseID (string courseID)
+        {
+            string query = "USP_GetTeacherByCourseID @CourseID";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });
         }
         // Get quantity
         public object GetQuantity (string type)
@@ -119,6 +129,12 @@ namespace DAO_ComputerManagementCenter
         {
             string query = "exec USP_GetRoom";
             return DAO_DataProvider.Instance.ExecuteQuery(query);
+        }
+        // Get room by course id
+        public DataTable GetRoomByCourseID (string courseID)
+        {
+            string query = "USP_GetRoomByCourseID @CourseID";
+            return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });
         }
         // -- Add
         // Add new student
@@ -181,6 +197,12 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_UpdateStatusCourse";
             DAO_DataProvider.Instance.ExecuteNonQuery(query);
         }
+        // Update course
+        public void UpdateCourse (object [] obj)
+        {
+            string query = "USP_UpdateCourse @CourseID , @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc , @string , @MaGiaoVien , @MaPhongHoc";
+            DAO_DataProvider.Instance.ExecuteNonQuery(query,obj);
+        }
 
         // --Delete--
         // Delete a course
@@ -189,6 +211,18 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_DeleteACourse @CourseID";
             DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });    
 
+        }
+        // Delete a student
+        public void DeleteAStudent (string studentID)
+        {
+            string query = "USP_DeleteAStudent @StudentID";
+            DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { studentID });
+        }
+        // Delete a teacher
+        public void DeleteATeacher(string teacherID)
+        {
+            string query = "USP_DeleteATeacher @TeacherID";
+            DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { teacherID });
         }
     }
 }

@@ -57,6 +57,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 labelQuanTity.Text = "All courses (" + BUS_RelatedToEmployee.Instance.GetQuality(page) + ")";
                 guna2ButtonAdd.Visible = true;
                 labelQuanTity.Visible = true;
+                guna2TextBoxSearch.Visible = true;
+                guna2TextBoxSearch.PlaceholderText = "Search course here";
             }
             else if (page == "Student")
             {
@@ -64,6 +66,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 labelQuanTity.Text = "All students (" + BUS_RelatedToEmployee.Instance.GetQuality(page) + ")";
                 guna2ButtonAdd.Visible = true;
                 labelQuanTity.Visible = true;
+                guna2TextBoxSearch.Visible = true;
+                guna2TextBoxSearch.PlaceholderText = "Search student here";
 
             }
             else if (page == "Teacher")
@@ -72,7 +76,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 labelQuanTity.Text = "All teachers (" + BUS_RelatedToEmployee.Instance.GetQuality(page) + ")";
                 guna2ButtonAdd.Visible = true;
                 labelQuanTity.Visible = true;
-
+                guna2TextBoxSearch.Visible = true;
+                guna2TextBoxSearch.PlaceholderText = "Search teacher here";
             }
             else
             {
@@ -122,13 +127,13 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // When click on TextBox Search
         private void guna2TextBoxSearch_Click(object sender, EventArgs e)
         {
-            guna2TextBoxSearch.Text = "";
+            
         }
 
         // When leave on TextBox Search
         private void guna2TextBoxSearch_Leave(object sender, EventArgs e)
         {
-            guna2TextBoxSearch.Text = "Search here";
+            
         }
 
 
@@ -221,7 +226,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Click DeleteTeacher
         private void guna2ButtonDeleteTeacher_Click(object sender, EventArgs e)
         {
-
+            DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
+            BUS_RelatedToEmployee.Instance.DeleteATeacher(DTO_Teacher.TeacherChoosen.Id);
+            MessageBox.Show("Delete teacher with " + DTO_Teacher.TeacherChoosen.Id + " successfully");
+            this.RefreshPage();
         }
 
         // Process with student page
@@ -346,7 +354,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ButtonDeleteCourse.TabIndex = 3;
             guna2ButtonDeleteCourse.Text = "Delete";
             guna2ButtonDeleteCourse.Tag = course;
-            guna2ButtonDeleteCourse.Click += new EventHandler(guna2ButtonDeleteStudent_Click);
+            guna2ButtonDeleteCourse.Click += new EventHandler(guna2ButtonDeleteCourse_Click);
             // 
             // guna2ButtonSatus
             // 
@@ -453,9 +461,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
             DTO_Course.CourseChoosen = course;
             FEditCourse fEditCourse = new FEditCourse();
-            fEditCourse.Show();
+            FBackGround fBackGround = new FBackGround();
+            fBackGround.Show();
+            fEditCourse.ShowDialog();
         }
-        private void guna2ButtonDeleteStudent_Click(object sender, EventArgs e)
+        private void guna2ButtonDeleteCourse_Click (object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
             if (course.CourseStatus == 1)
@@ -463,15 +473,22 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 BUS_RelatedToEmployee.Instance.DeleteACourse(course.CourseID);
                 MessageBox.Show("You deleted " + course.CourseName + "course successfully!");
                 this.RefreshPage();
-            } 
+            }
             else if (course.CourseStatus == 2)
             {
                 MessageBox.Show("You could not delete a course on going");
-            } 
+            }
             else
             {
                 MessageBox.Show("You could not delete a course ending up");
             }
+        }
+        private void guna2ButtonDeleteStudent_Click(object sender, EventArgs e)
+        {
+            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+            BUS_RelatedToEmployee.Instance.DeleteAStudent(DTO_Student.PersonChoosen.Id);
+            MessageBox.Show("Delete a student with student ID is " + DTO_Teacher.PersonChoosen.Id + " successful");
+            this.RefreshPage();
         }
 
 

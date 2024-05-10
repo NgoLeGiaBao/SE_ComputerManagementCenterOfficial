@@ -76,8 +76,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListRoom();
 
             // Load time
-            guna2DateTimePickerStart.MinDate = DateTime.Now.AddDays(1);    
-            guna2DateTimePickerStart.Value = DateTime.Now.AddDays(1);
+            guna2DateTimePickerStart.MinDate = DateTime.Now;
+            guna2DateTimePickerStart.Value = DateTime.Now;
         }
 
 
@@ -285,9 +285,15 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string room = guna2ComboBoxRoom.Text;
 
             int number;
+            if (courseShift == "")
+            {
+                MessageBox.Show("Please start day is not Sunday");
+                return;
+            }
             if (courseFee != "" && !int.TryParse(courseFee, out number))
             {
-                    MessageBox.Show("You must be enter course fee being number");
+                MessageBox.Show("You must be enter course fee being number");
+                return;
             } 
             else
             {

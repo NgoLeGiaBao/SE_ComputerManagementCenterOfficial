@@ -12,6 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
 {
@@ -40,7 +41,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (date == "Monday" || date == "Thursday")
             {
 
-                guna2ComboBoxShift.DataSource = MoveItemToTop(shiftWednesdayAndStaturday, DTO_Course.CourseChoosen.CourseShift);
+                guna2ComboBoxShift.DataSource = MoveItemToTop(shiftMondayAndThursday, DTO_Course.CourseChoosen.CourseShift);
             }
             else if (date == "Tuesday" || date == "Friday")
             {
@@ -57,9 +58,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
         // Get Course by ID
-        public DTO_Course GetCourseByID (string courteID)
+        public DTO_Course GetCourseByID (string courseID)
         {
-            return BUS_RelatedToEmployee.Instance.GetCourseByID(courteID);
+            return BUS_RelatedToEmployee.Instance.GetCourseByID(courseID);
         }
 
 
@@ -74,8 +75,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             return list;
         }
 
-        // Load page
-        private void FAddCourse_Load(object sender, EventArgs e)
+        // Load form
+        public void LoadForm ()
         {
             // Show data into combobox subject  
             List<string> listSubject = new List<string>();
@@ -94,16 +95,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             guna2ComboBoxSubject.DataSource = MoveItemToTop(listSubject, nameSubject);
 
-
-
             // Show data into combobox shift
             GetShiftFromCourseStart();
 
-
             // Show data into number of meetings
             guna2ComboBoxMeetings.DataSource = MoveItemToTop(new List<String> { "12", "15", "18", "21" }, BUS_RelatedToTeacher.Instance.GetMeetingFromCourseID(DTO_Course.CourseChoosen.CourseID).Count().ToString());
-
-
 
             // Show list teacher
             LoadListTeacher();
@@ -112,8 +108,37 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListRoom();
 
             // Load time
-            //guna2DateTimePickerStart.MinDate = DateTime.Now;
+            guna2DateTimePickerStart.MinDate = DTO_Course.CourseChoosen.StartDay;
             guna2DateTimePickerStart.Value = DTO_Course.CourseChoosen.StartDay;
+
+            // Load other element
+            guna2TextBoxCourseName.Text = DTO_Course.CourseChoosen.CourseName;
+            guna2TextBoxDescription.Text = DTO_Course.CourseChoosen.CourseInfor;
+            guna2TextBoxFee.Text = DTO_Course.CourseChoosen.CourseFee.ToString();
+
+            // Load list student
+            LoadListStudent();
+
+            if (DTO_Course.CourseChoosen.CourseStatus == 2 || DTO_Course.CourseChoosen.CourseStatus == 3)
+            {
+                guna2ButtonAdd.Enabled = false;
+                guna2TextBoxSearch.Enabled = false;
+                guna2ComboBoxSubject.Enabled = false;
+                guna2ButtonSave.Enabled = false;
+                guna2TextBoxCourseName.Enabled = false;
+                guna2TextBoxDescription.Enabled = false;
+                guna2TextBoxFee.Enabled = false;
+                guna2ComboBoxMeetings.Enabled = false;
+                guna2ComboBoxRoom.Enabled = false;
+                guna2ComboBoxShift.Enabled = false;
+                guna2ComboBoxTeacher.Enabled = false;
+                guna2DataGridViewStudent.Enabled = false;
+            }
+        }
+        // Load page
+        private void FAddCourse_Load(object sender, EventArgs e)
+        {
+            LoadForm();
         }
 
 
@@ -126,7 +151,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 list.Add(item.RoomID);
             }
-            guna2ComboBoxRoom.DataSource = list;
+            DTO_Room room = BUS_RelatedToEmployee.Instance.GetRoomByCourseID(DTO_Course.CourseChoosen.CourseID);
+            guna2ComboBoxRoom.DataSource = MoveItemToTop(list,room.RoomID);
         }
 
 
@@ -139,9 +165,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 list.Add(item.Id + " - " + item.FullName);
             }
-            guna2ComboBoxTeacher.DataSource = list;
+            DTO_Teacher teacher = BUS_RelatedToEmployee.Instance.GetTeacherByCourseID(DTO_Course.CourseChoosen.CourseID);
+            guna2ComboBoxTeacher.DataSource = MoveItemToTop(list, (teacher.Id + " - " + teacher.FullName));
         }
 
+        // Load list student by course id
+        public void LoadListStudent ()
+        {
+            guna2DataGridViewStudent.Rows.Clear();
+            List<DTO_Student> studentList = BUS_RelatedToEmployee.Instance.GetStudentByCourseID(DTO_Course.CourseChoosen.CourseID);
+            foreach (DTO_Student item in studentList)
+            {
+                AddNewStudentIntoCourse(item);
+            }
+        }
 
         // Add new student into course
         public void AddNewStudentIntoCourse(DTO_Student item)
@@ -155,7 +192,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             };
             guna2DataGridViewStudent.Rows.Add(rowValues);
             guna2DataGridViewStudent.Rows[guna2DataGridViewStudent.Rows.Count - 1].Tag = item;
-
         }
 
 
@@ -253,7 +289,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 }
             }
             LoadListStudentBySearchAndNoExist(text, listStudentID);
-
         }
 
 
@@ -319,8 +354,21 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string courseDescription = guna2TextBoxDescription.Text;
             string listStudentID = "";
             string room = guna2ComboBoxRoom.Text;
-
+            string todayString = DateTime.Today.ToString("yyyy/MM/dd");
             int number;
+
+            if (String.Compare(courseStart, todayString) < 0)
+            {
+                MessageBox.Show("You must be enter day today or more");
+                return;
+            }
+
+            if (courseShift == "")
+            {
+                MessageBox.Show("Please start day is not Sunday");
+                return;
+            }
+
             if (courseFee != "" && !int.TryParse(courseFee, out number))
             {
                 MessageBox.Show("You must be enter course fee being number");
@@ -339,15 +387,16 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     }
                 }
                 listStudentID = listStudentID.Length > 0 ? listStudentID.Substring(0, listStudentID.Length - 1) : listStudentID;
-                if (BUS_RelatedToEmployee.Instance.AddNewCourse(new object[] { subjectID, courseName, courseStart, courseDescription, courseFee, courseShift, courseNumberOfMeeting, listStudentID, courseTeacherByID, room }))
+
+                BUS_RelatedToEmployee.Instance.UpdateCourse(new object[] { DTO_Course.CourseChoosen.CourseID, subjectID, courseName, courseStart, courseDescription, courseFee, courseShift, courseNumberOfMeeting, listStudentID, courseTeacherByID, room });
+                MessageBox.Show("Update course successfully");
+                DTO_Course.CourseChoosen = BUS_RelatedToEmployee.Instance.GetCourseByID(DTO_Course.CourseChoosen.CourseID);
+                LoadForm();
+                
+                FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
+                if (fEs != null)
                 {
-                    MessageBox.Show("Add new course successfully");
-                    FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
-                    if (fEs != null)
-                    {
-                        fEs.RefreshPage();
-                        fEs.LoadListCourse();
-                    }
+                    fEs.RefreshPage();
                 }
             }
         }
@@ -363,6 +412,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     form.Hide();
                 }
             }
+            
         }
 
 
