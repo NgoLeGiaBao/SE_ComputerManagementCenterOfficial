@@ -22,7 +22,7 @@ namespace GUI_ComputerManagementCenter
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new Form1());   
-            //Application.Run(new FLogin());
+            Application.Run(new FLogin());
             //Application.Run(new FChangePassword());
             //Application.Run(new FForgetPassword());
             //Application.Run(new FNewPassword());
@@ -31,7 +31,7 @@ namespace GUI_ComputerManagementCenter
             //Application.Run(new FEmployees());  
             //Application.Run(new FE());
             //Application.Run(new Fes());
-            Application.Run(new FEs());
+            //Application.Run(new FEs());
             //Application.Run(new FAddTeacher());
             //Application.Run(new FAddStudent());
             //Application.Run(new FStudent());

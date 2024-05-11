@@ -107,12 +107,6 @@
     <Compile Include="GUI_RelatedToActorEmployee\FEditTeacher.Designer.cs">
       <DependentUpon>FEditTeacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI_RelatedToActorEmployee\FEmployee.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI_RelatedToActorEmployee\FEmployee.Designer.cs">
-      <DependentUpon>FEmployee.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI_RelatedToActorEmployee\FEs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,9 +192,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEditTeacher.resx">
       <DependentUpon>FEditTeacher.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEmployee.resx">
-      <DependentUpon>FEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_RelatedToActorEmployee\FEs.resx">
       <DependentUpon>FEs.cs</DependentUpon>
@@ -332,6 +323,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\61NYR5UwSyL._AC_UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graduated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teacher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meeting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revenue %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sales.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

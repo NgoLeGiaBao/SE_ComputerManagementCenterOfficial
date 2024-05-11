@@ -48,7 +48,12 @@ namespace BUS_ComputerManagementCenter
             {
                 list.Add(dataTable.Rows[0]["DiemKhoaHoc"].ToString());
             }
-            if (dataTable.Rows[0]["DiemKhoaHoc"].ToString() == "0")
+
+            if (dataTable.Rows[0]["TrangThaiKhoaHoc"].ToString() == "1")
+            {
+                list.Add("It's not yet started");
+
+            } else if (dataTable.Rows[0]["TrangThaiKhoaHoc"].ToString() == "2")
             {
                 list.Add("In progress");
             } else

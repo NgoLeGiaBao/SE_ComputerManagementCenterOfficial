@@ -1,5 +1,6 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
+using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -45,6 +46,17 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
                 list[j++]
                 };
                 guna2DataGridViewListStudentInfor.Rows.Add(rowValues);
+            }
+        }
+
+        private void guna2ControlBoxClose_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
             }
         }
     }

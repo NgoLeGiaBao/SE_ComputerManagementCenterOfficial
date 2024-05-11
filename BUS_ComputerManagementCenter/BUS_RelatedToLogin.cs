@@ -7,6 +7,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using DAO_ComputerManagementCenter;
+using System.Windows;
 
 namespace BUS_ComputerManagementCenter
 {

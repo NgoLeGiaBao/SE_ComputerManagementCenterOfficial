@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,44 +22,19 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
         {
             InitializeComponent();
             LoadListCourse();
-            //LoadAttendance();
+            LoadDataGridViewCommon();
+
         }
 
-        //private void LoadAttendance ()
-        //{
-        //    guna2DataGridView1.ColumnCount = 12; // Số lượng cột
-        //
-        //    // Đặt tên cho các cột
-        //    for (int i = 0; i < 6; i++)
-        //    {
-        //        guna2DataGridView1.Columns[i].HeaderText = "Column" + (i + 1);
-        //    }
-        //
-        //    // Tạo dữ liệu mẫu
-        //    List<string> data = new List<string>();
-        //    for (int i = 0; i < 10; i++) // Số lượng dòng
-        //    {
-        //        string rowData = ""; // Khởi tạo dữ liệu cho dòng
-        //        for (int j = 0; j < 6; j++) // Số lượng cột
-        //        {
-        //            rowData += $"Data_{i + 1}_{j + 1} "; // Dữ liệu mẫu
-        //        }
-        //        data.Add(rowData.Trim()); // Thêm dữ liệu dòng vào danh sách
-        //    }
-        //
-        //    // Thêm dữ liệu vào Guna2DataGridView
-        //    foreach (string row in data)
-        //    {
-        //        string[] values = row.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-        //        int rowIndex = guna2DataGridView1.Rows.Add(values);
-        //
-        //        // Nếu số lượng cột trên mỗi dòng lớn hơn 6, thêm một dòng mới
-        //        while (guna2DataGridView1.Rows[rowIndex].Cells.Count < 6)
-        //        {
-        //            guna2DataGridView1.Rows[rowIndex].Cells.Add(new DataGridViewTextBoxCell());
-        //        }
-        //    }
-        //}
+        // Process with datagridview common
+        public void LoadDataGridViewCommon()
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("Function", typeof(string));
+            table.Rows.Add("Change Password");
+            table.Rows.Add("Log out");
+            guna2DataGridViewCommon.DataSource = table;
+        }
         public void GetGuna2PanelCourse(DTO_Course course, int i, int k)
         {
 
@@ -68,7 +44,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             Label labelInforCourse = new Label();
             Label labelIDCourse = new Label();
             Guna2Button guna2ButtonViewCourse = new Guna2Button();
-            //Guna2Button guna2ButtonDeleteCourse = new Guna2Button();
+            Guna2Button guna2ButtonDeleteCourse = new Guna2Button();
             Guna2Button guna2ButtonSatus = new Guna2Button();
             Guna2Panel guna2PanelCoverPicture = new Guna2Panel();
             Guna2PictureBox guna2PictureBoxCourse = new Guna2PictureBox();
@@ -92,7 +68,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
 
             // guna2PanelDetailCourse
             // 
-            //guna2PanelDetailCourse.Controls.Add(guna2ButtonDeleteCourse);
+            guna2PanelDetailCourse.Controls.Add(guna2ButtonDeleteCourse);
             guna2PanelDetailCourse.Controls.Add(guna2ButtonViewCourse);
             guna2PanelDetailCourse.Controls.Add(labelInforCourse);
             guna2PanelDetailCourse.Controls.Add(labelIDCourse);
@@ -110,7 +86,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             labelInforCourse.Size = new System.Drawing.Size(272, 115);
             labelInforCourse.TabIndex = 1;
             labelInforCourse.Text = course.CourseName;
-            labelInforCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            labelInforCourse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // labelIDCourse
             // 
@@ -120,6 +96,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             labelIDCourse.Size = new System.Drawing.Size(57, 35);
             labelIDCourse.TabIndex = 0;
             labelIDCourse.Text = course.CourseID;
+            labelIDCourse.Font = new System.Drawing.Font("Poppins", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
 
 
             // guna2ButtonViewCourse
@@ -130,13 +108,14 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             guna2ButtonViewCourse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             guna2ButtonViewCourse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             guna2ButtonViewCourse.FillColor = System.Drawing.Color.Black;
-            guna2ButtonViewCourse.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            guna2ButtonViewCourse.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             guna2ButtonViewCourse.ForeColor = System.Drawing.Color.White;
             guna2ButtonViewCourse.Location = new System.Drawing.Point(0, 156);
             guna2ButtonViewCourse.Name = "guna2ButtonViewCourse";
             guna2ButtonViewCourse.Size = new System.Drawing.Size(272, 41);
             guna2ButtonViewCourse.TabIndex = 2;
-            guna2ButtonViewCourse.Text = "View Detail Course";
+            guna2ButtonViewCourse.Text = "View course deteail";
+
 
             guna2ButtonViewCourse.Tag = course;
             guna2ButtonViewCourse.Click += new EventHandler(guna2ButtonViewCourse_Click);
@@ -144,19 +123,21 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             // 
             // guna2ButtonDeleteCourse
             // 
-            //guna2ButtonDeleteCourse.BorderRadius = 6;
-            //guna2ButtonDeleteCourse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            //guna2ButtonDeleteCourse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            //guna2ButtonDeleteCourse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            //guna2ButtonDeleteCourse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            //guna2ButtonDeleteCourse.FillColor = System.Drawing.Color.Black;
-            //guna2ButtonDeleteCourse.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //guna2ButtonDeleteCourse.ForeColor = System.Drawing.Color.White;
-            //guna2ButtonDeleteCourse.Location = new System.Drawing.Point(141, 156);
-            //guna2ButtonDeleteCourse.Name = "guna2ButtonDeleteCourse";
-            //guna2ButtonDeleteCourse.Size = new System.Drawing.Size(131, 41);
-            //guna2ButtonDeleteCourse.TabIndex = 3;
-            //guna2ButtonDeleteCourse.Text = "Delete";
+            guna2ButtonDeleteCourse.BorderRadius = 6;
+            guna2ButtonDeleteCourse.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            guna2ButtonDeleteCourse.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            guna2ButtonDeleteCourse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            guna2ButtonDeleteCourse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            guna2ButtonDeleteCourse.FillColor = System.Drawing.Color.Black;
+            guna2ButtonDeleteCourse.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            guna2ButtonDeleteCourse.ForeColor = System.Drawing.Color.White;
+            guna2ButtonDeleteCourse.Location = new System.Drawing.Point(176, 156);
+            guna2ButtonDeleteCourse.Name = "guna2ButtonDeleteCourse";
+            guna2ButtonDeleteCourse.Size = new System.Drawing.Size(0, 0);
+            guna2ButtonDeleteCourse.TabIndex = 3;
+            guna2ButtonDeleteCourse.Text = "Delete";
+            guna2ButtonDeleteCourse.Tag = course;
+            //guna2ButtonDeleteCourse.Click += new EventHandler(guna2ButtonDeleteCourse_Click);
             // 
             // guna2ButtonSatus
             // 
@@ -164,9 +145,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             guna2ButtonSatus.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             guna2ButtonSatus.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             //guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            guna2ButtonSatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            guna2ButtonSatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             guna2ButtonSatus.FillColor = System.Drawing.Color.Lime;
-            guna2ButtonSatus.Font = new System.Drawing.Font("Poppins", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            guna2ButtonSatus.Font = new System.Drawing.Font("Poppins", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             guna2ButtonSatus.ForeColor = System.Drawing.Color.White;
             guna2ButtonSatus.Location = new System.Drawing.Point(10, 166);
             guna2ButtonSatus.Name = "guna2ButtonSatus";
@@ -175,53 +156,76 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             guna2ButtonSatus.Enabled = false;
 
             guna2ButtonSatus.TextAlign = (HorizontalAlignment)ContentAlignment.MiddleCenter;
-            if (course.CourseStatus == 0)
+            if (course.CourseStatus == 1)
             {
-                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightGray;
-                guna2ButtonSatus.Text = "Not yet started";
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightBlue;
+                guna2ButtonSatus.Text = "Not yet";
 
                 guna2ButtonSatus.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
 
-            }
-            else if (course.CourseStatus == 1)
-            {
-                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightGreen;
-                guna2ButtonSatus.Text = "OnGoing";
             }
             else if (course.CourseStatus == 2)
             {
-                guna2ButtonSatus.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightSkyBlue;
-                guna2ButtonSatus.Text = "Ended";
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightGreen;
+                guna2ButtonSatus.Text = "OnGoing";
+                guna2ButtonDeleteCourse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+
+                //guna2ButtonDeleteCourse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+                //guna2ButtonDeleteCourse.Enabled = false;
             }
+            else if (course.CourseStatus == 3)
+            {
+                guna2ButtonSatus.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
+                guna2ButtonSatus.DisabledState.FillColor = System.Drawing.Color.LightYellow;
+                guna2ButtonSatus.Text = "Ended";
 
+                //guna2ButtonDeleteCourse.Enabled = false;
+                //guna2ButtonDeleteCourse.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+                //guna2ButtonDeleteCourse.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
 
+            }
             // 
             // guna2PanelCoverPicture
             // 
-
-
             guna2PanelCoverPicture.Controls.Add(guna2PictureBoxCourse);
             guna2PanelCoverPicture.Location = new System.Drawing.Point(10, 10);
             guna2PanelCoverPicture.Margin = new System.Windows.Forms.Padding(10);
             guna2PanelCoverPicture.Name = "guna2PanelCoverPicture";
             guna2PanelCoverPicture.Size = new System.Drawing.Size(105, 150);
             guna2PanelCoverPicture.TabIndex = 0;
+            //guna2PanelCoverPicture.BackColor = Color.Red;
             // 
 
 
             // guna2PictureBoxCourse
             // 
             guna2PictureBoxCourse.Dock = System.Windows.Forms.DockStyle.Fill;
-            guna2PictureBoxCourse.Image = global::GUI_ComputerManagementCenter.Properties.Resources.course_1;
             guna2PictureBoxCourse.ImageRotate = 0F;
             guna2PictureBoxCourse.Location = new System.Drawing.Point(0, 0);
             guna2PictureBoxCourse.Name = "guna2PictureBoxCourse";
+
             guna2PictureBoxCourse.Size = new System.Drawing.Size(105, 150);
-            guna2PictureBoxCourse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            guna2PictureBoxCourse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+
             guna2PictureBoxCourse.TabIndex = 0;
             guna2PictureBoxCourse.TabStop = false;
-            // 
+
+            if (course.SubjectID.StartsWith("ME"))
+            {
+                guna2PictureBoxCourse.Image = global::GUI_ComputerManagementCenter.Properties.Resources.B09PMFX3R2;
+
+            }
+            else if (course.SubjectID.StartsWith("MP"))
+            {
+                guna2PictureBoxCourse.Image = global::GUI_ComputerManagementCenter.Properties.Resources._61NYR5UwSyL__AC_UF1000_1000_QL80_;
+
+            }
+            else
+            {
+                guna2PictureBoxCourse.Image = global::GUI_ComputerManagementCenter.Properties.Resources._61zhCt7RBNL__SY466_;
+
+            }
+
             if (i == 1)
             {
                 guna2PanelCourse.Margin = new System.Windows.Forms.Padding(20, 0, 20, 0);
@@ -234,24 +238,19 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             {
                 guna2PanelCourse.Margin = new System.Windows.Forms.Padding(20, 20, 20, 20);
             }
-
             flowLayoutPanelCourse.Controls.Add(guna2PanelCourse);
         }
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
             
-            
-            //FCourseDetail detail = new FCourseDetail();
-
-            //FBackGround fBackGround = new FBackGround();
             DTO_Course.CourseChoosen = course;
+            
+            FCourseInformation fCourseInformation = new FCourseInformation();
+            FBackGround fBackGround = new FBackGround();
 
-            //fBackGround.Show();
-            //detail.ShowDialog();
-
-            FCourseInformation fCourseInf = new FCourseInformation();
-            fCourseInf.Show();
+            fBackGround.Show();
+            fCourseInformation.ShowDialog();
         }
 
         public void LoadListCourse()
@@ -271,6 +270,38 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
                 }
                 i++;
             }
+        }
+
+        private void guna2ControlBoxClose_Click(object sender, EventArgs e)
+        {
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
+        }
+
+
+
+        
+
+        private void labelPersonalName_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+
+        }
+
+        private void guna2PictureBoxScroll_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+
+        }
+
+        private void guna2CirclePictureBoxAvatar_Click(object sender, EventArgs e)
+        {
+            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
         }
     }
 }

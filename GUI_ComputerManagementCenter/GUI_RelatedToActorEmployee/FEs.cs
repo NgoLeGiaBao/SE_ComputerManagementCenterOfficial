@@ -30,6 +30,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Process with all pages
         private void FEs_Load(object sender, EventArgs e)
         {
+            LoadOverview();
             LoadListTeacher();
             LoadListStudent();
             LoadListCourse();
@@ -49,6 +50,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
          // Get quantity
          public void RefreshQuantity ()
         {
+            LoadOverview ();    
             LoadListTeacher();
             LoadListStudent();
             LoadListCourse();
@@ -89,7 +91,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             else
             {
-                labelQuanTity.Visible = false;
+                labelQuanTity.Text = "Overview";
+                labelQuanTity.Visible = true;
                 guna2ButtonAdd.Visible = false;
                 guna2TextBoxSearch.Visible = false;
             }
@@ -132,8 +135,47 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+        // Load chart
+        public void LoadChart ()
+        {
+            List<string> list = BUS_RelatedToEmployee.Instance.GetDataForChart();
+            int i = 0;
+
+            chartSystemUser.Series["SeriesUserSystem"].Points.Clear();
+            chartStatus.Series["SeriesCourseStatus"].Points.Clear();
+            chartFiel.Series["SeriesFiled"].Points.Clear();
+
+            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active T", list[i++]);
+            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive T", list[i++]);
+            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active S", list[i++]);
+            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive S", list[i++]);
+           
+
+            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Ended", list[i++]);
+            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("On Going", list[i++]);
+            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Not yet", list[i++]);
+
+            chartFiel.Series["SeriesFiled"].Points.AddXY("Word", list[i++]);
+            chartFiel.Series["SeriesFiled"].Points.AddXY("Powerpoint", list[i++]);
+            chartFiel.Series["SeriesFiled"].Points.AddXY("Excel", list[i++]);
+        }
 
         // Process with teacher page
+        // Load overview 
+        public void LoadOverview ()
+        {
+            LoadChart();
+            int i = 0;
+            List<string> list = BUS_RelatedToEmployee.Instance.GetDataForDashBoard();
+            labelAllStudent.Text = list[i++];   
+            labelActiStudent.Text = list[i++];
+            labelAllTeacher.Text = list[i++];
+            labelAcTeacher.Text = list[i++];    
+            labelAllCourse.Text = list[i++];    
+            labelNewCourse.Text = list[i++];
+            labelRevenues.Text = list[i++];
+            labelAllRevenue.Text = list[i++];
+        }
         // Load list teacher
         public void LoadListTeacher ()
         {
@@ -496,6 +538,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2DataGridViewStudent.Rows.Clear();
             guna2DataGridViewTeacher.Rows.Clear();
             flowLayoutPanelCourse.Controls.Clear();
+            LoadOverview();
             LoadListStudent();
             LoadListTeacher();
             LoadListCourse();

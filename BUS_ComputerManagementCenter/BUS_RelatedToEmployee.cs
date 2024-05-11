@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BUS_ComputerManagementCenter
 {
@@ -205,9 +206,30 @@ namespace BUS_ComputerManagementCenter
             }
             return room;
         }
-
-        //--Check--//
-        // Check student exist
+        // Get data to give dashboard
+        public List<string> GetDataForDashBoard()
+        {
+            List<string> data = new List<string>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetDataForDashBoard();
+            foreach (DataRow dataRow  in dataTable.Rows) 
+            {
+                data.Add(dataRow["SoLuong"].ToString());    
+            }
+            return data;
+        }
+        // Get data to give chart
+        public List<string> GetDataForChart()
+        {
+            List<string> data = new List<string>();
+            DataTable dataTable = DAO_RelatedToEmployee.Instance.GetDataForChart();
+            foreach (DataRow dataRow in dataTable.Rows)
+            {
+                data.Add(dataRow["SoLuong"].ToString());
+            }
+            return data;
+        }
+            //--Check--//
+            // Check student exist
         public bool CheckExistStudentID (string id)
         {
             return DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows.Count > 0 ? true : false;

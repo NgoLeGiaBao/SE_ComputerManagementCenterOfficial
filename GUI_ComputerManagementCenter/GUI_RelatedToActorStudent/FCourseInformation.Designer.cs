@@ -37,29 +37,28 @@
             this.guna2PanelRigth = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelLeft = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelTopInner = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelBottomInner = new Guna.UI2.WinForms.Guna2Panel();
             this.labelCourseIFF = new System.Windows.Forms.Label();
             this.guna2PanelTeacher = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelRoom = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelTime = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelStudyTime = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelCF = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelTeacher = new System.Windows.Forms.Label();
-            this.labelRoom = new System.Windows.Forms.Label();
-            this.labelIF = new System.Windows.Forms.Label();
-            this.labelTime = new System.Windows.Forms.Label();
-            this.labelStudyTime = new System.Windows.Forms.Label();
             this.labelTeacherT = new System.Windows.Forms.Label();
+            this.labelTeacher = new System.Windows.Forms.Label();
+            this.guna2PanelRoom = new Guna.UI2.WinForms.Guna2Panel();
             this.labelRoomT = new System.Windows.Forms.Label();
-            this.labelIFT = new System.Windows.Forms.Label();
+            this.labelRoom = new System.Windows.Forms.Label();
+            this.guna2PanelTime = new Guna.UI2.WinForms.Guna2Panel();
             this.labelTimeT = new System.Windows.Forms.Label();
+            this.labelTime = new System.Windows.Forms.Label();
+            this.guna2PanelStudyTime = new Guna.UI2.WinForms.Guna2Panel();
             this.labelStudyTimeT = new System.Windows.Forms.Label();
+            this.labelStudyTime = new System.Windows.Forms.Label();
+            this.guna2PanelCF = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelIFT = new System.Windows.Forms.Label();
+            this.labelIF = new System.Windows.Forms.Label();
             this.guna2PanelResult = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PanelStatus = new Guna.UI2.WinForms.Guna2Panel();
-            this.labelResult = new System.Windows.Forms.Label();
-            this.labelCourseStatus = new System.Windows.Forms.Label();
             this.labelResultT = new System.Windows.Forms.Label();
+            this.labelResult = new System.Windows.Forms.Label();
+            this.guna2PanelStatus = new Guna.UI2.WinForms.Guna2Panel();
             this.labelCourseStatusT = new System.Windows.Forms.Label();
+            this.labelCourseStatus = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.labelList = new System.Windows.Forms.Label();
             this.guna2DataGridViewListStudentInfor = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -104,6 +103,7 @@
             this.guna2ControlBoxClose.Name = "guna2ControlBoxClose";
             this.guna2ControlBoxClose.Size = new System.Drawing.Size(60, 30);
             this.guna2ControlBoxClose.TabIndex = 3;
+            this.guna2ControlBoxClose.Click += new System.EventHandler(this.guna2ControlBoxClose_Click);
             // 
             // guna2PanelRigth
             // 
@@ -126,24 +126,15 @@
             this.guna2PanelTopInner.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2PanelTopInner.Location = new System.Drawing.Point(60, 30);
             this.guna2PanelTopInner.Name = "guna2PanelTopInner";
-            this.guna2PanelTopInner.Size = new System.Drawing.Size(931, 40);
+            this.guna2PanelTopInner.Size = new System.Drawing.Size(931, 30);
             this.guna2PanelTopInner.TabIndex = 24;
-            // 
-            // guna2PanelBottomInner
-            // 
-            this.guna2PanelBottomInner.BackColor = System.Drawing.Color.IndianRed;
-            this.guna2PanelBottomInner.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2PanelBottomInner.Location = new System.Drawing.Point(60, 854);
-            this.guna2PanelBottomInner.Name = "guna2PanelBottomInner";
-            this.guna2PanelBottomInner.Size = new System.Drawing.Size(931, 35);
-            this.guna2PanelBottomInner.TabIndex = 25;
             // 
             // labelCourseIFF
             // 
             this.labelCourseIFF.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelCourseIFF.Font = new System.Drawing.Font("Poppins ExtraBold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCourseIFF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelCourseIFF.Location = new System.Drawing.Point(60, 70);
+            this.labelCourseIFF.Location = new System.Drawing.Point(60, 60);
             this.labelCourseIFF.Name = "labelCourseIFF";
             this.labelCourseIFF.Size = new System.Drawing.Size(931, 120);
             this.labelCourseIFF.TabIndex = 26;
@@ -158,6 +149,29 @@
             this.guna2PanelTeacher.Size = new System.Drawing.Size(407, 27);
             this.guna2PanelTeacher.TabIndex = 27;
             // 
+            // labelTeacherT
+            // 
+            this.labelTeacherT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTeacherT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTeacherT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelTeacherT.Location = new System.Drawing.Point(93, 0);
+            this.labelTeacherT.Name = "labelTeacherT";
+            this.labelTeacherT.Size = new System.Drawing.Size(314, 27);
+            this.labelTeacherT.TabIndex = 1;
+            this.labelTeacherT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // labelTeacher
+            // 
+            this.labelTeacher.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelTeacher.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTeacher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelTeacher.Location = new System.Drawing.Point(0, 0);
+            this.labelTeacher.Name = "labelTeacher";
+            this.labelTeacher.Size = new System.Drawing.Size(93, 27);
+            this.labelTeacher.TabIndex = 0;
+            this.labelTeacher.Text = "Teacher:";
+            this.labelTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // guna2PanelRoom
             // 
             this.guna2PanelRoom.Controls.Add(this.labelRoomT);
@@ -167,44 +181,16 @@
             this.guna2PanelRoom.Size = new System.Drawing.Size(407, 27);
             this.guna2PanelRoom.TabIndex = 28;
             // 
-            // guna2PanelTime
+            // labelRoomT
             // 
-            this.guna2PanelTime.Controls.Add(this.labelTimeT);
-            this.guna2PanelTime.Controls.Add(this.labelTime);
-            this.guna2PanelTime.Location = new System.Drawing.Point(579, 193);
-            this.guna2PanelTime.Name = "guna2PanelTime";
-            this.guna2PanelTime.Size = new System.Drawing.Size(407, 27);
-            this.guna2PanelTime.TabIndex = 28;
-            // 
-            // guna2PanelStudyTime
-            // 
-            this.guna2PanelStudyTime.Controls.Add(this.labelStudyTimeT);
-            this.guna2PanelStudyTime.Controls.Add(this.labelStudyTime);
-            this.guna2PanelStudyTime.Location = new System.Drawing.Point(579, 240);
-            this.guna2PanelStudyTime.Name = "guna2PanelStudyTime";
-            this.guna2PanelStudyTime.Size = new System.Drawing.Size(407, 27);
-            this.guna2PanelStudyTime.TabIndex = 29;
-            // 
-            // guna2PanelCF
-            // 
-            this.guna2PanelCF.Controls.Add(this.labelIFT);
-            this.guna2PanelCF.Controls.Add(this.labelIF);
-            this.guna2PanelCF.Location = new System.Drawing.Point(60, 287);
-            this.guna2PanelCF.Name = "guna2PanelCF";
-            this.guna2PanelCF.Size = new System.Drawing.Size(931, 27);
-            this.guna2PanelCF.TabIndex = 29;
-            // 
-            // labelTeacher
-            // 
-            this.labelTeacher.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelTeacher.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTeacher.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelTeacher.Location = new System.Drawing.Point(0, 0);
-            this.labelTeacher.Name = "labelTeacher";
-            this.labelTeacher.Size = new System.Drawing.Size(111, 27);
-            this.labelTeacher.TabIndex = 0;
-            this.labelTeacher.Text = "Teacher:";
-            this.labelTeacher.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelRoomT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRoomT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRoomT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelRoomT.Location = new System.Drawing.Point(79, 0);
+            this.labelRoomT.Name = "labelRoomT";
+            this.labelRoomT.Size = new System.Drawing.Size(328, 27);
+            this.labelRoomT.TabIndex = 2;
+            this.labelRoomT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelRoom
             // 
@@ -218,17 +204,25 @@
             this.labelRoom.Text = "Room: ";
             this.labelRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelIF
+            // guna2PanelTime
             // 
-            this.labelIF.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelIF.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelIF.Location = new System.Drawing.Point(0, 0);
-            this.labelIF.Name = "labelIF";
-            this.labelIF.Size = new System.Drawing.Size(217, 27);
-            this.labelIF.TabIndex = 2;
-            this.labelIF.Text = "Course Information:";
-            this.labelIF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guna2PanelTime.Controls.Add(this.labelTimeT);
+            this.guna2PanelTime.Controls.Add(this.labelTime);
+            this.guna2PanelTime.Location = new System.Drawing.Point(500, 193);
+            this.guna2PanelTime.Name = "guna2PanelTime";
+            this.guna2PanelTime.Size = new System.Drawing.Size(491, 27);
+            this.guna2PanelTime.TabIndex = 28;
+            // 
+            // labelTimeT
+            // 
+            this.labelTimeT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelTimeT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTimeT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelTimeT.Location = new System.Drawing.Point(69, 0);
+            this.labelTimeT.Name = "labelTimeT";
+            this.labelTimeT.Size = new System.Drawing.Size(422, 27);
+            this.labelTimeT.TabIndex = 4;
+            this.labelTimeT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelTime
             // 
@@ -242,6 +236,26 @@
             this.labelTime.Text = "Time:";
             this.labelTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // guna2PanelStudyTime
+            // 
+            this.guna2PanelStudyTime.Controls.Add(this.labelStudyTimeT);
+            this.guna2PanelStudyTime.Controls.Add(this.labelStudyTime);
+            this.guna2PanelStudyTime.Location = new System.Drawing.Point(500, 240);
+            this.guna2PanelStudyTime.Name = "guna2PanelStudyTime";
+            this.guna2PanelStudyTime.Size = new System.Drawing.Size(491, 27);
+            this.guna2PanelStudyTime.TabIndex = 29;
+            // 
+            // labelStudyTimeT
+            // 
+            this.labelStudyTimeT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelStudyTimeT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStudyTimeT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelStudyTimeT.Location = new System.Drawing.Point(134, 0);
+            this.labelStudyTimeT.Name = "labelStudyTimeT";
+            this.labelStudyTimeT.Size = new System.Drawing.Size(357, 27);
+            this.labelStudyTimeT.TabIndex = 5;
+            this.labelStudyTimeT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // labelStudyTime
             // 
             this.labelStudyTime.Dock = System.Windows.Forms.DockStyle.Left;
@@ -254,27 +268,14 @@
             this.labelStudyTime.Text = "Study Time:";
             this.labelStudyTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelTeacherT
+            // guna2PanelCF
             // 
-            this.labelTeacherT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTeacherT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTeacherT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelTeacherT.Location = new System.Drawing.Point(111, 0);
-            this.labelTeacherT.Name = "labelTeacherT";
-            this.labelTeacherT.Size = new System.Drawing.Size(296, 27);
-            this.labelTeacherT.TabIndex = 1;
-            this.labelTeacherT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labelRoomT
-            // 
-            this.labelRoomT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelRoomT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRoomT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelRoomT.Location = new System.Drawing.Point(79, 0);
-            this.labelRoomT.Name = "labelRoomT";
-            this.labelRoomT.Size = new System.Drawing.Size(328, 27);
-            this.labelRoomT.TabIndex = 2;
-            this.labelRoomT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guna2PanelCF.Controls.Add(this.labelIFT);
+            this.guna2PanelCF.Controls.Add(this.labelIF);
+            this.guna2PanelCF.Location = new System.Drawing.Point(60, 287);
+            this.guna2PanelCF.Name = "guna2PanelCF";
+            this.guna2PanelCF.Size = new System.Drawing.Size(931, 27);
+            this.guna2PanelCF.TabIndex = 29;
             // 
             // labelIFT
             // 
@@ -287,27 +288,17 @@
             this.labelIFT.TabIndex = 3;
             this.labelIFT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // labelTimeT
+            // labelIF
             // 
-            this.labelTimeT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelTimeT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTimeT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelTimeT.Location = new System.Drawing.Point(69, 0);
-            this.labelTimeT.Name = "labelTimeT";
-            this.labelTimeT.Size = new System.Drawing.Size(338, 27);
-            this.labelTimeT.TabIndex = 4;
-            this.labelTimeT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labelStudyTimeT
-            // 
-            this.labelStudyTimeT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelStudyTimeT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStudyTimeT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelStudyTimeT.Location = new System.Drawing.Point(134, 0);
-            this.labelStudyTimeT.Name = "labelStudyTimeT";
-            this.labelStudyTimeT.Size = new System.Drawing.Size(273, 27);
-            this.labelStudyTimeT.TabIndex = 5;
-            this.labelStudyTimeT.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelIF.Dock = System.Windows.Forms.DockStyle.Left;
+            this.labelIF.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelIF.Location = new System.Drawing.Point(0, 0);
+            this.labelIF.Name = "labelIF";
+            this.labelIF.Size = new System.Drawing.Size(217, 27);
+            this.labelIF.TabIndex = 2;
+            this.labelIF.Text = "Course Information:";
+            this.labelIF.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2PanelResult
             // 
@@ -318,14 +309,15 @@
             this.guna2PanelResult.Size = new System.Drawing.Size(407, 27);
             this.guna2PanelResult.TabIndex = 30;
             // 
-            // guna2PanelStatus
+            // labelResultT
             // 
-            this.guna2PanelStatus.Controls.Add(this.labelCourseStatusT);
-            this.guna2PanelStatus.Controls.Add(this.labelCourseStatus);
-            this.guna2PanelStatus.Location = new System.Drawing.Point(579, 334);
-            this.guna2PanelStatus.Name = "guna2PanelStatus";
-            this.guna2PanelStatus.Size = new System.Drawing.Size(407, 27);
-            this.guna2PanelStatus.TabIndex = 31;
+            this.labelResultT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelResultT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelResultT.Location = new System.Drawing.Point(99, 0);
+            this.labelResultT.Name = "labelResultT";
+            this.labelResultT.Size = new System.Drawing.Size(308, 27);
+            this.labelResultT.TabIndex = 4;
             // 
             // labelResult
             // 
@@ -339,6 +331,25 @@
             this.labelResult.Text = "Result:";
             this.labelResult.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // guna2PanelStatus
+            // 
+            this.guna2PanelStatus.Controls.Add(this.labelCourseStatusT);
+            this.guna2PanelStatus.Controls.Add(this.labelCourseStatus);
+            this.guna2PanelStatus.Location = new System.Drawing.Point(500, 334);
+            this.guna2PanelStatus.Name = "guna2PanelStatus";
+            this.guna2PanelStatus.Size = new System.Drawing.Size(491, 27);
+            this.guna2PanelStatus.TabIndex = 31;
+            // 
+            // labelCourseStatusT
+            // 
+            this.labelCourseStatusT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelCourseStatusT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCourseStatusT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelCourseStatusT.Location = new System.Drawing.Point(165, 0);
+            this.labelCourseStatusT.Name = "labelCourseStatusT";
+            this.labelCourseStatusT.Size = new System.Drawing.Size(326, 27);
+            this.labelCourseStatusT.TabIndex = 5;
+            // 
             // labelCourseStatus
             // 
             this.labelCourseStatus.Dock = System.Windows.Forms.DockStyle.Left;
@@ -350,26 +361,6 @@
             this.labelCourseStatus.TabIndex = 4;
             this.labelCourseStatus.Text = "Course Status: ";
             this.labelCourseStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // labelResultT
-            // 
-            this.labelResultT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelResultT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelResultT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelResultT.Location = new System.Drawing.Point(99, 0);
-            this.labelResultT.Name = "labelResultT";
-            this.labelResultT.Size = new System.Drawing.Size(308, 27);
-            this.labelResultT.TabIndex = 4;
-            // 
-            // labelCourseStatusT
-            // 
-            this.labelCourseStatusT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelCourseStatusT.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCourseStatusT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelCourseStatusT.Location = new System.Drawing.Point(165, 0);
-            this.labelCourseStatusT.Name = "labelCourseStatusT";
-            this.labelCourseStatusT.Size = new System.Drawing.Size(242, 27);
-            this.labelCourseStatusT.TabIndex = 5;
             // 
             // guna2Panel1
             // 
@@ -401,7 +392,7 @@
             this.guna2DataGridViewListStudentInfor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(85)))), ((int)(((byte)(85)))));
@@ -521,7 +512,6 @@
             this.Controls.Add(this.guna2PanelRoom);
             this.Controls.Add(this.guna2PanelTeacher);
             this.Controls.Add(this.labelCourseIFF);
-            this.Controls.Add(this.guna2PanelBottomInner);
             this.Controls.Add(this.guna2PanelTopInner);
             this.Controls.Add(this.guna2PanelLeft);
             this.Controls.Add(this.guna2PanelRigth);
@@ -551,7 +541,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2PanelRigth;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelLeft;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTopInner;
-        private Guna.UI2.WinForms.Guna2Panel guna2PanelBottomInner;
         private System.Windows.Forms.Label labelCourseIFF;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelTeacher;
         private Guna.UI2.WinForms.Guna2Panel guna2PanelRoom;

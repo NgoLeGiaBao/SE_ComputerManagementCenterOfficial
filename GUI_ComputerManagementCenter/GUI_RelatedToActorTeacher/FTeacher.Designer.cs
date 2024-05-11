@@ -133,6 +133,7 @@
             // 
             // flowLayoutPanelCourse
             // 
+            this.flowLayoutPanelCourse.AutoScroll = true;
             this.flowLayoutPanelCourse.Location = new System.Drawing.Point(53, 0);
             this.flowLayoutPanelCourse.Name = "flowLayoutPanelCourse";
             this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);

@@ -36,7 +36,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             labelTitleSchedule.Text = "SCHEDULE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
             List<DTO_Meeting> list = BUS_RelatedToTeacher.Instance.GetMeetingFromCourseID(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
-            Attandance.Image = global::GUI_ComputerManagementCenter.Properties.Resources.de;
+            Attandance.Image = global::GUI_ComputerManagementCenter.Properties.Resources.assign;
             foreach (DTO_Meeting item in list)
             {
                 object[] rowValues = new object[]
@@ -81,6 +81,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         // Load List Point
         public void LoadListPoint()
         {
+            guna2DataGridViewPoint.Rows.Clear();
             labelPointTitle.Text = DTO_Course.CourseChoosen.CourseName.ToUpper() + "COURSE" + "\n" + " GRADE SHEET";
             List<DTO_CourseStudentDetail> list = BUS_RelatedToTeacher.Instance.GetListCourseStudentDetail(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
@@ -149,6 +150,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 DataGridViewRow selectedRow = guna2DataGridViewSchedule.SelectedRows[0];
                 DTO_Meeting.MeetingChoosen = BUS_RelatedToTeacher.Instance.GetMeetingByMeetingID(selectedRow.Cells["MeetingIDSCH"].Value.ToString());
                 guna2TabControlCourseDetail.SelectedTab = tabPageAttendance;
+                guna2ButtonSaveAttendace.Visible = true;
+                guna2ButtonCancelAttendance.Visible = true;
                 LoadListDetailMeeting();
             }
         }
@@ -190,25 +193,32 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)
         {
-            Form fBackground = Application.OpenForms["FBackGround"];
-            fBackground.Hide();
-            fBackground.Close();
-            FTeacher fTeacher = new FTeacher();
-            fTeacher.ShowDialog();
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is FBackGround)
+                {
+                    form.Hide();
+                }
+            }
         }
 
         private void guna2ButtonCancelAttendance_Click(object sender, EventArgs e)
         {
-
+            guna2TabControlCourseDetail.SelectedIndex = 1;
         }
 
         private void guna2TabControlCourseDetail_Selected(object sender, TabControlEventArgs e)
         {
             if (DTO_Meeting.MeetingChoosen != null)
             {
-                
                 guna2PanelMessageAttendance.Visible = false;
-            } 
+            }
+            else
+            {
+                guna2PanelMessageAttendance.Visible = true;
+                guna2ButtonCancelAttendance.Visible = false;
+                guna2ButtonSaveAttendace.Visible = false;
+            }
         }
 
         private void guna2TabControlCourseDetail_SelectedIndexChanged(object sender, EventArgs e)
@@ -222,5 +232,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
+        private void guna2ButtonCancel_Click(object sender, EventArgs e)
+        {
+            LoadListPoint();
+        }
     }
 }

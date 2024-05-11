@@ -50,6 +50,14 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Indetity card have only 12 characters");
                 return;
 
+            } 
+            else
+            {
+                if (BUS_RelatedToEmployee.Instance.CheckExistTeacherID("GV" + id))
+                {
+                    MessageBox.Show("ID existed");
+                    return;
+                }
             }
             string gender = GetGender();
             string identityCard = guna2TextBoxIC.Text;

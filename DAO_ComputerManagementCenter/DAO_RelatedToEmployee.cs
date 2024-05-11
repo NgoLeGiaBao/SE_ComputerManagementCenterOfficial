@@ -143,6 +143,19 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_GetRoomByCourseID @CourseID";
             return DAO_DataProvider.Instance.ExecuteQuery(query, new object[] { courseID });
         }
+
+        // Get data to give dashboard
+        public DataTable GetDataForDashBoard ()
+        {
+            string query = "USP_Dasboard";
+            return DAO_DataProvider.Instance.ExecuteQuery(query);
+        }
+        // Get data to give chart
+        public DataTable GetDataForChart ()
+        {
+            string query = "USP_Chart";
+            return DAO_DataProvider.Instance.ExecuteQuery (query);  
+        }
         // -- Add
         // Add new student
         public bool AddNewStudent(object[] parameters, string obj)
