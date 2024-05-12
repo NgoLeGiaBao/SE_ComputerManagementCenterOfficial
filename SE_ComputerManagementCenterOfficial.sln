@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_ComputerManagementCente
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO_ComputerManagementCenter", "DAO_ComputerManagementCenter\DAO_ComputerManagementCenter.csproj", "{44B96994-CFD1-48A2-BA02-DEFAFD9F8115}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TEST_ComputerManagementCenterOfficial", "TEST_ComputerManagementCenterOfficial\TEST_ComputerManagementCenterOfficial.csproj", "{F687CD1E-C3A0-4B77-86F6-3CE5A40EC4E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{44B96994-CFD1-48A2-BA02-DEFAFD9F8115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44B96994-CFD1-48A2-BA02-DEFAFD9F8115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44B96994-CFD1-48A2-BA02-DEFAFD9F8115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F687CD1E-C3A0-4B77-86F6-3CE5A40EC4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F687CD1E-C3A0-4B77-86F6-3CE5A40EC4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F687CD1E-C3A0-4B77-86F6-3CE5A40EC4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F687CD1E-C3A0-4B77-86F6-3CE5A40EC4E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

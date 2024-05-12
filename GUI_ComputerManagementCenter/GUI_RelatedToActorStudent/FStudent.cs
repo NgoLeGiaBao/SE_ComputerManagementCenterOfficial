@@ -1,6 +1,7 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher;
+using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             table.Columns.Add("Function", typeof(string));
             table.Rows.Add("Change Password");
             table.Rows.Add("Log out");
-            guna2DataGridViewCommon.DataSource = table;
         }
         public void GetGuna2PanelCourse(DTO_Course course, int i, int k)
         {
@@ -283,25 +283,20 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             }
         }
 
-
-
-        
-
-        private void labelPersonalName_Click(object sender, EventArgs e)
+        private void labelLogout_Click(object sender, EventArgs e)
         {
-            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
-
+            FLogin fLogin = new FLogin();
+            this.Hide();
+            fLogin.ShowDialog();
         }
 
-        private void guna2PictureBoxScroll_Click(object sender, EventArgs e)
+        private void labelChangePassword_Click(object sender, EventArgs e)
         {
-            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+            FBackGround fBackGround = new FBackGround();
+            FChangePassword fChangePassword = new FChangePassword();
 
-        }
-
-        private void guna2CirclePictureBoxAvatar_Click(object sender, EventArgs e)
-        {
-            guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
+            fBackGround.Show();
+            fChangePassword.ShowDialog();
         }
     }
 }

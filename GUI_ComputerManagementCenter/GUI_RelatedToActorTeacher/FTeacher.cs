@@ -1,6 +1,7 @@
 ﻿using BUS_ComputerManagementCenter;
 using DTO_ComputerManagementCenter;
 using GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee;
+using GUI_ComputerManagementCenter.GUI_RelatedToLogin;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -255,10 +256,25 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 i++;
             }
         }
-
         private void FTeacher_Load(object sender, EventArgs e)
         {
             LoadListCourse();
+        }
+
+        private void labelChangePassword_Click(object sender, EventArgs e)
+        {
+            FBackGround fBackGround = new FBackGround();
+            FChangePassword fChangePassword = new FChangePassword();
+
+            fBackGround.Show();
+            fChangePassword.ShowDialog();
+        }
+
+        private void labelLogout_Click(object sender, EventArgs e)
+        {
+            FLogin fLogin = new FLogin();
+            this.Hide();
+            fLogin.ShowDialog();
         }
     }
 }
