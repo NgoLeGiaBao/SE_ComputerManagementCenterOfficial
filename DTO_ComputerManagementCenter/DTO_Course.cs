@@ -35,6 +35,7 @@ namespace DTO_ComputerManagementCenter
             this.CourseStatus = courseStatus;
             this.CourseShift = courseShift;
         }
+
         // Constructor with datarow
         public DTO_Course(DataRow dataRow)
         {
@@ -48,6 +49,7 @@ namespace DTO_ComputerManagementCenter
             this.CourseStatus = int.Parse(dataRow["TrangThaiKhoaHoc"].ToString());
             this.CourseShift = dataRow["TenCaHoc"].ToString();
         }
+
 
 
         public string CourseID { get => courseID; set => courseID = value; }

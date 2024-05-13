@@ -22,14 +22,16 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         {
             InitializeComponent();
         }
+
+
         private void FCourseDetail_Load(object sender, EventArgs e)
         {
             LoadMeetings();
             LoadListPoint();
             LoadCourseInformation();
             labelTitleAttendance.Text = "ATTENDANCE FOR "  + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
-
         }
+
 
         public void LoadMeetings()
         {
@@ -50,6 +52,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 guna2DataGridViewSchedule.Rows.Add(rowValues);
             }
         }
+
 
         // Load Course Information
         public void LoadCourseInformation ()
@@ -78,6 +81,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 guna2DataGridViewListStudentInfor.Rows.Add(rowValues);
             }
         }
+
+
         // Load List Point
         public void LoadListPoint()
         {
@@ -98,6 +103,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 guna2DataGridViewPoint.Rows.Add(rowValues);
             }
         }
+
+
 
         // Change value in column point
         private void guna2DataGridViewPoint_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -122,6 +129,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
+
         // Click on save
         private void guna2ButtonSavePoint_Click(object sender, EventArgs e)
         {
@@ -131,16 +139,17 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             {
                 points.Add(row.Cells["Point"].Value.ToString());
             }
-            int i = 0;
+
             // Get course
+            int i = 0;
             List<DTO_CourseStudentDetail> list = BUS_RelatedToTeacher.Instance.GetListCourseStudentDetail(DTO_Course.CourseChoosen.CourseID);
             foreach (DTO_CourseStudentDetail item in list)
             {
                 BUS_RelatedToTeacher.Instance.UpdatePointIntoCourseStudentDetail(DTO_Course.CourseChoosen.CourseID, item.Student.Id, (points[i++] == "") ? "-1" : points[i - 1]);
             }
             MessageBox.Show("Save Grade Sheet Successfully");
-            
         }
+
 
         // Click on cell content data gridview schedule
         private void guna2DataGridViewSchedule_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -155,6 +164,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 LoadListDetailMeeting();
             }
         }
+
+
         // Load list list student by meeting
         public void LoadListDetailMeeting()
         {
@@ -177,6 +188,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
+
         private void guna2ButtonSaveAttendance_Click(object sender, EventArgs e)
         {
             List<string> listStudentID = new List<string>();
@@ -191,6 +203,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
 
         }
 
+
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)
         {
             foreach (Form form in Application.OpenForms)
@@ -202,24 +215,29 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             }
         }
 
+
         private void guna2ButtonCancelAttendance_Click(object sender, EventArgs e)
         {
             guna2TabControlCourseDetail.SelectedIndex = 1;
         }
+
 
         private void guna2TabControlCourseDetail_Selected(object sender, TabControlEventArgs e)
         {
             if (DTO_Meeting.MeetingChoosen != null)
             {
                 guna2PanelMessageAttendance.Visible = false;
+                guna2DataGridViewAttendance.Visible = true;
             }
             else
             {
+                guna2DataGridViewAttendance.Visible = false;
                 guna2PanelMessageAttendance.Visible = true;
                 guna2ButtonCancelAttendance.Visible = false;
                 guna2ButtonSaveAttendace.Visible = false;
             }
         }
+
 
         private void guna2TabControlCourseDetail_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -228,9 +246,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
                 DTO_Meeting.MeetingChoosen = null;
                 guna2PanelMessageAttendance.Visible = true;
                 labelTitleAttendance.Text = "ATTENDANCE FOR " + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
-
-            }
+            } 
         }
+
 
         private void guna2ButtonCancel_Click(object sender, EventArgs e)
         {

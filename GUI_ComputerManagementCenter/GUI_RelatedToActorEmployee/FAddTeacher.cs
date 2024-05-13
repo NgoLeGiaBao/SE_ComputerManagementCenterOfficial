@@ -18,6 +18,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             InitializeComponent();
         }
+
+
         public string GetGender()
         {
             string gender = "";
@@ -32,10 +34,14 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             return gender;
         }
 
+
+
         private void guna2TextBoxIC_Leave(object sender, EventArgs e)
         {
             guna2TextBoxID.Text = "GV" + guna2TextBoxIC.Text;
         }
+
+
 
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
@@ -94,8 +100,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             if (isAdded)
             {
                 BUS_RelatedToSendEmail.SendEmailToUser(email, emailSubject, emailBody);
-                MessageBox.Show("Add a new student successfully!");
-                // Tạo một tham chiếu đến form FEs nếu cần thiết
+                MessageBox.Show("Add a new teacher successfully!");
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
                 if (fEs != null)
                 {
@@ -114,6 +119,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Data is not valid");
             }
         }
+
 
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {

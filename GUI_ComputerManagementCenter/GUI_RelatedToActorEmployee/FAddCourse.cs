@@ -22,6 +22,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             InitializeComponent();
         }
+
+
         // Get shift from course start
         public void GetShiftFromCourseStart ()
         {

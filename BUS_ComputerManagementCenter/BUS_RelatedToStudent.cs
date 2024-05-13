@@ -18,6 +18,8 @@ namespace BUS_ComputerManagementCenter
             get { if (instance == null) { instance = new BUS_RelatedToStudent(); } return instance; }
             private set { instance = value; }
         }
+
+
         // -- Get course by ID student
         public List<DTO_Course> GetCourseByStudentID(string studentID)
         {
@@ -29,6 +31,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
+
+
         // Get course detail by course and student ID
         public List<string> GetCourseInformationDetailByID(string courseID, string studentID)
         {
@@ -62,6 +66,8 @@ namespace BUS_ComputerManagementCenter
             }
             return list;
         }
+
+
         //-- Get Schedule and result attendance
         public List<List<string>> GetScheduleAndResultAttendance(string courseID, string studentID)
         {

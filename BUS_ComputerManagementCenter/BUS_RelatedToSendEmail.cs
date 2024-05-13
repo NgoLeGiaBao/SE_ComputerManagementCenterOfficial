@@ -19,6 +19,7 @@ namespace BUS_ComputerManagementCenter
             private set { instance = value; }
         }
 
+
         // Get body email with information account
         public static string GetBodyEmailWithAccountInformation (string username, string password, string fullName)
         {
@@ -73,6 +74,7 @@ namespace BUS_ComputerManagementCenter
         //    } while (flag == 0);
         //    return "";
         //}
+
 
         // Send email
         public static bool SendEmailToUser(string email, string emailSubject, string emailBody)

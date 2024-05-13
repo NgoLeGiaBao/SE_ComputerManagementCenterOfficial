@@ -20,6 +20,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             InitializeComponent();
         }
 
+
         private void FEditStudent_Load(object sender, EventArgs e)
         {
             guna2TextBoxID.Text = DTO_Person.PersonChoosen.Id;
@@ -38,7 +39,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2TextBoxEmail.Text = DTO_Person.PersonChoosen.EmailAddress;
         }
 
-        // Get gender
+
         public string GetGender ()
         {
             if (guna2CustomRadioButtonFemale.Checked)
@@ -67,6 +68,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Please fill all filed data");
                 return;
             }
+
             if (phone.Length != 10)
             {
                 MessageBox.Show("Telephone number only contains 10 characters");
@@ -78,10 +80,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Please enter format @gmail.com");
                 return;
             }
+
             bool isUpdated = BUS_RelatedToEmployee.Instance.UpdateStudent(new object[] {identityCard, fullName, gender, birthday, phone, address, email});
             if (isUpdated)
             {
-                // Tạo một tham chiếu đến form FEs nếu cần thiết
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
                 if (fEs != null)
                 {
@@ -90,6 +92,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Update student successfully");
             }
         }
+
 
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
@@ -103,6 +106,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             this.Close();   
         }
 
+
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             foreach (Form form in Application.OpenForms)
@@ -112,7 +116,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     form.Hide();
                 }
             }
-
         }
     }
 }

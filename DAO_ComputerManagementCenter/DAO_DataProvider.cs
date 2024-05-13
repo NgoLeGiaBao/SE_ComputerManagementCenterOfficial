@@ -17,8 +17,12 @@ namespace DAO_ComputerManagementCenter
             get { if (instance == null) instance = new DAO_DataProvider(); return instance; }
             private set { instance = value; }
         }
+
+
         // Đây là một constructor được khởi tạo, và ở dạng private để không có đối tượng nào ở ngoài có thể truy xuất được
         private DAO_DataProvider() { }
+
+
         // Để lấy được chuỗi kết nối chọn Tools -> Connect to Database 
         private string connectionStr = "Data Source=.\\SQLEXPRESS;Initial Catalog=QuanLyTrungTamTinHoc_V3;Integrated Security=True;Encrypt=False";
         public DataTable ExecuteQuery(String query, object[] parameters = null)
@@ -46,7 +50,6 @@ namespace DAO_ComputerManagementCenter
                         }
                     }
                 }
-
                 // Tạo ra data adapter
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 // Thông qua adapeter, đưa dữ liệu vào data
@@ -58,6 +61,8 @@ namespace DAO_ComputerManagementCenter
             // Trả về bảng dữ liệu
             return data;
         }
+
+
         // Trả về số dòng thành công trong cơ sở dữ liệu sừ dụng cho INSERT, UPDATE, DELETE
         public int ExecuteNonQuery(String query, object[] parameters = null)
         {

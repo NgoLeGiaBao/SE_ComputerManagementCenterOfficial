@@ -32,6 +32,7 @@ namespace BUS_ComputerManagementCenter
             return listStudent;
         }
         
+
         // Get course list
         public List<DTO_Course> GetListCourse()
         {
@@ -43,6 +44,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
+
+
         // Get course by search
         public List<DTO_Course> GetListCourseBySearch(string search)
         {
@@ -54,6 +57,7 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
+
 
         // Get student list
         public List<DTO_Teacher> GetListTeacher()
@@ -67,6 +71,7 @@ namespace BUS_ComputerManagementCenter
             return listTeacher;
         }
         
+
         // Get subject list
         public List<DTO_Subject> GetListSubject()
         {
@@ -78,12 +83,14 @@ namespace BUS_ComputerManagementCenter
             }
             return listSubject;
         }
+
         
         // Get subject id base on name subject
         public string GetSubjectIDBaseOnSubjectName(string subjectName)
         {
             return DAO_RelatedToEmployee.Instance.GetSubjecIDtBaseOnSubjectName(subjectName).ToString();
         }
+
         
         // Get shift 
         public DataTable GetListShift()
@@ -91,6 +98,7 @@ namespace BUS_ComputerManagementCenter
             return DAO_RelatedToEmployee.Instance.GetListShift();
         }
         
+
         // Get lasted course id
         public string GetLastedCourseID()
         {
@@ -105,6 +113,7 @@ namespace BUS_ComputerManagementCenter
             return new DTO_Course(dataRow);
         }
 
+
         // Get student by ID
         public DTO_Student GetStudentByID (string id)
         {
@@ -115,6 +124,8 @@ namespace BUS_ComputerManagementCenter
             }
             return null;
         }
+
+
         // Get student by course ID
         public List<DTO_Student> GetStudentByCourseID (string courseID)
         {
@@ -127,12 +138,14 @@ namespace BUS_ComputerManagementCenter
             return listStudent;
         }
 
+
         // Get teacher by ID
         public DTO_Teacher GetTeacherByID (string id)
         {
             DataRow dataRow = DAO_RelatedToEmployee.Instance.GetTeacherByID(id).Rows[0];
             return new DTO_Teacher(dataRow);
         }
+
 
         // Get student by search and no exist
         public List<DTO_Student> GetStudentBySearchAndNoExist(string search, string exist)
@@ -145,6 +158,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listStudent;
         }
+
+
         // Get student by search
         public List<DTO_Student> GetStudentBySearch(string search)
         {
@@ -156,6 +171,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listStudent;
         }
+
+
         // Get teacher by search
         public List<DTO_Teacher> GetTeachertBySearch(string search)
         {
@@ -167,6 +184,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listTeacher;
         }
+
+
         // Get teacher by course id
         public DTO_Teacher GetTeacherByCourseID (string courseID)
         {
@@ -178,12 +197,16 @@ namespace BUS_ComputerManagementCenter
             }
             return teacher;
         }
+
+
         // Get quantity 
         public string GetQuality (string type)
         {
             string result = DAO_RelatedToEmployee.Instance.GetQuantity(type).ToString();
             return result == "" ? "0": result;
         }
+
+
         // Get room
         public List<DTO_Room> GetRoom()
         {
@@ -195,6 +218,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listRoom;
         }
+
+
         // Get room by course id
         public DTO_Room GetRoomByCourseID (string courseID)
         {
@@ -206,6 +231,8 @@ namespace BUS_ComputerManagementCenter
             }
             return room;
         }
+
+
         // Get data to give dashboard
         public List<string> GetDataForDashBoard()
         {
@@ -217,6 +244,8 @@ namespace BUS_ComputerManagementCenter
             }
             return data;
         }
+
+
         // Get data to give chart
         public List<string> GetDataForChart()
         {
@@ -228,6 +257,8 @@ namespace BUS_ComputerManagementCenter
             }
             return data;
         }
+
+
         // Get status account 
         public string GetStatusAccount (string accountID)
         {

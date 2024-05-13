@@ -20,6 +20,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             InitializeComponent();
         }
 
+
         // Get Gender
         public string GetGender ()
         {
@@ -33,7 +34,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             return gender;
         }
-
 
 
         // Click on Save Button
@@ -110,6 +110,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+
         // Click on Cancel button
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
@@ -134,10 +135,12 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+
         private void guna2TextBoxIC_Leave(object sender, EventArgs e)
         {
                 guna2TextBoxID.Text = "HV" + guna2TextBoxIC.Text;
         }
+
 
         private void FAddStudent_Load(object sender, EventArgs e)
         {

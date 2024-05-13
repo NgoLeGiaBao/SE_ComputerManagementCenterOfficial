@@ -23,6 +23,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             InitializeComponent();
         }
 
+
         // Get shift from course start
         public void GetShiftFromCourseStart()
         {
@@ -31,6 +32,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             List<string> shiftMondayAndThursday = new List<string>();
             List<string> shiftTuesdayAndFriday = new List<string>();
             List<string> shiftWednesdayAndStaturday = new List<string>();
+            
             for (int i = 0; i < dt.Rows.Count; i += 3)
             {
                 shiftMondayAndThursday.Add(dt.Rows[i]["TenCaHoc"].ToString());
@@ -57,6 +59,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+
         // Get Course by ID
         public DTO_Course GetCourseByID (string courseID)
         {
@@ -75,10 +78,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             return list;
         }
 
+
         // Load form
         public void LoadForm ()
         {
-            // Show data into combobox subject  
             List<string> listSubject = new List<string>();
             foreach (DTO_Subject subject in BUS_RelatedToEmployee.Instance.GetListSubject())
             {
@@ -135,6 +138,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 guna2DataGridViewStudent.Enabled = false;
             }
         }
+
+
         // Load page
         private void FAddCourse_Load(object sender, EventArgs e)
         {
@@ -169,6 +174,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2ComboBoxTeacher.DataSource = MoveItemToTop(list, (teacher.Id + " - " + teacher.FullName));
         }
 
+
         // Load list student by course id
         public void LoadListStudent ()
         {
@@ -179,6 +185,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 AddNewStudentIntoCourse(item);
             }
         }
+
 
         // Add new student into course
         public void AddNewStudentIntoCourse(DTO_Student item)
@@ -373,6 +380,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 MessageBox.Show("You must be enter course fee being number");
             }
+
             if (subjectID == "" || courseName == "" || courseStart == "" || courseFee == "" || courseDescription == "")
             {
                 MessageBox.Show("Please fill all field information");

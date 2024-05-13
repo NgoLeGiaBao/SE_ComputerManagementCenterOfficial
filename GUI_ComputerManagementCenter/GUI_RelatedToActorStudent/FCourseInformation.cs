@@ -20,6 +20,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             InitializeComponent();
             LoadCourseDetail();
         }
+
+
         public void LoadCourseDetail ()
         {
             labelCourseIFF.Text = "VIEW DETAIL ABOUT " + DTO_Course.CourseChoosen.CourseName.ToUpper();
@@ -48,6 +50,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
                 guna2DataGridViewListStudentInfor.Rows.Add(rowValues);
             }
         }
+
 
         private void guna2ControlBoxClose_Click(object sender, EventArgs e)
         {

@@ -22,14 +22,22 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
 
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(DTO_Person.IDSession);
             if (label2.Text == "" && label3.Text == "" && label4.Text == "")
             {
                 if (BUS_RelatedToLogin.Instance.ChangeNewPassword(DTO_Person.IDSession, guna2TextBoxNew.Text))
                 {
                     MessageBox.Show("Change Password Successfully");
+                    foreach (Form form in Application.OpenForms)
+                    {
+                        if (form is FBackGround)
+                        {
+                            form.Hide();
+                        }
+                    }
+                    this.Close();
                 }
-            } else
+            } 
+            else
             {
                 MessageBox.Show("Please check information field again");
             }

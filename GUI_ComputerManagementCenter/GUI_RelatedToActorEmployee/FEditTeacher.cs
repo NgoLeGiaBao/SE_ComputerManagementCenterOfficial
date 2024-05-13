@@ -20,7 +20,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             InitializeComponent();
         }
         
-        // Get gender
+
         public string GetGender()
         {
             if (guna2CustomRadioButtonFemale.Checked)
@@ -34,6 +34,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             return "";
         }
 
+
         private void FEditTeacher_Load(object sender, EventArgs e)
         {
 
@@ -41,6 +42,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2TextBoxIC.Text = DTO_Teacher.TeacherChoosen.IdCard;
             guna2TextBoxFullName.Text = DTO_Teacher.TeacherChoosen.FullName;
             guna2TextBoxPhone.Text = DTO_Teacher.TeacherChoosen.TelephoneNumber;
+            
             if (DTO_Teacher.TeacherChoosen.Sex == "Female")
             {
                 guna2CustomRadioButtonFemale.Checked = true;
@@ -49,11 +51,13 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 guna2CustomRadioButtonMale.Checked = true;
             }
+            
             guna2DateTimePickerBirth.Value = DTO_Teacher.TeacherChoosen.Date;
             guna2TextBoxAddress.Text = DTO_Teacher.TeacherChoosen.Address;
             guna2TextBoxEmail.Text = DTO_Teacher.TeacherChoosen.EmailAddress;
             guna2TextBoxAcademic.Text = DTO_Teacher.TeacherChoosen.AcademicLevels;
         }
+
 
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
@@ -71,6 +75,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Please fill all filed data");
                 return;
             }
+            
             if (phone.Length != 10)
             {
                 MessageBox.Show("Telephone number only contains 10 characters");
@@ -82,10 +87,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Please enter format @gmail.com");
                 return;
             }
+
             bool isUpdated = BUS_RelatedToEmployee.Instance.UpdateTeacher(new object[] { identityCard, fullName, gender, birthday, phone, address, email, academicLevel });
             if (isUpdated)
             {
-                // Tạo một tham chiếu đến form FEs nếu cần thiết
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
                 if (fEs != null)
                 {
@@ -94,6 +99,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("Update teacher successfully");
             }
         }
+
 
         private void guna2ButtonCacel_Click(object sender, EventArgs e)
         {
@@ -106,6 +112,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
             this.Close();
         }
+
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {

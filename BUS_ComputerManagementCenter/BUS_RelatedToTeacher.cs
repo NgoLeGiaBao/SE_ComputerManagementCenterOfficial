@@ -19,6 +19,7 @@ namespace BUS_ComputerManagementCenter
             private set { instance = value; }
         }
 
+
         // -- Get course by ID teacher
         public List<DTO_Course> GetCourseByTeacherID(string teacherID)
         {
@@ -30,6 +31,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourse;
         }
+
+
         // -- Get meeting from Course ID
         public List<DTO_Meeting> GetMeetingFromCourseID (string courseID) {
             List<DTO_Meeting> listMeeting = new List<DTO_Meeting>();
@@ -40,6 +43,8 @@ namespace BUS_ComputerManagementCenter
             }
             return listMeeting;
         }
+
+
         // -- Get list student from Course Student Detail
         public List<DTO_CourseStudentDetail> GetListCourseStudentDetail (string courseID)
         {
@@ -51,11 +56,15 @@ namespace BUS_ComputerManagementCenter
             }
             return listCourseStudentDetail;
         }
+
+
         //-- Get meeting by Meeting ID
         public DTO_Meeting GetMeetingByMeetingID(string meetingID)
         {
             return new DTO_Meeting(DAO_RelatedToTeacher.Instance.GetMeetingByMeetingID(meetingID).Rows[0]);
         }
+
+
         //-- Get list meeting detail by meeting id
         public List<DTO_MeetingDetail> GetListMeetingDetailByMeetingID(string meetingID)
         {
@@ -67,12 +76,16 @@ namespace BUS_ComputerManagementCenter
             }
             return listMeetingDetail;
         }
+
+
         // -- Get course by ID
         public DTO_Course GetCourseByID(string id)
         {
             DataRow dataRow = DAO_RelatedToEmployee.Instance.GetCourseByID(id).Rows[0];
             return new DTO_Course(dataRow);
         }
+
+
         //-- Get course information by ID
         public List<string> GetCourseInformationByID (string id)
         {
@@ -88,11 +101,14 @@ namespace BUS_ComputerManagementCenter
             return list;
         }
 
+
         //-- Update point into Course Student Detail
         public int UpdatePointIntoCourseStudentDetail (string courseID, string studentID, string point)
         {
             return DAO_RelatedToTeacher.Instance.UpdatePointIntoCourseStudentDetail(courseID, studentID, point);    
         }
+
+
         //-- Update attendance into Detail Meeting
         public void UpdateAttendanceIntoDetailMeeting(List<string> listStudentID, List<string> listAttendance, string courseID)
         {

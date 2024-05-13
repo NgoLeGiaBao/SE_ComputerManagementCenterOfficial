@@ -220,7 +220,7 @@
             this.guna2TextBoxReNew.PlaceholderText = "Confirmation password";
             this.guna2TextBoxReNew.SelectedText = "";
             this.guna2TextBoxReNew.Size = new System.Drawing.Size(469, 47);
-            this.guna2TextBoxReNew.TabIndex = 2;
+            this.guna2TextBoxReNew.TabIndex = 0;
             this.guna2TextBoxReNew.UseSystemPasswordChar = true;
             this.guna2TextBoxReNew.IconRightClick += new System.EventHandler(this.guna2TextBoxReNew_IconRightClick);
             this.guna2TextBoxReNew.Leave += new System.EventHandler(this.guna2TextBoxReNew_Leave);
@@ -276,7 +276,7 @@
             this.guna2TextBoxNew.PlaceholderText = "New password";
             this.guna2TextBoxNew.SelectedText = "";
             this.guna2TextBoxNew.Size = new System.Drawing.Size(469, 47);
-            this.guna2TextBoxNew.TabIndex = 1;
+            this.guna2TextBoxNew.TabIndex = 0;
             this.guna2TextBoxNew.UseSystemPasswordChar = true;
             this.guna2TextBoxNew.IconRightClick += new System.EventHandler(this.guna2TextBoxNew_IconRightClick);
             this.guna2TextBoxNew.Click += new System.EventHandler(this.guna2TextBoxNew_Click);
