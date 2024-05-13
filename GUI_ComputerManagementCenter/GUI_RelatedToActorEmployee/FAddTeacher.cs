@@ -40,6 +40,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonSave_Click(object sender, EventArgs e)
         {
             string id = guna2TextBoxIC.Text;
+            if (id == "" || guna2TextBoxFullName.Text == "" || guna2TextBoxEmail.Text == "" || guna2TextBoxAddress.Text == "" || guna2TextBoxPhone.Text == ""|| guna2TextBoxAcademic.Text == "")
+            {
+                MessageBox.Show("Please fill all filed data");
+                return;
+            }
             if (id.Length == 0)
             {
                 MessageBox.Show("Please enter indetity card");
@@ -59,6 +64,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     return;
                 }
             }
+            
             string gender = GetGender();
             string identityCard = guna2TextBoxIC.Text;
             string fullName = guna2TextBoxFullName.Text;
@@ -68,22 +74,40 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string email = guna2TextBoxEmail.Text;
             string username = "GV" + identityCard;
             string academicLevel = guna2TextBoxAcademic.Text;
+            
+            if (phone.Length != 10)
+            {
+                MessageBox.Show("Telephone number only contains 10 characters");
+                return;
+            }
+
+            if (!email.ToLower().EndsWith("@gmail.com"))
+            {
+                MessageBox.Show("Please enter format @gmail.com");
+                return;
+            }
             string password = BUS_RelatedToSendEmail.CreateStringRadom(8);
             string emailSubject = "Your Account Login Information";
             string emailBody = BUS_RelatedToSendEmail.GetBodyEmailWithAccountInformation(username, password, fullName);
-
 
             bool isAdded = BUS_RelatedToEmployee.Instance.AddNewTeacher(new Object[] { identityCard, fullName, gender, birthday, phone, address, email, password, academicLevel });
             if (isAdded)
             {
                 BUS_RelatedToSendEmail.SendEmailToUser(email, emailSubject, emailBody);
-                MessageBox.Show("Successfully");
+                MessageBox.Show("Add a new student successfully!");
                 // Tạo một tham chiếu đến form FEs nếu cần thiết
                 FEs fEs = Application.OpenForms.OfType<FEs>().FirstOrDefault();
                 if (fEs != null)
                 {
                     fEs.RefreshPage();
                 }
+                guna2TextBoxID.Text = "";
+                guna2TextBoxIC.Text = "";
+                guna2TextBoxFullName.Text = "";
+                guna2TextBoxPhone.Text = "";
+                guna2TextBoxAddress.Text = "";
+                guna2TextBoxEmail.Text = "";
+                guna2TextBoxAcademic.Text = "";
             }
             else
             {

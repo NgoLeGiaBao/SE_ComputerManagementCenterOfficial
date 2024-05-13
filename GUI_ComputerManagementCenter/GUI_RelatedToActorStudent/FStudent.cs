@@ -24,6 +24,16 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
             InitializeComponent();
             LoadListCourse();
             LoadDataGridViewCommon();
+            string[] fullName = BUS_RelatedToEmployee.Instance.GetStudentByID(DTO_Person.IDSession).FullName.Split(' ');
+            
+            if (fullName.Length == 1 )
+            {
+                labelPersonalName.Text = fullName[0];
+            } 
+            else
+            {
+                labelPersonalName.Text = fullName[fullName.Length - 1] +  " " + fullName[fullName.Length - 2];
+            }
 
         }
 

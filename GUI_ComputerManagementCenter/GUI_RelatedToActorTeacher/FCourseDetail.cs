@@ -27,13 +27,13 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             LoadMeetings();
             LoadListPoint();
             LoadCourseInformation();
-            labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+            labelTitleAttendance.Text = "ATTENDANCE FOR "  + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
 
         }
 
         public void LoadMeetings()
         {
-            labelTitleSchedule.Text = "SCHEDULE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+            labelTitleSchedule.Text = "SCHEDULE FOR "  + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
             List<DTO_Meeting> list = BUS_RelatedToTeacher.Instance.GetMeetingFromCourseID(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
             Attandance.Image = global::GUI_ComputerManagementCenter.Properties.Resources.assign;
@@ -54,7 +54,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         // Load Course Information
         public void LoadCourseInformation ()
         {
-            labelCourseInformation.Text = "INFORMATION ABOUT" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper();
+            labelCourseInformation.Text = "INFORMATION ABOUT "  + DTO_Course.CourseChoosen.CourseName.ToUpper();
             List<string> infor = BUS_RelatedToTeacher.Instance.GetCourseInformationByID(DTO_Course.CourseChoosen.CourseID);
             int i = 0;
             labelTeacher.Text = infor[i++];
@@ -82,7 +82,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         public void LoadListPoint()
         {
             guna2DataGridViewPoint.Rows.Clear();
-            labelPointTitle.Text = DTO_Course.CourseChoosen.CourseName.ToUpper() + "COURSE" + "\n" + " GRADE SHEET";
+            labelPointTitle.Text = DTO_Course.CourseChoosen.CourseName.ToUpper() + "COURSE "  + " GRADE SHEET";
             List<DTO_CourseStudentDetail> list = BUS_RelatedToTeacher.Instance.GetListCourseStudentDetail(DTO_Course.CourseChoosen.CourseID);
             int i = 1;
             foreach (DTO_CourseStudentDetail item in list)
@@ -227,7 +227,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
             {
                 DTO_Meeting.MeetingChoosen = null;
                 guna2PanelMessageAttendance.Visible = true;
-                labelTitleAttendance.Text = "ATTENDANCE FOR" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
+                labelTitleAttendance.Text = "ATTENDANCE FOR " + DTO_Course.CourseChoosen.CourseName.ToUpper() + " COURSE";
 
             }
         }

@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea11 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend11 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea12 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend12 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2PanelControl = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelInfor = new Guna.UI2.WinForms.Guna2Panel();
             this.labelQuanTity = new System.Windows.Forms.Label();
@@ -69,10 +69,17 @@
             this.guna2TabControlEmployee = new Guna.UI2.WinForms.Guna2TabControl();
             this.tabPageHome = new System.Windows.Forms.TabPage();
             this.guna2PanelFullHone = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBoxData3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.chartFiel = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBoxData2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.chartStatus = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBoxNoData1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.chartSystemUser = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2PanelOverview = new Guna.UI2.WinForms.Guna2Panel();
@@ -121,6 +128,7 @@
             this.guna2PanelOverVie1Left = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelHomeLeft = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel19 = new Guna.UI2.WinForms.Guna2Panel();
             this.tabPageTeacher = new System.Windows.Forms.TabPage();
             this.guna2PanelFooter = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ButtonRefreshSearchTeacher = new Guna.UI2.WinForms.Guna2Button();
@@ -154,9 +162,6 @@
             this.StudentEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPageCourse = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
-            this.chartFiel = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PanelControl.SuspendLayout();
             this.guna2PanelInfor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewCommon)).BeginInit();
@@ -170,9 +175,14 @@
             this.guna2TabControlEmployee.SuspendLayout();
             this.tabPageHome.SuspendLayout();
             this.guna2PanelFullHone.SuspendLayout();
+            this.guna2Panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxData3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFiel)).BeginInit();
             this.guna2Panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxData2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartStatus)).BeginInit();
             this.guna2Panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxNoData1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSystemUser)).BeginInit();
             this.guna2PanelOverview.SuspendLayout();
             this.guna2PanelOverview7.SuspendLayout();
@@ -192,6 +202,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2PanelButtonOverView1.SuspendLayout();
             this.guna2PanelOverVie1Left.SuspendLayout();
+            this.guna2PanelHomeLeft.SuspendLayout();
             this.tabPageTeacher.SuspendLayout();
             this.guna2PanelFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewTeacher)).BeginInit();
@@ -199,8 +210,6 @@
             this.guna2PanelFooterStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).BeginInit();
             this.tabPageCourse.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFiel)).BeginInit();
-            this.guna2Panel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2PanelControl
@@ -242,42 +251,42 @@
             // 
             // guna2DataGridViewCommon
             // 
-            dataGridViewCellStyle37.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewCommon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewCommon.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.guna2DataGridViewCommon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2DataGridViewCommon.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle38.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewCommon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewCommon.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.guna2DataGridViewCommon.ColumnHeadersHeight = 50;
             this.guna2DataGridViewCommon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridViewCommon.ColumnHeadersVisible = false;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle39.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewCommon.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewCommon.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridViewCommon.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewCommon.Location = new System.Drawing.Point(1419, 73);
             this.guna2DataGridViewCommon.Name = "guna2DataGridViewCommon";
             this.guna2DataGridViewCommon.ReadOnly = true;
-            dataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle40.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle40.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewCommon.RowHeadersDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewCommon.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.guna2DataGridViewCommon.RowHeadersVisible = false;
             this.guna2DataGridViewCommon.RowHeadersWidth = 51;
             this.guna2DataGridViewCommon.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
@@ -556,8 +565,66 @@
             this.guna2PanelFullHone.Size = new System.Drawing.Size(1690, 990);
             this.guna2PanelFullHone.TabIndex = 1;
             // 
+            // guna2Panel18
+            // 
+            this.guna2Panel18.Controls.Add(this.guna2PictureBoxData3);
+            this.guna2Panel18.Controls.Add(this.label5);
+            this.guna2Panel18.Controls.Add(this.chartFiel);
+            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2Panel18.Location = new System.Drawing.Point(1127, 200);
+            this.guna2Panel18.Name = "guna2Panel18";
+            this.guna2Panel18.Size = new System.Drawing.Size(563, 790);
+            this.guna2Panel18.TabIndex = 3;
+            // 
+            // guna2PictureBoxData3
+            // 
+            this.guna2PictureBoxData3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBoxData3.Image = global::GUI_ComputerManagementCenter.Properties.Resources.nodata_1;
+            this.guna2PictureBoxData3.ImageRotate = 0F;
+            this.guna2PictureBoxData3.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBoxData3.Name = "guna2PictureBoxData3";
+            this.guna2PictureBoxData3.Size = new System.Drawing.Size(563, 790);
+            this.guna2PictureBoxData3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxData3.TabIndex = 5;
+            this.guna2PictureBoxData3.TabStop = false;
+            this.guna2PictureBoxData3.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(20, 515);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(439, 90);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Microsoft Office Training Program Distribution Chart";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // chartFiel
+            // 
+            chartArea1.Name = "ChartAreaSystemUser";
+            this.chartFiel.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFiel.Legends.Add(legend1);
+            this.chartFiel.Location = new System.Drawing.Point(30, 30);
+            this.chartFiel.Name = "chartFiel";
+            this.chartFiel.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartFiel.PaletteCustomColors = new System.Drawing.Color[] {
+        System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(135)))), ((int)(((byte)(84))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7))))),
+        System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))))};
+            series1.ChartArea = "ChartAreaSystemUser";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "SeriesFiled";
+            this.chartFiel.Series.Add(series1);
+            this.chartFiel.Size = new System.Drawing.Size(496, 517);
+            this.chartFiel.TabIndex = 3;
+            this.chartFiel.Text = "chart2";
+            // 
             // guna2Panel17
             // 
+            this.guna2Panel17.Controls.Add(this.guna2PictureBoxData2);
             this.guna2Panel17.Controls.Add(this.label7);
             this.guna2Panel17.Controls.Add(this.chartStatus);
             this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Left;
@@ -565,6 +632,19 @@
             this.guna2Panel17.Name = "guna2Panel17";
             this.guna2Panel17.Size = new System.Drawing.Size(563, 790);
             this.guna2Panel17.TabIndex = 2;
+            // 
+            // guna2PictureBoxData2
+            // 
+            this.guna2PictureBoxData2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBoxData2.Image = global::GUI_ComputerManagementCenter.Properties.Resources.nodata_1;
+            this.guna2PictureBoxData2.ImageRotate = 0F;
+            this.guna2PictureBoxData2.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBoxData2.Name = "guna2PictureBoxData2";
+            this.guna2PictureBoxData2.Size = new System.Drawing.Size(563, 790);
+            this.guna2PictureBoxData2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxData2.TabIndex = 6;
+            this.guna2PictureBoxData2.TabStop = false;
+            this.guna2PictureBoxData2.Visible = false;
             // 
             // label7
             // 
@@ -578,10 +658,10 @@
             // 
             // chartStatus
             // 
-            chartArea11.Name = "ChartAreaSystemUser";
-            this.chartStatus.ChartAreas.Add(chartArea11);
-            legend11.Name = "Legend1";
-            this.chartStatus.Legends.Add(legend11);
+            chartArea2.Name = "ChartAreaSystemUser";
+            this.chartStatus.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartStatus.Legends.Add(legend2);
             this.chartStatus.Location = new System.Drawing.Point(30, 30);
             this.chartStatus.Name = "chartStatus";
             this.chartStatus.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -590,17 +670,19 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(135)))), ((int)(((byte)(84))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))))};
-            series11.ChartArea = "ChartAreaSystemUser";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series11.Legend = "Legend1";
-            series11.Name = "SeriesCourseStatus";
-            this.chartStatus.Series.Add(series11);
+            series2.ChartArea = "ChartAreaSystemUser";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "SeriesCourseStatus";
+            this.chartStatus.Series.Add(series2);
             this.chartStatus.Size = new System.Drawing.Size(496, 517);
             this.chartStatus.TabIndex = 1;
             this.chartStatus.Text = "chart1";
             // 
             // guna2Panel16
             // 
+            this.guna2Panel16.Controls.Add(this.guna2PictureBoxNoData1);
+            this.guna2Panel16.Controls.Add(this.label8);
             this.guna2Panel16.Controls.Add(this.label4);
             this.guna2Panel16.Controls.Add(this.chartSystemUser);
             this.guna2Panel16.Dock = System.Windows.Forms.DockStyle.Left;
@@ -608,6 +690,28 @@
             this.guna2Panel16.Name = "guna2Panel16";
             this.guna2Panel16.Size = new System.Drawing.Size(564, 790);
             this.guna2Panel16.TabIndex = 1;
+            // 
+            // guna2PictureBoxNoData1
+            // 
+            this.guna2PictureBoxNoData1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2PictureBoxNoData1.Image = global::GUI_ComputerManagementCenter.Properties.Resources.nodata_1;
+            this.guna2PictureBoxNoData1.ImageRotate = 0F;
+            this.guna2PictureBoxNoData1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBoxNoData1.Name = "guna2PictureBoxNoData1";
+            this.guna2PictureBoxNoData1.Size = new System.Drawing.Size(564, 790);
+            this.guna2PictureBoxNoData1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxNoData1.TabIndex = 8;
+            this.guna2PictureBoxNoData1.TabStop = false;
+            this.guna2PictureBoxNoData1.Visible = false;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 41);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "label8";
             // 
             // label4
             // 
@@ -621,10 +725,10 @@
             // 
             // chartSystemUser
             // 
-            chartArea12.Name = "ChartAreaSystemUser";
-            this.chartSystemUser.ChartAreas.Add(chartArea12);
-            legend12.Name = "Legend1";
-            this.chartSystemUser.Legends.Add(legend12);
+            chartArea3.Name = "ChartAreaSystemUser";
+            this.chartSystemUser.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartSystemUser.Legends.Add(legend3);
             this.chartSystemUser.Location = new System.Drawing.Point(30, 30);
             this.chartSystemUser.Name = "chartSystemUser";
             this.chartSystemUser.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
@@ -633,11 +737,11 @@
         System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(135)))), ((int)(((byte)(84))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7))))),
         System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))))};
-            series12.ChartArea = "ChartAreaSystemUser";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series12.Legend = "Legend1";
-            series12.Name = "SeriesUserSystem";
-            this.chartSystemUser.Series.Add(series12);
+            series3.ChartArea = "ChartAreaSystemUser";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "SeriesUserSystem";
+            this.chartSystemUser.Series.Add(series3);
             this.chartSystemUser.Size = new System.Drawing.Size(496, 517);
             this.chartSystemUser.TabIndex = 0;
             this.chartSystemUser.Text = "chartSystemUser";
@@ -724,7 +828,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(276, 50);
             this.label13.TabIndex = 8;
-            this.label13.Text = "Revenues with 30 days";
+            this.label13.Text = " Recently revenues";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelRevenues
@@ -841,7 +945,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(279, 50);
             this.label11.TabIndex = 8;
-            this.label11.Text = "New course with 30 days";
+            this.label11.Text = "Recent course openings";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelNewCourse
@@ -1130,11 +1234,19 @@
             // 
             // guna2PanelHomeLeft
             // 
+            this.guna2PanelHomeLeft.Controls.Add(this.guna2Panel19);
             this.guna2PanelHomeLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2PanelHomeLeft.Location = new System.Drawing.Point(4, 4);
             this.guna2PanelHomeLeft.Name = "guna2PanelHomeLeft";
             this.guna2PanelHomeLeft.Size = new System.Drawing.Size(56, 990);
             this.guna2PanelHomeLeft.TabIndex = 0;
+            // 
+            // guna2Panel19
+            // 
+            this.guna2Panel19.Location = new System.Drawing.Point(56, 200);
+            this.guna2Panel19.Name = "guna2Panel19";
+            this.guna2Panel19.Size = new System.Drawing.Size(605, 275);
+            this.guna2Panel19.TabIndex = 0;
             // 
             // tabPageTeacher
             // 
@@ -1236,17 +1348,17 @@
             this.guna2DataGridViewTeacher.AllowUserToDeleteRows = false;
             this.guna2DataGridViewTeacher.AllowUserToResizeColumns = false;
             this.guna2DataGridViewTeacher.AllowUserToResizeRows = false;
-            dataGridViewCellStyle41.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle41;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewTeacher.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.guna2DataGridViewTeacher.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle42.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle42;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewTeacher.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.guna2DataGridViewTeacher.ColumnHeadersHeight = 50;
             this.guna2DataGridViewTeacher.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -1259,14 +1371,14 @@
             this.Email,
             this.AcademicLevel});
             this.guna2DataGridViewTeacher.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle43.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle43.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewTeacher.DefaultCellStyle = dataGridViewCellStyle43;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Poppins", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewTeacher.DefaultCellStyle = dataGridViewCellStyle7;
             this.guna2DataGridViewTeacher.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewTeacher.Location = new System.Drawing.Point(56, 0);
             this.guna2DataGridViewTeacher.MultiSelect = false;
@@ -1302,6 +1414,7 @@
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewTeacher.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewTeacher.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewTeacher_CellClick);
             // 
             // ID
             // 
@@ -1483,17 +1596,17 @@
             this.guna2DataGridViewStudent.AllowUserToDeleteRows = false;
             this.guna2DataGridViewStudent.AllowUserToResizeColumns = false;
             this.guna2DataGridViewStudent.AllowUserToResizeRows = false;
-            dataGridViewCellStyle44.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridViewStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridViewStudent.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.guna2DataGridViewStudent.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
-            dataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle45.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewStudent.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.guna2DataGridViewStudent.ColumnHeadersHeight = 50;
             this.guna2DataGridViewStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridViewStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1505,37 +1618,37 @@
             this.ICNumber,
             this.StudentAddress,
             this.StudentEmail});
-            dataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle46.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridViewStudent.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridViewStudent.DefaultCellStyle = dataGridViewCellStyle10;
             this.guna2DataGridViewStudent.GridColor = System.Drawing.Color.White;
             this.guna2DataGridViewStudent.Location = new System.Drawing.Point(56, 0);
             this.guna2DataGridViewStudent.MultiSelect = false;
             this.guna2DataGridViewStudent.Name = "guna2DataGridViewStudent";
             this.guna2DataGridViewStudent.ReadOnly = true;
             this.guna2DataGridViewStudent.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridViewStudent.RowHeadersDefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Poppins Medium", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(187)))), ((int)(((byte)(187)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridViewStudent.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.guna2DataGridViewStudent.RowHeadersVisible = false;
             this.guna2DataGridViewStudent.RowHeadersWidth = 51;
             this.guna2DataGridViewStudent.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridViewStudent.RowsDefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewStudent.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.guna2DataGridViewStudent.RowTemplate.Height = 50;
             this.guna2DataGridViewStudent.Size = new System.Drawing.Size(1698, 888);
             this.guna2DataGridViewStudent.TabIndex = 0;
@@ -1560,6 +1673,7 @@
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.Height = 50;
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridViewStudent.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridViewStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridViewStudent_CellClick);
             // 
             // StudentID
             // 
@@ -1654,49 +1768,6 @@
             this.flowLayoutPanelCourse.Size = new System.Drawing.Size(1701, 960);
             this.flowLayoutPanelCourse.TabIndex = 0;
             // 
-            // chartFiel
-            // 
-            chartArea10.Name = "ChartAreaSystemUser";
-            this.chartFiel.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chartFiel.Legends.Add(legend10);
-            this.chartFiel.Location = new System.Drawing.Point(30, 30);
-            this.chartFiel.Name = "chartFiel";
-            this.chartFiel.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
-            this.chartFiel.PaletteCustomColors = new System.Drawing.Color[] {
-        System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(110)))), ((int)(((byte)(253))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(135)))), ((int)(((byte)(84))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7))))),
-        System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(46)))), ((int)(((byte)(60)))))};
-            series10.ChartArea = "ChartAreaSystemUser";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series10.Legend = "Legend1";
-            series10.Name = "SeriesFiled";
-            this.chartFiel.Series.Add(series10);
-            this.chartFiel.Size = new System.Drawing.Size(496, 517);
-            this.chartFiel.TabIndex = 3;
-            this.chartFiel.Text = "chart2";
-            // 
-            // label5
-            // 
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(20, 515);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(439, 90);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Microsoft Office Training Program Distribution Chart";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2Panel18
-            // 
-            this.guna2Panel18.Controls.Add(this.label5);
-            this.guna2Panel18.Controls.Add(this.chartFiel);
-            this.guna2Panel18.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel18.Location = new System.Drawing.Point(1127, 200);
-            this.guna2Panel18.Name = "guna2Panel18";
-            this.guna2Panel18.Size = new System.Drawing.Size(563, 790);
-            this.guna2Panel18.TabIndex = 3;
-            // 
             // FEs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1725,9 +1796,15 @@
             this.guna2TabControlEmployee.ResumeLayout(false);
             this.tabPageHome.ResumeLayout(false);
             this.guna2PanelFullHone.ResumeLayout(false);
+            this.guna2Panel18.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxData3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFiel)).EndInit();
             this.guna2Panel17.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxData2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartStatus)).EndInit();
             this.guna2Panel16.ResumeLayout(false);
+            this.guna2Panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxNoData1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartSystemUser)).EndInit();
             this.guna2PanelOverview.ResumeLayout(false);
             this.guna2PanelOverview7.ResumeLayout(false);
@@ -1747,6 +1824,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2PanelButtonOverView1.ResumeLayout(false);
             this.guna2PanelOverVie1Left.ResumeLayout(false);
+            this.guna2PanelHomeLeft.ResumeLayout(false);
             this.tabPageTeacher.ResumeLayout(false);
             this.guna2PanelFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewTeacher)).EndInit();
@@ -1754,8 +1832,6 @@
             this.guna2PanelFooterStudent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewStudent)).EndInit();
             this.tabPageCourse.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chartFiel)).EndInit();
-            this.guna2Panel18.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1859,7 +1935,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel16;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartSystemUser;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel17;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label labelRevenues;
@@ -1871,5 +1946,11 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel18;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartFiel;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartSystemUser;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
+        private System.Windows.Forms.Label label8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxNoData1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxData3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBoxData2;
     }
 }

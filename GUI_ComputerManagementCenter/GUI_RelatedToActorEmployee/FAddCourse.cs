@@ -219,8 +219,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListStudentBySearchAndNoExist(text, listStudentID);
 
         }
-
-
         // Click button add
         private void guna2ButtonAdd_Click(object sender, EventArgs e)
         {
@@ -295,6 +293,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("You must be enter course fee being number");
                 return;
             } 
+            if (subjectID == "" || courseName == "" || courseStart == "" || courseFee == "" || courseDescription == "")
+            {
+                MessageBox.Show("Please fill all field information");
+                return;
+            }
             else
             {
                 if (guna2DataGridViewStudent != null)
@@ -318,6 +321,29 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                         fEs.RefreshPage();
                         fEs.LoadListCourse();
                     }
+
+                    // Show data into combobox subject
+                    guna2ComboBoxSubject.DataSource = BUS_RelatedToEmployee.Instance.GetListSubject();
+                    guna2ComboBoxSubject.DisplayMember = "SubjectName";
+                    // Show data into combobox shift
+                    GetShiftFromCourseStart();
+                    // Show data into number of meetings
+                    guna2ComboBoxMeetings.DataSource = new List<String> { "12", "15", "18", "21" };
+                    // Show list teacher
+                    LoadListTeacher();
+                    // Show room
+                    LoadListRoom();
+                    // Load time
+                    guna2DateTimePickerStart.MinDate = DateTime.Now;
+                    guna2DateTimePickerStart.Value = DateTime.Now;
+
+                    guna2TextBoxCourseName.Text = "";
+                    guna2TextBoxDescription.Text = "";
+                    guna2TextBoxFee.Text = "";
+                    guna2DataGridViewSearch.Rows.Clear();
+                    guna2DataGridViewStudent.Rows.Clear();
+                    guna2TextBoxSearch.Text = "";
+                    
                 }
             }
         }

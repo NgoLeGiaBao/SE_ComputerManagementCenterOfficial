@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.guna2PanelControl = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelLogout = new System.Windows.Forms.Label();
+            this.labelChangePassword = new System.Windows.Forms.Label();
+            this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PanelCoverInfor = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelPersonalName = new System.Windows.Forms.Label();
+            this.guna2CirclePictureBoxAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PanelSmall = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBoxMinimized = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBoxClose = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -37,23 +44,16 @@
             this.tabPageCourseManagement = new System.Windows.Forms.TabPage();
             this.flowLayoutPanelCourse = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2TabControlTeacher = new Guna.UI2.WinForms.Guna2TabControl();
-            this.guna2PanelCoverInfor = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBoxAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.labelPersonalName = new System.Windows.Forms.Label();
-            this.guna2PictureBoxScroll = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.labelLogout = new System.Windows.Forms.Label();
-            this.labelChangePassword = new System.Windows.Forms.Label();
             this.guna2PanelControl.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
+            this.guna2PanelCoverInfor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).BeginInit();
             this.guna2PanelSmall.SuspendLayout();
             this.guna2PanelCoverLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.tabPageCourseManagement.SuspendLayout();
             this.guna2TabControlTeacher.SuspendLayout();
-            this.guna2PanelCoverInfor.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2PanelControl
@@ -67,6 +67,90 @@
             this.guna2PanelControl.Name = "guna2PanelControl";
             this.guna2PanelControl.Size = new System.Drawing.Size(1942, 180);
             this.guna2PanelControl.TabIndex = 0;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.labelLogout);
+            this.guna2Panel1.Controls.Add(this.labelChangePassword);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBoxScroll);
+            this.guna2Panel1.Controls.Add(this.guna2PanelCoverInfor);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(240, 30);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1702, 150);
+            this.guna2Panel1.TabIndex = 2;
+            // 
+            // labelLogout
+            // 
+            this.labelLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelLogout.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogout.ForeColor = System.Drawing.Color.White;
+            this.labelLogout.Location = new System.Drawing.Point(1492, 90);
+            this.labelLogout.Name = "labelLogout";
+            this.labelLogout.Size = new System.Drawing.Size(210, 45);
+            this.labelLogout.TabIndex = 8;
+            this.labelLogout.Text = "Log out";
+            this.labelLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelLogout.Click += new System.EventHandler(this.labelLogout_Click);
+            // 
+            // labelChangePassword
+            // 
+            this.labelChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.labelChangePassword.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChangePassword.ForeColor = System.Drawing.Color.White;
+            this.labelChangePassword.Location = new System.Drawing.Point(1276, 90);
+            this.labelChangePassword.Name = "labelChangePassword";
+            this.labelChangePassword.Size = new System.Drawing.Size(210, 45);
+            this.labelChangePassword.TabIndex = 7;
+            this.labelChangePassword.Text = "Change password";
+            this.labelChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelChangePassword.Click += new System.EventHandler(this.labelChangePassword_Click);
+            // 
+            // guna2PictureBoxScroll
+            // 
+            this.guna2PictureBoxScroll.BorderRadius = 10;
+            this.guna2PictureBoxScroll.Image = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
+            this.guna2PictureBoxScroll.ImageRotate = 0F;
+            this.guna2PictureBoxScroll.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
+            this.guna2PictureBoxScroll.Location = new System.Drawing.Point(1684, 36);
+            this.guna2PictureBoxScroll.Name = "guna2PictureBoxScroll";
+            this.guna2PictureBoxScroll.Size = new System.Drawing.Size(18, 18);
+            this.guna2PictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBoxScroll.TabIndex = 5;
+            this.guna2PictureBoxScroll.TabStop = false;
+            // 
+            // guna2PanelCoverInfor
+            // 
+            this.guna2PanelCoverInfor.Controls.Add(this.labelPersonalName);
+            this.guna2PanelCoverInfor.Controls.Add(this.guna2CirclePictureBoxAvatar);
+            this.guna2PanelCoverInfor.Location = new System.Drawing.Point(1409, 20);
+            this.guna2PanelCoverInfor.Name = "guna2PanelCoverInfor";
+            this.guna2PanelCoverInfor.Size = new System.Drawing.Size(275, 50);
+            this.guna2PanelCoverInfor.TabIndex = 2;
+            // 
+            // labelPersonalName
+            // 
+            this.labelPersonalName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelPersonalName.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPersonalName.Location = new System.Drawing.Point(50, 0);
+            this.labelPersonalName.Name = "labelPersonalName";
+            this.labelPersonalName.Size = new System.Drawing.Size(225, 50);
+            this.labelPersonalName.TabIndex = 3;
+            this.labelPersonalName.Text = "Hi, Hoang Phuc !";
+            this.labelPersonalName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2CirclePictureBoxAvatar
+            // 
+            this.guna2CirclePictureBoxAvatar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.guna2CirclePictureBoxAvatar.Image = global::GUI_ComputerManagementCenter.Properties.Resources.images;
+            this.guna2CirclePictureBoxAvatar.ImageRotate = 0F;
+            this.guna2CirclePictureBoxAvatar.Location = new System.Drawing.Point(0, 0);
+            this.guna2CirclePictureBoxAvatar.Name = "guna2CirclePictureBoxAvatar";
+            this.guna2CirclePictureBoxAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBoxAvatar.Size = new System.Drawing.Size(50, 50);
+            this.guna2CirclePictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBoxAvatar.TabIndex = 2;
+            this.guna2CirclePictureBoxAvatar.TabStop = false;
             // 
             // guna2PanelSmall
             // 
@@ -181,90 +265,6 @@
             this.guna2TabControlTeacher.TabIndex = 1;
             this.guna2TabControlTeacher.TabMenuBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
             // 
-            // guna2PanelCoverInfor
-            // 
-            this.guna2PanelCoverInfor.Controls.Add(this.labelPersonalName);
-            this.guna2PanelCoverInfor.Controls.Add(this.guna2CirclePictureBoxAvatar);
-            this.guna2PanelCoverInfor.Location = new System.Drawing.Point(1409, 20);
-            this.guna2PanelCoverInfor.Name = "guna2PanelCoverInfor";
-            this.guna2PanelCoverInfor.Size = new System.Drawing.Size(275, 50);
-            this.guna2PanelCoverInfor.TabIndex = 2;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.labelLogout);
-            this.guna2Panel1.Controls.Add(this.labelChangePassword);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBoxScroll);
-            this.guna2Panel1.Controls.Add(this.guna2PanelCoverInfor);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(240, 30);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1702, 150);
-            this.guna2Panel1.TabIndex = 2;
-            // 
-            // guna2CirclePictureBoxAvatar
-            // 
-            this.guna2CirclePictureBoxAvatar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2CirclePictureBoxAvatar.Image = global::GUI_ComputerManagementCenter.Properties.Resources.images;
-            this.guna2CirclePictureBoxAvatar.ImageRotate = 0F;
-            this.guna2CirclePictureBoxAvatar.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBoxAvatar.Name = "guna2CirclePictureBoxAvatar";
-            this.guna2CirclePictureBoxAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBoxAvatar.Size = new System.Drawing.Size(50, 50);
-            this.guna2CirclePictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBoxAvatar.TabIndex = 2;
-            this.guna2CirclePictureBoxAvatar.TabStop = false;
-            // 
-            // labelPersonalName
-            // 
-            this.labelPersonalName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelPersonalName.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPersonalName.Location = new System.Drawing.Point(50, 0);
-            this.labelPersonalName.Name = "labelPersonalName";
-            this.labelPersonalName.Size = new System.Drawing.Size(225, 50);
-            this.labelPersonalName.TabIndex = 3;
-            this.labelPersonalName.Text = "Hi, Hoang Phuc !";
-            this.labelPersonalName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2PictureBoxScroll
-            // 
-            this.guna2PictureBoxScroll.BorderRadius = 10;
-            this.guna2PictureBoxScroll.Image = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
-            this.guna2PictureBoxScroll.ImageRotate = 0F;
-            this.guna2PictureBoxScroll.InitialImage = global::GUI_ComputerManagementCenter.Properties.Resources.Arrow_back_ios_new;
-            this.guna2PictureBoxScroll.Location = new System.Drawing.Point(1684, 36);
-            this.guna2PictureBoxScroll.Name = "guna2PictureBoxScroll";
-            this.guna2PictureBoxScroll.Size = new System.Drawing.Size(18, 18);
-            this.guna2PictureBoxScroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBoxScroll.TabIndex = 5;
-            this.guna2PictureBoxScroll.TabStop = false;
-            // 
-            // labelLogout
-            // 
-            this.labelLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelLogout.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLogout.ForeColor = System.Drawing.Color.White;
-            this.labelLogout.Location = new System.Drawing.Point(1492, 90);
-            this.labelLogout.Name = "labelLogout";
-            this.labelLogout.Size = new System.Drawing.Size(210, 45);
-            this.labelLogout.TabIndex = 8;
-            this.labelLogout.Text = "Log out";
-            this.labelLogout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelLogout.Click += new System.EventHandler(this.labelLogout_Click);
-            // 
-            // labelChangePassword
-            // 
-            this.labelChangePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.labelChangePassword.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChangePassword.ForeColor = System.Drawing.Color.White;
-            this.labelChangePassword.Location = new System.Drawing.Point(1276, 90);
-            this.labelChangePassword.Name = "labelChangePassword";
-            this.labelChangePassword.Size = new System.Drawing.Size(210, 45);
-            this.labelChangePassword.TabIndex = 7;
-            this.labelChangePassword.Text = "Change password";
-            this.labelChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelChangePassword.Click += new System.EventHandler(this.labelChangePassword_Click);
-            // 
             // FTeacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -280,15 +280,15 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FTeacher_Load);
             this.guna2PanelControl.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).EndInit();
+            this.guna2PanelCoverInfor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).EndInit();
             this.guna2PanelSmall.ResumeLayout(false);
             this.guna2PanelCoverLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.tabPageCourseManagement.ResumeLayout(false);
             this.guna2TabControlTeacher.ResumeLayout(false);
-            this.guna2PanelCoverInfor.ResumeLayout(false);
-            this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBoxAvatar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBoxScroll)).EndInit();
             this.ResumeLayout(false);
 
         }

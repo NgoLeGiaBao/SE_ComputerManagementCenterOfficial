@@ -155,14 +155,18 @@
             this.guna2TextBoxCurr.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxCurr.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxCurr.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxCurr.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.visible__1_;
             this.guna2TextBoxCurr.Location = new System.Drawing.Point(0, 25);
             this.guna2TextBoxCurr.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.guna2TextBoxCurr.Name = "guna2TextBoxCurr";
-            this.guna2TextBoxCurr.PasswordChar = '\0';
+            this.guna2TextBoxCurr.PasswordChar = '●';
             this.guna2TextBoxCurr.PlaceholderText = "Current password";
             this.guna2TextBoxCurr.SelectedText = "";
             this.guna2TextBoxCurr.Size = new System.Drawing.Size(469, 47);
             this.guna2TextBoxCurr.TabIndex = 0;
+            this.guna2TextBoxCurr.UseSystemPasswordChar = true;
+            this.guna2TextBoxCurr.IconRightClick += new System.EventHandler(this.guna2TextBoxCurr_IconRightClick);
+            this.guna2TextBoxCurr.Click += new System.EventHandler(this.guna2TextBoxCurr_Click);
             this.guna2TextBoxCurr.Leave += new System.EventHandler(this.guna2TextBoxCurr_Leave);
             // 
             // guna2PanelNew
@@ -208,14 +212,17 @@
             this.guna2TextBoxReNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxReNew.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxReNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxReNew.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.visible__1_;
             this.guna2TextBoxReNew.Location = new System.Drawing.Point(0, 25);
             this.guna2TextBoxReNew.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBoxReNew.Name = "guna2TextBoxReNew";
-            this.guna2TextBoxReNew.PasswordChar = '\0';
+            this.guna2TextBoxReNew.PasswordChar = '●';
             this.guna2TextBoxReNew.PlaceholderText = "Confirmation password";
             this.guna2TextBoxReNew.SelectedText = "";
             this.guna2TextBoxReNew.Size = new System.Drawing.Size(469, 47);
             this.guna2TextBoxReNew.TabIndex = 2;
+            this.guna2TextBoxReNew.UseSystemPasswordChar = true;
+            this.guna2TextBoxReNew.IconRightClick += new System.EventHandler(this.guna2TextBoxReNew_IconRightClick);
             this.guna2TextBoxReNew.Leave += new System.EventHandler(this.guna2TextBoxReNew_Leave);
             // 
             // guna2PanelRe
@@ -261,14 +268,18 @@
             this.guna2TextBoxNew.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxNew.Font = new System.Drawing.Font("Poppins", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2TextBoxNew.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBoxNew.IconRight = global::GUI_ComputerManagementCenter.Properties.Resources.visible__1_;
             this.guna2TextBoxNew.Location = new System.Drawing.Point(0, 25);
             this.guna2TextBoxNew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.guna2TextBoxNew.Name = "guna2TextBoxNew";
-            this.guna2TextBoxNew.PasswordChar = '\0';
+            this.guna2TextBoxNew.PasswordChar = '●';
             this.guna2TextBoxNew.PlaceholderText = "New password";
             this.guna2TextBoxNew.SelectedText = "";
             this.guna2TextBoxNew.Size = new System.Drawing.Size(469, 47);
             this.guna2TextBoxNew.TabIndex = 1;
+            this.guna2TextBoxNew.UseSystemPasswordChar = true;
+            this.guna2TextBoxNew.IconRightClick += new System.EventHandler(this.guna2TextBoxNew_IconRightClick);
+            this.guna2TextBoxNew.Click += new System.EventHandler(this.guna2TextBoxNew_Click);
             this.guna2TextBoxNew.Leave += new System.EventHandler(this.guna2TextBoxNew_Leave);
             // 
             // labelNewPass

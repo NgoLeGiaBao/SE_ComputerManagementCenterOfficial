@@ -20,6 +20,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorTeacher
         public FTeacher()
         {
             InitializeComponent();
+
+            string[] fullName = BUS_RelatedToEmployee.Instance.GetTeacherByID(DTO_Person.IDSession).FullName.Split(' ');
+            labelPersonalName.Text = fullName[fullName.Length - 1] + " " + fullName[fullName.Length - 2];
         }
         public void GetGuna2PanelCourse(DTO_Course course, int i, int k)
         {

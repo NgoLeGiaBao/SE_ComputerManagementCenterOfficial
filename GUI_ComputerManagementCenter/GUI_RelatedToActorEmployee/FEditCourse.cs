@@ -373,6 +373,11 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             {
                 MessageBox.Show("You must be enter course fee being number");
             }
+            if (subjectID == "" || courseName == "" || courseStart == "" || courseFee == "" || courseDescription == "")
+            {
+                MessageBox.Show("Please fill all field information");
+                return;
+            }
             else
             {
                 if (guna2DataGridViewStudent != null)

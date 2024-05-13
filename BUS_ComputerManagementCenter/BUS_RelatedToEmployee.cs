@@ -228,8 +228,14 @@ namespace BUS_ComputerManagementCenter
             }
             return data;
         }
-            //--Check--//
-            // Check student exist
+        // Get status account 
+        public string GetStatusAccount (string accountID)
+        {
+            return DAO_RelatedToEmployee.Instance.GetStatusAccount(accountID).ToString();
+        }
+
+        //--Check--//
+        // Check student exist
         public bool CheckExistStudentID (string id)
         {
             return DAO_RelatedToEmployee.Instance.GetStudentByID(id).Rows.Count > 0 ? true : false;
@@ -287,6 +293,11 @@ namespace BUS_ComputerManagementCenter
         public void UpdateCourse(object[] parameters)
         {
             DAO_RelatedToEmployee.Instance.UpdateCourse(parameters);
+        }
+        // Update account
+        public void UpdateAccount (string accoutID)
+        {
+            DAO_RelatedToEmployee.Instance.UpdateAccount(accoutID);
         }
         //--Delete --
         public void DeleteACourse(string courseID)

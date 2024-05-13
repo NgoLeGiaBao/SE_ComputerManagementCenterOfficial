@@ -32,7 +32,10 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToLogin
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("You have just canceled creating a new password");
+            FLogin fLogin = new FLogin();
+            fLogin.Show();
+            this.Hide();
         }
 
         private void guna2TextBoxUserName_Leave(object sender, EventArgs e)

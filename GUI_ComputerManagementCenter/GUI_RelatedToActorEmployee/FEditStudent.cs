@@ -62,6 +62,22 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             string address = guna2TextBoxAddress.Text;
             string email = guna2TextBoxEmail.Text;
 
+            if (guna2TextBoxFullName.Text == "" || guna2TextBoxEmail.Text == "" || guna2TextBoxAddress.Text == "" || guna2TextBoxPhone.Text == "")
+            {
+                MessageBox.Show("Please fill all filed data");
+                return;
+            }
+            if (phone.Length != 10)
+            {
+                MessageBox.Show("Telephone number only contains 10 characters");
+                return;
+            }
+
+            if (!email.ToLower().EndsWith("@gmail.com"))
+            {
+                MessageBox.Show("Please enter format @gmail.com");
+                return;
+            }
             bool isUpdated = BUS_RelatedToEmployee.Instance.UpdateStudent(new object[] {identityCard, fullName, gender, birthday, phone, address, email});
             if (isUpdated)
             {

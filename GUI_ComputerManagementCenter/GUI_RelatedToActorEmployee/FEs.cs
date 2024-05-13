@@ -35,7 +35,6 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             LoadListStudent();
             LoadListCourse();
             LoadDataGridViewCommon();
-            
         }
        
         // Process with datagridview common
@@ -140,24 +139,45 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         {
             List<string> list = BUS_RelatedToEmployee.Instance.GetDataForChart();
             int i = 0;
-
+            
             chartSystemUser.Series["SeriesUserSystem"].Points.Clear();
             chartStatus.Series["SeriesCourseStatus"].Points.Clear();
             chartFiel.Series["SeriesFiled"].Points.Clear();
 
-            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active T", list[i++]);
-            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive T", list[i++]);
-            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active S", list[i++]);
-            chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive S", list[i++]);
-           
+            if (list[i] == "0" && list[i + 1] == "0" && list[i+2] == "0" && list[i+3] == "0")
+            {
+                guna2PictureBoxNoData1.Visible = true;
+            } else
+            {
+                guna2PictureBoxNoData1.Visible = false;
+            }
+            _ = list[i] != "0" ? chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active T", list[i++]) : i++;
+            _ = list[i] != "0" ? chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive T", list[i++]) : i++;
+            _ = list[i] != "0" ? chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("Active S", list[i++]) : i++;
+            _ = list[i] != "0" ? chartSystemUser.Series["SeriesUserSystem"].Points.AddXY("InActive S", list[i++]) : i++;
 
-            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Ended", list[i++]);
-            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("On Going", list[i++]);
-            chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Not yet", list[i++]);
+            if (list[i] == "0" && list[i + 1] == "0" && list[i + 2] == "0")
+            {
+                guna2PictureBoxData2.Visible = true;
+            } else
+            {
+                guna2PictureBoxData2.Visible = false;
 
-            chartFiel.Series["SeriesFiled"].Points.AddXY("Word", list[i++]);
-            chartFiel.Series["SeriesFiled"].Points.AddXY("Powerpoint", list[i++]);
-            chartFiel.Series["SeriesFiled"].Points.AddXY("Excel", list[i++]);
+            }
+            _ = list[i] != "0" ? chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Ended", list[i++]) : i++;
+            _ = list[i] != "0" ? chartStatus.Series["SeriesCourseStatus"].Points.AddXY("On Going", list[i++]) : i++;
+            _ = list[i] != "0" ? chartStatus.Series["SeriesCourseStatus"].Points.AddXY("Not yet", list[i++]) : i++;
+
+            if (list[i] == "0" && list[i + 1] == "0" && list[i + 2] == "0")
+            {
+                guna2PictureBoxData3.Visible = true;
+            } else
+            {
+                guna2PictureBoxData3.Visible = false;
+            }
+            _ = list[i] != "0" ? chartFiel.Series["SeriesFiled"].Points.AddXY("Word", list[i++]) : i++;
+            _ = list[i] != "0" ? chartFiel.Series["SeriesFiled"].Points.AddXY("Powerpoint", list[i++]) : i++;
+            _ = list[i] != "0" ? chartFiel.Series["SeriesFiled"].Points.AddXY("Excel", list[i++]) : i++;
         }
 
         // Process with teacher page
@@ -173,8 +193,26 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             labelAcTeacher.Text = list[i++];    
             labelAllCourse.Text = list[i++];    
             labelNewCourse.Text = list[i++];
+
+           
+            if (list[i] == "")
+            {
+                labelRevenues.Text = "0";
+                i++;
+            } else
+            {
             labelRevenues.Text = list[i++];
-            labelAllRevenue.Text = list[i++];
+            }
+
+            if (list[i] == "")
+            {
+                labelAllRevenue.Text = "0";
+                i++;
+            }
+            else
+            {
+                labelAllRevenue.Text = list[i++];
+            }
         }
         // Load list teacher
         public void LoadListTeacher ()
@@ -196,7 +234,18 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                     item.AcademicLevels,
                 };
                 guna2DataGridViewTeacher.Rows.Add(rowValues);
-            }    
+            }
+            if (list.Count > 0)
+            {
+                if (BUS_RelatedToEmployee.Instance.GetStatusAccount(list[0].Id) == "0")
+                {
+                    guna2ButtonDeleteTeacher.Text = "Delete";
+                }
+                else
+                {
+                    guna2ButtonDeleteTeacher.Text = "Recover";
+                }
+            }
         }
         
         // Load list student
@@ -219,6 +268,18 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 };
                 guna2DataGridViewStudent.Rows.Add(rowValues);
             }
+            if (list.Count > 0)
+            {
+                if (BUS_RelatedToEmployee.Instance.GetStatusAccount(list[0].Id) == "0")
+                {
+                    guna2ButtonDeleteStudent.Text = "Delete";
+                }
+                else
+                {
+                    guna2ButtonDeleteStudent.Text = "Recover";
+                }
+            }
+            
         }
         // Load list course
         public void LoadListCourse ()
@@ -249,9 +310,13 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Get ID teacher from row selected from datagridview teacher
         public string GetRowTeacherSelected()
         {
-            int selectedIndex = guna2DataGridViewTeacher.SelectedRows[0].Index;
-            string cellValueID = guna2DataGridViewTeacher.Rows[selectedIndex].Cells["ID"].Value.ToString();
-            return cellValueID;
+            if(guna2DataGridViewStudent.Rows.Count > 0)
+            {
+                int selectedIndex = guna2DataGridViewTeacher.SelectedRows[0].Index;
+                string cellValueID = guna2DataGridViewTeacher.Rows[selectedIndex].Cells["ID"].Value.ToString();
+                return cellValueID;
+            }
+            return "";
         }
         
         // Click Edit Teacher
@@ -268,18 +333,39 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         private void guna2ButtonDeleteTeacher_Click(object sender, EventArgs e)
         {
             DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
-            BUS_RelatedToEmployee.Instance.DeleteATeacher(DTO_Teacher.TeacherChoosen.Id);
-            MessageBox.Show("Delete teacher with " + DTO_Teacher.TeacherChoosen.Id + " successfully");
-            this.RefreshPage();
+            if (guna2ButtonDeleteTeacher.Text == "Delete")
+            {
+                DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete teacher with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    BUS_RelatedToEmployee.Instance.DeleteATeacher(DTO_Teacher.TeacherChoosen.Id);
+                    MessageBox.Show("Delete a teacher successfully: " + DTO_Teacher.TeacherChoosen.Id);
+                    this.RefreshPage();
+                }
+            }
+            else
+            {
+                DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover student with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Teacher.TeacherChoosen.Id);
+                    MessageBox.Show("Recover a student successfully: " + DTO_Teacher.TeacherChoosen.Id);
+                    this.RefreshPage();
+                }
+            }
         }
 
         // Process with student page
         // Get row selected from datagridview teacher
         public string GetRowStudentSelected()
         {
-            int selectedIndex = guna2DataGridViewStudent.SelectedRows[0].Index;
-            string cellValueID = guna2DataGridViewStudent.Rows[selectedIndex].Cells["StudentID"].Value.ToString();
-            return cellValueID;
+            if (guna2DataGridViewStudent.Rows.Count > 0)
+            {
+                int selectedIndex = guna2DataGridViewStudent.SelectedRows[0].Index;
+                string cellValueID = guna2DataGridViewStudent.Rows[selectedIndex].Cells["StudentID"].Value.ToString();
+                return cellValueID;
+            }
+            return "";
         }
 
         // Click Edit Student
@@ -526,10 +612,28 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
         private void guna2ButtonDeleteStudent_Click(object sender, EventArgs e)
         {
-            DTO_Student.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
-            BUS_RelatedToEmployee.Instance.DeleteAStudent(DTO_Student.PersonChoosen.Id);
-            MessageBox.Show("Delete a student with student ID is " + DTO_Teacher.PersonChoosen.Id + " successful");
-            this.RefreshPage();
+            DTO_Person.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+            if (guna2ButtonDeleteStudent.Text == "Delete")
+            {
+                DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    BUS_RelatedToEmployee.Instance.DeleteAStudent(DTO_Person.PersonChoosen.Id);
+                    MessageBox.Show("Delete a student successfully: " + DTO_Person.PersonChoosen.Id);
+                    this.RefreshPage();
+                }
+            } 
+            else
+            {
+                DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Person.PersonChoosen.Id);
+                    MessageBox.Show("Recover a student successfully: " + DTO_Person.PersonChoosen.Id);
+                    this.RefreshPage();
+                }
+            }
+            
         }
 
 
@@ -821,6 +925,32 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             guna2TextBoxSearch.PlaceholderText = "Search teacher here";
             guna2TextBoxSearch.Text = "";
             this.RefreshPage();
+        }
+
+
+        private void guna2DataGridViewStudent_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string studentID = GetRowStudentSelected();
+            if (BUS_RelatedToEmployee.Instance.GetStatusAccount(studentID) == "0") {
+                guna2ButtonDeleteStudent.Text = "Delete";
+            } 
+            else
+            {
+                guna2ButtonDeleteStudent.Text = "Recover";
+            }
+        }
+
+        private void guna2DataGridViewTeacher_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string teacherID = GetRowTeacherSelected();
+            if (BUS_RelatedToEmployee.Instance.GetStatusAccount(teacherID) == "0")
+            {
+                guna2ButtonDeleteTeacher.Text = "Delete";
+            }
+            else
+            {
+                guna2ButtonDeleteTeacher.Text = "Recover";
+            }
         }
     }
 }

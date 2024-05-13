@@ -156,6 +156,12 @@ namespace DAO_ComputerManagementCenter
             string query = "USP_Chart";
             return DAO_DataProvider.Instance.ExecuteQuery (query);  
         }
+        // Get status account
+        public object GetStatusAccount (string id)
+        {
+            string query = "USP_GetStatusAccount @ID ";
+            return DAO_DataProvider.Instance.ExecuteScalar(query, new object[] { id }); 
+        }
         // -- Add
         // Add new student
         public bool AddNewStudent(object[] parameters, string obj)
@@ -222,6 +228,12 @@ namespace DAO_ComputerManagementCenter
         {
             string query = "USP_UpdateCourse @CourseID , @MaMonHoc , @TenKhoaHoc , @NgayBatDau , @ThongTinKhoaHoc , @HocPhiKhoaHoc , @TenCaHoc , @SoLuongBuoiHoc , @string , @MaGiaoVien , @MaPhongHoc";
             DAO_DataProvider.Instance.ExecuteNonQuery(query,obj);
+        }
+        // Update status
+        public void UpdateAccount (string accountID)
+        {
+            string query = "USP_UpdateStatusAccount @ID";
+            DAO_DataProvider.Instance.ExecuteNonQuery(query, new object[] { accountID });
         }
 
         // --Delete--

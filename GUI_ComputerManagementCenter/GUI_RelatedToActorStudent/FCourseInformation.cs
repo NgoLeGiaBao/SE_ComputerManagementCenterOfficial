@@ -22,7 +22,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorStudent
         }
         public void LoadCourseDetail ()
         {
-            labelCourseIFF.Text = "VIEW DETAIL ABOUT" + "\n" + DTO_Course.CourseChoosen.CourseName.ToUpper();
+            labelCourseIFF.Text = "VIEW DETAIL ABOUT " + DTO_Course.CourseChoosen.CourseName.ToUpper();
             List<string> infor = BUS_RelatedToStudent.Instance.GetCourseInformationDetailByID(DTO_Course.CourseChoosen.CourseID,DTO_Person.IDSession);
             int i = 0;
             labelTeacherT.Text = infor[i++];
