@@ -262,7 +262,7 @@ namespace BUS_ComputerManagementCenter
         // Get status account 
         public string GetStatusAccount (string accountID)
         {
-            return DAO_RelatedToEmployee.Instance.GetStatusAccount(accountID).ToString();
+            return DAO_RelatedToEmployee.Instance.GetStatusAccount(accountID) == null ? "": DAO_RelatedToEmployee.Instance.GetStatusAccount(accountID).ToString();
         }
 
         //--Check--//

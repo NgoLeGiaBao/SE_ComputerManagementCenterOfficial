@@ -345,26 +345,33 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         // Click DeleteTeacher
         private void guna2ButtonDeleteTeacher_Click(object sender, EventArgs e)
         {
-            DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
-            if (guna2ButtonDeleteTeacher.Text == "Delete")
+            if (guna2DataGridViewTeacher.Rows.Count > 0)
             {
-                DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete teacher with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
-                if (confirmResult == DialogResult.Yes)
+                DTO_Teacher.TeacherChoosen = BUS_RelatedToEmployee.Instance.GetTeacherByID(GetRowTeacherSelected());
+                if (guna2ButtonDeleteTeacher.Text == "Delete")
                 {
-                    BUS_RelatedToEmployee.Instance.DeleteATeacher(DTO_Teacher.TeacherChoosen.Id);
-                    MessageBox.Show("Delete a teacher successfully: " + DTO_Teacher.TeacherChoosen.Id);
-                    this.RefreshPage();
+                    DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete teacher with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        BUS_RelatedToEmployee.Instance.DeleteATeacher(DTO_Teacher.TeacherChoosen.Id);
+                        MessageBox.Show("Delete a teacher successfully: " + DTO_Teacher.TeacherChoosen.Id);
+                        this.RefreshPage();
+                    }
+                }
+                else
+                {
+                    DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover teacher with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Teacher.TeacherChoosen.Id);
+                        MessageBox.Show("Recover a teacher successfully: " + DTO_Teacher.TeacherChoosen.Id);
+                        this.RefreshPage();
+                    }
                 }
             }
             else
             {
-                DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover student with ID " + DTO_Teacher.TeacherChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
-                if (confirmResult == DialogResult.Yes)
-                {
-                    BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Teacher.TeacherChoosen.Id);
-                    MessageBox.Show("Recover a student successfully: " + DTO_Teacher.TeacherChoosen.Id);
-                    this.RefreshPage();
-                }
+                MessageBox.Show("Please choose a teacher in list to delete");
             }
         }
 
@@ -566,6 +573,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             flowLayoutPanelCourse.Controls.Add(guna2PanelCourse);
         }
 
+
+        // Click view course
         private void guna2ButtonViewCourse_Click(object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
@@ -575,6 +584,9 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             fBackGround.Show();
             fEditCourse.ShowDialog();
         }
+        
+
+        // Click delete course
         private void guna2ButtonDeleteCourse_Click (object sender, EventArgs e)
         {
             DTO_Course course = ((sender as Guna2Button).Tag as DTO_Course);
@@ -593,32 +605,43 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
                 MessageBox.Show("You could not delete a course ending up");
             }
         }
+
+
+        // Click on delete student
         private void guna2ButtonDeleteStudent_Click(object sender, EventArgs e)
         {
-            DTO_Person.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
-            if (guna2ButtonDeleteStudent.Text == "Delete")
+            if (guna2DataGridViewStudent.Rows.Count > 0)
             {
-                DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
-                if (confirmResult == DialogResult.Yes)
+                DTO_Person.PersonChoosen = BUS_RelatedToEmployee.Instance.GetStudentByID(GetRowStudentSelected());
+                if (guna2ButtonDeleteStudent.Text == "Delete")
                 {
-                    BUS_RelatedToEmployee.Instance.DeleteAStudent(DTO_Person.PersonChoosen.Id);
-                    MessageBox.Show("Delete a student successfully: " + DTO_Person.PersonChoosen.Id);
-                    this.RefreshPage();
+                    DialogResult confirmResult = MessageBox.Show("Are you sure you want to delete student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        BUS_RelatedToEmployee.Instance.DeleteAStudent(DTO_Person.PersonChoosen.Id);
+                        MessageBox.Show("Delete a student successfully: " + DTO_Person.PersonChoosen.Id);
+                        this.RefreshPage();
+                    }
                 }
-            } 
+                else
+                {
+                    DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Person.PersonChoosen.Id);
+                        MessageBox.Show("Recover a student successfully: " + DTO_Person.PersonChoosen.Id);
+                        this.RefreshPage();
+                    }
+                }  
+            }
             else
             {
-                DialogResult confirmResult = MessageBox.Show("Are you sure you want to recover student with ID " + DTO_Person.PersonChoosen.Id + "?", "Confirm", MessageBoxButtons.YesNo);
-                if (confirmResult == DialogResult.Yes)
-                {
-                    BUS_RelatedToEmployee.Instance.UpdateAccount(DTO_Person.PersonChoosen.Id);
-                    MessageBox.Show("Recover a student successfully: " + DTO_Person.PersonChoosen.Id);
-                    this.RefreshPage();
-                }
-            } 
+                MessageBox.Show("Please choose a student in list to delete");
+            }
         }
 
 
+        // Reload page
         public void RefreshPage()
         {
             guna2DataGridViewStudent.Rows.Clear();
@@ -632,6 +655,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+        // Click button print
         private void guna2ButtonViewAndPrint_Click(object sender, EventArgs e)
         {
             try
@@ -693,24 +717,28 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+        // Click circle picture
         private void guna2CirclePictureBoxAvatar_Click(object sender, EventArgs e)
         {
             guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
         }
 
 
+        // Click person name
         private void labelPersonalName_Click(object sender, EventArgs e)
         {
             guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
         }
 
 
+        // Click picture box
         private void guna2PictureBoxScroll_Click(object sender, EventArgs e)
         {
             guna2DataGridViewCommon.Visible = !guna2DataGridViewCommon.Visible;
         }
 
 
+        // Click row in guna2DataGridViewCommon
         private void guna2DataGridViewCommon_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewCell cell = guna2DataGridViewCommon.Rows[e.RowIndex].Cells[e.ColumnIndex];
@@ -732,6 +760,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+        // Xuất danh sách giáo viên
         private void guna2ButtonSavePDFTeacher_Click(object sender, EventArgs e)
         {
             try
@@ -795,13 +824,15 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
-
+        
+        // Mouse leave guan2DataGridViewCommon
         private void guna2DataGridViewCommon_MouseLeave(object sender, EventArgs e)
         {
             guna2DataGridViewCommon.Visible = false;
         }
 
 
+        // Click icon right text box search
         private void guna2TextBoxSearch_IconRightClick(object sender, EventArgs e)
         {
             string page = guna2TabControlEmployee.SelectedTab.Text;
@@ -869,6 +900,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+        // Refresh search student
         private void guna2ButtonRefreshSearchStudent_Click(object sender, EventArgs e)
         {
             guna2TextBoxSearch.PlaceholderText = "Search student here";
@@ -877,6 +909,8 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+
+        // Refresh search teacher
         private void guna2ButtonRefreshSearchTeacher_Click(object sender, EventArgs e)
         {
             guna2TextBoxSearch.PlaceholderText = "Search teacher here";
@@ -885,6 +919,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
         }
 
 
+        // Guan2DataGridViewStudent Click
         private void guna2DataGridViewStudent_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string studentID = GetRowStudentSelected();
@@ -897,6 +932,7 @@ namespace GUI_ComputerManagementCenter.GUI_RelatedToActorEmployee
             }
         }
 
+        // Cick guna2DataGridViewTeacher Click
         private void guna2DataGridViewTeacher_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             string teacherID = GetRowTeacherSelected();
